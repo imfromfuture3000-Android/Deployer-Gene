@@ -4,6 +4,7 @@ use solana_program::{
     pubkey::Pubkey,
     msg,
 };
+use core::str::FromStr;
 
 #[derive(Clone)]
 pub struct BotSwarm {
@@ -53,14 +54,14 @@ fn pentacle_entry(
         ],
     };
 
-    swarm.expand(5);
-    Ω_emit_pentacle_pulse();
+    // Ignore result for now (demo)
+    let _ = swarm.expand(5);
+    emit_pentacle_pulse(5);
     Ok(())
 }
 
-// Event to trigger off-chain bots
-#[event]
-pub struct PentaclePulse {
-    pub timestamp: i64,
-    pub depth: u64,
+// Simplified event emission placeholder (no #[event] macro available here)
+pub fn emit_pentacle_pulse(depth: u64) {
+    // In a real program you might create a custom log format for off-chain indexing
+    msg!("PENTACLE_PULSE depth={}", depth);
 }

@@ -1,9 +1,8 @@
-#[cfg(test)]
-mod tests {
-    use super::*;
-    #[test]
-    fn test_bot_swarm_expand() {
-        // Placeholder for unit test
-        assert_eq!(2 + 2, 4);
-    }
+use pentacle::emit_pentacle_pulse;
+
+#[test]
+fn test_emit_pulse() {
+    // Just ensure the function can be called without panic
+    emit_pentacle_pulse(3);
+    assert_eq!(2 + 2, 4);
 }

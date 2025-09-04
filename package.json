@@ -10,7 +10,10 @@
     "mainnet:lock": "ts-node src/lockAuthorities.ts",
     "mainnet:rollback": "ts-node src/rollback.ts",
     "mainnet:copilot": "ts-node grok-copilot.ts",
-    "mainnet:all": "npm run dev:check && npm run mainnet:create-mint && npm run mainnet:mint-initial && npm run mainnet:set-metadata && npm run mainnet:lock"
+  "mainnet:all": "npm run dev:check && npm run mainnet:create-mint && npm run mainnet:mint-initial && npm run mainnet:set-metadata && npm run mainnet:lock",
+  "build": "tsc",
+  "build:rust": "cargo build --manifest-path pentacle/Cargo.toml",
+  "build:all": "npm run build && npm run build:rust"
   },
   "dependencies": {
     "@solana/web3.js": "^1.95.3",
