@@ -1,0 +1,27 @@
+{
+  "name": "omega-prime-token",
+  "version": "1.2.0",
+  "type": "commonjs",
+  "scripts": {
+    "dev:check": "ts-node src/utils/checkEnv.ts",
+    "mainnet:create-mint": "ts-node src/createMint.ts",
+    "mainnet:mint-initial": "ts-node src/mintInitial.ts",
+    "mainnet:set-metadata": "ts-node src/setMetadata.ts",
+    "mainnet:lock": "ts-node src/lockAuthorities.ts",
+    "mainnet:rollback": "ts-node src/rollback.ts",
+    "mainnet:copilot": "ts-node grok-copilot.ts",
+    "mainnet:all": "npm run dev:check && npm run mainnet:create-mint && npm run mainnet:mint-initial && npm run mainnet:set-metadata && npm run mainnet:lock"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.95.3",
+    "@solana/spl-token": "^0.4.8",
+    "@metaplex-foundation/mpl-token-metadata": "^3.2.1",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
