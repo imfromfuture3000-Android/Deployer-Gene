@@ -1,0 +1,35 @@
+Omega-prime-deployer/
+├── .env                # Your environment variables (never commit secrets)
+├── .env.sample         # Template for required environment variables
+├── .gitignore          # Ignore secrets, build artifacts, node_modules, etc.
+├── package.json        # Scripts and dependencies for deployment and extension
+├── README.md           # Project documentation and usage instructions
+├── relayer-docs/
+│   └── README.md       # Relayer server setup guide
+├── resources/
+│   └── light/
+│       └── logo.svg    # Sidebar icon for the extension
+├── logo.png            # Extension icon
+├── .cache/             # Deployment cache and wallet files (not committed)
+│   └── user_auth.json  # Wallet keypairs (never commit)
+├── src/
+│   ├── extension.ts                    # Main extension activation
+│   ├── webviewPanel.ts                 # Webview panel logic
+│   ├── walletUtils.ts                  # Wallet management utilities
+│   ├── repoIntegration.ts              # Script and env integration
+│   ├── sidebar.ts                      # Sidebar provider
+│   ├── commands/
+│   │   └── registerValidateEnvCommand.ts # .env validation command
+│   └── utils/
+│       ├── checkProjectReady.ts        # Project readiness utility
+│       ├── relayer.ts                  # Relayer utilities
+│       ├── pdas.ts                     # PDA utilities
+│       ├── wallet.ts                   # Wallet utilities
+│       └── checkEnv.ts                 # .env validation logic
+│   ├── create-mint.ts                  # Deployment scripts
+│   ├── mint-initial.ts
+│   ├── set-metadata.ts
+│   ├── lock.ts
+│   ├── rollback.ts
+│   └── copilot.ts
+└── ...
