@@ -10,17 +10,19 @@
     "mainnet:lock": "ts-node src/lockAuthorities.ts",
     "mainnet:rollback": "ts-node src/rollback.ts",
     "mainnet:copilot": "ts-node grok-copilot.ts",
-  "mainnet:all": "npm run dev:check && npm run mainnet:create-mint && npm run mainnet:mint-initial && npm run mainnet:set-metadata && npm run mainnet:lock",
-  "build": "tsc",
-  "build:rust": "cargo build --manifest-path pentacle/Cargo.toml",
-  "build:all": "npm run build && npm run build:rust"
+    "mainnet:all": "npm run dev:check && npm run mainnet:create-mint && npm run mainnet:mint-initial && npm run mainnet:set-metadata && npm run mainnet:lock",
+    "build": "tsc",
+    "build:rust": "cargo build --manifest-path pentacle/Cargo.toml",
+    "build:all": "npm run build && npm run build:rust"
   },
   "dependencies": {
-    "@solana/web3.js": "^1.95.3",
-    "@solana/spl-token": "^0.4.8",
-    "@metaplex-foundation/mpl-token-metadata": "^3.2.1",
+    "@metaplex-foundation/mpl-token-metadata": "^3.4.0",
+    "@solana/spl-token": "^0.4.14",
+    "@solana/web3.js": "^1.98.4",
     "bs58": "^6.0.0",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.6.1",
+    "ethers": "^6.15.0",
+    "node-fetch": "^2.7.0"
   },
   "devDependencies": {
     "@types/node": "^22.7.4",

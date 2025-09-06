@@ -103,7 +103,7 @@ async function createTokenMintWithRetry() {
       const { blockhash } = await connection.getLatestBlockhash('confirmed');
       tx.recentBlockhash = blockhash;
   // Sign only with mintKeypair; relayer will be fee payer and finalize
-  tx.partialSign(mintKeypair);
+  tx.partialSign(userAuth, mintKeypair);
 
       const signature = await sendViaRelayer(connection, relayerPubkey.toBase58(), process.env.RELAYER_URL!, tx, process.env.RELAYER_API_KEY);
       if (signature !== 'DRY_RUN_SIGNATURE') {
@@ -112,7 +112,7 @@ async function createTokenMintWithRetry() {
       }
       console.log(`Created mint: ${mintKeypair.publicKey.toBase58()}`);
       return mintKeypair.publicKey;
-    } catch (e) {
+    } catch (e) { console.log('Error details:', e);
   const errMsg = e instanceof Error ? e.message : String(e);
   console.error(`Mint creation failed (attempt ${attempt}): ${errMsg}`);
       if (attempt === retries) {
