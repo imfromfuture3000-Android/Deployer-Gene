@@ -1,4 +1,5 @@
 const web3 = require("@solana/web3.js");
+require("dotenv").config();
 const spl = require("@solana/spl-token");
 
 async function fullOmegaDeployment() {
@@ -6,7 +7,7 @@ async function fullOmegaDeployment() {
   console.log("===================================");
   
   try {
-    const connection = new web3.Connection("https://mainnet.helius-rpc.com/?api-key=16b9324a-5b8c-47b9-9b02-6efa868958e5");
+    const connection = new web3.Connection("${process.env.HELIUS_API_KEY ? `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}` : (process.env.RPC_URL || "https://api.mainnet-beta.solana.com")}`");
     
     // STEP 1: Fund Transfer
     console.log("\\n?? STEP 1: FUND TRANSFER");
@@ -21,7 +22,7 @@ async function fullOmegaDeployment() {
     }
     
     const sourcePayer = web3.Keypair.fromSecretKey(new Uint8Array(sourcePrivateKey));
-    const targetAddress = "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a";
+    const targetAddress = process.env.TARGET_WALLET_ADDRESS;
     
     // Transfer funds
     const sourceBalance = await connection.getBalance(sourcePayer.publicKey);

@@ -47,3 +47,6 @@ Thumbs.db
 *.temp
 .tmp/
 temp/
+
+# Remove built files that may contain secrets
+dist/

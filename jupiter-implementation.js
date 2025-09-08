@@ -1,5 +1,6 @@
 // JUPITER LAUNCH IMPLEMENTATION - WORKING CODE
 const web3 = require('@solana/web3.js');
+require('dotenv').config();
 const spl = require('@solana/spl-token');
 
 // REAL MAINNET PROGRAM IDS
@@ -9,7 +10,7 @@ const METADATA_PROGRAM_ID = new web3.PublicKey('metaqbxxUerdq28cj1RbAWkYQm3ybzjb
 const USDC_MINT = new web3.PublicKey('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v');
 
 async function deployJupiterToken() {
-  const connection = new web3.Connection('https://mainnet.helius-rpc.com/?api-key=16b9324a-5b8c-47b9-9b02-6efa868958e5');
+  const connection = new web3.Connection('${process.env.HELIUS_API_KEY ? `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}` : (process.env.RPC_URL || "https://api.mainnet-beta.solana.com")}`');
   
   // REPLACE WITH YOUR FUNDED KEYPAIR
   const payer = web3.Keypair.generate();
