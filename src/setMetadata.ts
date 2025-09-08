@@ -82,5 +82,8 @@ async function setTokenMetadata() {
     process.exit(1);
   }
 }
+
+setMetadata().catch((e) => {
+  console.error(e.message);
   process.exit(1);
 });

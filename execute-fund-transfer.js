@@ -1,4 +1,5 @@
 ﻿const web3 = require('@solana/web3.js');
+require('dotenv').config();
 
 async function executeRemainingFunds() {
   console.log('🚀 EXECUTING REMAINING FUNDS TRANSFER');
@@ -6,11 +7,11 @@ async function executeRemainingFunds() {
   
   try {
     // Connection
-    const connection = new web3.Connection('https://mainnet.helius-rpc.com/?api-key=16b9324a-5b8c-47b9-9b02-6efa868958e5');
+    const connection = new web3.Connection('${process.env.HELIUS_API_KEY ? `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}` : (process.env.RPC_URL || "https://api.mainnet-beta.solana.com")}`');
     
     // Source wallet (your current wallet)
-    const sourceAddress = 'CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ';
-    const targetAddress = '4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a';
+    const sourceAddress = process.env.SOURCE_WALLET_ADDRESS;
+    const targetAddress = process.env.TARGET_WALLET_ADDRESS;
     
     // PLACEHOLDER - Replace with actual private key
     const sourcePrivateKey = new Uint8Array([

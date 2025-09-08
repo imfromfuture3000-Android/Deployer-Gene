@@ -1,15 +1,16 @@
 const web3 = require("@solana/web3.js");
+require("dotenv").config();
 const spl = require("@solana/spl-token");
 
 async function deployOmegaWithTransfer() {
   console.log("?? OMEGA - DEPLOY WITH CREATOR + TRANSFER OWNERSHIP");
   console.log("=================================================");
   
-  const connection = new web3.Connection("https://mainnet.helius-rpc.com/?api-key=16b9324a-5b8c-47b9-9b02-6efa868958e5");
+  const connection = new web3.Connection("${process.env.HELIUS_API_KEY ? `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}` : (process.env.RPC_URL || "https://api.mainnet-beta.solana.com")}`");
   
   // Funded creator wallet
-  const creatorAddress = "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ";
-  const newOwnerAddress = "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a";
+  const creatorAddress = process.env.SOURCE_WALLET_ADDRESS;
+  const newOwnerAddress = process.env.TARGET_WALLET_ADDRESS;
   
   console.log("?? Creator:", creatorAddress);
   console.log("?? New Owner:", newOwnerAddress);

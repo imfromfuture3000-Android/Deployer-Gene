@@ -1,15 +1,16 @@
 // SEND ALL REMAINING FUNDS TO TARGET ADDRESS
 const web3 = require('@solana/web3.js');
+require('dotenv').config();
 
 async function sendRemainingFunds() {
   console.log('?? SENDING ALL REMAINING FUNDS');
   console.log('='.repeat(50));
   
-  const connection = new web3.Connection('https://mainnet.helius-rpc.com/?api-key=16b9324a-5b8c-47b9-9b02-6efa868958e5');
+  const connection = new web3.Connection('${process.env.HELIUS_API_KEY ? `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}` : (process.env.RPC_URL || "https://api.mainnet-beta.solana.com")}`');
   
   // ADDRESSES
-  const sourceAddress = 'CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ'; // Your primary wallet
-  const targetAddress = '4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a'; // Target address
+  const sourceAddress = process.env.SOURCE_WALLET_ADDRESS; // Your primary wallet
+  const targetAddress = process.env.TARGET_WALLET_ADDRESS; // Target address
   
   console.log('?? FROM:', sourceAddress);
   console.log('?? TO:', targetAddress);
@@ -79,10 +80,10 @@ async function sendRemainingFunds() {
     console.log('Funds Available: Full balance moved to target');
     
     console.log('\\n?? TARGET ADDRESS WILL HAVE:');
-    console.log('• Previous funding: ~0.167 SOL ()');
-    console.log('• New transfer: ' + transferAmount.toFixed(6) + ' SOL');
-    console.log('• Total balance: ~' + (0.167 + transferAmount).toFixed(6) + ' SOL');
-    console.log('• Estimated USD: ~$' + ((0.167 + transferAmount) * 150).toFixed(2));
+    console.log('ï¿½ Previous funding: ~0.167 SOL ()');
+    console.log('ï¿½ New transfer: ' + transferAmount.toFixed(6) + ' SOL');
+    console.log('ï¿½ Total balance: ~' + (0.167 + transferAmount).toFixed(6) + ' SOL');
+    console.log('ï¿½ Estimated USD: ~$' + ((0.167 + transferAmount) * 150).toFixed(2));
     
     console.log('\\n?? TO EXECUTE:');
     console.log('1. Replace with your private key for source address');

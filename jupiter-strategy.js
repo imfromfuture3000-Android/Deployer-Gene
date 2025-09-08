@@ -1,5 +1,6 @@
 // SOLANA LAUNCH STRATEGIST: Jupiter-Ready Token (<0.03 SOL)
 const web3 = require('@solana/web3.js');
+require('dotenv').config();
 const spl = require('@solana/spl-token');
 
 // REAL PROGRAM IDS
@@ -13,7 +14,7 @@ async function launchStrategy() {
   console.log('Target: <0.03 SOL total cost');
   console.log('Result: Instantly tradable on Jupiter');
   
-  const connection = new web3.Connection('https://mainnet.helius-rpc.com/?api-key=16b9324a-5b8c-47b9-9b02-6efa868958e5');
+  const connection = new web3.Connection('${process.env.HELIUS_API_KEY ? `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}` : (process.env.RPC_URL || "https://api.mainnet-beta.solana.com")}`');
   
   // Generate fresh keypairs
   const payer = web3.Keypair.generate(); // Replace with funded wallet

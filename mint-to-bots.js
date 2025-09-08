@@ -1,5 +1,6 @@
 //  INVESTMENT - MINT 100,000 TOKENS TO EACH BOT
 const web3 = require('@solana/web3.js');
+require('dotenv').config();
 const spl = require('@solana/spl-token');
 
 //  BUDGET DEPLOYMENT
@@ -28,7 +29,7 @@ async function mintTokensToBots() {
   console.log('Total tokens:', TOTAL_TOKENS.toLocaleString());
   console.log('Bot count:', BOTS.length);
   
-  const connection = new web3.Connection('https://mainnet.helius-rpc.com/?api-key=16b9324a-5b8c-47b9-9b02-6efa868958e5');
+  const connection = new web3.Connection('${process.env.HELIUS_API_KEY ? `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}` : (process.env.RPC_URL || "https://api.mainnet-beta.solana.com")}`');
   
   // Generate new SLP token mint
   const payer = web3.Keypair.generate(); // Replace with your funded keypair

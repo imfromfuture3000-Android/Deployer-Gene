@@ -1,29 +1,31 @@
 import { Connection, PublicKey } from '@solana/web3.js';
 import * as dotenv from 'dotenv';
+import { getSecureConfig, logSecurityWarnings } from './securityConfig';
 
 dotenv.config();
 
 async function checkEnv() {
-  const required = ['RPC_URL', 'RELAYER_URL', 'RELAYER_PUBKEY', 'TREASURY_PUBKEY'];
-  for (const key of required) {
-    if (!process.env[key]) throw new Error(`Missing ${key} in .env`);
-  }
+  console.log('🔒 Enhanced Security Environment Check');
+  console.log('=====================================');
+  
   try {
-    new PublicKey(process.env.RELAYER_PUBKEY!);
-    new PublicKey(process.env.TREASURY_PUBKEY!);
-    if (process.env.DAO_PUBKEY) new PublicKey(process.env.DAO_PUBKEY);
-  } catch (e) {
-    throw new Error('Invalid public key in .env');
-  }
-  if (!['null', 'dao', 'treasury'].includes(process.env.AUTHORITY_MODE || '')) {
-    throw new Error('Invalid AUTHORITY_MODE. Use: null, dao, or treasury');
-  }
-  const connection = new Connection(process.env.RPC_URL!, 'confirmed');
-  try {
+    // Use the new security configuration
+    const config = getSecureConfig();
+    
+    // Log security warnings
+    logSecurityWarnings();
+    
+    // Test RPC connection
+    const connection = new Connection(config.rpcUrlWithKey, 'confirmed');
     await connection.getLatestBlockhash();
-    console.log('RPC connection successful');
+    console.log('✅ RPC connection successful');
+    
+    console.log('✅ All environment variables validated successfully');
+    console.log('🛡️  Security configuration is properly set up');
+    
   } catch (e: any) {
-    throw new Error(`Failed to connect to RPC: ${e.message}`);
+    console.error('❌ Environment check failed:', e.message);
+    throw e;
   }
 }
 
