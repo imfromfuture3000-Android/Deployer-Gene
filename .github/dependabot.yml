@@ -1,0 +1,63 @@
+version: 2
+updates:
+  # Enable version updates for npm
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "04:00"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "imfromfuture3000-Android"
+    assignees:
+      - "imfromfuture3000-Android"
+    commit-message:
+      prefix: "security"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "security"
+    allow:
+      - dependency-type: "all"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+
+  # Enable version updates for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "04:00"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "imfromfuture3000-Android"
+    assignees:
+      - "imfromfuture3000-Android"
+    commit-message:
+      prefix: "security"
+      include: "scope"
+    labels:
+      - "github-actions"
+      - "security"
+
+  # Enable version updates for Rust dependencies
+  - package-ecosystem: "cargo"
+    directory: "/pentacle"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "04:00"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "imfromfuture3000-Android"
+    assignees:
+      - "imfromfuture3000-Android"
+    commit-message:
+      prefix: "security"
+      include: "scope"
+    labels:
+      - "rust"
+      - "security"

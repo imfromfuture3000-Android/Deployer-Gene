@@ -1,39 +1,47 @@
 const web3 = require("@solana/web3.js");
 const spl = require("@solana/spl-token");
+require('dotenv').config();
 
 async function deployOmega() {
   console.log("?? OMEGA DEPLOYMENT - READY TO EXECUTE");
   console.log("=====================================");
   
-  const connection = new web3.Connection("https://mainnet.helius-rpc.com/?api-key=16b9324a-5b8c-47b9-9b02-6efa868958e5");
+  // Use environment variables for secure configuration
+  const heliusApiKey = process.env.HELIUS_API_KEY;
+  const rpcUrl = heliusApiKey 
+    ? `https://mainnet.helius-rpc.com/?api-key=${heliusApiKey}`
+    : process.env.RPC_URL || 'https://api.mainnet-beta.solana.com';
+    
+  const connection = new web3.Connection(rpcUrl);
   
-  // TARGET ADDRESSES
-  const creatorAddress = "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ"; // Funded wallet
-  const newOwnerAddress = "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a"; // Target owner
+  // TARGET ADDRESSES from environment variables
+  const creatorAddress = process.env.SOURCE_WALLET_ADDRESS;
+  const newOwnerAddress = process.env.TARGET_WALLET_ADDRESS;
+  
+  if (!creatorAddress || !newOwnerAddress) {
+    console.error("❌ ERROR: Wallet addresses not configured in environment variables");
+    console.log("Please set SOURCE_WALLET_ADDRESS and TARGET_WALLET_ADDRESS in your .env file");
+    return;
+  }
   
   console.log("?? Creator (Funded):", creatorAddress);
   console.log("?? New Owner:", newOwnerAddress);
   
-  // ??  REPLACE THIS WITH YOUR ACTUAL PRIVATE KEY
-  // Export private key from Phantom/Solflare for: CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ
-  const creatorPrivateKey = [
-    // PASTE YOUR 64-BYTE PRIVATE KEY ARRAY HERE
-    // Example format: [123, 45, 67, 89, 101, 112, 134, 156, ...]
-    // Get this from wallet export (Phantom > Settings > Export Private Key)
-  ];
+  // ⚠️  SECURITY WARNING: NEVER COMMIT REAL PRIVATE KEYS
+  // Use secure key management instead of hardcoding
+  const privateKeyPath = process.env.PRIVATE_KEY_PATH;
   
-  // VALIDATION
-  if (creatorPrivateKey.length === 0) {
-    console.log("? PRIVATE KEY REQUIRED!");
+  if (!privateKeyPath) {
+    console.log("? PRIVATE KEY PATH REQUIRED!");
     console.log("");
-    console.log("?? HOW TO GET PRIVATE KEY:");
-    console.log("1. Open Phantom/Solflare wallet");
-    console.log("2. Go to Settings > Export Private Key");
-    console.log("3. Copy the private key");
-    console.log("4. Convert to array format [byte1, byte2, ...]");
-    console.log("5. Paste into creatorPrivateKey array above");
+    console.log("?? SECURE SETUP INSTRUCTIONS:");
+    console.log("1. Create a secure key file outside this repository");
+    console.log("2. Set PRIVATE_KEY_PATH in your .env file");
+    console.log("3. Ensure the key file is properly secured (600 permissions)");
+    console.log("4. NEVER commit private keys to version control");
     console.log("");
-    console.log("?? Wallet to export: " + creatorAddress);
+    console.log("?? Alternative: Use hardware wallet or secure key management");
+    console.log("?? Required wallet address: " + creatorAddress);
     return;
   }
   

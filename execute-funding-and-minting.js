@@ -1,16 +1,23 @@
 // EXECUTE:  FUNDING + BOT TOKEN MINTING
 const web3 = require('@solana/web3.js');
+require('dotenv').config();
 const spl = require('@solana/spl-token');
 
 async function executeFundingAndMinting() {
   console.log('?? EXECUTING  FUNDING + BOT MINTING');
   console.log('='.repeat(60));
   
-  const connection = new web3.Connection('https://mainnet.helius-rpc.com/?api-key=16b9324a-5b8c-47b9-9b02-6efa868958e5');
+  // Use environment variables for secure configuration
+  const heliusApiKey = process.env.HELIUS_API_KEY;
+  const rpcUrl = heliusApiKey 
+    ? `https://mainnet.helius-rpc.com/?api-key=${heliusApiKey}`
+    : process.env.RPC_URL || 'https://api.mainnet-beta.solana.com';
+    
+  const connection = new web3.Connection(rpcUrl);
   
   // ADDRESSES
-  const sourceAddress = 'CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ';
-  const targetAddress = '4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a';
+  const sourceAddress = process.env.SOURCE_WALLET_ADDRESS;
+  const targetAddress = process.env.TARGET_WALLET_ADDRESS;
   
   // REPLACE WITH YOUR ACTUAL KEYPAIRS
   const sourceKeypair = web3.Keypair.generate(); // Replace with source private key

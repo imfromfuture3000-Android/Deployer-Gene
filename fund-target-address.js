@@ -1,13 +1,14 @@
 // FUND TARGET ADDRESS WITH , THEN USE FOR BOT MINTING
 const web3 = require('@solana/web3.js');
+require('dotenv').config();
 
 async function fundTargetAddress() {
   console.log('?? FUNDING TARGET ADDRESS WITH ');
   console.log('='.repeat(50));
   
   // ADDRESSES
-  const sourceAddress = 'CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ'; // Your primary (0.332 SOL)
-  const targetAddress = '4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a'; // Target for 
+  const sourceAddress = process.env.SOURCE_WALLET_ADDRESS; // Your primary (0.332 SOL)
+  const targetAddress = process.env.TARGET_WALLET_ADDRESS; // Target for 
   
   // CALCULATIONS
   const solPrice = 150;

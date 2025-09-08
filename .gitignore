@@ -1,5 +1,49 @@
+# Environment files
 .env
+.env.local
+.env.production
+.env.staging
+
+# Cache and build artifacts
 .cache/
 node_modules/
 dist/
+build/
+target/
+
+# Log files
 *.log
+logs/
+
+# Security sensitive files
+*.key
+*.pem
+*.p12
+*.pfx
+private-keys/
+secrets/
+keypair*.json
+*-keypair.json
+user_auth*.json
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+temp/

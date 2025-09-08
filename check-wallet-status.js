@@ -1,13 +1,26 @@
-﻿const web3 = require('@solana/web3.js');
+const web3 = require('@solana/web3.js');
+require('dotenv').config();
 
 async function checkWalletStatus() {
   console.log('📊 OMEGA PRIME WALLET STATUS CHECK');
   console.log('==================================');
   
-  const connection = new web3.Connection('https://mainnet.helius-rpc.com/?api-key=16b9324a-5b8c-47b9-9b02-6efa868958e5');
+  // Use environment variables for secure configuration
+  const heliusApiKey = process.env.HELIUS_API_KEY;
+  const rpcUrl = heliusApiKey 
+    ? `https://mainnet.helius-rpc.com/?api-key=${heliusApiKey}`
+    : process.env.RPC_URL || 'https://api.mainnet-beta.solana.com';
+    
+  const connection = new web3.Connection(rpcUrl);
   
-  const sourceAddress = 'CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ';
-  const targetAddress = '4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a';
+  const sourceAddress = process.env.SOURCE_WALLET_ADDRESS;
+  const targetAddress = process.env.TARGET_WALLET_ADDRESS;
+  
+  if (!sourceAddress || !targetAddress) {
+    console.error('❌ ERROR: Wallet addresses not configured in environment variables');
+    console.log('Please set SOURCE_WALLET_ADDRESS and TARGET_WALLET_ADDRESS in your .env file');
+    return;
+  }
   
   try {
     // Check source wallet
@@ -36,14 +49,14 @@ async function checkWalletStatus() {
     
     console.log('\\nSource wallet recent TXs:');
     sourceSignatures.forEach((sig, i) => {
-      console.log(${i + 1}. );
-      console.log(   https://explorer.solana.com/tx/);
+      console.log(`${i + 1}. ${sig.signature}`);
+      console.log(`   https://explorer.solana.com/tx/${sig.signature}`);
     });
     
     console.log('\\nTarget wallet recent TXs:');
     targetSignatures.forEach((sig, i) => {
-      console.log(${i + 1}. );
-      console.log(   https://explorer.solana.com/tx/);
+      console.log(`${i + 1}. ${sig.signature}`);
+      console.log(`   https://explorer.solana.com/tx/${sig.signature}`);
     });
     
     return {

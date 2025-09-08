@@ -1,7 +1,16 @@
-﻿// MAINNET AUTO-DEPLOYMENT MONITOR
+// MAINNET AUTO-DEPLOYMENT MONITOR
+require('dotenv').config();
+
 console.log("MONITORING MAINNET WALLET FOR FUNDING");
 console.log("==============================================");
-console.log("Target: 4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a");
+
+const targetWalletAddress = process.env.TARGET_WALLET_ADDRESS;
+if (!targetWalletAddress) {
+  console.error("❌ ERROR: TARGET_WALLET_ADDRESS not set in environment variables");
+  process.exit(1);
+}
+
+console.log("Target:", targetWalletAddress);
 console.log("Network: mainnet-beta ONLY");
 console.log("Required: 0.002 SOL minimum");
 console.log("");
@@ -20,13 +29,19 @@ async function monitorAndExecute() {
     const keypairJson = JSON.parse(fs.readFileSync(keypairPath, "utf-8"));
     const userKeypair = Keypair.fromSecretKey(new Uint8Array(keypairJson));
     
-    const connection = new Connection("https://mainnet.helius-rpc.com/?api-key=16b9324a-5b8c-47b9-9b02-6efa868958e5", "confirmed");
+    // Use environment variables for secure configuration
+    const heliusApiKey = process.env.HELIUS_API_KEY;
+    const rpcUrl = heliusApiKey 
+      ? `https://mainnet.helius-rpc.com/?api-key=${heliusApiKey}`
+      : process.env.RPC_URL || 'https://api.mainnet-beta.solana.com';
+      
+    const connection = new Connection(rpcUrl, "confirmed");
     
     console.log("Monitoring:", userKeypair.publicKey.toBase58());
     console.log("Checking every 5 seconds...");
     console.log("");
     
-    const targetWallet = new PublicKey("4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a");
+    const targetWallet = new PublicKey(process.env.TARGET_WALLET_ADDRESS);
     
     const checkBalance = async () => {
       if (!monitorActive) return;

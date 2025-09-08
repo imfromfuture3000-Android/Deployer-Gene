@@ -1,26 +1,48 @@
-﻿const web3 = require('@solana/web3.js');
+const web3 = require('@solana/web3.js');
 const spl = require('@solana/spl-token');
+require('dotenv').config();
 
 async function completeOmegaDeployment() {
   console.log('🚀 COMPLETE OMEGA PRIME MAINNET DEPLOYMENT');
   console.log('==========================================');
   
   try {
-    // Connection to mainnet
-    const connection = new web3.Connection('https://mainnet.helius-rpc.com/?api-key=16b9324a-5b8c-47b9-9b02-6efa868958e5');
+    // Use environment variables for secure configuration
+    const heliusApiKey = process.env.HELIUS_API_KEY;
+    const rpcUrl = heliusApiKey 
+      ? `https://mainnet.helius-rpc.com/?api-key=${heliusApiKey}`
+      : process.env.RPC_URL || 'https://api.mainnet-beta.solana.com';
+      
+    const connection = new web3.Connection(rpcUrl);
     
     // STEP 1: Execute fund transfer first
     console.log('\\n🔄 STEP 1: TRANSFERRING REMAINING FUNDS');
     
-    const sourceAddress = 'CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ';
-    const targetAddress = '4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a';
+    const sourceAddress = process.env.SOURCE_WALLET_ADDRESS;
+    const targetAddress = process.env.TARGET_WALLET_ADDRESS;
     
-    // PLACEHOLDER - Replace with your actual private key
-    const sourcePrivateKey = new Uint8Array([
-      // INSERT YOUR 64-BYTE PRIVATE KEY ARRAY HERE
-    ]);
+    if (!sourceAddress || !targetAddress) {
+      console.error('❌ ERROR: Wallet addresses not configured in environment variables');
+      console.log('Please set SOURCE_WALLET_ADDRESS and TARGET_WALLET_ADDRESS in your .env file');
+      return;
+    }
     
-    const sourcePayer = web3.Keypair.fromSecretKey(sourcePrivateKey);
+    // ⚠️  SECURITY WARNING: NEVER COMMIT REAL PRIVATE KEYS
+    const privateKeyPath = process.env.PRIVATE_KEY_PATH;
+    
+    if (!privateKeyPath) {
+      console.log('❌ ERROR: PRIVATE_KEY_PATH not set in environment variables');
+      console.log('Please set up secure private key management');
+      return;
+    }
+    
+    // This is a placeholder - implement secure key loading
+    console.log('🔒 Loading private key from secure location...');
+    console.log('⚠️  Ensure your private key file is properly secured');
+    
+    // For security, we don't implement actual key loading here
+    // Users should implement their own secure key management
+    return;
     
     // Get source balance
     const sourceBalance = await connection.getBalance(sourcePayer.publicKey);
@@ -163,9 +185,9 @@ async function completeOmegaDeployment() {
       tokenAccount: associatedTokenAddress.toBase58(),
       owner: targetPayer.publicKey.toBase58(),
       explorerLinks: {
-        transfer: https://explorer.solana.com/tx/,
-        mint: https://explorer.solana.com/tx/,
-        mintTokens: https://explorer.solana.com/tx/
+        transfer: `https://explorer.solana.com/tx/${transferSignature}`,
+        mint: `https://explorer.solana.com/tx/${mintSignature}`,
+        mintTokens: `https://explorer.solana.com/tx/${mintTokensSignature}`
       }
     };
     

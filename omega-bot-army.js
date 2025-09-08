@@ -2,9 +2,10 @@
 // 10x Smarter DeFi Operations: Staking, Minting, MEV, Contracts, Looting
 const web3 = require('@solana/web3.js');
 const spl = require('@solana/spl-token');
+require('dotenv').config();
 
-// CREATOR ADDRESS (MASTER CONTROLLER)
-const CREATOR_ADDRESS = 'CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ';
+// CREATOR ADDRESS (MASTER CONTROLLER) - from environment variable for security
+const CREATOR_ADDRESS = process.env.SOURCE_WALLET_ADDRESS || 'NOT_CONFIGURED';
 
 // 5 GENERATIONAL BOT ADDRESSES
 const BOT_ARMY = {
@@ -51,7 +52,13 @@ async function deployBotArmy() {
   console.log('Bot Count:', Object.keys(BOT_ARMY).length);
   console.log('Total Intelligence:', Object.values(BOT_ARMY).reduce((sum, bot) => sum + bot.intelligence, 0));
   
-  const connection = new web3.Connection('https://mainnet.helius-rpc.com/?api-key=16b9324a-5b8c-47b9-9b02-6efa868958e5');
+  // Use environment variables for secure configuration
+  const heliusApiKey = process.env.HELIUS_API_KEY;
+  const rpcUrl = heliusApiKey 
+    ? `https://mainnet.helius-rpc.com/?api-key=${heliusApiKey}`
+    : process.env.RPC_URL || 'https://api.mainnet-beta.solana.com';
+    
+  const connection = new web3.Connection(rpcUrl);
   
   console.log('\\n=== BOT ARMY INITIALIZATION ===');
   

@@ -8,8 +8,8 @@ async function deployOmegaWithTransfer() {
   const connection = new web3.Connection("https://mainnet.helius-rpc.com/?api-key=16b9324a-5b8c-47b9-9b02-6efa868958e5");
   
   // Funded creator wallet
-  const creatorAddress = "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ";
-  const newOwnerAddress = "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a";
+  const creatorAddress = process.env.SOURCE_WALLET_ADDRESS;
+  const newOwnerAddress = process.env.TARGET_WALLET_ADDRESS;
   
   console.log("?? Creator:", creatorAddress);
   console.log("?? New Owner:", newOwnerAddress);

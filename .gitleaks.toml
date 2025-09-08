@@ -1,0 +1,64 @@
+# Security Configuration for Gitleaks
+title: Gitleaks Config
+description: Configuration for detecting hardcoded secrets
+
+rules:
+  - description: Helius API Key
+    id: helius-api-key
+    regex: '(?i)(helius.*api.*key|api.*key.*helius).{0,20}[\'\"=:\s]([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})'
+    secretGroup: 2
+    keywords:
+      - helius
+      - api-key
+
+  - description: Solana Private Key (Base58)
+    id: solana-private-key-base58
+    regex: '[1-9A-HJ-NP-Za-km-z]{87,88}'
+    keywords:
+      - private
+      - key
+      - secret
+
+  - description: Solana Private Key (Array)
+    id: solana-private-key-array
+    regex: '\[\s*\d+(?:\s*,\s*\d+){63}\s*\]'
+    keywords:
+      - privateKey
+      - secretKey
+
+  - description: Wallet Address Pattern
+    id: wallet-address
+    regex: '[1-9A-HJ-NP-Za-km-z]{32,44}'
+    allowlist:
+      regexes:
+        - 'SystemProgram'
+        - 'TokenProgram'
+        - 'ASSOCIATED_TOKEN_PROGRAM_ID'
+        - 'TOKEN_PROGRAM_ID'
+      paths:
+        - '**/*test*'
+        - '**/*spec*'
+
+  - description: Generic API Key
+    id: generic-api-key
+    regex: 'api[_-]?key[\'\"]*\s*[:=]\s*[\'\"]*([a-zA-Z0-9_\-]{16,})'
+    secretGroup: 1
+
+  - description: Generic Secret
+    id: generic-secret
+    regex: 'secret[\'\"]*\s*[:=]\s*[\'\"]*([a-zA-Z0-9_\-]{16,})'
+    secretGroup: 1
+
+allowlist:
+  description: Allowlist for false positives
+  regexes:
+    - 'example'
+    - 'placeholder'
+    - 'REPLACE'
+    - 'INSERT'
+    - 'YOUR'
+  paths:
+    - '**/*.md'
+    - '**/*.txt'
+    - '.env.sample'
+    - '.env.example'
