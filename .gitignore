@@ -50,3 +50,4 @@ temp/
 
 # Remove built files that may contain secrets
 dist/
+tsc-output.txt
