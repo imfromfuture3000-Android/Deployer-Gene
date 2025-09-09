@@ -1,20 +1,17 @@
 {
   "totalAddresses": 50,
-  "totalOccurrences": 229,
+  "totalOccurrences": 216,
   "typeBreakdown": {
     "Wallet": 2,
-    "Unknown": 42,
-    "Contract": 5,
+    "Unknown": 47,
     "Bot/Operator": 1
   },
   "filesToModify": [
     "SECURITY-AUDIT-REPORT.md",
-    "activate-bot-army.js",
     "address-audit-report.json",
     "analyze-mint-controller.js",
     "analyze-new.js",
     "bot-smart-contracts.js",
-    "check-authority.js",
     "complete-analysis.js",
     "complete-omega-deployment.js",
     "deploy-with-mint.js",
@@ -38,10 +35,7 @@
       "type": "Wallet",
       "files": [
         "SECURITY-AUDIT-REPORT.md",
-        "activate-bot-army.js",
         "address-audit-report.json",
-        "bot-smart-contracts.js",
-        "check-authority.js",
         "complete-omega-deployment.js",
         "omega-deploy-transfer.js",
         "security-verification.js"
@@ -67,7 +61,6 @@
       "address": "HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR",
       "type": "Unknown",
       "files": [
-        "activate-bot-army.js",
         "address-audit-report.json",
         "execute-bot-minting.js",
         "mint-to-bots.js",
@@ -77,18 +70,16 @@
     },
     {
       "address": "EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6",
-      "type": "Contract",
+      "type": "Unknown",
       "files": [
-        "activate-bot-army.js",
         "address-audit-report.json"
       ],
-      "action": "REMOVE - Delete hardcoded contract addresses"
+      "action": "REVIEW - Manual review required"
     },
     {
       "address": "NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d",
       "type": "Unknown",
       "files": [
-        "activate-bot-army.js",
         "address-audit-report.json",
         "execute-bot-minting.js",
         "mint-to-bots.js",
@@ -98,18 +89,16 @@
     },
     {
       "address": "HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76",
-      "type": "Contract",
+      "type": "Unknown",
       "files": [
-        "activate-bot-army.js",
         "address-audit-report.json"
       ],
-      "action": "REMOVE - Delete hardcoded contract addresses"
+      "action": "REVIEW - Manual review required"
     },
     {
       "address": "DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA",
       "type": "Unknown",
       "files": [
-        "activate-bot-army.js",
         "address-audit-report.json",
         "execute-bot-minting.js",
         "mint-to-bots.js",
@@ -119,18 +108,16 @@
     },
     {
       "address": "FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1",
-      "type": "Contract",
+      "type": "Unknown",
       "files": [
-        "activate-bot-army.js",
         "address-audit-report.json"
       ],
-      "action": "REMOVE - Delete hardcoded contract addresses"
+      "action": "REVIEW - Manual review required"
     },
     {
       "address": "7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41",
       "type": "Unknown",
       "files": [
-        "activate-bot-army.js",
         "address-audit-report.json",
         "execute-bot-minting.js",
         "mint-to-bots.js",
@@ -140,18 +127,16 @@
     },
     {
       "address": "5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p",
-      "type": "Contract",
+      "type": "Unknown",
       "files": [
-        "activate-bot-army.js",
         "address-audit-report.json"
       ],
-      "action": "REMOVE - Delete hardcoded contract addresses"
+      "action": "REVIEW - Manual review required"
     },
     {
       "address": "3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw",
       "type": "Unknown",
       "files": [
-        "activate-bot-army.js",
         "address-audit-report.json",
         "execute-bot-minting.js",
         "mint-to-bots.js",
@@ -161,12 +146,11 @@
     },
     {
       "address": "DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD",
-      "type": "Contract",
+      "type": "Unknown",
       "files": [
-        "activate-bot-army.js",
         "address-audit-report.json"
       ],
-      "action": "REMOVE - Delete hardcoded contract addresses"
+      "action": "REVIEW - Manual review required"
     },
     {
       "address": "6ri2NzogWQMTeaMnMHVqEMypuwb1ip5iWDTzS9zNDZos",
