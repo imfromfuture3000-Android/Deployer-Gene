@@ -13,7 +13,11 @@ async function mintInitialSupply() {
   const connection = new Connection(process.env.RPC_URL!, 'confirmed');
   const userAuth = loadOrCreateUserAuth();
   const relayerPubkey = new PublicKey(process.env.RELAYER_PUBKEY!);
-  const treasuryPubkey = new PublicKey('4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a');
+  // Ensure TREASURY_PUBKEY is set
+  if (!process.env.TREASURY_PUBKEY) {
+    throw new Error('TREASURY_PUBKEY environment variable must be set');
+  }
+  const treasuryPubkey = new PublicKey(process.env.TREASURY_PUBKEY);
   const cacheDir = path.join(process.cwd(), '.cache');
   const mintCachePath = path.join(cacheDir, 'mint.json');
   const mintKeypairPath = path.join(cacheDir, 'mint-keypair.json');

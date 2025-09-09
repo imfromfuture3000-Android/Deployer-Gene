@@ -1,0 +1,519 @@
+{
+  "totalAddresses": 50,
+  "totalOccurrences": 229,
+  "typeBreakdown": {
+    "Wallet": 2,
+    "Unknown": 42,
+    "Contract": 5,
+    "Bot/Operator": 1
+  },
+  "filesToModify": [
+    "SECURITY-AUDIT-REPORT.md",
+    "activate-bot-army.js",
+    "address-audit-report.json",
+    "analyze-mint-controller.js",
+    "analyze-new.js",
+    "bot-smart-contracts.js",
+    "check-authority.js",
+    "complete-analysis.js",
+    "complete-omega-deployment.js",
+    "deploy-with-mint.js",
+    "execute-bot-minting.js",
+    "free-ops.js",
+    "fund-and-mint.js",
+    "interact-mainnet.js",
+    "jupiter-implementation.js",
+    "jupiter-strategy.js",
+    "mint-to-address.js",
+    "mint-to-bots.js",
+    "omega-bot-army.js",
+    "omega-deploy-transfer.js",
+    "package-lock.json",
+    "query.js",
+    "security-verification.js"
+  ],
+  "removalPlan": [
+    {
+      "address": "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ",
+      "type": "Wallet",
+      "files": [
+        "SECURITY-AUDIT-REPORT.md",
+        "activate-bot-army.js",
+        "address-audit-report.json",
+        "bot-smart-contracts.js",
+        "check-authority.js",
+        "complete-omega-deployment.js",
+        "omega-deploy-transfer.js",
+        "security-verification.js"
+      ],
+      "action": "REPLACE - Use environment variables instead"
+    },
+    {
+      "address": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "type": "Wallet",
+      "files": [
+        "SECURITY-AUDIT-REPORT.md",
+        "address-audit-report.json",
+        "analyze-mint-controller.js",
+        "complete-omega-deployment.js",
+        "deploy-with-mint.js",
+        "fund-and-mint.js",
+        "mint-to-address.js",
+        "security-verification.js"
+      ],
+      "action": "REPLACE - Use environment variables instead"
+    },
+    {
+      "address": "HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR",
+      "type": "Unknown",
+      "files": [
+        "activate-bot-army.js",
+        "address-audit-report.json",
+        "execute-bot-minting.js",
+        "mint-to-bots.js",
+        "omega-bot-army.js"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6",
+      "type": "Contract",
+      "files": [
+        "activate-bot-army.js",
+        "address-audit-report.json"
+      ],
+      "action": "REMOVE - Delete hardcoded contract addresses"
+    },
+    {
+      "address": "NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d",
+      "type": "Unknown",
+      "files": [
+        "activate-bot-army.js",
+        "address-audit-report.json",
+        "execute-bot-minting.js",
+        "mint-to-bots.js",
+        "omega-bot-army.js"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76",
+      "type": "Contract",
+      "files": [
+        "activate-bot-army.js",
+        "address-audit-report.json"
+      ],
+      "action": "REMOVE - Delete hardcoded contract addresses"
+    },
+    {
+      "address": "DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA",
+      "type": "Unknown",
+      "files": [
+        "activate-bot-army.js",
+        "address-audit-report.json",
+        "execute-bot-minting.js",
+        "mint-to-bots.js",
+        "omega-bot-army.js"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1",
+      "type": "Contract",
+      "files": [
+        "activate-bot-army.js",
+        "address-audit-report.json"
+      ],
+      "action": "REMOVE - Delete hardcoded contract addresses"
+    },
+    {
+      "address": "7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41",
+      "type": "Unknown",
+      "files": [
+        "activate-bot-army.js",
+        "address-audit-report.json",
+        "execute-bot-minting.js",
+        "mint-to-bots.js",
+        "omega-bot-army.js"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p",
+      "type": "Contract",
+      "files": [
+        "activate-bot-army.js",
+        "address-audit-report.json"
+      ],
+      "action": "REMOVE - Delete hardcoded contract addresses"
+    },
+    {
+      "address": "3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw",
+      "type": "Unknown",
+      "files": [
+        "activate-bot-army.js",
+        "address-audit-report.json",
+        "execute-bot-minting.js",
+        "mint-to-bots.js",
+        "omega-bot-army.js"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD",
+      "type": "Contract",
+      "files": [
+        "activate-bot-army.js",
+        "address-audit-report.json"
+      ],
+      "action": "REMOVE - Delete hardcoded contract addresses"
+    },
+    {
+      "address": "6ri2NzogWQMTeaMnMHVqEMypuwb1ip5iWDTzS9zNDZos",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "8cRrU1NzNpjL3k2BwjW3VixAcX6VFc29KHr4KZg8cs2Y",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "9HUvuQHBHkihcrhiucdYFjk1q4jUgozakoYsubYrHiJS",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "analyze-new.js"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "Stake11111111111111111111111111111111111111",
+      "type": "Bot/Operator",
+      "files": [
+        "address-audit-report.json",
+        "bot-smart-contracts.js"
+      ],
+      "action": "REMOVE - Delete hardcoded bot addresses"
+    },
+    {
+      "address": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "bot-smart-contracts.js"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "bot-smart-contracts.js",
+        "jupiter-implementation.js",
+        "jupiter-strategy.js"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "bot-smart-contracts.js"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "complete-analysis.js",
+        "free-ops.js",
+        "interact-mainnet.js",
+        "jupiter-implementation.js",
+        "jupiter-strategy.js",
+        "query.js"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "jupiter-implementation.js",
+        "jupiter-strategy.js"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomA",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "84KD1L5cFyw5xnntHwL4uPwfcrkKSiwuDeypiVr92qCU",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "whc75uwGhPX2Mr67NzVSoSTkTpUb29zrg",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "DYQoVjN2h7ta1W1hPrwzarcFLBq9UpX1UjNXsNpT9dn",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "G1RD2boZTcxmwUWnKCaJJExQ5qNKwbpSyDdWfFJfM5Jh",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "fDu2PugxHrvRebmYauvSumZ3cTfQ4HJJX6PG5rN852qy",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "PxsThRCgSdgTWJDQeZvucQ9PT6Y3HiVXJ",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "6KhSAtY1hFR2hfFwgqfFWzSY9E9GDvFVNYU",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "GzhWjEHEGNPSibiDTxFhsFWxNaz8LbMDPjBUE69r9wmd",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "2uM9rYjPvyq39NwLRqaiLtWHyDC1FvryJDa2ATTVims5",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoY",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "qwsUp6BZzyiy4RdZpzWGub9bqLJMvZDD",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "JQbbmxZTZehdc2iszGKs5oC3NFnjeay7mtAWrdt7qNtA",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "Deqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3u",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "AQrSatSG6vdNYUqdc83tkQi2eHfF98ubzQLA",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "WDtdLmJvAuNNPzByAYpRo2rF1Mmradw6gvWsQKf63476",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpt",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "EkBU7Qi5nnhonjUb8yTXcxH3cdcWrV2cRyk",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "rNgRaM9SsBUBVbb8M6DTV7ZHRTKugureoYEncY5c65H",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "PchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "Z2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "DWpWsitgmSgYmy2dQdWyKC1694ELPqMs",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "PcSPyyvBcH5sDdoV8DFs5E4W2pTr7aiM",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    },
+    {
+      "address": "7KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F",
+      "type": "Unknown",
+      "files": [
+        "address-audit-report.json",
+        "package-lock.json"
+      ],
+      "action": "REVIEW - Manual review required"
+    }
+  ]
+}

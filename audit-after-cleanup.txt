@@ -1,0 +1,928 @@
+🔍 COMPREHENSIVE CONTRACT ADDRESS AUDIT
+Generated: 2025-09-09T11:39:55.066Z
+============================================================
+📊 AUDIT RESULTS:
+Total unique addresses found: 50
+Total occurrences: 229
+
+🔑 ADDRESS: CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ
+   Type: Wallet
+   Occurrences: 8
+     📁 SECURITY-AUDIT-REPORT.md:15
+        - Source wallet: `CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ`
+     📁 activate-bot-army.js:5
+        const CREATOR_ADDRESS = 'CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ';
+     📁 address-audit-report.json:74
+        "address": "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ",
+     📁 bot-smart-contracts.js:101
+        const creatorKey = new web3.PublicKey('CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ');
+     📁 check-authority.js:2
+        require('dotenv').config(); async function checkAuthority() { console.log('?? CHECKING AUTHORITY FOR: CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ'); const address = process.env.SOURCE_WALLET_ADDRESS; const mainnet = new web3.Connection('${process.env.HELIUS_API_KEY ? `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}` : (process.env.RPC_URL || "https://api.mainnet-beta.solana.com")}`'); const devnet = new web3.Connection('https://api.devnet.solana.com'); const publicKey = new web3.PublicKey(address); console.log('=== AUTHORITY ANALYSIS ==='); let info = await mainnet.getAccountInfo(publicKey); let network = 'mainnet'; if (!info) { info = await devnet.getAccountInfo(publicKey); network = 'devnet'; } if (!info) { console.log('? Address not found on mainnet or devnet'); return; } console.log('? Found on:', network.toUpperCase()); console.log('Owner Program:', info.owner.toBase58()); console.log('Data Size:', info.data.length, 'bytes'); console.log('SOL Balance:', info.lamports / 1e9); console.log('Executable:', info.executable); if (info.owner.toBase58() === 'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA' || info.owner.toBase58() === 'TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb') { console.log('\\n?? TOKEN MINT ANALYSIS'); if (info.data.length >= 82) { const mintAuthPresent = info.data[0]; if (mintAuthPresent === 1) { const mintAuth = new web3.PublicKey(info.data.slice(4, 36)); console.log('?? MINT AUTHORITY:', mintAuth.toBase58()); } else { console.log('?? MINT AUTHORITY: NULL (RENOUNCED)'); } const supply = info.data.readBigUInt64LE(36); const decimals = info.data[44]; console.log('?? Total Supply:', supply.toString()); console.log('?? Decimals:', decimals); const freezeAuthPresent = info.data[46]; if (freezeAuthPresent === 1) { const freezeAuth = new web3.PublicKey(info.data.slice(47, 79)); console.log('??  FREEZE AUTHORITY:', freezeAuth.toBase58()); } else { console.log('??  FREEZE AUTHORITY: NULL'); } } } else if (info.owner.toBase58() === 'BPFLoaderUpgradeab1e11111111111111111111111') { console.log('\\n???  UPGRADEABLE PROGRAM ANALYSIS'); try { const programDataKey = new web3.PublicKey(info.data.slice(4, 36)); const connection = network === 'mainnet' ? mainnet : devnet; const programData = await connection.getAccountInfo(programDataKey); if (programData && programData.data.length > 45) { const upgradeAuthPresent = programData.data[12]; if (upgradeAuthPresent === 1) { const upgradeAuth = new web3.PublicKey(programData.data.slice(13, 45)); console.log('?? UPGRADE AUTHORITY:', upgradeAuth.toBase58()); } else { console.log('?? UPGRADE AUTHORITY: NULL (RENOUNCED)'); } } } catch (e) { console.log('Could not parse program data'); } } else { console.log('\\n?? ACCOUNT TYPE: Standard account or other program'); console.log('?? CONTROLLED BY:', info.owner.toBase58()); } console.log('\\n=== AUTHORITY SUMMARY ==='); console.log('Network:', network.toUpperCase()); console.log('Type:', info.executable ? 'PROGRAM' : 'ACCOUNT'); console.log('Owner/Authority:', info.owner.toBase58()); console.log('?? Query Cost: FREE'); } checkAuthority().catch(console.error);
+     📁 complete-omega-deployment.js:203
+        1. Add source wallet private key (CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ)
+     📁 omega-deploy-transfer.js:20
+        // INSERT PRIVATE KEY FOR CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ
+     📁 security-verification.js:32
+        'CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ',
+
+🔑 ADDRESS: 4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a
+   Type: Wallet
+   Occurrences: 8
+     📁 SECURITY-AUDIT-REPORT.md:16
+        - Target wallet: `4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a`
+     📁 address-audit-report.json:89
+        "address": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+     📁 analyze-mint-controller.js:2
+        require('dotenv').config(); async function analyzeMintController() { console.log('?? ANALYZING MINT/CONTROLLER: 4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a'); const address = process.env.TARGET_WALLET_ADDRESS; const mainnet = new web3.Connection('${process.env.HELIUS_API_KEY ? `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}` : (process.env.RPC_URL || "https://api.mainnet-beta.solana.com")}`'); const devnet = new web3.Connection('https://api.devnet.solana.com'); const publicKey = new web3.PublicKey(address); console.log('=== ANALYZING FOR MINT/CONTROLLER ROLE ==='); let info = await mainnet.getAccountInfo(publicKey); let network = 'mainnet'; if (!info) { info = await devnet.getAccountInfo(publicKey); network = 'devnet'; } if (!info) { console.log('? Address not found on any network'); return; } console.log('? Found on:', network.toUpperCase()); console.log('Owner Program:', info.owner.toBase58()); console.log('Data Size:', info.data.length, 'bytes'); console.log('SOL Balance:', info.lamports / 1e9); console.log('Executable:', info.executable); if (info.owner.toBase58() === 'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA' || info.owner.toBase58() === 'TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb') { console.log('\\n?? EXISTING TOKEN MINT DETECTED!'); if (info.data.length >= 82) { const mintAuthPresent = info.data[0]; if (mintAuthPresent === 1) { const mintAuth = new web3.PublicKey(info.data.slice(4, 36)); console.log('?? Current Mint Authority:', mintAuth.toBase58()); } else { console.log('?? Mint Authority: RENOUNCED (NULL)'); } const supply = info.data.readBigUInt64LE(36); const decimals = info.data[44]; console.log('?? Current Supply:', supply.toString()); console.log('?? Decimals:', decimals); const freezeAuthPresent = info.data[46]; if (freezeAuthPresent === 1) { const freezeAuth = new web3.PublicKey(info.data.slice(47, 79)); console.log('??  Freeze Authority:', freezeAuth.toBase58()); } else { console.log('??  Freeze Authority: NULL'); } console.log('\\n??  IMPORTANT: This is an EXISTING token mint!'); console.log('Cannot use as new mint address - already exists'); console.log('Can use as target for minting if you control mint authority'); } } else if (info.executable) { console.log('\\n???  PROGRAM/CONTRACT DETECTED'); console.log('Type: Executable Program'); console.log('Can be used as controller/authority for new tokens'); } else { console.log('\\n?? STANDARD ACCOUNT'); console.log('Type: Regular wallet/account'); console.log('Balance:', info.lamports / 1e9, 'SOL'); console.log('Can be used as: Authority, recipient, or controller'); } console.log('\\n=== RECOMMENDATION ==='); if (info.owner.toBase58().includes('Token')) { console.log('?? USE AS: Existing mint (mint additional tokens)'); console.log('? ROLE: Target mint address'); } else if (info.executable) { console.log('?? USE AS: Controller program'); console.log('? ROLE: Authority/controller contract'); } else { console.log('?? USE AS: Authority or recipient'); console.log('? ROLE: Mint authority or token recipient'); } console.log('?? Analysis Cost: FREE'); } analyzeMintController().catch(console.error);
+     📁 complete-omega-deployment.js:204
+        2. Add target wallet private key (4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a)
+     📁 deploy-with-mint.js:2
+        require('dotenv').config(); const spl = require('@solana/spl-token'); async function deployWithPredeterminedMint() { console.log('?? OMEGA PRIME DEPLOYMENT WITH PREDETERMINED MINT'); console.log('Target Mint Address: 4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a'); const connection = new web3.Connection('${process.env.HELIUS_API_KEY ? `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}` : (process.env.RPC_URL || "https://api.mainnet-beta.solana.com")}`', 'confirmed'); const targetMint = new web3.PublicKey(process.env.TARGET_WALLET_ADDRESS); const recipientWallet = new web3.PublicKey(process.env.SOURCE_WALLET_ADDRESS); console.log('=== DEPLOYMENT CONFIGURATION ==='); console.log('?? Mint Address:', targetMint.toBase58()); console.log('?? Recipient Wallet:', recipientWallet.toBase58()); console.log('?? Network: MAINNET-BETA'); console.log('?? Token Amount: 1,000,000,000 OMEGA'); console.log('?? Decimals: 9'); console.log('\\n??  TO COMPLETE DEPLOYMENT:'); console.log('1. You need the private key for the mint address'); console.log('2. You need a funded wallet as the payer'); console.log('3. Minimum 0.02 SOL required for deployment'); console.log('\\n=== DEPLOYMENT STEPS ==='); console.log('Step 1: Create the mint account at predetermined address'); console.log('Step 2: Initialize mint with 9 decimals'); console.log('Step 3: Create token account for recipient'); console.log('Step 4: Mint 1 billion tokens to recipient'); const payer = web3.Keypair.generate(); console.log('\\n?? GENERATED PAYER (REPLACE WITH YOUR KEYPAIR):'); console.log('Public Key:', payer.publicKey.toBase58()); console.log('\\n?? NEXT STEPS:'); console.log('1. Replace payer keypair with your funded mainnet wallet'); console.log('2. Generate or provide the keypair for mint address'); console.log('3. Run deployment to mainnet'); console.log('\\n?? DEPLOYMENT SCRIPT READY'); console.log('Mint will be created at:', targetMint.toBase58()); console.log('Tokens will be minted to:', recipientWallet.toBase58()); } deployWithPredeterminedMint().catch(console.error);
+     📁 fund-and-mint.js:51
+        console.log('Transaction 1: Transfer 0.167 SOL to 4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a');
+     📁 mint-to-address.js:2
+        require('dotenv').config(); const spl = require('@solana/spl-token'); async function mintToAddress() { console.log('?? MINTING OMEGA TOKENS TO: 4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a'); const connection = new web3.Connection('${process.env.HELIUS_API_KEY ? `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}` : (process.env.RPC_URL || "https://api.mainnet-beta.solana.com")}`'); const recipientAddress = new web3.PublicKey(process.env.TARGET_WALLET_ADDRESS); const newMint = web3.Keypair.generate(); console.log('=== OMEGA PRIME MINT SETUP ==='); console.log('?? New Mint Address:', newMint.publicKey.toBase58()); console.log('?? Recipient Address:', recipientAddress.toBase58()); console.log('?? Amount: 1,000,000,000 OMEGA tokens'); console.log('?? Decimals: 9'); console.log('?? Network: MAINNET'); console.log('\\n?? MINT KEYPAIR (SAVE THIS):'); console.log('Secret Key Array:', JSON.stringify(Array.from(newMint.secretKey))); console.log('\\n??  TO DEPLOY:'); console.log('1. Add funded payer keypair to script'); console.log('2. Run deployment to create mint and send tokens'); console.log('3. Recipient will receive 1 billion OMEGA tokens'); } mintToAddress().catch(console.error);
+     📁 security-verification.js:33
+        '4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a'
+
+🔑 ADDRESS: HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR
+   Type: Unknown
+   Occurrences: 5
+     📁 activate-bot-army.js:9
+        address: 'HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR',
+     📁 address-audit-report.json:107
+        "address": "HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR",
+     📁 execute-bot-minting.js:17
+        { name: 'STAKE_MASTER', address: 'HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR' },
+     📁 mint-to-bots.js:16
+        'HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR', // Bot1 - Stake Master
+     📁 omega-bot-army.js:13
+        address: 'HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR',
+
+🔑 ADDRESS: EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6
+   Type: Contract
+   Occurrences: 2
+     📁 activate-bot-army.js:10
+        contract: 'EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6',
+     📁 address-audit-report.json:119
+        "address": "EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6",
+
+🔑 ADDRESS: NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d
+   Type: Unknown
+   Occurrences: 5
+     📁 activate-bot-army.js:25
+        address: 'NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d',
+     📁 address-audit-report.json:127
+        "address": "NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d",
+     📁 execute-bot-minting.js:18
+        { name: 'MINT_OPERATOR', address: 'NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d' },
+     📁 mint-to-bots.js:17
+        'NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d',  // Bot2 - Mint Operator
+     📁 omega-bot-army.js:20
+        address: 'NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d',
+
+🔑 ADDRESS: HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76
+   Type: Contract
+   Occurrences: 2
+     📁 activate-bot-army.js:26
+        contract: 'HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76',
+     📁 address-audit-report.json:139
+        "address": "HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76",
+
+🔑 ADDRESS: DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA
+   Type: Unknown
+   Occurrences: 5
+     📁 activate-bot-army.js:41
+        address: 'DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA',
+     📁 address-audit-report.json:147
+        "address": "DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA",
+     📁 execute-bot-minting.js:19
+        { name: 'CONTRACT_DEPLOYER', address: 'DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA' },
+     📁 mint-to-bots.js:18
+        'DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA', // Bot3 - Contract Deployer
+     📁 omega-bot-army.js:27
+        address: 'DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA',
+
+🔑 ADDRESS: FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1
+   Type: Contract
+   Occurrences: 2
+     📁 activate-bot-army.js:42
+        contract: 'FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1',
+     📁 address-audit-report.json:159
+        "address": "FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1",
+
+🔑 ADDRESS: 7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41
+   Type: Unknown
+   Occurrences: 5
+     📁 activate-bot-army.js:57
+        address: '7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41',
+     📁 address-audit-report.json:167
+        "address": "7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41",
+     📁 execute-bot-minting.js:20
+        { name: 'MEV_HUNTER', address: '7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41' },
+     📁 mint-to-bots.js:19
+        '7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41', // Bot4 - MEV Hunter
+     📁 omega-bot-army.js:34
+        address: '7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41',
+
+🔑 ADDRESS: 5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p
+   Type: Contract
+   Occurrences: 2
+     📁 activate-bot-army.js:58
+        contract: '5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p',
+     📁 address-audit-report.json:179
+        "address": "5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p",
+
+🔑 ADDRESS: 3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw
+   Type: Unknown
+   Occurrences: 5
+     📁 activate-bot-army.js:73
+        address: '3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw',
+     📁 address-audit-report.json:187
+        "address": "3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw",
+     📁 execute-bot-minting.js:21
+        { name: 'LOOT_EXTRACTOR', address: '3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw' }
+     📁 mint-to-bots.js:20
+        '3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw'  // Bot5 - Loot Extractor
+     📁 omega-bot-army.js:41
+        address: '3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw',
+
+🔑 ADDRESS: DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD
+   Type: Contract
+   Occurrences: 2
+     📁 activate-bot-army.js:74
+        contract: 'DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD',
+     📁 address-audit-report.json:199
+        "address": "DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD",
+
+🔑 ADDRESS: 6ri2NzogWQMTeaMnMHVqEMypuwb1ip5iWDTzS9zNDZos
+   Type: Unknown
+   Occurrences: 1
+     📁 address-audit-report.json:49
+        "address": "6ri2NzogWQMTeaMnMHVqEMypuwb1ip5iWDTzS9zNDZos",
+
+🔑 ADDRESS: 8cRrU1NzNpjL3k2BwjW3VixAcX6VFc29KHr4KZg8cs2Y
+   Type: Unknown
+   Occurrences: 1
+     📁 address-audit-report.json:57
+        "address": "8cRrU1NzNpjL3k2BwjW3VixAcX6VFc29KHr4KZg8cs2Y",
+
+🔑 ADDRESS: EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6
+   Type: Unknown
+   Occurrences: 1
+     📁 address-audit-report.json:65
+        "address": "EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6",
+
+🔑 ADDRESS: 9HUvuQHBHkihcrhiucdYFjk1q4jUgozakoYsubYrHiJS
+   Type: Unknown
+   Occurrences: 3
+     📁 address-audit-report.json:207
+        "address": "9HUvuQHBHkihcrhiucdYFjk1q4jUgozakoYsubYrHiJS",
+     📁 analyze-new.js:2
+        require('dotenv').config(); async function analyzeAddress() { console.log('?? ANALYZING ADDRESS: 9HUvuQHBHkihcrhiucdYFjk1q4jUgozakoYsubYrHiJS'); const address = '9HUvuQHBHkihcrhiucdYFjk1q4jUgozakoYsubYrHiJS'; const mainnet = new web3.Connection('${process.env.HELIUS_API_KEY ? `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}` : (process.env.RPC_URL || "https://api.mainnet-beta.solana.com")}`'); const devnet = new web3.Connection('https://api.devnet.solana.com'); const publicKey = new web3.PublicKey(address); console.log('=== NETWORK DETECTION ==='); const mainnetInfo = await mainnet.getAccountInfo(publicKey); const devnetInfo = await devnet.getAccountInfo(publicKey); if (mainnetInfo) { console.log('? MAINNET: FOUND'); console.log('Owner:', mainnetInfo.owner.toBase58()); console.log('SOL Balance:', mainnetInfo.lamports / 1e9); console.log('Data Size:', mainnetInfo.data.length, 'bytes'); console.log('Executable:', mainnetInfo.executable); if (mainnetInfo.data.length === 82) { console.log('?? TOKEN MINT DETECTED'); const mintAuth = mainnetInfo.data[0] === 1 ? new web3.PublicKey(mainnetInfo.data.slice(4, 36)).toBase58() : 'NULL'; const supply = mainnetInfo.data.readBigUInt64LE(36); const decimals = mainnetInfo.data[44]; const freezeAuth = mainnetInfo.data[46] === 1 ? new web3.PublicKey(mainnetInfo.data.slice(47, 79)).toBase58() : 'NULL'; console.log('Mint Authority:', mintAuth); console.log('Supply:', supply.toString()); console.log('Decimals:', decimals); console.log('Freeze Authority:', freezeAuth); } const sigs = await mainnet.getSignaturesForAddress(publicKey, {limit: 3}); console.log('Recent Transactions:', sigs.length); sigs.forEach((s, i) => console.log((i+1) + '. ' + s.signature.substring(0, 15) + '...')); } else { console.log('? MAINNET: NOT FOUND'); } if (devnetInfo) { console.log('? DEVNET: FOUND (Balance:', devnetInfo.lamports / 1e9, 'SOL)'); } else { console.log('? DEVNET: NOT FOUND'); } console.log('?? Analysis Cost: FREE'); } analyzeAddress().catch(console.error);
+     📁 analyze-new.js:2
+        require('dotenv').config(); async function analyzeAddress() { console.log('?? ANALYZING ADDRESS: 9HUvuQHBHkihcrhiucdYFjk1q4jUgozakoYsubYrHiJS'); const address = '9HUvuQHBHkihcrhiucdYFjk1q4jUgozakoYsubYrHiJS'; const mainnet = new web3.Connection('${process.env.HELIUS_API_KEY ? `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}` : (process.env.RPC_URL || "https://api.mainnet-beta.solana.com")}`'); const devnet = new web3.Connection('https://api.devnet.solana.com'); const publicKey = new web3.PublicKey(address); console.log('=== NETWORK DETECTION ==='); const mainnetInfo = await mainnet.getAccountInfo(publicKey); const devnetInfo = await devnet.getAccountInfo(publicKey); if (mainnetInfo) { console.log('? MAINNET: FOUND'); console.log('Owner:', mainnetInfo.owner.toBase58()); console.log('SOL Balance:', mainnetInfo.lamports / 1e9); console.log('Data Size:', mainnetInfo.data.length, 'bytes'); console.log('Executable:', mainnetInfo.executable); if (mainnetInfo.data.length === 82) { console.log('?? TOKEN MINT DETECTED'); const mintAuth = mainnetInfo.data[0] === 1 ? new web3.PublicKey(mainnetInfo.data.slice(4, 36)).toBase58() : 'NULL'; const supply = mainnetInfo.data.readBigUInt64LE(36); const decimals = mainnetInfo.data[44]; const freezeAuth = mainnetInfo.data[46] === 1 ? new web3.PublicKey(mainnetInfo.data.slice(47, 79)).toBase58() : 'NULL'; console.log('Mint Authority:', mintAuth); console.log('Supply:', supply.toString()); console.log('Decimals:', decimals); console.log('Freeze Authority:', freezeAuth); } const sigs = await mainnet.getSignaturesForAddress(publicKey, {limit: 3}); console.log('Recent Transactions:', sigs.length); sigs.forEach((s, i) => console.log((i+1) + '. ' + s.signature.substring(0, 15) + '...')); } else { console.log('? MAINNET: NOT FOUND'); } if (devnetInfo) { console.log('? DEVNET: FOUND (Balance:', devnetInfo.lamports / 1e9, 'SOL)'); } else { console.log('? DEVNET: NOT FOUND'); } console.log('?? Analysis Cost: FREE'); } analyzeAddress().catch(console.error);
+
+🔑 ADDRESS: Stake11111111111111111111111111111111111111
+   Type: Bot/Operator
+   Occurrences: 2
+     📁 address-audit-report.json:217
+        "address": "Stake11111111111111111111111111111111111111",
+     📁 bot-smart-contracts.js:7
+        STAKE_PROGRAM: 'Stake11111111111111111111111111111111111111',
+
+🔑 ADDRESS: JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4
+   Type: Unknown
+   Occurrences: 2
+     📁 address-audit-report.json:225
+        "address": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+     📁 bot-smart-contracts.js:9
+        JUPITER_PROGRAM: 'JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4',
+
+🔑 ADDRESS: LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo
+   Type: Unknown
+   Occurrences: 4
+     📁 address-audit-report.json:233
+        "address": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+     📁 bot-smart-contracts.js:10
+        METEORA_PROGRAM: 'LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo',
+     📁 jupiter-implementation.js:8
+        const METEORA_DBC_PROGRAM = new web3.PublicKey('LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo');
+     📁 jupiter-strategy.js:8
+        const METEORA_DBC = 'LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo';
+
+🔑 ADDRESS: 675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8
+   Type: Unknown
+   Occurrences: 2
+     📁 address-audit-report.json:243
+        "address": "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8",
+     📁 bot-smart-contracts.js:11
+        RAYDIUM_PROGRAM: '675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8'
+
+🔑 ADDRESS: GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp
+   Type: Unknown
+   Occurrences: 7
+     📁 address-audit-report.json:251
+        "address": "GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp",
+     📁 complete-analysis.js:2
+        require('dotenv').config(); async function completeAnalysis() { console.log('?? COMPLETE MAINNET CONTRACT ANALYSIS'); const address = 'GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp'; const connection = new web3.Connection('${process.env.HELIUS_API_KEY ? `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}` : (process.env.RPC_URL || "https://api.mainnet-beta.solana.com")}`'); const publicKey = new web3.PublicKey(address); const info = await connection.getAccountInfo(publicKey); console.log('=== CONTRACT VERIFICATION ==='); console.log('? Address:', address); console.log('? Network: MAINNET-BETA'); console.log('? Status: ACTIVE'); console.log('? Owner Program:', info.owner.toBase58()); console.log('=== OWNERSHIP ANALYSIS ==='); const owner = info.owner.toBase58(); if (owner === 'BPFLoaderUpgradeab1e11111111111111111111111') { console.log('?? CONTRACT TYPE: Upgradeable BPF Program'); console.log('?? UPGRADE AUTHORITY: Can be checked'); const programDataKey = new web3.PublicKey(info.data.slice(4, 36)); const programData = await connection.getAccountInfo(programDataKey); if (programData) { const upgradeAuthority = new web3.PublicKey(programData.data.slice(13, 45)); console.log('?? Upgrade Authority:', upgradeAuthority.toBase58()); if (upgradeAuthority.equals(web3.PublicKey.default)) { console.log('?? RENOUNCED: Upgrade authority set to null'); } else { console.log('??  NOT RENOUNCED: Upgrade authority still active'); } } } console.log('=== PROGRAM DETAILS ==='); console.log('?? SOL Balance:', info.lamports / 1e9); console.log('?? Data Size:', info.data.length, 'bytes'); console.log('???  Executable:', info.executable); console.log('?? Rent Epoch:', info.rentEpoch); console.log('=== RECENT ACTIVITY ==='); const sigs = await connection.getSignaturesForAddress(publicKey, {limit: 5}); console.log('?? Recent Transactions:', sigs.length); sigs.forEach((sig, i) => { const date = sig.blockTime ? new Date(sig.blockTime * 1000).toISOString().split('T')[0] : 'Unknown'; console.log((i+1) + '. ' + sig.signature.substring(0, 15) + '... (' + date + ')'); }); console.log('=== SECURITY STATUS ==='); console.log('???  Contract verified and active on mainnet'); console.log('?? All data retrieved without cost'); console.log('?? Analysis cost: .00'); return { verified: true, network: 'mainnet-beta', type: 'BPF Program', cost: 'FREE' }; } completeAnalysis().catch(console.error);
+     📁 free-ops.js:2
+        require('dotenv').config(); async function freeOperations() { console.log('?? FREE MAINNET OPERATIONS - NO SOL REQUIRED'); const contractAddress = 'GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp'; const connection = new web3.Connection('${process.env.HELIUS_API_KEY ? `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}` : (process.env.RPC_URL || "https://api.mainnet-beta.solana.com")}`', 'confirmed'); console.log('1. ? Read Contract State (FREE)'); console.log('2. ? Query Account Balance (FREE)'); console.log('3. ? Check Transaction History (FREE)'); console.log('4. ? View Program Logs (FREE)'); console.log('5. ? Monitor Real-time Updates (FREE)'); console.log(''); console.log('?? OPERATIONS THAT COST SOL:'); console.log('? Send Transactions (Costs ~0.000005 SOL)'); console.log('? Create Accounts (Costs rent ~0.002 SOL)'); console.log('? Token Transfers (Costs fees)'); console.log(''); console.log('?? CURRENT SETUP: 100% FREE INTERACTION'); console.log('?? Explorer: https://explorer.solana.com/address/' + contractAddress); return { freeOps: 'unlimited', costOps: 'require_sol', recommendation: 'use_read_only_operations' }; } freeOperations().catch(console.error);
+     📁 interact-mainnet.js:2
+        require('dotenv').config(); const spl = require('@solana/spl-token'); async function interactWithContract() { console.log('?? INTERACTING WITH MAINNET CONTRACT - NO DEPLOYMENT COST'); const contractAddress = 'GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp'; const connection = new web3.Connection('${process.env.HELIUS_API_KEY ? `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}` : (process.env.RPC_URL || "https://api.mainnet-beta.solana.com")}`', 'confirmed'); console.log('Contract:', contractAddress); console.log('Network: MAINNET-BETA'); const publicKey = new web3.PublicKey(contractAddress); const accountInfo = await connection.getAccountInfo(publicKey); if (!accountInfo) { console.log('? Contract not found'); return; } console.log('? Contract found on mainnet'); console.log('Owner:', accountInfo.owner.toBase58()); console.log('Data size:', accountInfo.data.length, 'bytes'); console.log('Lamports:', accountInfo.lamports / 1e9, 'SOL'); if (accountInfo.owner.equals(spl.TOKEN_2022_PROGRAM_ID)) { console.log('?? This is a SPL Token-2022 mint!'); try { const mintInfo = spl.unpackMint(publicKey, accountInfo, spl.TOKEN_2022_PROGRAM_ID); console.log('Decimals:', mintInfo.decimals); console.log('Supply:', mintInfo.supply.toString()); console.log('Mint Authority:', mintInfo.mintAuthority?.toBase58() || 'None'); console.log('Freeze Authority:', mintInfo.freezeAuthority?.toBase58() || 'None'); } catch (e) { console.log('Could not parse as token mint'); } } console.log('?? INTERACTION OPTIONS (NO COST):'); console.log('� Query token balance'); console.log('� Check account info'); console.log('� View transaction history'); console.log('� Read contract state'); console.log('? ALL QUERIES ARE FREE - NO SOL REQUIRED'); return { address: contractAddress, network: 'mainnet-beta', cost: 'FREE', interactionType: 'READ_ONLY' }; } interactWithContract().catch(console.error);
+     📁 jupiter-implementation.js:7
+        const JUPITER_PROXY_PROGRAM = new web3.PublicKey('GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp');
+     📁 jupiter-strategy.js:7
+        const JUPITER_PROXY = 'GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp';
+     📁 query.js:2
+        require('dotenv').config(); const spl = require('@solana/spl-token'); async function interactWithContract() { console.log('?? INTERACTING WITH MAINNET CONTRACT - NO DEPLOYMENT COST'); const contractAddress = 'GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp'; const connection = new web3.Connection('${process.env.HELIUS_API_KEY ? `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}` : (process.env.RPC_URL || "https://api.mainnet-beta.solana.com")}`', 'confirmed'); console.log('Contract:', contractAddress); console.log('Network: MAINNET-BETA'); const publicKey = new web3.PublicKey(contractAddress); const accountInfo = await connection.getAccountInfo(publicKey); if (!accountInfo) { console.log('? Contract not found'); return; } console.log('? Contract found on mainnet'); console.log('Owner:', accountInfo.owner.toBase58()); console.log('Data size:', accountInfo.data.length, 'bytes'); console.log('Lamports:', accountInfo.lamports / 1e9, 'SOL'); if (accountInfo.owner.equals(spl.TOKEN_2022_PROGRAM_ID)) { console.log('?? This is a SPL Token-2022 mint!'); try { const mintInfo = spl.unpackMint(publicKey, accountInfo, spl.TOKEN_2022_PROGRAM_ID); console.log('Decimals:', mintInfo.decimals); console.log('Supply:', mintInfo.supply.toString()); console.log('Mint Authority:', mintInfo.mintAuthority?.toBase58() || 'None'); console.log('Freeze Authority:', mintInfo.freezeAuthority?.toBase58() || 'None'); } catch (e) { console.log('Could not parse as token mint'); } } console.log('?? INTERACTION OPTIONS (NO COST):'); console.log('� Query token balance'); console.log('� Check account info'); console.log('� View transaction history'); console.log('� Read contract state'); console.log('? ALL QUERIES ARE FREE - NO SOL REQUIRED'); return { address: contractAddress, network: 'mainnet-beta', cost: 'FREE', interactionType: 'READ_ONLY' }; } interactWithContract().catch(console.error);
+
+🔑 ADDRESS: EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
+   Type: Unknown
+   Occurrences: 3
+     📁 address-audit-report.json:266
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+     📁 jupiter-implementation.js:10
+        const USDC_MINT = new web3.PublicKey('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v');
+     📁 jupiter-strategy.js:10
+        const USDC_MINT = 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v';
+
+🔑 ADDRESS: 67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomA
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:275
+        "address": "67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomA",
+     📁 package-lock.json:41
+        "integrity": "sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==",
+     📁 package-lock.json:1226
+        "integrity": "sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==",
+     📁 package-lock.json:41
+        "integrity": "sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==",
+     📁 package-lock.json:1226
+        "integrity": "sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==",
+
+🔑 ADDRESS: 6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:283
+        "address": "6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ",
+     📁 package-lock.json:68
+        "integrity": "sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==",
+     📁 package-lock.json:1247
+        "integrity": "sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==",
+     📁 package-lock.json:68
+        "integrity": "sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==",
+     📁 package-lock.json:1247
+        "integrity": "sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==",
+
+🔑 ADDRESS: 84KD1L5cFyw5xnntHwL4uPwfcrkKSiwuDeypiVr92qCU
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:291
+        "address": "84KD1L5cFyw5xnntHwL4uPwfcrkKSiwuDeypiVr92qCU",
+     📁 package-lock.json:89
+        "integrity": "sha512-84KD1L5cFyw5xnntHwL4uPwfcrkKSiwuDeypiVr92qCUFuF3ZENa2zlFVPu+pQcjTlod2LmEX3MhBmNjRMpdKg==",
+     📁 package-lock.json:1265
+        "integrity": "sha512-84KD1L5cFyw5xnntHwL4uPwfcrkKSiwuDeypiVr92qCUFuF3ZENa2zlFVPu+pQcjTlod2LmEX3MhBmNjRMpdKg==",
+     📁 package-lock.json:89
+        "integrity": "sha512-84KD1L5cFyw5xnntHwL4uPwfcrkKSiwuDeypiVr92qCUFuF3ZENa2zlFVPu+pQcjTlod2LmEX3MhBmNjRMpdKg==",
+     📁 package-lock.json:1265
+        "integrity": "sha512-84KD1L5cFyw5xnntHwL4uPwfcrkKSiwuDeypiVr92qCUFuF3ZENa2zlFVPu+pQcjTlod2LmEX3MhBmNjRMpdKg==",
+
+🔑 ADDRESS: whc75uwGhPX2Mr67NzVSoSTkTpUb29zrg
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:299
+        "address": "whc75uwGhPX2Mr67NzVSoSTkTpUb29zrg",
+     📁 package-lock.json:114
+        "integrity": "sha512-UB+MVzK8GIMLYS7qgtl7Qr5fUW36EelUk2VA/VyQJZb2rlQYZu08/whc75uwGhPX2Mr67NzVSoSTkTpUb29zrg==",
+     📁 package-lock.json:1288
+        "integrity": "sha512-UB+MVzK8GIMLYS7qgtl7Qr5fUW36EelUk2VA/VyQJZb2rlQYZu08/whc75uwGhPX2Mr67NzVSoSTkTpUb29zrg==",
+     📁 package-lock.json:114
+        "integrity": "sha512-UB+MVzK8GIMLYS7qgtl7Qr5fUW36EelUk2VA/VyQJZb2rlQYZu08/whc75uwGhPX2Mr67NzVSoSTkTpUb29zrg==",
+     📁 package-lock.json:1288
+        "integrity": "sha512-UB+MVzK8GIMLYS7qgtl7Qr5fUW36EelUk2VA/VyQJZb2rlQYZu08/whc75uwGhPX2Mr67NzVSoSTkTpUb29zrg==",
+
+🔑 ADDRESS: DYQoVjN2h7ta1W1hPrwzarcFLBq9UpX1UjNXsNpT9dn
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:307
+        "address": "DYQoVjN2h7ta1W1hPrwzarcFLBq9UpX1UjNXsNpT9dn",
+     📁 package-lock.json:196
+        "integrity": "sha512-szG4sxgJGktbuZYDg2FfNmkMi0DYQoVjN2h7ta1W1hPrwzarcFLBq9UpX1UjNXsNpT9dn+chgprtWGioUAr4/g==",
+     📁 package-lock.json:1355
+        "integrity": "sha512-szG4sxgJGktbuZYDg2FfNmkMi0DYQoVjN2h7ta1W1hPrwzarcFLBq9UpX1UjNXsNpT9dn+chgprtWGioUAr4/g==",
+     📁 package-lock.json:196
+        "integrity": "sha512-szG4sxgJGktbuZYDg2FfNmkMi0DYQoVjN2h7ta1W1hPrwzarcFLBq9UpX1UjNXsNpT9dn+chgprtWGioUAr4/g==",
+     📁 package-lock.json:1355
+        "integrity": "sha512-szG4sxgJGktbuZYDg2FfNmkMi0DYQoVjN2h7ta1W1hPrwzarcFLBq9UpX1UjNXsNpT9dn+chgprtWGioUAr4/g==",
+
+🔑 ADDRESS: G1RD2boZTcxmwUWnKCaJJExQ5qNKwbpSyDdWfFJfM5Jh
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:315
+        "address": "G1RD2boZTcxmwUWnKCaJJExQ5qNKwbpSyDdWfFJfM5Jh",
+     📁 package-lock.json:210
+        "integrity": "sha512-qxoR7VybNJixV51L0G1RD2boZTcxmwUWnKCaJJExQ5qNKwbpSyDdWfFJfM5JhGyKe9DnPVOZB+JHWXnpbZBqrQ==",
+     📁 package-lock.json:1366
+        "integrity": "sha512-qxoR7VybNJixV51L0G1RD2boZTcxmwUWnKCaJJExQ5qNKwbpSyDdWfFJfM5JhGyKe9DnPVOZB+JHWXnpbZBqrQ==",
+     📁 package-lock.json:210
+        "integrity": "sha512-qxoR7VybNJixV51L0G1RD2boZTcxmwUWnKCaJJExQ5qNKwbpSyDdWfFJfM5JhGyKe9DnPVOZB+JHWXnpbZBqrQ==",
+     📁 package-lock.json:1366
+        "integrity": "sha512-qxoR7VybNJixV51L0G1RD2boZTcxmwUWnKCaJJExQ5qNKwbpSyDdWfFJfM5JhGyKe9DnPVOZB+JHWXnpbZBqrQ==",
+
+🔑 ADDRESS: fDu2PugxHrvRebmYauvSumZ3cTfQ4HJJX6PG5rN852qy
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:323
+        "address": "fDu2PugxHrvRebmYauvSumZ3cTfQ4HJJX6PG5rN852qy",
+     📁 package-lock.json:225
+        "integrity": "sha512-bauxqMfSs8EHD0JKESaNmNuNvkvHSuN3bbWAF5RjOfDu2PugxHrvRebmYauvSumZ3cTfQ4HJJX6PG5rN852qyQ==",
+     📁 package-lock.json:1378
+        "integrity": "sha512-bauxqMfSs8EHD0JKESaNmNuNvkvHSuN3bbWAF5RjOfDu2PugxHrvRebmYauvSumZ3cTfQ4HJJX6PG5rN852qyQ==",
+     📁 package-lock.json:225
+        "integrity": "sha512-bauxqMfSs8EHD0JKESaNmNuNvkvHSuN3bbWAF5RjOfDu2PugxHrvRebmYauvSumZ3cTfQ4HJJX6PG5rN852qyQ==",
+     📁 package-lock.json:1378
+        "integrity": "sha512-bauxqMfSs8EHD0JKESaNmNuNvkvHSuN3bbWAF5RjOfDu2PugxHrvRebmYauvSumZ3cTfQ4HJJX6PG5rN852qyQ==",
+
+🔑 ADDRESS: PxsThRCgSdgTWJDQeZvucQ9PT6Y3HiVXJ
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:331
+        "address": "PxsThRCgSdgTWJDQeZvucQ9PT6Y3HiVXJ",
+     📁 package-lock.json:249
+        "integrity": "sha512-J5i5mOkvukXn8E3Z7sGIPxsThRCgSdgTWJDQeZvucQ9PT6Y3HiVXJ0pcWiOWAoQ3RX8e/f4I3IC+wE6pZiJzDQ==",
+     📁 package-lock.json:1396
+        "integrity": "sha512-J5i5mOkvukXn8E3Z7sGIPxsThRCgSdgTWJDQeZvucQ9PT6Y3HiVXJ0pcWiOWAoQ3RX8e/f4I3IC+wE6pZiJzDQ==",
+     📁 package-lock.json:249
+        "integrity": "sha512-J5i5mOkvukXn8E3Z7sGIPxsThRCgSdgTWJDQeZvucQ9PT6Y3HiVXJ0pcWiOWAoQ3RX8e/f4I3IC+wE6pZiJzDQ==",
+     📁 package-lock.json:1396
+        "integrity": "sha512-J5i5mOkvukXn8E3Z7sGIPxsThRCgSdgTWJDQeZvucQ9PT6Y3HiVXJ0pcWiOWAoQ3RX8e/f4I3IC+wE6pZiJzDQ==",
+
+🔑 ADDRESS: 6KhSAtY1hFR2hfFwgqfFWzSY9E9GDvFVNYU
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:339
+        "address": "6KhSAtY1hFR2hfFwgqfFWzSY9E9GDvFVNYU",
+     📁 package-lock.json:337
+        "integrity": "sha512-7sMt1rsm/zQOQcUWllQX9mD2O6KhSAtY1hFR2hfFwgqfFWzSY9E9GDvFVNYUI1F0iQKcm6HmePU9QbKRXTEBiA==",
+     📁 package-lock.json:1456
+        "integrity": "sha512-7sMt1rsm/zQOQcUWllQX9mD2O6KhSAtY1hFR2hfFwgqfFWzSY9E9GDvFVNYUI1F0iQKcm6HmePU9QbKRXTEBiA==",
+     📁 package-lock.json:337
+        "integrity": "sha512-7sMt1rsm/zQOQcUWllQX9mD2O6KhSAtY1hFR2hfFwgqfFWzSY9E9GDvFVNYUI1F0iQKcm6HmePU9QbKRXTEBiA==",
+     📁 package-lock.json:1456
+        "integrity": "sha512-7sMt1rsm/zQOQcUWllQX9mD2O6KhSAtY1hFR2hfFwgqfFWzSY9E9GDvFVNYUI1F0iQKcm6HmePU9QbKRXTEBiA==",
+
+🔑 ADDRESS: GzhWjEHEGNPSibiDTxFhsFWxNaz8LbMDPjBUE69r9wmd
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:347
+        "address": "GzhWjEHEGNPSibiDTxFhsFWxNaz8LbMDPjBUE69r9wmd",
+     📁 package-lock.json:373
+        "integrity": "sha512-oG+VZzN6YhBHIoSKgS5ESM9VIGzhWjEHEGNPSibiDTxFhsFWxNaz8LbMDPjBUE69r9wmdGLkrQ+wVPbnJcZPvw==",
+     📁 package-lock.json:1486
+        "integrity": "sha512-oG+VZzN6YhBHIoSKgS5ESM9VIGzhWjEHEGNPSibiDTxFhsFWxNaz8LbMDPjBUE69r9wmdGLkrQ+wVPbnJcZPvw==",
+     📁 package-lock.json:373
+        "integrity": "sha512-oG+VZzN6YhBHIoSKgS5ESM9VIGzhWjEHEGNPSibiDTxFhsFWxNaz8LbMDPjBUE69r9wmdGLkrQ+wVPbnJcZPvw==",
+     📁 package-lock.json:1486
+        "integrity": "sha512-oG+VZzN6YhBHIoSKgS5ESM9VIGzhWjEHEGNPSibiDTxFhsFWxNaz8LbMDPjBUE69r9wmdGLkrQ+wVPbnJcZPvw==",
+
+🔑 ADDRESS: xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ
+   Type: Unknown
+   Occurrences: 17
+     📁 address-audit-report.json:355
+        "address": "xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ",
+     📁 package-lock.json:420
+        "integrity": "sha512-xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ/Y37WJ4bhGfKPpqEIlmIyueQHqOyoPhE6xNUqjzRr8ra0eF9VRvA==",
+     📁 package-lock.json:618
+        "integrity": "sha512-xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ/Y37WJ4bhGfKPpqEIlmIyueQHqOyoPhE6xNUqjzRr8ra0eF9VRvA==",
+     📁 package-lock.json:1512
+        "integrity": "sha512-xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ/Y37WJ4bhGfKPpqEIlmIyueQHqOyoPhE6xNUqjzRr8ra0eF9VRvA==",
+     📁 package-lock.json:1676
+        "integrity": "sha512-xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ/Y37WJ4bhGfKPpqEIlmIyueQHqOyoPhE6xNUqjzRr8ra0eF9VRvA==",
+     📁 package-lock.json:420
+        "integrity": "sha512-xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ/Y37WJ4bhGfKPpqEIlmIyueQHqOyoPhE6xNUqjzRr8ra0eF9VRvA==",
+     📁 package-lock.json:618
+        "integrity": "sha512-xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ/Y37WJ4bhGfKPpqEIlmIyueQHqOyoPhE6xNUqjzRr8ra0eF9VRvA==",
+     📁 package-lock.json:1512
+        "integrity": "sha512-xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ/Y37WJ4bhGfKPpqEIlmIyueQHqOyoPhE6xNUqjzRr8ra0eF9VRvA==",
+     📁 package-lock.json:1676
+        "integrity": "sha512-xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ/Y37WJ4bhGfKPpqEIlmIyueQHqOyoPhE6xNUqjzRr8ra0eF9VRvA==",
+     📁 package-lock.json:420
+        "integrity": "sha512-xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ/Y37WJ4bhGfKPpqEIlmIyueQHqOyoPhE6xNUqjzRr8ra0eF9VRvA==",
+     📁 package-lock.json:618
+        "integrity": "sha512-xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ/Y37WJ4bhGfKPpqEIlmIyueQHqOyoPhE6xNUqjzRr8ra0eF9VRvA==",
+     📁 package-lock.json:1512
+        "integrity": "sha512-xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ/Y37WJ4bhGfKPpqEIlmIyueQHqOyoPhE6xNUqjzRr8ra0eF9VRvA==",
+     📁 package-lock.json:1676
+        "integrity": "sha512-xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ/Y37WJ4bhGfKPpqEIlmIyueQHqOyoPhE6xNUqjzRr8ra0eF9VRvA==",
+     📁 package-lock.json:420
+        "integrity": "sha512-xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ/Y37WJ4bhGfKPpqEIlmIyueQHqOyoPhE6xNUqjzRr8ra0eF9VRvA==",
+     📁 package-lock.json:618
+        "integrity": "sha512-xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ/Y37WJ4bhGfKPpqEIlmIyueQHqOyoPhE6xNUqjzRr8ra0eF9VRvA==",
+     📁 package-lock.json:1512
+        "integrity": "sha512-xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ/Y37WJ4bhGfKPpqEIlmIyueQHqOyoPhE6xNUqjzRr8ra0eF9VRvA==",
+     📁 package-lock.json:1676
+        "integrity": "sha512-xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ/Y37WJ4bhGfKPpqEIlmIyueQHqOyoPhE6xNUqjzRr8ra0eF9VRvA==",
+
+🔑 ADDRESS: 2uM9rYjPvyq39NwLRqaiLtWHyDC1FvryJDa2ATTVims5
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:363
+        "address": "2uM9rYjPvyq39NwLRqaiLtWHyDC1FvryJDa2ATTVims5",
+     📁 package-lock.json:436
+        "integrity": "sha512-2uM9rYjPvyq39NwLRqaiLtWHyDC1FvryJDa2ATTVims5YAS4PupsEQsDvP14FqhFr0P49CYDugi59xaxJlTXRA==",
+     📁 package-lock.json:1528
+        "integrity": "sha512-2uM9rYjPvyq39NwLRqaiLtWHyDC1FvryJDa2ATTVims5YAS4PupsEQsDvP14FqhFr0P49CYDugi59xaxJlTXRA=="
+     📁 package-lock.json:436
+        "integrity": "sha512-2uM9rYjPvyq39NwLRqaiLtWHyDC1FvryJDa2ATTVims5YAS4PupsEQsDvP14FqhFr0P49CYDugi59xaxJlTXRA==",
+     📁 package-lock.json:1528
+        "integrity": "sha512-2uM9rYjPvyq39NwLRqaiLtWHyDC1FvryJDa2ATTVims5YAS4PupsEQsDvP14FqhFr0P49CYDugi59xaxJlTXRA=="
+
+🔑 ADDRESS: ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoY
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:371
+        "address": "ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoY",
+     📁 package-lock.json:464
+        "integrity": "sha512-ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoYlM2nc6388Fq5jcXyr5mRsqViLx/GJYdoL0bfXD8nmF+Zn/Iow==",
+     📁 package-lock.json:1555
+        "integrity": "sha512-ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoYlM2nc6388Fq5jcXyr5mRsqViLx/GJYdoL0bfXD8nmF+Zn/Iow==",
+     📁 package-lock.json:464
+        "integrity": "sha512-ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoYlM2nc6388Fq5jcXyr5mRsqViLx/GJYdoL0bfXD8nmF+Zn/Iow==",
+     📁 package-lock.json:1555
+        "integrity": "sha512-ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoYlM2nc6388Fq5jcXyr5mRsqViLx/GJYdoL0bfXD8nmF+Zn/Iow==",
+
+🔑 ADDRESS: qwsUp6BZzyiy4RdZpzWGub9bqLJMvZDD
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:379
+        "address": "qwsUp6BZzyiy4RdZpzWGub9bqLJMvZDD",
+     📁 package-lock.json:484
+        "integrity": "sha512-m5ObIqwsUp6BZzyiy4RdZpzWGub9bqLJMvZDD0QMXhxjqMHMENlj+SqF5QxoUwaQNFe+8kz8XM8ZQhqkQPTgMQ==",
+     📁 package-lock.json:1575
+        "integrity": "sha512-m5ObIqwsUp6BZzyiy4RdZpzWGub9bqLJMvZDD0QMXhxjqMHMENlj+SqF5QxoUwaQNFe+8kz8XM8ZQhqkQPTgMQ==",
+     📁 package-lock.json:484
+        "integrity": "sha512-m5ObIqwsUp6BZzyiy4RdZpzWGub9bqLJMvZDD0QMXhxjqMHMENlj+SqF5QxoUwaQNFe+8kz8XM8ZQhqkQPTgMQ==",
+     📁 package-lock.json:1575
+        "integrity": "sha512-m5ObIqwsUp6BZzyiy4RdZpzWGub9bqLJMvZDD0QMXhxjqMHMENlj+SqF5QxoUwaQNFe+8kz8XM8ZQhqkQPTgMQ==",
+
+🔑 ADDRESS: JQbbmxZTZehdc2iszGKs5oC3NFnjeay7mtAWrdt7qNtA
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:387
+        "address": "JQbbmxZTZehdc2iszGKs5oC3NFnjeay7mtAWrdt7qNtA",
+     📁 package-lock.json:497
+        "integrity": "sha512-JQbbmxZTZehdc2iszGKs5oC3NFnjeay7mtAWrdt7qNtAVK0g19muApzAy4bm9byz79xa2ZnO/BOBC2R8RC5Lww==",
+     📁 package-lock.json:1588
+        "integrity": "sha512-JQbbmxZTZehdc2iszGKs5oC3NFnjeay7mtAWrdt7qNtAVK0g19muApzAy4bm9byz79xa2ZnO/BOBC2R8RC5Lww==",
+     📁 package-lock.json:497
+        "integrity": "sha512-JQbbmxZTZehdc2iszGKs5oC3NFnjeay7mtAWrdt7qNtAVK0g19muApzAy4bm9byz79xa2ZnO/BOBC2R8RC5Lww==",
+     📁 package-lock.json:1588
+        "integrity": "sha512-JQbbmxZTZehdc2iszGKs5oC3NFnjeay7mtAWrdt7qNtAVK0g19muApzAy4bm9byz79xa2ZnO/BOBC2R8RC5Lww==",
+
+🔑 ADDRESS: Deqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3u
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:395
+        "address": "Deqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3u",
+     📁 package-lock.json:517
+        "integrity": "sha512-ueEepnujpqee2o5aIYnvHU6C0A42MNdsIDeqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3uleRvmTXaJgfXbt4g==",
+     📁 package-lock.json:1602
+        "integrity": "sha512-ueEepnujpqee2o5aIYnvHU6C0A42MNdsIDeqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3uleRvmTXaJgfXbt4g==",
+     📁 package-lock.json:517
+        "integrity": "sha512-ueEepnujpqee2o5aIYnvHU6C0A42MNdsIDeqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3uleRvmTXaJgfXbt4g==",
+     📁 package-lock.json:1602
+        "integrity": "sha512-ueEepnujpqee2o5aIYnvHU6C0A42MNdsIDeqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3uleRvmTXaJgfXbt4g==",
+
+🔑 ADDRESS: KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:403
+        "address": "KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji",
+     📁 package-lock.json:556
+        "integrity": "sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==",
+     📁 package-lock.json:1635
+        "integrity": "sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA=="
+     📁 package-lock.json:556
+        "integrity": "sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==",
+     📁 package-lock.json:1635
+        "integrity": "sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA=="
+
+🔑 ADDRESS: AQrSatSG6vdNYUqdc83tkQi2eHfF98ubzQLA
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:411
+        "address": "AQrSatSG6vdNYUqdc83tkQi2eHfF98ubzQLA",
+     📁 package-lock.json:608
+        "integrity": "sha512-CLCsZGIBCFnPtkNnieW/a8wmreDmfUtjU2m9yHrzPXIlNbqVs0AQrSatSG6vdNYUqdc83tkQi2eHfF98ubzQLA==",
+     📁 package-lock.json:1666
+        "integrity": "sha512-CLCsZGIBCFnPtkNnieW/a8wmreDmfUtjU2m9yHrzPXIlNbqVs0AQrSatSG6vdNYUqdc83tkQi2eHfF98ubzQLA==",
+     📁 package-lock.json:608
+        "integrity": "sha512-CLCsZGIBCFnPtkNnieW/a8wmreDmfUtjU2m9yHrzPXIlNbqVs0AQrSatSG6vdNYUqdc83tkQi2eHfF98ubzQLA==",
+     📁 package-lock.json:1666
+        "integrity": "sha512-CLCsZGIBCFnPtkNnieW/a8wmreDmfUtjU2m9yHrzPXIlNbqVs0AQrSatSG6vdNYUqdc83tkQi2eHfF98ubzQLA==",
+
+🔑 ADDRESS: WDtdLmJvAuNNPzByAYpRo2rF1Mmradw6gvWsQKf63476
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:419
+        "address": "WDtdLmJvAuNNPzByAYpRo2rF1Mmradw6gvWsQKf63476",
+     📁 package-lock.json:665
+        "integrity": "sha512-WDtdLmJvAuNNPzByAYpRo2rF1Mmradw6gvWsQKf63476DDXmomT9zUiGypLcG4ibIM67vhAj8jJRdbmEws2Aqw==",
+     📁 package-lock.json:1711
+        "integrity": "sha512-WDtdLmJvAuNNPzByAYpRo2rF1Mmradw6gvWsQKf63476DDXmomT9zUiGypLcG4ibIM67vhAj8jJRdbmEws2Aqw==",
+     📁 package-lock.json:665
+        "integrity": "sha512-WDtdLmJvAuNNPzByAYpRo2rF1Mmradw6gvWsQKf63476DDXmomT9zUiGypLcG4ibIM67vhAj8jJRdbmEws2Aqw==",
+     📁 package-lock.json:1711
+        "integrity": "sha512-WDtdLmJvAuNNPzByAYpRo2rF1Mmradw6gvWsQKf63476DDXmomT9zUiGypLcG4ibIM67vhAj8jJRdbmEws2Aqw==",
+
+🔑 ADDRESS: ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpt
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:427
+        "address": "ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpt",
+     📁 package-lock.json:714
+        "integrity": "sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==",
+     📁 package-lock.json:1741
+        "integrity": "sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==",
+     📁 package-lock.json:714
+        "integrity": "sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==",
+     📁 package-lock.json:1741
+        "integrity": "sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==",
+
+🔑 ADDRESS: EkBU7Qi5nnhonjUb8yTXcxH3cdcWrV2cRyk
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:435
+        "address": "EkBU7Qi5nnhonjUb8yTXcxH3cdcWrV2cRyk",
+     📁 package-lock.json:747
+        "integrity": "sha512-Kf/3ZW54L4UT0pZtsY/rf+EkBU7Qi5nnhonjUb8yTXcxH3cdcWrV2cRyk0Xk/4jK6OoHhxxZHriyhje20If2hQ==",
+     📁 package-lock.json:1765
+        "integrity": "sha512-Kf/3ZW54L4UT0pZtsY/rf+EkBU7Qi5nnhonjUb8yTXcxH3cdcWrV2cRyk0Xk/4jK6OoHhxxZHriyhje20If2hQ==",
+     📁 package-lock.json:747
+        "integrity": "sha512-Kf/3ZW54L4UT0pZtsY/rf+EkBU7Qi5nnhonjUb8yTXcxH3cdcWrV2cRyk0Xk/4jK6OoHhxxZHriyhje20If2hQ==",
+     📁 package-lock.json:1765
+        "integrity": "sha512-Kf/3ZW54L4UT0pZtsY/rf+EkBU7Qi5nnhonjUb8yTXcxH3cdcWrV2cRyk0Xk/4jK6OoHhxxZHriyhje20If2hQ==",
+
+🔑 ADDRESS: rNgRaM9SsBUBVbb8M6DTV7ZHRTKugureoYEncY5c65H
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:443
+        "address": "rNgRaM9SsBUBVbb8M6DTV7ZHRTKugureoYEncY5c65H",
+     📁 package-lock.json:774
+        "integrity": "sha512-oYclrNgRaM9SsBUBVbb8M6DTV7ZHRTKugureoYEncY5c65HOmRzvSiTE3y5CYaPYJA/GVkrhXEoF0M3Ya9PMnw==",
+     📁 package-lock.json:1779
+        "integrity": "sha512-oYclrNgRaM9SsBUBVbb8M6DTV7ZHRTKugureoYEncY5c65HOmRzvSiTE3y5CYaPYJA/GVkrhXEoF0M3Ya9PMnw==",
+     📁 package-lock.json:774
+        "integrity": "sha512-oYclrNgRaM9SsBUBVbb8M6DTV7ZHRTKugureoYEncY5c65HOmRzvSiTE3y5CYaPYJA/GVkrhXEoF0M3Ya9PMnw==",
+     📁 package-lock.json:1779
+        "integrity": "sha512-oYclrNgRaM9SsBUBVbb8M6DTV7ZHRTKugureoYEncY5c65HOmRzvSiTE3y5CYaPYJA/GVkrhXEoF0M3Ya9PMnw==",
+
+🔑 ADDRESS: PchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:451
+        "address": "PchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5",
+     📁 package-lock.json:796
+        "integrity": "sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==",
+     📁 package-lock.json:1792
+        "integrity": "sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==",
+     📁 package-lock.json:796
+        "integrity": "sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==",
+     📁 package-lock.json:1792
+        "integrity": "sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==",
+
+🔑 ADDRESS: Z2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:459
+        "address": "Z2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ",
+     📁 package-lock.json:923
+        "integrity": "sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ=="
+     📁 package-lock.json:1882
+        "integrity": "sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ=="
+     📁 package-lock.json:923
+        "integrity": "sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ=="
+     📁 package-lock.json:1882
+        "integrity": "sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ=="
+
+🔑 ADDRESS: DWpWsitgmSgYmy2dQdWyKC1694ELPqMs
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:467
+        "address": "DWpWsitgmSgYmy2dQdWyKC1694ELPqMs",
+     📁 package-lock.json:949
+        "integrity": "sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==",
+     📁 package-lock.json:1910
+        "integrity": "sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==",
+     📁 package-lock.json:949
+        "integrity": "sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==",
+     📁 package-lock.json:1910
+        "integrity": "sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==",
+
+🔑 ADDRESS: Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:475
+        "address": "Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH",
+     📁 package-lock.json:968
+        "integrity": "sha512-LA4ZjwlnUblHVgq0oBF3Jl/6h/Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH+F6ewcIB/q4jQ4UzPyid+CQ==",
+     📁 package-lock.json:1918
+        "integrity": "sha512-LA4ZjwlnUblHVgq0oBF3Jl/6h/Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH+F6ewcIB/q4jQ4UzPyid+CQ==",
+     📁 package-lock.json:968
+        "integrity": "sha512-LA4ZjwlnUblHVgq0oBF3Jl/6h/Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH+F6ewcIB/q4jQ4UzPyid+CQ==",
+     📁 package-lock.json:1918
+        "integrity": "sha512-LA4ZjwlnUblHVgq0oBF3Jl/6h/Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH+F6ewcIB/q4jQ4UzPyid+CQ==",
+
+🔑 ADDRESS: PcSPyyvBcH5sDdoV8DFs5E4W2pTr7aiM
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:483
+        "address": "PcSPyyvBcH5sDdoV8DFs5E4W2pTr7aiM",
+     📁 package-lock.json:979
+        "integrity": "sha512-I+kNjW0udB4Fetr3vvtRuYZJS0PcSPyyvBcH5sDdoV8DFs5E4W2pTr7aiMlKfPxANTClP9RlqCPolj9dd5MsEA==",
+     📁 package-lock.json:1924
+        "integrity": "sha512-I+kNjW0udB4Fetr3vvtRuYZJS0PcSPyyvBcH5sDdoV8DFs5E4W2pTr7aiMlKfPxANTClP9RlqCPolj9dd5MsEA==",
+     📁 package-lock.json:979
+        "integrity": "sha512-I+kNjW0udB4Fetr3vvtRuYZJS0PcSPyyvBcH5sDdoV8DFs5E4W2pTr7aiMlKfPxANTClP9RlqCPolj9dd5MsEA==",
+     📁 package-lock.json:1924
+        "integrity": "sha512-I+kNjW0udB4Fetr3vvtRuYZJS0PcSPyyvBcH5sDdoV8DFs5E4W2pTr7aiMlKfPxANTClP9RlqCPolj9dd5MsEA==",
+
+🔑 ADDRESS: 7KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F
+   Type: Unknown
+   Occurrences: 5
+     📁 address-audit-report.json:491
+        "address": "7KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F",
+     📁 package-lock.json:1029
+        "integrity": "sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==",
+     📁 package-lock.json:1956
+        "integrity": "sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ=="
+     📁 package-lock.json:1029
+        "integrity": "sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==",
+     📁 package-lock.json:1956
+        "integrity": "sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ=="
+
+🔧 REMOVAL RECOMMENDATIONS:
+────────────────────────────────────────
+Address: CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ
+Type: Wallet
+Files: SECURITY-AUDIT-REPORT.md, activate-bot-army.js, address-audit-report.json, bot-smart-contracts.js, check-authority.js, complete-omega-deployment.js, omega-deploy-transfer.js, security-verification.js
+Action: REPLACE - Use environment variables instead
+
+Address: 4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a
+Type: Wallet
+Files: SECURITY-AUDIT-REPORT.md, address-audit-report.json, analyze-mint-controller.js, complete-omega-deployment.js, deploy-with-mint.js, fund-and-mint.js, mint-to-address.js, security-verification.js
+Action: REPLACE - Use environment variables instead
+
+Address: HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR
+Type: Unknown
+Files: activate-bot-army.js, address-audit-report.json, execute-bot-minting.js, mint-to-bots.js, omega-bot-army.js
+Action: REVIEW - Manual review required
+
+Address: EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6
+Type: Contract
+Files: activate-bot-army.js, address-audit-report.json
+Action: REMOVE - Delete hardcoded contract addresses
+
+Address: NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d
+Type: Unknown
+Files: activate-bot-army.js, address-audit-report.json, execute-bot-minting.js, mint-to-bots.js, omega-bot-army.js
+Action: REVIEW - Manual review required
+
+Address: HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76
+Type: Contract
+Files: activate-bot-army.js, address-audit-report.json
+Action: REMOVE - Delete hardcoded contract addresses
+
+Address: DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA
+Type: Unknown
+Files: activate-bot-army.js, address-audit-report.json, execute-bot-minting.js, mint-to-bots.js, omega-bot-army.js
+Action: REVIEW - Manual review required
+
+Address: FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1
+Type: Contract
+Files: activate-bot-army.js, address-audit-report.json
+Action: REMOVE - Delete hardcoded contract addresses
+
+Address: 7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41
+Type: Unknown
+Files: activate-bot-army.js, address-audit-report.json, execute-bot-minting.js, mint-to-bots.js, omega-bot-army.js
+Action: REVIEW - Manual review required
+
+Address: 5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p
+Type: Contract
+Files: activate-bot-army.js, address-audit-report.json
+Action: REMOVE - Delete hardcoded contract addresses
+
+Address: 3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw
+Type: Unknown
+Files: activate-bot-army.js, address-audit-report.json, execute-bot-minting.js, mint-to-bots.js, omega-bot-army.js
+Action: REVIEW - Manual review required
+
+Address: DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD
+Type: Contract
+Files: activate-bot-army.js, address-audit-report.json
+Action: REMOVE - Delete hardcoded contract addresses
+
+Address: 6ri2NzogWQMTeaMnMHVqEMypuwb1ip5iWDTzS9zNDZos
+Type: Unknown
+Files: address-audit-report.json
+Action: REVIEW - Manual review required
+
+Address: 8cRrU1NzNpjL3k2BwjW3VixAcX6VFc29KHr4KZg8cs2Y
+Type: Unknown
+Files: address-audit-report.json
+Action: REVIEW - Manual review required
+
+Address: EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6
+Type: Unknown
+Files: address-audit-report.json
+Action: REVIEW - Manual review required
+
+Address: 9HUvuQHBHkihcrhiucdYFjk1q4jUgozakoYsubYrHiJS
+Type: Unknown
+Files: address-audit-report.json, analyze-new.js
+Action: REVIEW - Manual review required
+
+Address: Stake11111111111111111111111111111111111111
+Type: Bot/Operator
+Files: address-audit-report.json, bot-smart-contracts.js
+Action: REMOVE - Delete hardcoded bot addresses
+
+Address: JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4
+Type: Unknown
+Files: address-audit-report.json, bot-smart-contracts.js
+Action: REVIEW - Manual review required
+
+Address: LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo
+Type: Unknown
+Files: address-audit-report.json, bot-smart-contracts.js, jupiter-implementation.js, jupiter-strategy.js
+Action: REVIEW - Manual review required
+
+Address: 675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8
+Type: Unknown
+Files: address-audit-report.json, bot-smart-contracts.js
+Action: REVIEW - Manual review required
+
+Address: GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp
+Type: Unknown
+Files: address-audit-report.json, complete-analysis.js, free-ops.js, interact-mainnet.js, jupiter-implementation.js, jupiter-strategy.js, query.js
+Action: REVIEW - Manual review required
+
+Address: EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
+Type: Unknown
+Files: address-audit-report.json, jupiter-implementation.js, jupiter-strategy.js
+Action: REVIEW - Manual review required
+
+Address: 67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomA
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: 6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: 84KD1L5cFyw5xnntHwL4uPwfcrkKSiwuDeypiVr92qCU
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: whc75uwGhPX2Mr67NzVSoSTkTpUb29zrg
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: DYQoVjN2h7ta1W1hPrwzarcFLBq9UpX1UjNXsNpT9dn
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: G1RD2boZTcxmwUWnKCaJJExQ5qNKwbpSyDdWfFJfM5Jh
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: fDu2PugxHrvRebmYauvSumZ3cTfQ4HJJX6PG5rN852qy
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: PxsThRCgSdgTWJDQeZvucQ9PT6Y3HiVXJ
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: 6KhSAtY1hFR2hfFwgqfFWzSY9E9GDvFVNYU
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: GzhWjEHEGNPSibiDTxFhsFWxNaz8LbMDPjBUE69r9wmd
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: 2uM9rYjPvyq39NwLRqaiLtWHyDC1FvryJDa2ATTVims5
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoY
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: qwsUp6BZzyiy4RdZpzWGub9bqLJMvZDD
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: JQbbmxZTZehdc2iszGKs5oC3NFnjeay7mtAWrdt7qNtA
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: Deqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3u
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: AQrSatSG6vdNYUqdc83tkQi2eHfF98ubzQLA
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: WDtdLmJvAuNNPzByAYpRo2rF1Mmradw6gvWsQKf63476
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpt
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: EkBU7Qi5nnhonjUb8yTXcxH3cdcWrV2cRyk
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: rNgRaM9SsBUBVbb8M6DTV7ZHRTKugureoYEncY5c65H
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: PchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: Z2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: DWpWsitgmSgYmy2dQdWyKC1694ELPqMs
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: PcSPyyvBcH5sDdoV8DFs5E4W2pTr7aiM
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+Address: 7KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F
+Type: Unknown
+Files: address-audit-report.json, package-lock.json
+Action: REVIEW - Manual review required
+
+📋 SUMMARY REPORT:
+────────────────────────────────────────
+Total addresses to remove: 50
+Files requiring modification: 23
+Address types:
+  Wallet: 2
+  Unknown: 42
+  Contract: 5
+  Bot/Operator: 1
+
+✅ Detailed report saved to address-audit-report.json
