@@ -8,6 +8,7 @@
     "mainnet:mint-initial": "ts-node src/mintInitial.ts",
     "mainnet:set-metadata": "ts-node src/setMetadata.ts",
     "mainnet:lock": "ts-node src/lockAuthorities.ts",
+    "mainnet:withdraw-earnings": "ts-node src/withdraw_earnings.ts",
     "mainnet:rollback": "ts-node src/rollback.ts",
     "mainnet:copilot": "ts-node grok-copilot.ts",
     "mainnet:all": "npm run dev:check && npm run mainnet:create-mint && npm run mainnet:mint-initial && npm run mainnet:set-metadata && npm run mainnet:lock",
