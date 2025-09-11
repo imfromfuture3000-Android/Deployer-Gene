@@ -1,0 +1,453 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-11T13:41:57.368Z",
+    "verificationTarget": "GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp",
+    "totalAddressesChecked": 15,
+    "toolVersion": "1.0.0-demo",
+    "note": "This is a demonstration with mock data showing functionality"
+  },
+  "summary": {
+    "totalAddresses": 15,
+    "existingAddresses": 4,
+    "missingAddresses": 11,
+    "totalSOLBalance": 2.92434144,
+    "executablePrograms": 2,
+    "addressesWithTransactions": 2,
+    "verificationTimestamp": "2025-09-11T13:41:57.368Z"
+  },
+  "targetAddressAnalysis": {
+    "address": "GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp",
+    "label": "analysis - contract_analysis_target",
+    "exists": true,
+    "timestamp": "2025-09-11T13:41:57.317Z",
+    "accountInfo": {
+      "lamports": 1141440,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "rentEpoch": 123456,
+      "dataLength": 36
+    },
+    "transactions": [
+      {
+        "signature": "abc123def456ghi789...",
+        "slot": 356485154,
+        "blockTime": 1704067200,
+        "confirmationStatus": "finalized"
+      }
+    ],
+    "programData": {
+      "programDataAddress": "GrKC896KGzHSh8orNjfRyiYqkHqSF9xzKyoabftfDiow",
+      "upgradeAuthority": "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ",
+      "isUpgradeAuthorityNull": false,
+      "programDataSize": 8192
+    },
+    "balance": 0.00114144,
+    "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+    "executable": true,
+    "dataSize": 36,
+    "multisig": null
+  },
+  "verificationResults": {
+    "HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR": {
+      "address": "HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR",
+      "label": "bot1_stake_master - bot_address",
+      "exists": false,
+      "timestamp": "2025-09-11T13:41:56.608Z",
+      "accountInfo": null,
+      "transactions": [],
+      "programData": null,
+      "balance": 0,
+      "owner": null,
+      "executable": false,
+      "dataSize": 0
+    },
+    "EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6": {
+      "address": "EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6",
+      "label": "bot1_stake_master - contract_address",
+      "exists": false,
+      "timestamp": "2025-09-11T13:41:56.659Z",
+      "accountInfo": null,
+      "transactions": [],
+      "programData": null,
+      "balance": 0,
+      "owner": null,
+      "executable": false,
+      "dataSize": 0
+    },
+    "NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d": {
+      "address": "NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d",
+      "label": "bot2_mint_operator - bot_address",
+      "exists": false,
+      "timestamp": "2025-09-11T13:41:56.709Z",
+      "accountInfo": null,
+      "transactions": [],
+      "programData": null,
+      "balance": 0,
+      "owner": null,
+      "executable": false,
+      "dataSize": 0
+    },
+    "HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76": {
+      "address": "HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76",
+      "label": "bot2_mint_operator - contract_address",
+      "exists": false,
+      "timestamp": "2025-09-11T13:41:56.760Z",
+      "accountInfo": null,
+      "transactions": [],
+      "programData": null,
+      "balance": 0,
+      "owner": null,
+      "executable": false,
+      "dataSize": 0
+    },
+    "DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA": {
+      "address": "DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA",
+      "label": "bot3_contract_deployer - bot_address",
+      "exists": false,
+      "timestamp": "2025-09-11T13:41:56.811Z",
+      "accountInfo": null,
+      "transactions": [],
+      "programData": null,
+      "balance": 0,
+      "owner": null,
+      "executable": false,
+      "dataSize": 0
+    },
+    "FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1": {
+      "address": "FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1",
+      "label": "bot3_contract_deployer - contract_address",
+      "exists": false,
+      "timestamp": "2025-09-11T13:41:56.861Z",
+      "accountInfo": null,
+      "transactions": [],
+      "programData": null,
+      "balance": 0,
+      "owner": null,
+      "executable": false,
+      "dataSize": 0
+    },
+    "7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41": {
+      "address": "7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41",
+      "label": "bot4_mev_hunter - bot_address",
+      "exists": false,
+      "timestamp": "2025-09-11T13:41:56.912Z",
+      "accountInfo": null,
+      "transactions": [],
+      "programData": null,
+      "balance": 0,
+      "owner": null,
+      "executable": false,
+      "dataSize": 0
+    },
+    "5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p": {
+      "address": "5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p",
+      "label": "bot4_mev_hunter - contract_address",
+      "exists": false,
+      "timestamp": "2025-09-11T13:41:56.963Z",
+      "accountInfo": null,
+      "transactions": [],
+      "programData": null,
+      "balance": 0,
+      "owner": null,
+      "executable": false,
+      "dataSize": 0
+    },
+    "3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw": {
+      "address": "3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw",
+      "label": "bot5_loot_extractor - bot_address",
+      "exists": false,
+      "timestamp": "2025-09-11T13:41:57.013Z",
+      "accountInfo": null,
+      "transactions": [],
+      "programData": null,
+      "balance": 0,
+      "owner": null,
+      "executable": false,
+      "dataSize": 0
+    },
+    "DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD": {
+      "address": "DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD",
+      "label": "bot5_loot_extractor - contract_address",
+      "exists": false,
+      "timestamp": "2025-09-11T13:41:57.064Z",
+      "accountInfo": null,
+      "transactions": [],
+      "programData": null,
+      "balance": 0,
+      "owner": null,
+      "executable": false,
+      "dataSize": 0
+    },
+    "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ": {
+      "address": "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ",
+      "label": "control - creator_master_controller",
+      "exists": true,
+      "timestamp": "2025-09-11T13:41:57.115Z",
+      "accountInfo": {
+        "lamports": 0,
+        "owner": "SMPLecH534NA9acpos4G6x7uf3LWbCAwZQE9e8ZekMu",
+        "executable": false,
+        "rentEpoch": 123456,
+        "dataLength": 256
+      },
+      "transactions": [],
+      "programData": null,
+      "balance": 0,
+      "owner": "SMPLecH534NA9acpos4G6x7uf3LWbCAwZQE9e8ZekMu",
+      "executable": false,
+      "dataSize": 256,
+      "multisig": {
+        "program": "Squads V3",
+        "programId": "SMPLecH534NA9acpos4G6x7uf3LWbCAwZQE9e8ZekMu",
+        "threshold": "4 of 7",
+        "members": [
+          "2MgqMXdwSf3bRZ6S8uKJSffZAaoZBhD2mjst3phJXE7p",
+          "89FnbsKH8n6FXCghGUijxh3snqx3e6VXJ7q1fQAHWkQQ",
+          "BYidGfUnfoQtqi4nHiuo57Fjreizbej6hawJLnbwJmYr",
+          "CHRDWWqUs6LyeeoD7pJb3iRfnvYeMfwMUtf2N7zWk7uh",
+          "Dg5NLa5JuwfRMkuwZEguD9RpVrcQD3536GxogUv7pLNV",
+          "EhJqf1p39c8NnH5iuZAJyw778LQua1AhZWxarT5SF8sT",
+          "GGG2JyBtwbPAsYwUQED8GBbj9UMi7NQa3uwN3DmyGNtz"
+        ]
+      }
+    },
+    "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA": {
+      "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "label": "program - solana_core - token_program",
+      "exists": true,
+      "timestamp": "2025-09-11T13:41:57.165Z",
+      "accountInfo": {
+        "lamports": 1461600000,
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "executable": true,
+        "rentEpoch": 123456,
+        "dataLength": 12288
+      },
+      "transactions": [],
+      "programData": null,
+      "balance": 1.4616,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "dataSize": 12288,
+      "multisig": null
+    },
+    "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4": {
+      "address": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+      "label": "program - dex_trading - jupiter_program",
+      "exists": false,
+      "timestamp": "2025-09-11T13:41:57.216Z",
+      "accountInfo": null,
+      "transactions": [],
+      "programData": null,
+      "balance": 0,
+      "owner": null,
+      "executable": false,
+      "dataSize": 0
+    },
+    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": {
+      "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "label": "token - usdc_mint",
+      "exists": true,
+      "timestamp": "2025-09-11T13:41:57.267Z",
+      "accountInfo": {
+        "lamports": 1461600000,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "executable": false,
+        "rentEpoch": 123456,
+        "dataLength": 82
+      },
+      "transactions": [
+        {
+          "signature": "xyz789abc123def456...",
+          "slot": 356480000,
+          "blockTime": 1704060000,
+          "confirmationStatus": "finalized"
+        }
+      ],
+      "programData": null,
+      "balance": 1.4616,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "executable": false,
+      "dataSize": 82,
+      "multisig": null
+    },
+    "GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp": {
+      "address": "GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp",
+      "label": "analysis - contract_analysis_target",
+      "exists": true,
+      "timestamp": "2025-09-11T13:41:57.317Z",
+      "accountInfo": {
+        "lamports": 1141440,
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "executable": true,
+        "rentEpoch": 123456,
+        "dataLength": 36
+      },
+      "transactions": [
+        {
+          "signature": "abc123def456ghi789...",
+          "slot": 356485154,
+          "blockTime": 1704067200,
+          "confirmationStatus": "finalized"
+        }
+      ],
+      "programData": {
+        "programDataAddress": "GrKC896KGzHSh8orNjfRyiYqkHqSF9xzKyoabftfDiow",
+        "upgradeAuthority": "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ",
+        "isUpgradeAuthorityNull": false,
+        "programDataSize": 8192
+      },
+      "balance": 0.00114144,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "dataSize": 36,
+      "multisig": null
+    }
+  },
+  "controllerAddresses": {
+    "HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR": {
+      "address": "HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR",
+      "label": "bot1_stake_master - bot_address",
+      "exists": false,
+      "timestamp": "2025-09-11T13:41:56.608Z",
+      "accountInfo": null,
+      "transactions": [],
+      "programData": null,
+      "balance": 0,
+      "owner": null,
+      "executable": false,
+      "dataSize": 0
+    },
+    "EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6": {
+      "address": "EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6",
+      "label": "bot1_stake_master - contract_address",
+      "exists": false,
+      "timestamp": "2025-09-11T13:41:56.659Z",
+      "accountInfo": null,
+      "transactions": [],
+      "programData": null,
+      "balance": 0,
+      "owner": null,
+      "executable": false,
+      "dataSize": 0
+    },
+    "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ": {
+      "address": "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ",
+      "label": "control - creator_master_controller",
+      "exists": true,
+      "timestamp": "2025-09-11T13:41:57.115Z",
+      "accountInfo": {
+        "lamports": 0,
+        "owner": "SMPLecH534NA9acpos4G6x7uf3LWbCAwZQE9e8ZekMu",
+        "executable": false,
+        "rentEpoch": 123456,
+        "dataLength": 256
+      },
+      "transactions": [],
+      "programData": null,
+      "balance": 0,
+      "owner": "SMPLecH534NA9acpos4G6x7uf3LWbCAwZQE9e8ZekMu",
+      "executable": false,
+      "dataSize": 256,
+      "multisig": {
+        "program": "Squads V3",
+        "programId": "SMPLecH534NA9acpos4G6x7uf3LWbCAwZQE9e8ZekMu",
+        "threshold": "4 of 7",
+        "members": [
+          "2MgqMXdwSf3bRZ6S8uKJSffZAaoZBhD2mjst3phJXE7p",
+          "89FnbsKH8n6FXCghGUijxh3snqx3e6VXJ7q1fQAHWkQQ",
+          "BYidGfUnfoQtqi4nHiuo57Fjreizbej6hawJLnbwJmYr",
+          "CHRDWWqUs6LyeeoD7pJb3iRfnvYeMfwMUtf2N7zWk7uh",
+          "Dg5NLa5JuwfRMkuwZEguD9RpVrcQD3536GxogUv7pLNV",
+          "EhJqf1p39c8NnH5iuZAJyw778LQua1AhZWxarT5SF8sT",
+          "GGG2JyBtwbPAsYwUQED8GBbj9UMi7NQa3uwN3DmyGNtz"
+        ]
+      }
+    },
+    "GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp": {
+      "address": "GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp",
+      "label": "analysis - contract_analysis_target",
+      "exists": true,
+      "timestamp": "2025-09-11T13:41:57.317Z",
+      "accountInfo": {
+        "lamports": 1141440,
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "executable": true,
+        "rentEpoch": 123456,
+        "dataLength": 36
+      },
+      "transactions": [
+        {
+          "signature": "abc123def456ghi789...",
+          "slot": 356485154,
+          "blockTime": 1704067200,
+          "confirmationStatus": "finalized"
+        }
+      ],
+      "programData": {
+        "programDataAddress": "GrKC896KGzHSh8orNjfRyiYqkHqSF9xzKyoabftfDiow",
+        "upgradeAuthority": "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ",
+        "isUpgradeAuthorityNull": false,
+        "programDataSize": 8192
+      },
+      "balance": 0.00114144,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "dataSize": 36,
+      "multisig": null
+    }
+  },
+  "transactionSummary": {
+    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": {
+      "transactionCount": 1,
+      "latestTransaction": {
+        "signature": "xyz789abc123def456...",
+        "slot": 356480000,
+        "blockTime": 1704060000,
+        "confirmationStatus": "finalized"
+      },
+      "transactionHistory": [
+        {
+          "signature": "xyz789abc123def456...",
+          "slot": 356480000,
+          "blockTime": 1704060000,
+          "confirmationStatus": "finalized"
+        }
+      ]
+    },
+    "GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp": {
+      "transactionCount": 1,
+      "latestTransaction": {
+        "signature": "abc123def456ghi789...",
+        "slot": 356485154,
+        "blockTime": 1704067200,
+        "confirmationStatus": "finalized"
+      },
+      "transactionHistory": [
+        {
+          "signature": "abc123def456ghi789...",
+          "slot": 356485154,
+          "blockTime": 1704067200,
+          "confirmationStatus": "finalized"
+        }
+      ]
+    }
+  },
+  "multisigAnalysis": {
+    "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ": {
+      "address": "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ",
+      "program": "Squads V3",
+      "threshold": "4 of 7",
+      "members": [
+        "2MgqMXdwSf3bRZ6S8uKJSffZAaoZBhD2mjst3phJXE7p",
+        "89FnbsKH8n6FXCghGUijxh3snqx3e6VXJ7q1fQAHWkQQ",
+        "BYidGfUnfoQtqi4nHiuo57Fjreizbej6hawJLnbwJmYr",
+        "CHRDWWqUs6LyeeoD7pJb3iRfnvYeMfwMUtf2N7zWk7uh",
+        "Dg5NLa5JuwfRMkuwZEguD9RpVrcQD3536GxogUv7pLNV",
+        "EhJqf1p39c8NnH5iuZAJyw778LQua1AhZWxarT5SF8sT",
+        "GGG2JyBtwbPAsYwUQED8GBbj9UMi7NQa3uwN3DmyGNtz"
+      ],
+      "label": "control - creator_master_controller"
+    }
+  }
+}
