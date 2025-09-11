@@ -213,7 +213,8 @@ import { createInterface } from 'readline';
 
 dotenv.config();
 
-const OWNER_ADDRESS = 'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6';
+// Use environment variable for owner address instead of hardcoded value
+const OWNER_ADDRESS = process.env.TREASURY_PUBKEY || process.env.OWNER_ADDRESS;
 const rl = createInterface({ input: process.stdin, output: process.stdout });
 
 async function askQuestion(question: string): Promise<string> {
@@ -225,7 +226,7 @@ const REQUIRED_FILES: { [key: string]: string } = {
 RPC_URL=https://api.mainnet-beta.solana.com
 RELAYER_URL=https://<your-relayer-domain>/relay/sendRawTransaction
 RELAYER_PUBKEY=<RELAYER_FEE_PAYER_PUBKEY>
-TREASURY_PUBKEY=EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6
+TREASURY_PUBKEY=<YOUR_TREASURY_PUBKEY>
 DAO_PUBKEY=<YOUR_DAO_MULTISIG_PUBKEY> # Optional
 AUTHORITY_MODE=null # Options: null, dao, treasury
 DRY_RUN=false
@@ -269,13 +270,13 @@ node_modules/
   }, null, 2),
   'README.md': `# Stunning Solana: Omega Prime Token Deployment
 
-This repository deploys an SPL Token-2022 (ΩAGENT) on Solana mainnet-beta with zero SOL cost using a relayer. The \`grok-copilot.ts\` script handles all deployment steps interactively, with the treasury owner set to EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6.
+This repository deploys an SPL Token-2022 (ΩAGENT) on Solana mainnet-beta with zero SOL cost using a relayer. The \`grok-copilot.ts\` script handles all deployment steps interactively.
 
 ## Prerequisites
 - Node.js >= 18
 - npm >= 9
 - A funded relayer (RELAYER_PUBKEY, RELAYER_URL)
-- Treasury owner address: EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6
+- Treasury owner address: <YOUR_TREASURY_PUBKEY>
 - Optional: DAO multisig public key (DAO_PUBKEY)
 - Access to a Solana mainnet-beta RPC
 
@@ -293,12 +294,12 @@ This repository deploys an SPL Token-2022 (ΩAGENT) on Solana mainnet-beta with 
    \`\`\`bash
    cp .env.sample .env
    \`\`\`
-   Edit \`.env\` (TREASURY_PUBKEY is pre-set to EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6):
+   Edit \`.env\`:
    \`\`\`
    RPC_URL=https://api.mainnet-beta.solana.com
    RELAYER_URL=https://<your-relayer-domain>/relay/sendRawTransaction
    RELAYER_PUBKEY=<RELAYER_FEE_PAYER_PUBKEY>
-   TREASURY_PUBKEY=EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6
+   TREASURY_PUBKEY=<YOUR_TREASURY_PUBKEY>
    DAO_PUBKEY=<YOUR_DAO_MULTISIG_PUBKEY> # Optional
    AUTHORITY_MODE=null # Options: null, dao, treasury
    DRY_RUN=false
@@ -320,7 +321,7 @@ npm run mainnet:copilot
 - **No private keys** are stored in the repo.
 - **Relayer pays fees**: All fees are covered by the relayer.
 - **Authority lock**: Setting to \`null\` is **irreversible**.
-- **Owner Address**: The treasury owner is EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6.
+- **Owner Address**: The treasury owner is configured via TREASURY_PUBKEY environment variable.
 
 ## Post-Deploy Checklist
 1. Verify mint: \`https://explorer.solana.com/address/<MINT_ADDRESS>\`

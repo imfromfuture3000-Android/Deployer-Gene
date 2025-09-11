@@ -46,14 +46,14 @@ async function executeFundingAndMinting() {
   
   console.log('\\n? STEP 2: BOT TOKEN MINTING');
   
-  // BOT ADDRESSES
-  const BOTS = [
-    { name: 'STAKE_MASTER', address: 'HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR' },
-    { name: 'MINT_OPERATOR', address: 'NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d' },
-    { name: 'CONTRACT_DEPLOYER', address: 'DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA' },
-    { name: 'MEV_HUNTER', address: '7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41' },
-    { name: 'LOOT_EXTRACTOR', address: '3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw' }
-  ];
+  // BOT ADDRESSES - Removed hardcoded addresses as per security audit
+  // Use environment variables BOT_ADDRESSES (comma-separated) if needed
+  const BOTS = process.env.BOT_ADDRESSES 
+    ? process.env.BOT_ADDRESSES.split(',').map((addr, i) => ({ 
+        name: `BOT_${i + 1}`, 
+        address: addr.trim() 
+      }))
+    : [];
   
   // Generate SLP token mint
   const mint = web3.Keypair.generate();
@@ -82,6 +82,11 @@ async function executeFundingAndMinting() {
   );
   
   console.log('\\n?? BOT TOKEN DISTRIBUTION:');
+  
+  if (BOTS.length === 0) {
+    console.log('⚠️  No bot addresses configured. Set BOT_ADDRESSES environment variable if needed.');
+    console.log('   Example: BOT_ADDRESSES="addr1,addr2,addr3"');
+  }
   
   // Prepare token accounts and minting for each bot
   const botInstructions = [];

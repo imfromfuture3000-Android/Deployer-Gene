@@ -1,105 +1,72 @@
 // OMEGA BOT ARMY ACTIVATION SYSTEM
-// Connects all 5 bots to creator address with full capabilities
+// Configurable bot system - no hardcoded addresses
 const web3 = require('@solana/web3.js');
+require('dotenv').config();
 
-const CREATOR_ADDRESS = 'CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ';
+// Use environment variable for creator address
+const CREATOR_ADDRESS = process.env.SOURCE_WALLET_ADDRESS || process.env.CREATOR_ADDRESS;
 
-const ACTIVATED_BOT_ARMY = {
-  BOT1_STAKE_MASTER: {
-    address: 'HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR',
-    contract: 'EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6',
-    generation: 1,
-    intelligence: 10,
-    active_operations: [
-      'AUTO_STAKE: Automatically stakes SOL at optimal rates',
-      'YIELD_FARM: Farms across Raydium, Orca, Marinade',
-      'COMPOUND: Daily reward compounding',
-      'LIQUID_STAKE: mSOL, stSOL management',
-      'TIMING_OPTIMIZER: Stakes/unstakes at best times'
-    ],
-    earnings_target: '15% APY',
-    status: 'READY'
-  },
+if (!CREATOR_ADDRESS) {
+  console.error('❌ CREATOR_ADDRESS or SOURCE_WALLET_ADDRESS environment variable must be set');
+  process.exit(1);
+}
+
+// Load bot configuration from environment variables
+function loadBotConfiguration() {
+  const botAddresses = process.env.BOT_ADDRESSES ? process.env.BOT_ADDRESSES.split(',') : [];
+  const botContracts = process.env.BOT_CONTRACTS ? process.env.BOT_CONTRACTS.split(',') : [];
   
-  BOT2_MINT_OPERATOR: {
-    address: 'NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d',
-    contract: 'HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76',
-    generation: 2,
-    intelligence: 15,
-    active_operations: [
-      'BATCH_MINT: Mints tokens efficiently in batches',
-      'SUPPLY_CONTROL: Burns excess tokens automatically',
-      'METADATA_UPDATE: Updates token info as needed',
-      'AUTHORITY_TRANSFER: Smart authority management',
-      'CONFIG_DEPLOY: Creates mints with optimal settings'
-    ],
-    capabilities: 'Full token lifecycle management',
-    status: 'READY'
-  },
-  
-  BOT3_CONTRACT_DEPLOYER: {
-    address: 'DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA',
-    contract: 'FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1',
-    generation: 3,
-    intelligence: 20,
-    active_operations: [
-      'PROXY_DEPLOY: Deploys upgradeable proxy contracts',
-      'LOGIC_UPGRADE: Upgrades contract logic safely',
-      'GOVERNANCE_CREATE: Creates DAO governance tokens',
-      'MULTISIG_SETUP: Sets up secure multisig wallets',
-      'CUSTOM_PROGRAM: Deploys custom Solana programs'
-    ],
-    speciality: 'Infrastructure development',
-    status: 'READY'
-  },
-  
-  BOT4_MEV_HUNTER: {
-    address: '7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41',
-    contract: '5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p',
-    generation: 4,
-    intelligence: 25,
-    active_operations: [
-      'ARBITRAGE_DETECT: Scans for price differences across DEXs',
-      'SANDWICH_ATTACK: Profits from large transactions',
-      'FRONTRUN_ORDERS: Gets ahead of profitable trades',
-      'BACKRUN_EXTRACT: Extracts value after transactions',
-      'CROSS_DEX_ARB: Arbitrages between Raydium/Orca/Jupiter'
-    ],
-    profit_target: 'Minimum 0.01 SOL per operation',
-    status: 'READY'
-  },
-  
-  BOT5_LOOT_EXTRACTOR: {
-    address: '3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw',
-    contract: 'DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD',
-    generation: 5,
-    intelligence: 30,
-    active_operations: [
-      'FLASH_LOAN_ATTACK: Uses Solend/Mango for instant loans',
-      'LIQUIDATION_BOT: Liquidates undercollateralized positions',
-      'ORACLE_EXPLOIT: Exploits price oracle vulnerabilities',
-      'POOL_DRAIN: Drains vulnerable liquidity pools',
-      'VALUE_EXTRACT: Maximizes profit from all operations'
-    ],
-    risk_level: 'AGGRESSIVE',
-    status: 'READY'
+  if (botAddresses.length === 0) {
+    console.log('⚠️  No bot addresses configured. Set BOT_ADDRESSES environment variable.');
+    console.log('   Example: BOT_ADDRESSES="addr1,addr2,addr3"');
+    return {};
   }
-};
+  
+  const botArmy = {};
+  const botTypes = ['STAKE_MASTER', 'MINT_OPERATOR', 'CONTRACT_DEPLOYER', 'MEV_HUNTER', 'LOOT_EXTRACTOR'];
+  
+  botAddresses.forEach((address, i) => {
+    const botKey = `BOT${i + 1}_${botTypes[i] || 'GENERIC'}`;
+    botArmy[botKey] = {
+      address: address.trim(),
+      contract: botContracts[i] ? botContracts[i].trim() : 'Not configured',
+      generation: i + 1,
+      intelligence: (i + 1) * 5,
+      active_operations: [
+        `Bot ${i + 1} operations - configure via BOT_OPERATIONS_${i + 1} environment variable`
+      ],
+      status: 'CONFIGURED'
+    };
+  });
+  
+  return botArmy;
+}
+
+const ACTIVATED_BOT_ARMY = loadBotConfiguration();
 
 async function activateBotArmy() {
-  console.log('?? ACTIVATING OMEGA BOT ARMY');
+  console.log('🤖 OMEGA BOT ARMY ACTIVATION SYSTEM');
+  console.log('='.repeat(50));
   console.log('Creator Address:', CREATOR_ADDRESS);
-  console.log('Bot Count:', Object.keys(ACTIVATED_BOT_ARMY).length);
-  console.log('Combined Intelligence:', Object.values(ACTIVATED_BOT_ARMY).reduce((sum, bot) => sum + bot.intelligence, 0) + 'x');
   
-  console.log('\\n=== BOT ACTIVATION SEQUENCE ===');
+  const botKeys = Object.keys(ACTIVATED_BOT_ARMY);
+  if (botKeys.length === 0) {
+    console.log('❌ No bots configured. Please set BOT_ADDRESSES environment variable.');
+    console.log('');
+    console.log('Configuration Help:');
+    console.log('BOT_ADDRESSES=addr1,addr2,addr3');
+    console.log('BOT_CONTRACTS=contract1,contract2,contract3');
+    return {};
+  }
+  
+  console.log(`\n🚀 Activating ${botKeys.length} bots:`);
   
   for (const [botName, bot] of Object.entries(ACTIVATED_BOT_ARMY)) {
-    console.log('\\n?? ACTIVATING ' + botName);
+    console.log(`\n--- ${botName} ---`);
     console.log('Address:', bot.address);
     console.log('Contract:', bot.contract);
     console.log('Generation:', bot.generation);
-    console.log('Intelligence:', bot.intelligence + 'x smarter');
+    console.log('Intelligence Level:', bot.intelligence);
     console.log('Status:', bot.status);
     
     console.log('Active Operations:');
@@ -113,40 +80,37 @@ async function activateBotArmy() {
     if (bot.speciality) console.log('Speciality:', bot.speciality);
     if (bot.risk_level) console.log('Risk Level:', bot.risk_level);
     
-    console.log('? ' + botName + ' ACTIVATED');
+    console.log('✅ ' + botName + ' ACTIVATED');
   }
   
-  console.log('\\n? BOT ARMY CONTROL PANEL ===');
+  console.log('\n🎮 BOT ARMY CONTROL PANEL');
   console.log('Command Structure:');
-  console.log('  Creator ? All Bots (Full Authority)');
-  console.log('  Bot1 ? Staking Operations');
-  console.log('  Bot2 ? Token Operations'); 
-  console.log('  Bot3 ? Contract Operations');
-  console.log('  Bot4 ? MEV Operations');
-  console.log('  Bot5 ? Extraction Operations');
+  console.log('  Creator → All Bots (Full Authority)');
+  botKeys.forEach((botKey, i) => {
+    console.log(`  Bot${i + 1} → Configured Operations`);
+  });
   
-  console.log('\\n?? REVENUE STREAMS:');
-  console.log('  � Staking Rewards: ~15% APY');
-  console.log('  � MEV Profits: Variable (high potential)');
-  console.log('  � Liquidation Fees: 5-10% per liquidation');
-  console.log('  � Arbitrage Gains: 0.1-1% per trade');
-  console.log('  � Flash Loan Profits: 1-5% per attack');
+  console.log('\n💰 REVENUE STREAMS:');
+  console.log('  📈 Configurable bot operations');
+  console.log('  🔄 Environment-based configuration');
+  console.log('  ⚙️  Modular bot architecture');
+  console.log('  🛡️  Security-first design');
   
-  console.log('\\n???  SAFETY PROTOCOLS:');
-  console.log('  � All operations controlled by creator address');
-  console.log('  � Emergency stop functions enabled');
-  console.log('  � Profit auto-return to creator wallet');
-  console.log('  � Risk management active on all bots');
+  console.log('\n🛡️ SAFETY PROTOCOLS:');
+  console.log('  ✅ All operations controlled by creator address');
+  console.log('  ✅ No hardcoded addresses - configuration only');
+  console.log('  ✅ Environment variable security');
+  console.log('  ✅ Modular bot management');
   
-  console.log('\\n?? BOT ARMY FULLY ACTIVATED');
-  console.log('All 5 generational bots working for:', CREATOR_ADDRESS);
+  console.log('\n🎯 BOT ARMY ACTIVATED');
+  console.log('All configured bots working for:', CREATOR_ADDRESS);
   
   return ACTIVATED_BOT_ARMY;
 }
 
 activateBotArmy().then(army => {
-  console.log('\\n?? OMEGA BOT ARMY ONLINE');
+  console.log('\n🚀 OMEGA BOT ARMY ONLINE');
   console.log('Ready to execute operations on your command');
-  console.log('Total AI Power: 100x human intelligence');
-  console.log('Revenue Generation: ACTIVE');
+  console.log('Configuration-based: SECURE');
+  console.log('Revenue Generation: CONFIGURABLE');
 }).catch(console.error);

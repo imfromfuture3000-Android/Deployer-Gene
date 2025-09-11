@@ -1,6 +1,7 @@
 // OMEGA BOT ARMY - SMART CONTRACT SYSTEM
 // Expandable Contracts for Staking, MEV, Looting, and More
 const web3 = require('@solana/web3.js');
+require('dotenv').config();
 
 // PROGRAM IDS FOR BOT OPERATIONS
 const PROGRAMS = {
@@ -96,9 +97,14 @@ async function deployBotContracts() {
       console.log('  ' + (i+1) + '. ' + func);
     });
     
-    // Generate contract PDA
+    // Generate contract PDA using environment variable
     const contractSeed = Buffer.from(contract.name);
-    const creatorKey = new web3.PublicKey('CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ');
+    const creatorKey = new web3.PublicKey(process.env.SOURCE_WALLET_ADDRESS || process.env.CREATOR_ADDRESS);
+    
+    if (!creatorKey) {
+      console.log('❌ Creator address not configured. Set SOURCE_WALLET_ADDRESS or CREATOR_ADDRESS environment variable.');
+      continue;
+    }
     
     try {
       const [contractPda] = web3.PublicKey.findProgramAddressSync(
