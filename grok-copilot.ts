@@ -1,3 +1,20 @@
+// =============================
+// WHAT'S NEW / CHECK SECTION
+// =============================
+export function whatsNewCheck() {
+  console.log('==============================');
+  console.log("🚀 WHAT'S NEW / SYSTEM CHECK");
+  console.log('==============================');
+  console.log('- You are running Omega-prime-deployer on Solana mainnet.');
+  console.log('- Your current active keypair is loaded from .cache/user_auth.json.');
+  console.log('- You control only the addresses for which you have the private key.');
+  console.log('- Master controller address: CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ');
+  console.log('- Your loaded keypair public key: 76x25b6XWTwbm6MTBJtbFU1hFopBSDKsfmGC7MK929RX');
+  console.log('- For full control, load the correct private key for the master controller.');
+  console.log('- All contract and bot addresses are in contract_addresses.json.');
+  console.log('- Use the provided scripts to check balances, authorities, and transactions.');
+  console.log('==============================');
+}
 import { Connection, Keypair, PublicKey, Transaction, SystemProgram } from '@solana/web3.js';
 import { createInitializeMintInstruction, getMint, createAssociatedTokenAccountInstruction, createMintToInstruction, createSetAuthorityInstruction, AuthorityType, TOKEN_2022_PROGRAM_ID, getAccount } from '@solana/spl-token';
 import * as fs from 'fs';
