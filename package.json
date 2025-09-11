@@ -12,6 +12,8 @@
     "mainnet:rollback": "ts-node src/rollback.ts",
     "mainnet:copilot": "ts-node grok-copilot.ts",
     "mainnet:all": "npm run dev:check && npm run mainnet:create-mint && npm run mainnet:mint-initial && npm run mainnet:set-metadata && npm run mainnet:lock",
+    "verify:addresses": "node comprehensive-address-verifier.js",
+    "verify:demo": "node address-verifier-demo.js",
     "build": "tsc",
     "build:rust": "cargo build --manifest-path pentacle/Cargo.toml",
     "build:all": "npm run build && npm run build:rust"
