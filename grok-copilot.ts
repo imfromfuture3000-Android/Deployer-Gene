@@ -1,6 +1,5 @@
-import { Connection, Keypair, PublicKey, Transaction } from '@solana/web3.js';
-import { createMint, getMint, getOrCreateAssociatedTokenAccount, mintTo, setAuthority, TOKEN_2022_PROGRAM_ID, getTokenAccountBalance } from '@solana/spl-token';
-import { createMetadataAccountV3, updateMetadataAccountV3 } from '@metaplex-foundation/mpl-token-metadata';
+import { Connection, Keypair, PublicKey, Transaction, SystemProgram } from '@solana/web3.js';
+import { createInitializeMintInstruction, getMint, createAssociatedTokenAccountInstruction, createMintToInstruction, createSetAuthorityInstruction, AuthorityType, TOKEN_2022_PROGRAM_ID, getAccount } from '@solana/spl-token';
 import * as fs from 'fs';
 import * as path from 'path';
 import * as dotenv from 'dotenv';
@@ -182,7 +181,7 @@ async function sendViaRelayer(connection: Connection, relayerPubkey: string, rel
       await connection.confirmTransaction({ signature: j.txSignature, blockhash, lastValidBlockHeight }, 'confirmed');
       console.log(`Transaction confirmed: https://explorer.solana.com/tx/${j.txSignature} (${Date.now() - start}ms)`);
       return j.txSignature;
-    } catch (e) {
+    } catch (e: any) {
       if (attempt === 3) throw new Error(`Relayer failed after 3 attempts: ${e.message}`);
       await new Promise((resolve) => setTimeout(resolve, 1000));
     }
@@ -207,21 +206,32 @@ async function createTokenMint(): Promise<PublicKey> {
   }
 
   const mintKeypair = Keypair.generate();
+  
+  // Calculate space and rent
+  const space = 82; // Space required for Token-2022 mint account
+  const rentExemptLamports = await connection.getMinimumBalanceForRentExemption(space);
+  
   const tx = new Transaction().add(
-    await createMint(
-      connection,
-      userAuth,
-      userAuth.publicKey,
-      userAuth.publicKey,
+    // Create account for the mint
+    SystemProgram.createAccount({
+      fromPubkey: userAuth.publicKey,
+      newAccountPubkey: mintKeypair.publicKey,
+      lamports: rentExemptLamports,
+      space,
+      programId: TOKEN_2022_PROGRAM_ID,
+    }),
+    // Initialize the mint
+    createInitializeMintInstruction(
+      mintKeypair.publicKey,
       9,
-      mintKeypair,
-      { commitment: 'confirmed' },
+      userAuth.publicKey,
+      userAuth.publicKey,
       TOKEN_2022_PROGRAM_ID
     )
   );
 
   tx.partialSign(userAuth, mintKeypair);
-  const signature = await sendViaRelayer(connection, relayerPubkey, process.env.RELAYER_URL!, tx, process.env.RELAYER_API_KEY);
+  const signature = await sendViaRelayer(connection, relayerPubkey.toBase58(), process.env.RELAYER_URL!, tx, process.env.RELAYER_API_KEY);
   if (signature !== 'DRY_RUN_SIGNATURE') {
     if (!fs.existsSync(cacheDir)) fs.mkdirSync(cacheDir, { recursive: true });
     fs.writeFileSync(mintCachePath, JSON.stringify({ mint: mintKeypair.publicKey.toBase58() }));
@@ -245,8 +255,8 @@ async function mintInitialSupply(): Promise<void> {
   const ataInfo = await connection.getAccountInfo(treasuryAta);
 
   if (ataInfo) {
-    const balance = await getTokenAccountBalance(treasuryAta);
-    if (balance.value.amount === supply.toString()) {
+    const accountInfo = await getAccount(connection, treasuryAta, 'confirmed', TOKEN_2022_PROGRAM_ID);
+    if (accountInfo.amount === supply) {
       console.log(`Initial supply already minted to ${treasuryAta.toBase58()}`);
       return;
     }
@@ -254,100 +264,35 @@ async function mintInitialSupply(): Promise<void> {
 
   const tx = new Transaction();
   if (!ataInfo) {
-    tx.add(
-      (await getOrCreateAssociatedTokenAccount(
-        connection,
-        userAuth,
-        mint,
-        treasuryPubkey,
-        false,
-        'confirmed',
-        { commitment: 'confirmed' },
-        TOKEN_2022_PROGRAM_ID
-      )).instruction
+    const createAtaIx = createAssociatedTokenAccountInstruction(
+      userAuth.publicKey, // payer
+      treasuryAta,       // associated token account
+      treasuryPubkey,    // owner
+      mint,              // mint
+      TOKEN_2022_PROGRAM_ID
     );
+    tx.add(createAtaIx);
   }
 
-  tx.add(
-    await mintTo(
-      connection,
-      userAuth,
-      mint,
-      treasuryAta,
-      userAuth.publicKey,
-      supply,
-      [],
-      { commitment: 'confirmed' },
-      TOKEN_2022_PROGRAM_ID
-    )
+  const mintInstruction = createMintToInstruction(
+    mint,
+    treasuryAta,
+    userAuth.publicKey,
+    supply,
+    [],
+    TOKEN_2022_PROGRAM_ID
   );
+  
+  tx.add(mintInstruction);
 
   tx.partialSign(userAuth);
-  const signature = await sendViaRelayer(connection, relayerPubkey, process.env.RELAYER_URL!, tx, process.env.RELAYER_API_KEY);
+  const signature = await sendViaRelayer(connection, relayerPubkey.toBase58(), process.env.RELAYER_URL!, tx, process.env.RELAYER_API_KEY);
   console.log(`Minted ${supply} tokens to ${treasuryAta.toBase58()}`);
 }
 
 async function setTokenMetadata(): Promise<void> {
-  const connection = new Connection(process.env.RPC_URL!, 'confirmed');
-  const userAuth = loadOrCreateUserAuth();
-  const relayerPubkey = new PublicKey(process.env.RELAYER_PUBKEY!);
-  const mintCachePath = path.join(__dirname, '.cache/mint.json');
-  const METADATA = {
-    name: 'Omega Prime Token',
-    symbol: 'ΩAGENT',
-    description: 'Agent guild utility token powering Ω-Prime automations on Solana.',
-    image: 'https://<hosted-image>/logo.png',
-    external_url: 'https://<site>',
-  };
-
-  if (!fs.existsSync(mintCachePath)) throw new Error('Mint not created. Run create mint first.');
-  const mint = new PublicKey(JSON.parse(fs.readFileSync(mintCachePath, 'utf-8')).mint);
-  const metadataPda = findMetadataPda(mint);
-
-  const uri = `data:application/json;base64,${Buffer.from(JSON.stringify(METADATA)).toString('base64')}`;
-  const tx = new Transaction();
-  const metadataAccount = await connection.getAccountInfo(metadataPda);
-
-  if (metadataAccount) {
-    tx.add(
-      updateMetadataAccountV3({
-        metadata: metadataPda,
-        updateAuthority: userAuth.publicKey,
-        data: {
-          name: METADATA.name,
-          symbol: METADATA.symbol,
-          uri,
-          sellerFeeBasisPoints: 0,
-          creators: null,
-          collection: null,
-          uses: null,
-        },
-      })
-    );
-  } else {
-    tx.add(
-      createMetadataAccountV3({
-        metadata: metadataPda,
-        mint,
-        mintAuthority: userAuth.publicKey,
-        payer: userAuth.publicKey,
-        updateAuthority: userAuth.publicKey,
-        data: {
-          name: METADATA.name,
-          symbol: METADATA.symbol,
-          uri,
-          sellerFeeBasisPoints: 0,
-          creators: null,
-          collection: null,
-          uses: null,
-        },
-      })
-    );
-  }
-
-  tx.partialSign(userAuth);
-  const signature = await sendViaRelayer(connection, relayerPubkey, process.env.RELAYER_URL!, tx, process.env.RELAYER_API_KEY);
-  console.log(`Metadata set for mint ${mint.toBase58()}. URI: ${uri.slice(0, 50)}...`);
+  console.log('Metadata creation skipped - requires UMI context that is incompatible with current relayer pattern');
+  console.log('To add metadata, use the Metaplex UMI SDK directly or submit transactions through different flow');
 }
 
 async function lockAuthorities(): Promise<void> {
@@ -370,32 +315,26 @@ async function lockAuthorities(): Promise<void> {
   const authorityTypes = ['MintTokens', 'FreezeAccount'];
 
   for (const authType of authorityTypes) {
-    const currentAuthority = await connection.getTokenSupply(mint).then((info) => {
-      return authType === 'MintTokens' ? info.value.mintAuthority : info.value.freezeAuthority;
-    });
+    const mintInfo = await getMint(connection, mint, 'confirmed', TOKEN_2022_PROGRAM_ID);
+    const currentAuthority = authType === 'MintTokens' ? mintInfo.mintAuthority : mintInfo.freezeAuthority;
 
     if (currentAuthority && (!targetAuthority || !currentAuthority.equals(targetAuthority))) {
-      txs.push(
-        new Transaction().add(
-          await setAuthority(
-            connection,
-            userAuth,
-            mint,
-            userAuth.publicKey,
-            authType as any,
-            targetAuthority,
-            [],
-            { commitment: 'confirmed' },
-            TOKEN_2022_PROGRAM_ID
-          )
-        )
+      const authorityTypeEnum = authType === 'MintTokens' ? AuthorityType.MintTokens : AuthorityType.FreezeAccount;
+      const setAuthorityIx = createSetAuthorityInstruction(
+        mint,
+        userAuth.publicKey,
+        authorityTypeEnum,
+        targetAuthority,
+        [],
+        TOKEN_2022_PROGRAM_ID
       );
+      txs.push(new Transaction().add(setAuthorityIx));
     }
   }
 
   for (const tx of txs) {
     tx.partialSign(userAuth);
-    const signature = await sendViaRelayer(connection, relayerPubkey, process.env.RELAYER_URL!, tx, process.env.RELAYER_API_KEY);
+    const signature = await sendViaRelayer(connection, relayerPubkey.toBase58(), process.env.RELAYER_URL!, tx, process.env.RELAYER_API_KEY);
     console.log(`Authority set: ${signature}`);
   }
 
@@ -450,7 +389,7 @@ async function checkAndCreateFiles(): Promise<boolean> {
     console.log('Installing dependencies due to new package.json...');
     try {
       require('child_process').execSync('npm install', { stdio: 'inherit' });
-    } catch (e) {
+    } catch (e: any) {
       console.error(`Failed to install dependencies: ${e.message}`);
       return false;
     }
@@ -489,7 +428,7 @@ async function checkEnv(): Promise<boolean> {
     await connection.getLatestBlockhash();
     console.log('✅ RPC connection successful');
     return true;
-  } catch (e) {
+  } catch (e: any) {
     console.error(`Failed to connect to RPC: ${e.message}`);
     return false;
   }
@@ -517,15 +456,15 @@ async function checkDeploymentStatus(): Promise<void> {
     console.log(`   Freeze Authority: ${mintInfo.freezeAuthority ? mintInfo.freezeAuthority.toBase58() : 'null'}`);
 
     const treasuryAta = findAssociatedTokenAddress(treasuryPubkey, mint);
-    const ataBalance = await getTokenAccountBalance(connection, treasuryAta, 'confirmed');
+    const ataAccount = await getAccount(connection, treasuryAta, 'confirmed', TOKEN_2022_PROGRAM_ID);
     console.log(`✅ Treasury ATA: ${treasuryAta.toBase58()}`);
-    console.log(`   Balance: ${ataBalance.value.uiAmountString} ΩAGENT`);
+    console.log(`   Balance: ${Number(ataAccount.amount) / Math.pow(10, 9)} ΩAGENT`);
 
     const metadataPda = findMetadataPda(mint);
     const metadataInfo = await connection.getAccountInfo(metadataPda);
     console.log(`✅ Metadata: ${metadataInfo ? 'Set' : 'Not set'}`);
     if (metadataInfo) console.log(`   Metadata PDA: ${metadataPda.toBase58()}`);
-  } catch (e) {
+  } catch (e: any) {
     console.error(`Error checking status: ${e.message}`);
   }
 }
