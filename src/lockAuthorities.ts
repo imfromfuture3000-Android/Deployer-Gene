@@ -5,11 +5,12 @@ import * as path from 'path';
 import * as dotenv from 'dotenv';
 import { sendViaRelayer } from './utils/relayer';
 import { loadOrCreateUserAuth } from './utils/wallet';
+import { createSecureConnection } from './utils/securityConfig';
 
 dotenv.config();
 
 async function lockAuthorities() {
-  const connection = new Connection(process.env.RPC_URL!, 'confirmed');
+  const connection = createSecureConnection('confirmed');
   const userAuth = loadOrCreateUserAuth();
   const relayerPubkey = new PublicKey(process.env.RELAYER_PUBKEY!);
   const controllerPubkey = new PublicKey(process.env.CONTROLLER_PUBKEY!);

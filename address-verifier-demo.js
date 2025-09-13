@@ -33,7 +33,7 @@ class OfflineAddressVerifierDemo {
         dataSize: 36,
         programData: {
           programDataAddress: 'GrKC896KGzHSh8orNjfRyiYqkHqSF9xzKyoabftfDiow',
-          upgradeAuthority: 'CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ',
+          upgradeAuthority: 'DEMO_UPGRADE_AUTHORITY_ADDRESS_PLACEHOLDER',
           isUpgradeAuthorityNull: false,
           programDataSize: 8192
         },
@@ -46,7 +46,7 @@ class OfflineAddressVerifierDemo {
           }
         ]
       },
-      'CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ': {
+      'DEMO_MULTISIG_ADDRESS_PLACEHOLDER': {
         exists: true,
         balance: 0,
         owner: 'SMPLecH534NA9acpos4G6x7uf3LWbCAwZQE9e8ZekMu',
@@ -452,7 +452,7 @@ Based on Solana Explorer data provided in the problem statement:
 - **Executable Data**: GrKC896KGzHSh8orNjfRyiYqkHqSF9xzKyoabftfDiow
 - **Upgradeable**: Yes
 - **Last Deployed Slot**: 356,485,154
-- **Upgrade Authority**: Program Multisig (CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ)
+- **Upgrade Authority**: Program Multisig (DEMO_UPGRADE_AUTHORITY_ADDRESS_PLACEHOLDER)
 
 ### 🔐 Multisig Information
 - **Multisig Program**: Squads V3
@@ -487,7 +487,7 @@ ${Object.entries(data.transactionSummary).length > 0 ?
 
 ### Upgrade Authority Analysis
 - **Target Program**: GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp
-- **Upgrade Authority**: CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ (Multisig)
+- **Upgrade Authority**: DEMO_UPGRADE_AUTHORITY_ADDRESS_PLACEHOLDER (Multisig)
 - **Security Status**: ✅ **SECURE** - Upgrade authority is controlled by 4-of-7 multisig
 - **Risk Assessment**: **LOW** - Requires 4 signatures for any upgrades
 

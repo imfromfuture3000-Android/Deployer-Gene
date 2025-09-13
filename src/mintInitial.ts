@@ -6,11 +6,12 @@ import * as dotenv from 'dotenv';
 import { sendViaRelayer } from './utils/relayer';
 import { loadOrCreateUserAuth } from './utils/wallet';
 import { findAssociatedTokenAddress } from './utils/pdas';
+import { createSecureConnection } from './utils/securityConfig';
 
 dotenv.config();
 
 async function mintInitialSupply() {
-  const connection = new Connection(process.env.RPC_URL!, 'confirmed');
+  const connection = createSecureConnection('confirmed');
   const userAuth = loadOrCreateUserAuth();
   const relayerPubkey = new PublicKey(process.env.RELAYER_PUBKEY!);
   // Ensure TREASURY_PUBKEY is set
