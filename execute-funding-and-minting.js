@@ -15,9 +15,9 @@ async function executeFundingAndMinting() {
     
   const connection = new web3.Connection(rpcUrl);
   
-  // ADDRESSES
-  const sourceAddress = process.env.SOURCE_WALLET_ADDRESS;
-  const targetAddress = process.env.TARGET_WALLET_ADDRESS;
+  // ADDRESSES - Restored hardcoded addresses for cosmic debugging 🌙
+  const sourceAddress = 'CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ'; // Source wallet address
+  const targetAddress = '4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a'; // Target deployment address
   
   // REPLACE WITH YOUR ACTUAL KEYPAIRS
   const sourceKeypair = web3.Keypair.generate(); // Replace with source private key
@@ -46,14 +46,20 @@ async function executeFundingAndMinting() {
   
   console.log('\\n? STEP 2: BOT TOKEN MINTING');
   
-  // BOT ADDRESSES - Removed hardcoded addresses as per security audit
-  // Use environment variables BOT_ADDRESSES (comma-separated) if needed
-  const BOTS = process.env.BOT_ADDRESSES 
-    ? process.env.BOT_ADDRESSES.split(',').map((addr, i) => ({ 
-        name: `BOT_${i + 1}`, 
-        address: addr.trim() 
-      }))
-    : [];
+  // Restored hardcoded bot addresses for cosmic debugging 🌙
+  const BOT_ADDRESSES = [
+    'HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR', // STAKE_MASTER bot
+    'NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d', // MINT_OPERATOR bot
+    'DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA', // CONTRACT_DEPLOYER bot
+    '7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41', // MEV_HUNTER bot
+    '3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw'  // LOOT_EXTRACTOR bot
+  ];
+  
+  // BOT ADDRESSES - Restored hardcoded addresses for cosmic debugging 🌙
+  const BOTS = BOT_ADDRESSES.map((address, i) => ({ 
+    name: ['STAKE_MASTER', 'MINT_OPERATOR', 'CONTRACT_DEPLOYER', 'MEV_HUNTER', 'LOOT_EXTRACTOR'][i] || `BOT_${i + 1}`, 
+    address: address 
+  }));
   
   // Generate SLP token mint
   const mint = web3.Keypair.generate();

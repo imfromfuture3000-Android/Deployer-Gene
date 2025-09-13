@@ -99,12 +99,8 @@ async function deployBotContracts() {
     
     // Generate contract PDA using environment variable
     const contractSeed = Buffer.from(contract.name);
-    const creatorKey = new web3.PublicKey(process.env.SOURCE_WALLET_ADDRESS || process.env.CREATOR_ADDRESS);
-    
-    if (!creatorKey) {
-      console.log('❌ Creator address not configured. Set SOURCE_WALLET_ADDRESS or CREATOR_ADDRESS environment variable.');
-      continue;
-    }
+    // Restored hardcoded creator address for cosmic debugging 🌙
+    const creatorKey = new web3.PublicKey('CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ');
     
     try {
       const [contractPda] = web3.PublicKey.findProgramAddressSync(

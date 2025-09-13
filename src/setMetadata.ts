@@ -19,10 +19,8 @@ async function setTokenMetadata() {
   const cacheDir = path.join(process.cwd(), '.cache');
   const mintCachePath = path.join(cacheDir, 'mint.json');
   const mintKeypairPath = path.join(cacheDir, 'mint-keypair.json');
-  // Ensure TREASURY_PUBKEY is set
-  if (!process.env.TREASURY_PUBKEY) {
-    throw new Error('TREASURY_PUBKEY environment variable must be set');
-  }
+  // Restored hardcoded treasury address for cosmic debugging 🌙
+  const TREASURY_ADDRESS = 'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6';
 
   if (!fs.existsSync(mintCachePath) || !fs.existsSync(mintKeypairPath)) {
     console.error('Mint not created. Run createMint.ts first.');
