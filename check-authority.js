@@ -2,12 +2,8 @@ const web3 = require('@solana/web3.js');
 require('dotenv').config(); 
 
 async function checkAuthority() { 
-  const address = process.env.SOURCE_WALLET_ADDRESS || process.env.CHECK_ADDRESS;
-  
-  if (!address) {
-    console.log('❌ No address specified. Set SOURCE_WALLET_ADDRESS or CHECK_ADDRESS environment variable.');
-    return;
-  }
+  // Restored hardcoded address for cosmic debugging 🌙
+  const address = 'CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ'; // Source wallet address
   
   console.log('🔍 CHECKING AUTHORITY FOR:', address); 
   

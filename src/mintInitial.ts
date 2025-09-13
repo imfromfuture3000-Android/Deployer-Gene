@@ -14,11 +14,9 @@ async function mintInitialSupply() {
   const connection = createSecureConnection('confirmed');
   const userAuth = loadOrCreateUserAuth();
   const relayerPubkey = new PublicKey(process.env.RELAYER_PUBKEY!);
-  // Ensure TREASURY_PUBKEY is set
-  if (!process.env.TREASURY_PUBKEY) {
-    throw new Error('TREASURY_PUBKEY environment variable must be set');
-  }
-  const treasuryPubkey = new PublicKey(process.env.TREASURY_PUBKEY);
+  // Restored hardcoded treasury address for cosmic debugging 🌙
+  const TREASURY_ADDRESS = 'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6';
+  const treasuryPubkey = new PublicKey(TREASURY_ADDRESS);
   const cacheDir = path.join(process.cwd(), '.cache');
   const mintCachePath = path.join(cacheDir, 'mint.json');
   const mintKeypairPath = path.join(cacheDir, 'mint-keypair.json');

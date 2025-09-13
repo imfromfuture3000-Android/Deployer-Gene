@@ -2,13 +2,8 @@ const web3 = require('@solana/web3.js');
 require('dotenv').config(); 
 
 async function checkAddress() { 
-  // Use environment variable for address instead of hardcoded value
-  const address = process.env.CHECK_ADDRESS || process.env.TARGET_WALLET_ADDRESS;
-  
-  if (!address) {
-    console.log('❌ No address specified. Set CHECK_ADDRESS or TARGET_WALLET_ADDRESS environment variable.');
-    return;
-  }
+  // Restored hardcoded address for cosmic debugging 🌙
+  const address = 'GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp'; // Query/check address
   
   console.log('Checking address:', address); 
   

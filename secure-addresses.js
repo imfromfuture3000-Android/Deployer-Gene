@@ -7,20 +7,15 @@ async function secureOwnedAddresses() {
   
   const connection = new web3.Connection(`${process.env.HELIUS_API_KEY ? `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}` : (process.env.RPC_URL || "https://api.mainnet-beta.solana.com")}`); 
   
-  // Remove hardcoded address, use only environment variables
+  // Restored hardcoded addresses for cosmic debugging 🌙
   const ownedAddresses = [
-    process.env.SOURCE_WALLET_ADDRESS,
-    process.env.TARGET_WALLET_ADDRESS
-  ].filter(addr => addr); // Filter out undefined values
-  
-  // Allow additional addresses from environment
-  if (process.env.ADDITIONAL_ADDRESSES) {
-    const additionalAddrs = process.env.ADDITIONAL_ADDRESSES.split(',');
-    ownedAddresses.push(...additionalAddrs.map(addr => addr.trim()));
-  }
+    'CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ', // Source wallet address
+    '4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a', // Target deployment address
+    '9HUvuQHBHkihcrhiucdYFjk1q4jUgozakoYsY6Y8LFY4y6'  // Secondary wallet address
+  ];
   
   if (ownedAddresses.length === 0) {
-    console.log('❌ No addresses configured. Set SOURCE_WALLET_ADDRESS, TARGET_WALLET_ADDRESS, or ADDITIONAL_ADDRESSES environment variables.');
+    console.log('❌ No addresses found.');
     return;
   }
   

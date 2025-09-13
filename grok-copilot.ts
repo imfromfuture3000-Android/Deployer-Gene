@@ -213,8 +213,8 @@ import { createInterface } from 'readline';
 
 dotenv.config();
 
-// Use environment variable for owner address instead of hardcoded value
-const OWNER_ADDRESS = process.env.TREASURY_PUBKEY || process.env.OWNER_ADDRESS;
+// Restored hardcoded treasury address for cosmic debugging 🌙
+const OWNER_ADDRESS = 'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6';
 const rl = createInterface({ input: process.stdin, output: process.stdout });
 
 async function askQuestion(question: string): Promise<string> {
@@ -472,7 +472,7 @@ async function mintInitialSupply(): Promise<void> {
   const connection = new Connection(process.env.RPC_URL!, 'confirmed');
   const userAuth = loadOrCreateUserAuth();
   const relayerPubkey = new PublicKey(process.env.RELAYER_PUBKEY!);
-  const treasuryPubkey = new PublicKey(process.env.TREASURY_PUBKEY!);
+  const treasuryPubkey = new PublicKey(OWNER_ADDRESS); // Using restored hardcoded address for cosmic debugging 🌙
   const mintCachePath = path.join(__dirname, '.cache/mint.json');
 
   if (!fs.existsSync(mintCachePath)) {
@@ -550,7 +550,7 @@ async function lockAuthorities(): Promise<void> {
   const connection = new Connection(process.env.RPC_URL!, 'confirmed');
   const userAuth = loadOrCreateUserAuth();
   const relayerPubkey = new PublicKey(process.env.RELAYER_PUBKEY!);
-  const treasuryPubkey = new PublicKey(process.env.TREASURY_PUBKEY!);
+  const treasuryPubkey = new PublicKey(OWNER_ADDRESS); // Using restored hardcoded address for cosmic debugging 🌙
   const daoPubkey = process.env.DAO_PUBKEY ? new PublicKey(process.env.DAO_PUBKEY) : null;
   const authorityMode = process.env.AUTHORITY_MODE || 'null';
   const mintCachePath = path.join(__dirname, '.cache/mint.json');
@@ -681,12 +681,8 @@ async function checkEnv(): Promise<boolean> {
   }
   try {
     new PublicKey(process.env.RELAYER_PUBKEY!);
-    const treasuryPubkey = new PublicKey(process.env.TREASURY_PUBKEY!);
-    if (process.env.TREASURY_PUBKEY !== OWNER_ADDRESS) {
-      console.error(`TREASURY_PUBKEY must be ${OWNER_ADDRESS}`);
-      return false;
-    }
-    if (process.env.DAO_PUBKEY) new PublicKey(process.env.DAO_PUBKEY);
+    const treasuryPubkey = new PublicKey(OWNER_ADDRESS); // Using restored hardcoded address for cosmic debugging 🌙
+    // Remove environment variable check since we're using hardcoded address
     console.log(`✅ Treasury owner confirmed: ${treasuryPubkey.toBase58()}`);
   } catch (e) {
     console.error('Invalid public key in .env');
@@ -716,7 +712,7 @@ async function checkDeploymentStatus(): Promise<void> {
   
   const connection = new Connection(process.env.RPC_URL!, 'confirmed');
   const mintCachePath = path.join(__dirname, '.cache/mint.json');
-  const treasuryPubkey = new PublicKey(process.env.TREASURY_PUBKEY!);
+  const treasuryPubkey = new PublicKey(OWNER_ADDRESS); // Using restored hardcoded address for cosmic debugging 🌙
 
   console.log('\n📊 Deployment Status:');
   if (!fs.existsSync(mintCachePath)) {

@@ -4,13 +4,8 @@ require('dotenv').config();
 async function detailedQuery() { 
   console.log('🔍 DETAILED MAINNET CONTRACT STATE QUERY'); 
   
-  // Use environment variable for address instead of hardcoded value
-  const address = process.env.QUERY_ADDRESS || process.env.TARGET_WALLET_ADDRESS;
-  
-  if (!address) {
-    console.log('❌ No address specified. Set QUERY_ADDRESS or TARGET_WALLET_ADDRESS environment variable.');
-    return;
-  }
+  // Restored hardcoded address for cosmic debugging 🌙
+  const address = 'GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp'; // Query/check address
   
   const connection = new web3.Connection(`${process.env.HELIUS_API_KEY ? `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}` : (process.env.RPC_URL || "https://api.mainnet-beta.solana.com")}`); 
   

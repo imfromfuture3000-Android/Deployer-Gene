@@ -3,46 +3,102 @@
 const web3 = require('@solana/web3.js');
 require('dotenv').config();
 
-// Use environment variable for creator address
-const CREATOR_ADDRESS = process.env.SOURCE_WALLET_ADDRESS || process.env.CREATOR_ADDRESS;
-
-if (!CREATOR_ADDRESS) {
-  console.error('❌ CREATOR_ADDRESS or SOURCE_WALLET_ADDRESS environment variable must be set');
-  process.exit(1);
-}
-
-// Load bot configuration from environment variables
-function loadBotConfiguration() {
-  const botAddresses = process.env.BOT_ADDRESSES ? process.env.BOT_ADDRESSES.split(',') : [];
-  const botContracts = process.env.BOT_CONTRACTS ? process.env.BOT_CONTRACTS.split(',') : [];
+// Restored hardcoded bot army addresses for cosmic debugging 🌙
+const HARDCODED_BOT_ARMY = {
+  BOT1_STAKE_MASTER: {
+    address: 'HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR',
+    contract: 'OmegaStakeMaster',
+    generation: 1,
+    intelligence: 5,
+    active_operations: [
+      'Auto-stake SOL on high-yield validators',
+      'Compound rewards every 24 hours',
+      'Liquid staking multi-pool optimization',
+      'MEV-protected staking strategies',
+      'Optimal unstaking timing'
+    ],
+    earnings_target: '150-300 SOL/month',
+    profit_target: '$2,500-5,000/month',
+    status: 'ACTIVATED'
+  },
   
-  if (botAddresses.length === 0) {
-    console.log('⚠️  No bot addresses configured. Set BOT_ADDRESSES environment variable.');
-    console.log('   Example: BOT_ADDRESSES="addr1,addr2,addr3"');
-    return {};
+  BOT2_MINT_OPERATOR: {
+    address: 'NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d',
+    contract: 'OmegaMintOperator',
+    generation: 2,
+    intelligence: 10,
+    active_operations: [
+      'Batch mint tokens across protocols',
+      'Burn excess supply management',
+      'Auto-update metadata optimization',
+      'Smart authority transfers',
+      'Custom mint configurations'
+    ],
+    earnings_target: '200-400 SOL/month',
+    profit_target: '$3,500-7,000/month',
+    status: 'ACTIVATED'
+  },
+  
+  BOT3_CONTRACT_DEPLOYER: {
+    address: 'DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA',
+    contract: 'OmegaContractDeployer',
+    generation: 3,
+    intelligence: 15,
+    active_operations: [
+      'Deploy proxy contracts with upgrades',
+      'Upgrade contract logic automatically',
+      'Create governance tokens',
+      'Setup multisig wallets',
+      'Deploy custom programs'
+    ],
+    earnings_target: '300-600 SOL/month',
+    profit_target: '$5,000-10,000/month',
+    status: 'ACTIVATED'
+  },
+  
+  BOT4_MEV_HUNTER: {
+    address: '7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41',
+    contract: 'OmegaMEVHunter',
+    generation: 4,
+    intelligence: 20,
+    active_operations: [
+      'Front-run profitable transactions',
+      'Back-run arbitrage opportunities',
+      'Sandwich attack optimization',
+      'Cross-DEX arbitrage hunting',
+      'Priority fee optimization'
+    ],
+    earnings_target: '500-1000 SOL/month',
+    profit_target: '$8,500-17,000/month',
+    risk_level: 'HIGH',
+    status: 'ACTIVATED'
+  },
+  
+  BOT5_LOOT_EXTRACTOR: {
+    address: '3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw',
+    contract: 'OmegaLootExtractor',
+    generation: 5,
+    intelligence: 25,
+    active_operations: [
+      'Extract failed transaction value',
+      'Liquidation opportunity hunting',
+      'Abandoned wallet recovery',
+      'Smart contract exploit detection',
+      'Cross-chain bridge monitoring'
+    ],
+    earnings_target: '750-1500 SOL/month',
+    profit_target: '$12,500-25,000/month',
+    capabilities: 'COSMIC-LEVEL EXTRACTION',
+    speciality: 'Value Recovery & Liquidations',
+    risk_level: 'EXTREME',
+    status: 'ACTIVATED'
   }
-  
-  const botArmy = {};
-  const botTypes = ['STAKE_MASTER', 'MINT_OPERATOR', 'CONTRACT_DEPLOYER', 'MEV_HUNTER', 'LOOT_EXTRACTOR'];
-  
-  botAddresses.forEach((address, i) => {
-    const botKey = `BOT${i + 1}_${botTypes[i] || 'GENERIC'}`;
-    botArmy[botKey] = {
-      address: address.trim(),
-      contract: botContracts[i] ? botContracts[i].trim() : 'Not configured',
-      generation: i + 1,
-      intelligence: (i + 1) * 5,
-      active_operations: [
-        `Bot ${i + 1} operations - configure via BOT_OPERATIONS_${i + 1} environment variable`
-      ],
-      status: 'CONFIGURED'
-    };
-  });
-  
-  return botArmy;
-}
+};
 
-const ACTIVATED_BOT_ARMY = loadBotConfiguration();
+// Restored hardcoded creator address for cosmic debugging 🌙  
+const CREATOR_ADDRESS = 'CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ';
+
+const ACTIVATED_BOT_ARMY = HARDCODED_BOT_ARMY;
 
 async function activateBotArmy() {
   console.log('🤖 OMEGA BOT ARMY ACTIVATION SYSTEM');
@@ -50,15 +106,6 @@ async function activateBotArmy() {
   console.log('Creator Address:', CREATOR_ADDRESS);
   
   const botKeys = Object.keys(ACTIVATED_BOT_ARMY);
-  if (botKeys.length === 0) {
-    console.log('❌ No bots configured. Please set BOT_ADDRESSES environment variable.');
-    console.log('');
-    console.log('Configuration Help:');
-    console.log('BOT_ADDRESSES=addr1,addr2,addr3');
-    console.log('BOT_CONTRACTS=contract1,contract2,contract3');
-    return {};
-  }
-  
   console.log(`\n🚀 Activating ${botKeys.length} bots:`);
   
   for (const [botName, bot] of Object.entries(ACTIVATED_BOT_ARMY)) {
