@@ -2,40 +2,15 @@
   "compilerOptions": {
     "target": "ES2020",
     "module": "commonjs",
-<<<<<<< HEAD
     "lib": ["ES2020"],
-    "outDir": "out",
-    "rootDir": "src",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", ".vscode-test"]
-=======
-    "strict": true,
-    "esModuleInterop": true,
-    "outDir": "./dist",
-    "rootDir": "./",
-    "types": ["node"]
-  },
-  "include": ["grok-copilot.ts", "*.ts"],
-  "exclude": ["node_modules", "dist", "src"]
->>>>>>> origin/main
-{
-  "compilerOptions": {
-    "target": "ES2020",
-    "module": "commonjs",
-    "lib": ["ES2020"],
-    "outDir": "./dist",
-    "rootDir": "./",
+    "outDir": "./out",
+    "rootDir": ".",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "types": ["node"]
   },
-  "include": ["src", "grok-copilot.ts", "*.ts"],
-  "exclude": ["node_modules", "dist", ".vscode-test"]
+  "include": ["src/**/*", "grok-copilot.ts", "*.ts"],
+  "exclude": ["node_modules", "out", ".vscode-test"]
 }
