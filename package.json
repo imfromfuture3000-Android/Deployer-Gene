@@ -1,93 +1,50 @@
 {
-<<<<<<< HEAD
-  "name": "OmegaPrimeDeployer",
-  "displayName": "Omega Prime Token Deployer",
-  "description": "A VS Code extension to deploy the ΩAGENT token on Solana with a relayer, manage wallets, and monitor deployment status.",
-  "version": "0.0.1",
-  "publisher": "AutomataLabs",
-  "engines": {
-    "vscode": "^1.101.0"
-  },
-  "categories": ["AI", "Blockchain", "Deployment"],
-  "keywords": ["solana", "spl-token", "omega-prime", "token-deployment", "relayer", "blockchain", "web3"],
+  "name": "omega-prime-deployer",
+  "version": "1.2.0",
+  "description": "Scripts and a VS Code extension to deploy the Omega Prime token (IMPULSE / ΩAGENT) on Solana.",
   "main": "./out/extension.js",
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
+    "watch": "tsc -w -p ./",
+    "dev:check": "ts-node src/utils/checkEnv.ts",
+    "mainnet:create-mint": "ts-node src/createMint.ts",
+    "mainnet:mint-initial": "ts-node src/mintInitial.ts",
+    "mainnet:set-metadata": "ts-node src/setMetadata.ts",
+    "mainnet:lock": "ts-node src/lockAuthorities.ts",
+    "mainnet:withdraw-earnings": "ts-node src/withdraw_earnings.ts",
+    "mainnet:rollback": "ts-node src/rollback.ts",
+    "mainnet:copilot": "ts-node grok-copilot.ts",
+    "mainnet:all": "npm run dev:check && npm run mainnet:create-mint && npm run mainnet:mint-initial && npm run mainnet:set-metadata && npm run mainnet:lock",
+    "build": "tsc",
+    "build:rust": "cargo build --manifest-path pentacle/Cargo.toml",
+    "build:all": "npm run build && npm run build:rust",
     "lint": "eslint src --ext ts",
-    "test": "npm run compile && node ./out/test/runTest.js"
+    "test": "npm run build && node ./out/test/runTest.js"
   },
-  "icon": "logo.png",
-  "contributes": {
-    "commands": [
-      { "command": "OmegaPrime:RunFullDeployment", "title": "OmegaPrime: Run Full Deployment" },
-      { "command": "OmegaPrime:CreateMint", "title": "OmegaPrime: Create Mint" },
-      { "command": "OmegaPrime:MintInitialSupply", "title": "OmegaPrime: Mint Initial Supply" },
-      { "command": "OmegaPrime:SetMetadata", "title": "OmegaPrime: Set Metadata" },
-      { "command": "OmegaPrime:LockAuthorities", "title": "OmegaPrime: Lock Authorities" },
-      { "command": "OmegaPrime:CheckStatus", "title": "OmegaPrime: Check Status" },
-      { "command": "OmegaPrime:DryRun", "title": "OmegaPrime: Dry Run" },
-      { "command": "OmegaPrime:Rollback", "title": "OmegaPrime: Rollback" }
-    ],
-    "configuration": {
-      "type": "object",
-      "title": "Omega Prime Deployer Configuration",
-      "properties": {
-        "omegaPrimeDeployer.logLevel": {
-          "type": "string",
-          "enum": ["debug", "info", "warn", "error", "none"],
-          "default": "info",
-          "description": "Log verbosity for Omega Prime Deployer"
-        },
-        "omegaPrimeDeployer.network": {
-          "type": "string",
-          "enum": ["mainnet-beta", "devnet", "testnet"],
-          "default": "mainnet-beta",
-          "description": "Solana network selection"
-        },
-        "omegaPrimeDeployer.relayerUrl": {
-          "type": "string",
-          {
-            "name": "omega-prime-token",
-            "version": "1.2.0",
-            "type": "commonjs",
-            "description": "Scripts and utilities to deploy the Omega Prime token (IMPULSE / ΩAGENT) on Solana.",
-            "scripts": {
-              "dev:check": "ts-node src/utils/checkEnv.ts",
-              "mainnet:create-mint": "ts-node src/createMint.ts",
-              "mainnet:mint-initial": "ts-node src/mintInitial.ts",
-              "mainnet:set-metadata": "ts-node src/setMetadata.ts",
-              "mainnet:lock": "ts-node src/lockAuthorities.ts",
-              "mainnet:withdraw-earnings": "ts-node src/withdraw_earnings.ts",
-              "mainnet:rollback": "ts-node src/rollback.ts",
-              "mainnet:copilot": "ts-node grok-copilot.ts",
-              "mainnet:all": "npm run dev:check && npm run mainnet:create-mint && npm run mainnet:mint-initial && npm run mainnet:set-metadata && npm run mainnet:lock",
-              "verify:addresses": "node comprehensive-address-verifier.js",
-              "verify:demo": "node address-verifier-demo.js",
-              "build": "tsc",
-              "build:rust": "cargo build --manifest-path pentacle/Cargo.toml",
-              "build:all": "npm run build && npm run build:rust",
-              "lint": "eslint src --ext ts",
-              "test": "npm run build && node ./out/test/runTest.js"
-            },
-            "dependencies": {
-              "@metaplex-foundation/mpl-token-metadata": "^3.4.0",
-              "@metaplex-foundation/umi": "^1.4.1",
-              "@metaplex-foundation/umi-bundle-defaults": "^1.4.1",
-              "@solana/spl-token": "^0.4.14",
-              "@solana/web3.js": "^1.98.4",
-              "bs58": "^6.0.0",
-              "dotenv": "^16.6.1",
-              "ethers": "^6.15.0",
-              "node-fetch": "^2.7.0"
-            },
-            "devDependencies": {
-              "@types/node": "^22.7.4",
-              "ts-node": "^10.9.2",
-              "typescript": "^5.6.2",
-              "@types/vscode": "^1.101.0",
-              "@vscode/extension-telemetry": "^0.6.2"
-            }
-          }
-    "build:all": "npm run build && npm run build:rust"
+  "dependencies": {
+    "@metaplex-foundation/mpl-token-metadata": "^3.4.0",
+    "@metaplex-foundation/umi": "^1.4.1",
+    "@metaplex-foundation/umi-bundle-defaults": "^1.4.1",
+    "@solana/spl-token": "^0.4.14",
+    "@solana/web3.js": "^1.98.4",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.6.1",
+    "ethers": "^6.15.0",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2",
+    "@types/vscode": "^1.101.0",
+    "@vscode/extension-telemetry": "^0.6.2",
+    "eslint": "^8.50.0"
+  },
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "keywords": ["solana","spl-token","omega-prime","token-deployment","relayer","blockchain","web3"],
+  "author": "AutomataLabs",
+  "license": "MIT"
+}
