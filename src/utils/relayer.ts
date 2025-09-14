@@ -37,7 +37,7 @@ export async function sendViaRelayer(
         headers,
         body: JSON.stringify({ signedTransactionBase64: b64 }),
       });
-      const j = await res.json();
+      const j = await res.json() as any;
       if (!j.success) throw new Error(j.error || `Relayer error (attempt ${attempt})`);
       await connection.confirmTransaction({ signature: j.txSignature, blockhash, lastValidBlockHeight }, 'confirmed');
       console.log(`Transaction confirmed: https://explorer.solana.com/tx/${j.txSignature} (${Date.now() - start}ms)`);

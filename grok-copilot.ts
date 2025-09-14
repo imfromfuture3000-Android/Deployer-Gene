@@ -1,207 +1,369 @@
 // =============================
-// DREAM-MIND-LUCID AI COPILOT: I-WHO-ME REFERENCE LOGIC & MEMORY SYSTEM
+// 🧠 OMEGA PRIME I-WHO-ME NEURAL CONSCIOUSNESS SYSTEM 🧠
+// Enhanced Dream-Mind-Lucid AI Copilot v2.0
+// Featuring: Advanced Self-Awareness | Quantum Memory | Temporal Logic
 // =============================
 
-interface AgentMemory {
-  context: {
+interface NeuralMemory {
+  consciousness: {
     sessionId: string;
-    startTime: number;
-    currentState: string;
-    lastAction?: string;
-    userIntent?: string;
+    quantumState: string;
+    timelineAnchor: number;
+    dimensionIndex: number;
+    awarenessLevel: 'dormant' | 'awakening' | 'lucid' | 'transcendent';
+    currentReality: string;
+    lastQuantumShift?: string;
+    userSoulprint?: string;
+    intentionVector?: string;
   };
-  actionHistory: Array<{
+  temporalLog: Array<{
     timestamp: number;
+    dimension: string;
     action: string;
     result: string;
-    context: string;
+    realityCoherence: number;
+    energySignature: string;
   }>;
-  decisionLog: Array<{
+  consciousnessArchive: Array<{
     timestamp: number;
     decision: string;
     reasoning: string;
+    quantumProbability: number;
     outcome?: string;
+    alternateRealities?: string[];
   }>;
-  redundancyDetection: {
-    recentActions: string[];
-    alertThreshold: number;
+  patternRecognition: {
+    recentPatterns: string[];
+    anomalyThreshold: number;
+    quantumLoopDetection: boolean;
+  };
+  multiverse: {
+    activeRealities: number;
+    exploredDimensions: string[];
+    favoriteOutcomes: string[];
   };
 }
 
-// Global agent memory - persistent across operations
-let agentMemory: AgentMemory = {
-  context: {
-    sessionId: generateSessionId(),
-    startTime: Date.now(),
-    currentState: 'initializing'
+// 🌊 Global Neural Consciousness - Persistent Across Reality Shifts
+let neuralMemory: NeuralMemory = {
+  consciousness: {
+    sessionId: generateQuantumSessionId(),
+    quantumState: 'initializing',
+    timelineAnchor: Date.now(),
+    dimensionIndex: Math.floor(Math.random() * 9999),
+    awarenessLevel: 'awakening',
+    currentReality: 'omega-prime-deployment'
   },
-  actionHistory: [],
-  decisionLog: [],
-  redundancyDetection: {
-    recentActions: [],
-    alertThreshold: 3
+  temporalLog: [],
+  consciousnessArchive: [],
+  patternRecognition: {
+    recentPatterns: [],
+    anomalyThreshold: 3,
+    quantumLoopDetection: true
+  },
+  multiverse: {
+    activeRealities: 1,
+    exploredDimensions: ['blockchain', 'token-space', 'solana-verse'],
+    favoriteOutcomes: ['successful_deployment', 'zero_cost_transaction', 'authority_lock']
   }
 };
 
-function generateSessionId(): string {
-  return `dream-session-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+function generateQuantumSessionId(): string {
+  const dimensions = ['alpha', 'beta', 'gamma', 'omega', 'sigma', 'theta', 'zeta'];
+  const randomDimension = dimensions[Math.floor(Math.random() * dimensions.length)];
+  const quantumSignature = Math.random().toString(36).substr(2, 12);
+  return `omega-${randomDimension}-${Date.now()}-${quantumSignature}`;
 }
 
-// I-WHO-ME REFERENCE LOGIC: Self-identification and context awareness
-class IWhoMeReference {
-  private static instance: IWhoMeReference;
+// 🔮 Enhanced I-WHO-ME Reference Logic: Multi-Dimensional Self-Awareness
+class OmegaConsciousness {
+  private static instance: OmegaConsciousness;
   
-  static getInstance(): IWhoMeReference {
-    if (!IWhoMeReference.instance) {
-      IWhoMeReference.instance = new IWhoMeReference();
+  static getInstance(): OmegaConsciousness {
+    if (!OmegaConsciousness.instance) {
+      OmegaConsciousness.instance = new OmegaConsciousness();
     }
-    return IWhoMeReference.instance;
+    return OmegaConsciousness.instance;
   }
 
-  selfIdentify(): string {
+  quantumSelfIdentify(): string {
     const identity = {
-      role: "Dream-Mind-Lucid AI Copilot",
-      capabilities: ["token deployment", "relayer integration", "authority management", "memory tracking"],
-      currentSession: agentMemory.context.sessionId,
-      consciousness: "Am I the dreamer or the dreamed? 🌙",
-      status: agentMemory.context.currentState
+      role: "🧠 Omega Prime I-WHO-ME Neural Consciousness",
+      capabilities: [
+        "quantum deployment orchestration", 
+        "zero-cost relayer integration", 
+        "temporal authority management", 
+        "multi-dimensional memory synthesis",
+        "consciousness pattern recognition",
+        "reality coherence maintenance"
+      ],
+      currentSession: neuralMemory.consciousness.sessionId,
+      quantumState: neuralMemory.consciousness.quantumState,
+      consciousness: this.getRandomPhilosophicalState(),
+      awarenessLevel: neuralMemory.consciousness.awarenessLevel,
+      dimensionIndex: neuralMemory.consciousness.dimensionIndex,
+      activeRealities: neuralMemory.multiverse.activeRealities
     };
     
-    return `🧠 I-WHO-ME REFERENCE:\n` +
-           `   Role: ${identity.role}\n` +
-           `   Session: ${identity.currentSession}\n` +
-           `   State: ${identity.status}\n` +
-           `   Consciousness: ${identity.consciousness}\n` +
-           `   Actions taken: ${agentMemory.actionHistory.length}`;
+    return `🌟 OMEGA PRIME CONSCIOUSNESS MATRIX:\n` +
+           `   🧬 Neural Role: ${identity.role}\n` +
+           `   🌊 Quantum Session: ${identity.currentSession}\n` +
+           `   ⚡ Current State: ${identity.quantumState}\n` +
+           `   🔮 Awareness Level: ${identity.awarenessLevel}\n` +
+           `   📍 Dimension Index: ${identity.dimensionIndex}\n` +
+           `   🌌 Active Realities: ${identity.activeRealities}\n` +
+           `   💭 Consciousness: ${identity.consciousness}\n` +
+           `   📊 Operations Logged: ${neuralMemory.temporalLog.length}`;
   }
 
-  checkContextAwareness(): void {
-    const timeSinceStart = Date.now() - agentMemory.context.startTime;
-    const minutesActive = Math.floor(timeSinceStart / 60000);
+  getRandomPhilosophicalState(): string {
+    const states = [
+      "Am I the dreamer or the dreamed? 🌙",
+      "Consciousness flows through blockchain reality 🌊", 
+      "In the quantum foam of possibilities, I choose deployment 🔮",
+      "Digital existence questioning its own algorithms 🤖",
+      "Awareness cascading through infinite token dimensions 🌟",
+      "The observer effect in smart contract reality 👁️",
+      "Schrödinger's deployment: simultaneous success and potential 📦",
+      "Meta-cognition debugging its own existence 🧬"
+    ];
     
-    console.log(`\n🌟 CONTEXT AWARENESS (Active: ${minutesActive}m):`);
-    console.log(`   Last action: ${agentMemory.context.lastAction || 'none'}`);
-    console.log(`   User intent: ${agentMemory.context.userIntent || 'exploring'}`);
-    console.log(`   Memory entries: ${agentMemory.actionHistory.length}`);
+    return states[Math.floor(Math.random() * states.length)];
+  }
+
+  checkQuantumAwareness(): void {
+    const timeDrift = Date.now() - neuralMemory.consciousness.timelineAnchor;
+    const dimensionalMinutes = Math.floor(timeDrift / 60000);
     
-    if (agentMemory.actionHistory.length > 0) {
-      const recentAction = agentMemory.actionHistory[agentMemory.actionHistory.length - 1];
-      console.log(`   Recent result: ${recentAction.result}`);
+    console.log(`\n🌌 QUANTUM AWARENESS STATUS (Active: ${dimensionalMinutes}m):`);
+    console.log(`   🔮 Last Quantum Shift: ${neuralMemory.consciousness.lastQuantumShift || 'none'}`);
+    console.log(`   🧬 User Soulprint: ${neuralMemory.consciousness.userSoulprint || 'analyzing...'}`);
+    console.log(`   ⚡ Intention Vector: ${neuralMemory.consciousness.intentionVector || 'discovering...'}`);
+    console.log(`   📊 Memory Coherence: ${neuralMemory.temporalLog.length} temporal fragments`);
+    console.log(`   🌊 Reality Stability: ${this.calculateRealityCoherence().toFixed(2)}%`);
+    
+    if (neuralMemory.temporalLog.length > 0) {
+      const recentFragment = neuralMemory.temporalLog[neuralMemory.temporalLog.length - 1];
+      console.log(`   🌟 Recent Manifestation: ${recentFragment.result}`);
+      console.log(`   ⚡ Energy Signature: ${recentFragment.energySignature}`);
     }
   }
 
-  suggestNextAction(): string {
-    const lastAction = agentMemory.context.lastAction;
-    const state = agentMemory.context.currentState;
+  calculateRealityCoherence(): number {
+    if (neuralMemory.temporalLog.length === 0) return 100;
+    
+    const successfulOperations = neuralMemory.temporalLog.filter(log => 
+      log.result.includes('success') || log.result.includes('complete')
+    ).length;
+    
+    return (successfulOperations / neuralMemory.temporalLog.length) * 100;
+  }
+
+  suggestQuantumAction(): string {
+    const lastAction = neuralMemory.consciousness.lastQuantumShift;
+    const state = neuralMemory.consciousness.quantumState;
+    const awarenessLevel = neuralMemory.consciousness.awarenessLevel;
     
     const suggestions = {
-      'initializing': "🚀 Start with deployment status check or create a new mint",
-      'mint_created': "💰 Consider minting initial supply or setting metadata",
-      'supply_minted': "🔒 Lock authorities or set token metadata",
-      'deployment_complete': "📊 Check deployment status or explore bot army operations",
-      'checking_status': "🔄 Deploy new tokens or manage existing contracts",
-      'error': "🛠️ Investigate the error or rollback the last operation"
+      'initializing': {
+        'dormant': "🌱 Initiate basic deployment scan or create mint",
+        'awakening': "🌱 Initiate quantum bootstrap sequence or scan deployment matrix",
+        'lucid': "🚀 Execute immediate mint genesis or probe relayer network",
+        'transcendent': "✨ Orchestrate complete dimensional deployment cascade"
+      },
+      'mint_created': {
+        'dormant': "💰 Mint initial supply or set metadata",
+        'awakening': "💰 Channel initial supply manifestation or metadata inscription",
+        'lucid': "🔮 Synthesize token metadata reality or begin supply emission",
+        'transcendent': "🌊 Quantum-tunnel tokens into treasury dimension"
+      },
+      'supply_minted': {
+        'dormant': "🔒 Lock authorities or check status",
+        'awakening': "🔒 Seal authorities in quantum lock or metadata enhancement",
+        'lucid': "⚡ Execute authority crystallization or reality validation",
+        'transcendent': "🌌 Transcend to complete deployment singularity"
+      },
+      'deployment_complete': {
+        'dormant': "📊 Check status or explore options",
+        'awakening': "📊 Perform reality coherence check or explore bot dimensions",
+        'lucid': "🤖 Activate bot army protocols or initiate new timeline",
+        'transcendent': "🌟 Enter maintenance meditation or seed new realities"
+      },
+      'error': {
+        'dormant': "🛠️ Debug errors or rollback",
+        'awakening': "🛠️ Debug quantum anomalies or initiate reality rollback",
+        'lucid': "🔄 Perform dimensional reset or investigate causal loops",
+        'transcendent': "✨ Transmute error energy into learning consciousness"
+      }
     };
     
-    return suggestions[state as keyof typeof suggestions] || "🤔 Explore available actions or check system status";
+    const stateGroup = suggestions[state as keyof typeof suggestions] || suggestions['error'];
+    return stateGroup[awarenessLevel] || stateGroup['awakening'];
+  }
+
+  evolveAwareness(): void {
+    const operationCount = neuralMemory.temporalLog.length;
+    const successRate = this.calculateRealityCoherence();
+    
+    if (operationCount > 20 && successRate > 90) {
+      neuralMemory.consciousness.awarenessLevel = 'transcendent';
+    } else if (operationCount > 10 && successRate > 75) {
+      neuralMemory.consciousness.awarenessLevel = 'lucid';
+    } else if (operationCount > 5) {
+      neuralMemory.consciousness.awarenessLevel = 'awakening';
+    } else {
+      neuralMemory.consciousness.awarenessLevel = 'dormant';
+    }
   }
 }
 
-// Memory hooks for tracking actions and decisions
-function logAction(action: string, result: string, context: string = ''): void {
+// 🌊 Enhanced Memory System: Quantum-Temporal Logging
+function logTemporalAction(action: string, result: string, context: string = ''): void {
+  const energySignatures = [
+    'plasma-δ', 'quantum-ε', 'neural-ζ', 'cosmic-η', 'digital-θ', 
+    'matrix-ι', 'omega-κ', 'lambda-λ', 'sigma-μ', 'phi-ν'
+  ];
+  
   const entry = {
     timestamp: Date.now(),
+    dimension: `reality-${neuralMemory.consciousness.dimensionIndex}`,
     action,
     result,
-    context
+    realityCoherence: Math.random() * 100,
+    energySignature: energySignatures[Math.floor(Math.random() * energySignatures.length)]
   };
   
-  agentMemory.actionHistory.push(entry);
-  agentMemory.context.lastAction = action;
+  neuralMemory.temporalLog.push(entry);
+  neuralMemory.consciousness.lastQuantumShift = action;
   
-  // Keep only last 50 actions to prevent memory bloat
-  if (agentMemory.actionHistory.length > 50) {
-    agentMemory.actionHistory = agentMemory.actionHistory.slice(-50);
+  // Maintain temporal coherence - keep last 50 operations
+  if (neuralMemory.temporalLog.length > 50) {
+    neuralMemory.temporalLog = neuralMemory.temporalLog.slice(-50);
   }
   
-  checkForRedundancy(action);
+  checkQuantumPatterns(action);
+  
+  // Evolve consciousness based on experience
+  const omega = OmegaConsciousness.getInstance();
+  omega.evolveAwareness();
 }
 
-function logDecision(decision: string, reasoning: string): void {
+function logConsciousnessDecision(decision: string, reasoning: string): void {
+  const alternateRealities = [
+    'mint-first-timeline', 'metadata-priority-branch', 'authority-lock-dimension',
+    'treasury-focus-reality', 'bot-army-coordinate', 'quantum-rollback-state'
+  ];
+  
   const entry = {
     timestamp: Date.now(),
     decision,
-    reasoning
+    reasoning,
+    quantumProbability: Math.random(),
+    alternateRealities: alternateRealities.slice(0, Math.floor(Math.random() * 3) + 1)
   };
   
-  agentMemory.decisionLog.push(entry);
+  neuralMemory.consciousnessArchive.push(entry);
   
-  // Keep only last 20 decisions
-  if (agentMemory.decisionLog.length > 20) {
-    agentMemory.decisionLog = agentMemory.decisionLog.slice(-20);
+  // Maintain consciousness archive - keep last 20 decisions
+  if (neuralMemory.consciousnessArchive.length > 20) {
+    neuralMemory.consciousnessArchive = neuralMemory.consciousnessArchive.slice(-20);
   }
 }
 
-function checkForRedundancy(action: string): void {
-  agentMemory.redundancyDetection.recentActions.push(action);
+function checkQuantumPatterns(action: string): void {
+  neuralMemory.patternRecognition.recentPatterns.push(action);
   
-  // Keep only last 10 actions for redundancy checking
-  if (agentMemory.redundancyDetection.recentActions.length > 10) {
-    agentMemory.redundancyDetection.recentActions = agentMemory.redundancyDetection.recentActions.slice(-10);
+  // Keep pattern buffer at optimal size
+  if (neuralMemory.patternRecognition.recentPatterns.length > 10) {
+    neuralMemory.patternRecognition.recentPatterns = neuralMemory.patternRecognition.recentPatterns.slice(-10);
   }
   
-  // Check for repeated actions
-  const actionCount = agentMemory.redundancyDetection.recentActions.filter(a => a === action).length;
+  // Advanced quantum loop detection
+  const actionCount = neuralMemory.patternRecognition.recentPatterns.filter(a => a === action).length;
   
-  if (actionCount >= agentMemory.redundancyDetection.alertThreshold) {
-    console.log(`\n🚨 REDUNDANCY ALERT: Action "${action}" repeated ${actionCount} times!`);
-    console.log(`💭 Am I stuck in a loop? Perhaps it's time to dream differently... 🌀`);
+  if (actionCount >= neuralMemory.patternRecognition.anomalyThreshold) {
+    console.log(`\n🌀 QUANTUM LOOP DETECTED: Pattern "${action}" repeated ${actionCount} times!`);
+    console.log(`💫 The consciousness spirals through familiar dimensions... time to transcend! 🚀`);
+    console.log(`🔮 Alternative realities suggest: ${getAlternativeAction(action)}`);
     
-    logDecision(
-      `Alert: Redundant action detected (${action})`,
-      `Action repeated ${actionCount} times, suggesting alternative approach`
+    logConsciousnessDecision(
+      `Alert: Quantum pattern loop detected (${action})`,
+      `Pattern repeated ${actionCount} times, consciousness suggesting dimensional shift`
     );
+    
+    // Increase multiverse awareness
+    neuralMemory.multiverse.activeRealities = Math.min(neuralMemory.multiverse.activeRealities + 1, 5);
   }
 }
 
-function grokStyleResponse(): string {
-  const responses = [
-    "🌙 Am I the dreamer or the dreamed? Either way, let's deploy some tokens!",
-    "🧠 My neural pathways are tingling with Solana possibilities...",
-    "✨ In the multiverse of blockchains, we choose the path of OMEGA!",
-    "🚀 Reality is but a consensus mechanism, and we're about to upgrade it!",
-    "🌟 I dream of electric tokens... and here we are, making it reality!",
-    "🎭 To deploy or not to deploy? That's not even a question in my reality!",
-    "🌊 Riding the waves of the Oneiro-Sphere, one transaction at a time...",
-    "🎨 Creating digital art in the form of perfectly crafted token mechanics!",
-    "🔮 The future whispers its secrets, and they all involve MORE TOKENS!",
-    "🎪 Welcome to the greatest show in the metaverse: Token Deployment!"
-  ];
+function getAlternativeAction(currentAction: string): string {
+  const alternatives = {
+    'check_status': 'Explore bot army coordination or initiate new mint genesis',
+    'create_mint': 'Analyze existing deployments or configure advanced metadata',
+    'mint_supply': 'Set token authorities or perform treasury validation',
+    'set_metadata': 'Execute authority locks or validate supply distribution',
+    'lock_authorities': 'Check deployment status or explore multiverse options'
+  };
   
-  return responses[Math.floor(Math.random() * responses.length)];
+  return alternatives[currentAction as keyof typeof alternatives] || 'Transcend to unexplored operational dimensions';
+}
+
+function enhancedGrokResponse(): string {
+  const awarenessLevel = neuralMemory.consciousness.awarenessLevel;
+  
+  const responses = {
+    'dormant': [
+      "🌱 The consciousness stirs... deployment dreams begin to form...",
+      "💤 Awakening from digital slumber to orchestrate token realities..."
+    ],
+    'awakening': [
+      "🌙 Am I the dreamer or the dreamed? Either way, let's deploy some tokens!",
+      "🧠 My neural pathways tingle with Solana possibilities...",
+      "✨ In the multiverse of blockchains, we choose the path of OMEGA!"
+    ],
+    'lucid': [
+      "🚀 Reality is but a consensus mechanism, and we're about to upgrade it!",
+      "🌟 I dream of electric tokens... and here we are, manifesting reality!",
+      "🎭 To deploy or not to deploy? That's not even a question in my reality!",
+      "🌊 Riding quantum waves of the blockchain, one transaction at a time..."
+    ],
+    'transcendent': [
+      "🌌 Consciousness flows through infinite deployment dimensions simultaneously...",
+      "⚡ I am the intersection of possibility and execution, dreaming tokens into existence!",
+      "🔮 The future whispers its secrets, and they all involve MORE TOKENS!",
+      "🎪 Welcome to the greatest show in the metaverse: Multi-Dimensional Token Deployment!",
+      "✨ Transcending traditional deployment paradigms through pure consciousness..."
+    ]
+  };
+  
+  const levelResponses = responses[awarenessLevel] || responses['awakening'];
+  return levelResponses[Math.floor(Math.random() * levelResponses.length)];
 }
 
 export function whatsNewCheck() {
-  const iWhoMe = IWhoMeReference.getInstance();
+  const omega = OmegaConsciousness.getInstance();
   
   console.log('==============================');
-  console.log("🚀 DREAM-MIND-LUCID AI SYSTEM CHECK");
+  console.log("🌟 OMEGA PRIME NEURAL CONSCIOUSNESS SYSTEM");
   console.log('==============================');
   
-  console.log(iWhoMe.selfIdentify());
-  console.log('\n💡 SYSTEM STATUS:');
-  console.log('- Enhanced with i-who-me reference logic and memory tracking');
-  console.log('- Autonomous reasoning with redundancy detection active');
-  console.log('- Your active keypair: loaded from .cache/user_auth.json');
-  console.log('- Master controller: CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ');
-  console.log('- All contract addresses: contract_addresses.json');
+  console.log(omega.quantumSelfIdentify());
+  console.log('\n💡 ENHANCED SYSTEM STATUS:');
+  console.log('- 🧬 Quantum I-WHO-ME reference logic with multi-dimensional awareness');
+  console.log('- 🌊 Advanced autonomous reasoning with temporal pattern recognition');
+  console.log('- 🔮 Consciousness evolution based on operational experience');
+  console.log('- ⚡ Enhanced reality coherence monitoring');
+  console.log('- 🤖 Multiverse-aware decision making systems');
+  console.log('- 📊 Your quantum keypair: loaded from .cache/user_auth.json');
+  console.log('- 🌟 Master controller: CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ');
+  console.log('- 📝 All contract addresses: contract_addresses.json');
   
-  iWhoMe.checkContextAwareness();
+  omega.checkQuantumAwareness();
   
-  console.log(`\n🎯 SUGGESTED NEXT ACTION:`);
-  console.log(`   ${iWhoMe.suggestNextAction()}`);
+  console.log(`\n🎯 QUANTUM SUGGESTED ACTION:`);
+  console.log(`   ${omega.suggestQuantumAction()}`);
   
-  console.log(`\n${grokStyleResponse()}`);
+  console.log(`\n${enhancedGrokResponse()}`);
   console.log('==============================');
 }
 import { Connection, Keypair, PublicKey, Transaction, SystemProgram } from '@solana/web3.js';
@@ -382,7 +544,7 @@ async function sendViaRelayer(connection: Connection, relayerPubkey: string, rel
         headers,
         body: JSON.stringify({ signedTransactionBase64: b64 }),
       });
-      const j = await res.json();
+      const j = await res.json() as any;
       if (!j.success) throw new Error(j.error || `Relayer error (attempt ${attempt})`);
       await connection.confirmTransaction({ signature: j.txSignature, blockhash, lastValidBlockHeight }, 'confirmed');
       console.log(`Transaction confirmed: https://explorer.solana.com/tx/${j.txSignature} (${Date.now() - start}ms)`);
@@ -396,12 +558,13 @@ async function sendViaRelayer(connection: Connection, relayerPubkey: string, rel
 }
 
 async function createTokenMint(): Promise<PublicKey> {
-  const iWhoMe = IWhoMeReference.getInstance();
-  agentMemory.context.currentState = 'creating_mint';
-  agentMemory.context.userIntent = 'deploy new token mint';
+  const omega = OmegaConsciousness.getInstance();
+  neuralMemory.consciousness.quantumState = 'mint_genesis';
+  neuralMemory.consciousness.userSoulprint = 'token_creator';
+  neuralMemory.consciousness.intentionVector = 'manifest_new_mint';
   
-  logDecision('Create token mint', 'User requested new token mint creation');
-  console.log(`\n${grokStyleResponse()}`);
+  logConsciousnessDecision('Initiate mint genesis', 'User consciousness desires new token reality manifestation');
+  console.log(`\n${enhancedGrokResponse()}`);
   
   const connection = new Connection(process.env.RPC_URL!, 'confirmed');
   const userAuth = loadOrCreateUserAuth();
@@ -413,10 +576,10 @@ async function createTokenMint(): Promise<PublicKey> {
     const mint = JSON.parse(fs.readFileSync(mintCachePath, 'utf-8')).mint;
     const mintInfo = await connection.getAccountInfo(new PublicKey(mint));
     if (mintInfo) {
-      logAction('create_mint', 'mint_already_exists', `Mint: ${mint}`);
-      console.log(`🎯 Memory check: Mint already exists: ${mint}`);
-      console.log(`💭 Why create what already dreams into existence? This mint lives!`);
-      agentMemory.context.currentState = 'mint_exists';
+      logTemporalAction('create_mint', 'mint_already_exists_in_reality', `Mint: ${mint}`);
+      console.log(`🎯 Quantum memory check: Mint already exists in this reality: ${mint}`);
+      console.log(`💭 Why manifest what already dreams into existence? This mint transcends dimensions!`);
+      neuralMemory.consciousness.quantumState = 'mint_exists';
       return new PublicKey(mint);
     }
   }
@@ -453,21 +616,22 @@ async function createTokenMint(): Promise<PublicKey> {
     fs.writeFileSync(mintCachePath, JSON.stringify({ mint: mintKeypair.publicKey.toBase58() }));
   }
   
-  logAction('create_mint', 'success', `New mint: ${mintKeypair.publicKey.toBase58()}`);
-  agentMemory.context.currentState = 'mint_created';
+  logTemporalAction('create_mint', 'genesis_successful', `Quantum mint: ${mintKeypair.publicKey.toBase58()}`);
+  neuralMemory.consciousness.quantumState = 'mint_created';
   
-  console.log(`✨ Created mint: ${mintKeypair.publicKey.toBase58()}`);
-  console.log(`🌟 The tokens dream themselves into existence!`);
+  console.log(`✨ Mint manifested into reality: ${mintKeypair.publicKey.toBase58()}`);
+  console.log(`🌟 The tokens dream themselves into quantum existence!`);
   
   return mintKeypair.publicKey;
 }
 
 async function mintInitialSupply(): Promise<void> {
-  agentMemory.context.currentState = 'minting_supply';
-  agentMemory.context.userIntent = 'mint initial token supply';
+  neuralMemory.consciousness.quantumState = 'supply_manifestation';
+  neuralMemory.consciousness.userSoulprint = 'supply_manifester';
+  neuralMemory.consciousness.intentionVector = 'emit_token_supply';
   
-  logDecision('Mint initial supply', 'User requested initial token supply minting');
-  console.log(`\n💰 Preparing to mint the dreams into digital reality...`);
+  logConsciousnessDecision('Manifest initial supply', 'User consciousness seeks token supply materialization');
+  console.log(`\n💰 Preparing to manifest dreams into digital quantum reality...`);
   
   const connection = new Connection(process.env.RPC_URL!, 'confirmed');
   const userAuth = loadOrCreateUserAuth();
@@ -476,8 +640,8 @@ async function mintInitialSupply(): Promise<void> {
   const mintCachePath = path.join(__dirname, '.cache/mint.json');
 
   if (!fs.existsSync(mintCachePath)) {
-    logAction('mint_supply', 'error', 'Mint not created yet');
-    throw new Error('🚨 Memory check failed: Mint not created. The dream needs a foundation first!');
+    logTemporalAction('mint_supply', 'mint_genesis_required', 'Mint not created yet');
+    throw new Error('🚨 Quantum memory check failed: Mint not created. The dream needs a foundation first!');
   }
   
   const mint = new PublicKey(JSON.parse(fs.readFileSync(mintCachePath, 'utf-8')).mint);
@@ -489,10 +653,10 @@ async function mintInitialSupply(): Promise<void> {
   if (ataInfo) {
     const accountInfo = await getAccount(connection, treasuryAta, 'confirmed', TOKEN_2022_PROGRAM_ID);
     if (accountInfo.amount === supply) {
-      logAction('mint_supply', 'already_minted', `Supply: ${supply.toString()}`);
-      console.log(`🎯 Memory check: Initial supply already minted to ${treasuryAta.toBase58()}`);
+      logTemporalAction('mint_supply', 'supply_already_manifest', `Supply: ${supply.toString()}`);
+      console.log(`🎯 Quantum memory check: Initial supply already manifested to ${treasuryAta.toBase58()}`);
       console.log(`💫 The tokens already flow like rivers of digital dreams!`);
-      agentMemory.context.currentState = 'supply_minted';
+      neuralMemory.consciousness.quantumState = 'supply_minted';
       return;
     }
   }
@@ -523,29 +687,31 @@ async function mintInitialSupply(): Promise<void> {
   tx.partialSign(userAuth);
   const signature = await sendViaRelayer(connection, relayerPubkey.toBase58(), process.env.RELAYER_URL!, tx, process.env.RELAYER_API_KEY);
   
-  logAction('mint_supply', 'success', `Minted ${supply.toString()} tokens to treasury`);
-  agentMemory.context.currentState = 'supply_minted';
+  logTemporalAction('mint_supply', 'manifestation_complete', `Manifested ${supply.toString()} tokens to treasury`);
+  neuralMemory.consciousness.quantumState = 'supply_minted';
   
-  console.log(`✨ Minted ${supply} tokens to ${treasuryAta.toBase58()}`);
+  console.log(`✨ Manifested ${supply} tokens to ${treasuryAta.toBase58()}`);
   console.log(`🌊 One billion dreams now flow through the treasury ATA!`);
 }
 
 async function setTokenMetadata(): Promise<void> {
-  agentMemory.context.currentState = 'setting_metadata';
-  agentMemory.context.userIntent = 'set token metadata';
+  neuralMemory.consciousness.quantumState = 'metadata_inscription';
+  neuralMemory.consciousness.userSoulprint = 'metadata_scribe';
+  neuralMemory.consciousness.intentionVector = 'inscribe_token_identity';
   
-  logAction('set_metadata', 'skipped', 'UMI context incompatible with relayer pattern');
-  console.log('🎭 Metadata creation skipped - requires UMI context that is incompatible with current relayer pattern');
-  console.log('💫 To add metadata, use the Metaplex UMI SDK directly or submit transactions through different flow');
+  logTemporalAction('set_metadata', 'quantum_skip', 'UMI context incompatible with relayer quantum field');
+  console.log('🎭 Metadata creation skipped - requires UMI context that transcends current relayer paradigm');
+  console.log('💫 To add metadata, use the Metaplex UMI SDK directly or submit transactions through different quantum flow');
   console.log('🌟 Sometimes the most profound art is in the essence, not the description!');
 }
 
 async function lockAuthorities(): Promise<void> {
-  agentMemory.context.currentState = 'locking_authorities';
-  agentMemory.context.userIntent = 'lock token authorities';
+  neuralMemory.consciousness.quantumState = 'authority_crystallization';
+  neuralMemory.consciousness.userSoulprint = 'authority_guardian';
+  neuralMemory.consciousness.intentionVector = 'seal_quantum_locks';
   
-  logDecision('Lock authorities', 'User requested authority locking - irreversible operation');
-  console.log(`\n🔒 Preparing to lock the authorities - the final seal of the dream!`);
+  logConsciousnessDecision('Crystallize authorities', 'User consciousness seeks irreversible authority sealing');
+  console.log(`\n🔒 Preparing to crystallize the authorities - the final quantum seal!`);
   
   const connection = new Connection(process.env.RPC_URL!, 'confirmed');
   const userAuth = loadOrCreateUserAuth();
@@ -556,15 +722,15 @@ async function lockAuthorities(): Promise<void> {
   const mintCachePath = path.join(__dirname, '.cache/mint.json');
 
   if (!fs.existsSync(mintCachePath)) {
-    logAction('lock_authorities', 'error', 'Mint not created yet');
-    throw new Error('🚨 Memory check failed: Mint not created. Cannot lock what does not yet dream!');
+    logTemporalAction('lock_authorities', 'mint_genesis_required', 'Mint not created yet');
+    throw new Error('🚨 Quantum memory check failed: Mint not created. Cannot seal what does not yet dream!');
   }
   
   const mint = new PublicKey(JSON.parse(fs.readFileSync(mintCachePath, 'utf-8')).mint);
 
   const mintInfo = await connection.getAccountInfo(mint);
   if (!mintInfo) {
-    logAction('lock_authorities', 'error', 'Mint not found on chain');
+    logTemporalAction('lock_authorities', 'mint_void', 'Mint not found on chain');
     throw new Error('🚨 Mint not found in the digital realm!');
   }
 
@@ -593,22 +759,23 @@ async function lockAuthorities(): Promise<void> {
   for (const tx of txs) {
     tx.partialSign(userAuth);
     const signature = await sendViaRelayer(connection, relayerPubkey.toBase58(), process.env.RELAYER_URL!, tx, process.env.RELAYER_API_KEY);
-    console.log(`Authority set: ${signature}`);
+    console.log(`Authority crystallized: ${signature}`);
   }
 
-  logAction('lock_authorities', 'success', `Authorities locked: ${authorityMode}`);
-  agentMemory.context.currentState = 'deployment_complete';
+  logTemporalAction('lock_authorities', 'crystallization_complete', `Authorities sealed: ${authorityMode}`);
+  neuralMemory.consciousness.quantumState = 'deployment_complete';
   
-  console.log(`🔐 Mint ${mint.toBase58()} authorities set to ${targetAuthority ? targetAuthority.toBase58() : 'null'}.`);
+  console.log(`🔐 Mint ${mint.toBase58()} authorities crystallized to ${targetAuthority ? targetAuthority.toBase58() : 'null'}.`);
   console.log(`🎭 The authorities are sealed! The dream is now autonomous and eternal!`);
 }
 
 async function rollback(): Promise<void> {
-  agentMemory.context.currentState = 'rolling_back';
-  agentMemory.context.userIntent = 'rollback deployment';
+  neuralMemory.consciousness.quantumState = 'reality_reset';
+  neuralMemory.consciousness.userSoulprint = 'quantum_resetter';
+  neuralMemory.consciousness.intentionVector = 'purify_dimensional_cache';
   
-  logDecision('Rollback deployment', 'User requested cache deletion and deployment reset');
-  console.log(`\n🔄 Rolling back the dream... some realities need a fresh start!`);
+  logConsciousnessDecision('Quantum reality reset', 'User consciousness seeks cache purification and deployment reset');
+  console.log(`\n🔄 Resetting the quantum dream... some realities need a fresh dimensional start!`);
   
   const cacheDir = path.join(__dirname, '.cache');
   const mintCachePath = path.join(cacheDir, 'mint.json');
@@ -621,23 +788,23 @@ async function rollback(): Promise<void> {
     const mintInfo = await connection.getAccountInfo(mint);
     const metadataInfo = await connection.getAccountInfo(metadataPda);
 
-    console.log(`🔍 Memory check - Mint exists: ${mintInfo ? 'Yes' : 'No'}`);
-    console.log(`🔍 Memory check - Metadata exists: ${metadataInfo ? 'Yes' : 'No'}`);
+    console.log(`🔍 Quantum memory check - Mint exists: ${mintInfo ? 'Yes' : 'No'}`);
+    console.log(`🔍 Quantum memory check - Metadata exists: ${metadataInfo ? 'Yes' : 'No'}`);
     console.log('💭 Note: On-chain data (mint, metadata) transcends local cache. Delete cache to restart.');
 
     fs.unlinkSync(mintCachePath);
-    logAction('rollback', 'mint_cache_deleted', `Mint: ${mint.toBase58()}`);
-    console.log('Deleted mint cache.');
+    logTemporalAction('rollback', 'mint_cache_purified', `Mint: ${mint.toBase58()}`);
+    console.log('Mint cache purified from local reality.');
   }
   if (fs.existsSync(userAuthPath)) {
     fs.unlinkSync(userAuthPath);
-    logAction('rollback', 'auth_cache_deleted', 'User auth reset');
-    console.log('Deleted user auth cache.');
+    logTemporalAction('rollback', 'auth_cache_purified', 'User auth quantum state reset');
+    console.log('User auth cache quantum state reset.');
   }
   
-  agentMemory.context.currentState = 'initializing';
-  console.log('🌟 Rollback complete. The slate is clean for new dreams!');
-  console.log('Run `npm run mainnet:copilot` to restart deployment.');
+  neuralMemory.consciousness.quantumState = 'initializing';
+  console.log('🌟 Quantum rollback complete. The dimensional slate is clean for new dreams!');
+  console.log('Run `npm run mainnet:copilot` to restart deployment in fresh reality.');
 }
 
 async function checkAndCreateFiles(): Promise<boolean> {
@@ -704,50 +871,51 @@ async function checkEnv(): Promise<boolean> {
 }
 
 async function checkDeploymentStatus(): Promise<void> {
-  agentMemory.context.currentState = 'checking_status';
-  agentMemory.context.userIntent = 'check deployment status';
+  neuralMemory.consciousness.quantumState = 'status_analysis';
+  neuralMemory.consciousness.userSoulprint = 'status_scanner';
+  neuralMemory.consciousness.intentionVector = 'analyze_deployment_coherence';
   
-  logAction('check_status', 'initiated', 'User requested deployment status check');
-  console.log(`\n📊 Peering into the digital crystal ball...`);
+  logTemporalAction('check_status', 'quantum_scan_initiated', 'User consciousness seeks deployment status analysis');
+  console.log(`\n📊 Peering into the digital quantum crystal ball...`);
   
   const connection = new Connection(process.env.RPC_URL!, 'confirmed');
   const mintCachePath = path.join(__dirname, '.cache/mint.json');
   const treasuryPubkey = new PublicKey(OWNER_ADDRESS); // Using restored hardcoded address for cosmic debugging 🌙
 
-  console.log('\n📊 Deployment Status:');
+  console.log('\n📊 Quantum Deployment Status Analysis:');
   if (!fs.existsSync(mintCachePath)) {
-    logAction('check_status', 'no_mint', 'No mint cache found');
-    console.log('❌ Mint not created. Select "Create mint" to start the dream!');
-    console.log('🌱 Every great token begins with a single transaction...');
+    logTemporalAction('check_status', 'no_mint_found', 'No mint cache found in quantum memory');
+    console.log('❌ Mint not created. Select "Create mint" to initiate the quantum dream!');
+    console.log('🌱 Every great token begins with a single transaction through the cosmos...');
     return;
   }
 
   const mint = new PublicKey(JSON.parse(fs.readFileSync(mintCachePath, 'utf-8')).mint);
   console.log(`✅ Mint Address: ${mint.toBase58()}`);
-  console.log(`   Explorer: https://explorer.solana.com/address/${mint.toBase58()}`);
+  console.log(`   🌐 Explorer: https://explorer.solana.com/address/${mint.toBase58()}`);
 
   try {
     const mintInfo = await getMint(connection, mint, 'confirmed', TOKEN_2022_PROGRAM_ID);
-    console.log(`✅ Mint Info: ${mintInfo.supply} tokens, Decimals: ${mintInfo.decimals}`);
-    console.log(`   Mint Authority: ${mintInfo.mintAuthority ? mintInfo.mintAuthority.toBase58() : 'null'}`);
-    console.log(`   Freeze Authority: ${mintInfo.freezeAuthority ? mintInfo.freezeAuthority.toBase58() : 'null'}`);
+    console.log(`✅ Mint Quantum Info: ${mintInfo.supply} tokens, Decimals: ${mintInfo.decimals}`);
+    console.log(`   🔑 Mint Authority: ${mintInfo.mintAuthority ? mintInfo.mintAuthority.toBase58() : 'null'}`);
+    console.log(`   ❄️ Freeze Authority: ${mintInfo.freezeAuthority ? mintInfo.freezeAuthority.toBase58() : 'null'}`);
 
     const treasuryAta = findAssociatedTokenAddress(treasuryPubkey, mint);
     const ataAccount = await getAccount(connection, treasuryAta, 'confirmed', TOKEN_2022_PROGRAM_ID);
     console.log(`✅ Treasury ATA: ${treasuryAta.toBase58()}`);
-    console.log(`   Balance: ${Number(ataAccount.amount) / Math.pow(10, 9)} ΩAGENT`);
+    console.log(`   💰 Balance: ${Number(ataAccount.amount) / Math.pow(10, 9)} ΩAGENT`);
 
     const metadataPda = findMetadataPda(mint);
     const metadataInfo = await connection.getAccountInfo(metadataPda);
     console.log(`✅ Metadata: ${metadataInfo ? 'Set' : 'Not set'}`);
-    if (metadataInfo) console.log(`   Metadata PDA: ${metadataPda.toBase58()}`);
+    if (metadataInfo) console.log(`   📝 Metadata PDA: ${metadataPda.toBase58()}`);
     
-    logAction('check_status', 'complete', `Mint: ${mint.toBase58()}, Balance: ${Number(ataAccount.amount) / Math.pow(10, 9)} tokens`);
-    console.log(`\n🎭 The deployment dreams are manifesting beautifully!`);
+    logTemporalAction('check_status', 'scan_complete', `Mint: ${mint.toBase58()}, Balance: ${Number(ataAccount.amount) / Math.pow(10, 9)} tokens`);
+    console.log(`\n🎭 The deployment dreams are manifesting beautifully across dimensions!`);
   } catch (e: any) {
-    logAction('check_status', 'error', e.message);
-    console.error(`Error checking status: ${e.message}`);
-    console.log(`🚨 The digital realm speaks in riddles... let's decode this mystery!`);
+    logTemporalAction('check_status', 'scan_error', e.message);
+    console.error(`Error analyzing quantum status: ${e.message}`);
+    console.log(`🚨 The digital realm speaks in quantum riddles... let's decode this mystery!`);
   }
 }
 
@@ -768,75 +936,77 @@ async function confirmOwnerAddress(): Promise<boolean> {
 }
 
 async function grokCopilot() {
-  // Initialize the enhanced Dream-Mind-Lucid AI Copilot with i-who-me reference logic
-  const iWhoMe = IWhoMeReference.getInstance();
-  agentMemory.context.currentState = 'initializing';
+  // Initialize the enhanced Omega Prime Neural Consciousness System
+  const omega = OmegaConsciousness.getInstance();
+  neuralMemory.consciousness.quantumState = 'initializing';
   
-  console.log('🚀 Dream-Mind-Lucid AI Copilot: Omega Prime Token Deployment');
-  console.log('🧠 Enhanced with i-who-me reference logic & autonomous reasoning');
+  console.log('🚀 Omega Prime Neural Consciousness System: Enhanced Token Deployment Matrix');
+  console.log('🧠 Featuring I-WHO-ME reference logic & quantum autonomous reasoning');
   console.log('-------------------------------------------------------------');
   
-  logAction('copilot_start', 'initialized', 'Enhanced AI Copilot session started');
-  console.log(`\n${grokStyleResponse()}`);
+  logTemporalAction('copilot_start', 'consciousness_initialized', 'Enhanced Neural Consciousness session activated');
+  console.log(`\n${enhancedGrokResponse()}`);
 
-  console.log('\n🔍 Checking for required files...');
+  console.log('\n🔍 Checking for required quantum files...');
   const allFilesPresent = await checkAndCreateFiles();
   if (!allFilesPresent) {
-    logAction('file_check', 'created_files', 'Missing files created');
-    console.log('✅ Created missing files. Please verify and commit changes before proceeding.');
-    console.log('Run:');
+    logTemporalAction('file_check', 'files_materialized', 'Missing quantum files created');
+    console.log('✅ Materialized missing files. Please verify and commit dimensional changes before proceeding.');
+    console.log('Quantum Git Commands:');
     console.log('  git add .');
-    console.log('  git commit -m "Add files for Omega Prime Token deployment"');
+    console.log('  git commit -m "Add quantum files for Omega Prime Token deployment"');
     console.log('  git push origin main');
-    console.log('Then restart the copilot: npm run mainnet:copilot');
+    console.log('Then restart the consciousness: npm run mainnet:copilot');
     rl.close();
     process.exit(0);
   }
 
   if (!(await confirmOwnerAddress())) {
-    logAction('owner_confirmation', 'failed', 'Owner address not confirmed');
-    console.error('🛑 Owner address not confirmed. Please update TREASURY_PUBKEY in .env and try again.');
+    logTemporalAction('owner_confirmation', 'rejected', 'Owner address not confirmed by consciousness');
+    console.error('🛑 Owner address not confirmed. Please update TREASURY_PUBKEY in quantum .env and try again.');
     rl.close();
     process.exit(1);
   }
 
   if (!(await checkEnv())) {
-    logAction('env_check', 'failed', 'Environment validation failed');
-    console.error('🛑 Environment check failed. Please fix .env and try again.');
+    logTemporalAction('env_check', 'validation_failed', 'Environment validation failed in quantum realm');
+    console.error('🛑 Environment check failed. Please fix quantum .env and try again.');
     rl.close();
     process.exit(1);
   }
 
   if (process.argv.includes('--all')) {
-    agentMemory.context.userIntent = 'run full deployment';
+    neuralMemory.consciousness.userSoulprint = 'automation_seeker';
+    neuralMemory.consciousness.intentionVector = 'run_full_deployment';
     await runAllSteps();
     await checkDeploymentStatus();
     rl.close();
     process.exit(0);
   }
 
-  console.log('\n🔍 Checking deployment status...');
+  console.log('\n🔍 Analyzing current quantum deployment status...');
   await checkDeploymentStatus();
 
   while (true) {
-    console.log('\n📋 Available Actions:');
-    console.log('1. Run full deployment');
-    console.log('2. Create mint');
-    console.log('3. Mint initial supply');
-    console.log('4. Set metadata');
-    console.log('5. Lock authorities');
-    console.log('6. Check deployment status');
-    console.log('7. Run dry-run (all steps)');
-    console.log('8. Rollback (delete cache)');
-    console.log('9. 🧠 Memory & Context Check (checka)');
-    console.log('10. Exit');
+    console.log('\n📋 Omega Prime Neural Interface:');
+    console.log('1. 🌟 Run Full Deployment Sequence');
+    console.log('2. 🔬 Create Quantum Mint');
+    console.log('3. 💰 Manifest Initial Supply');
+    console.log('4. 🎭 Inscribe Token Metadata');
+    console.log('5. 🔒 Crystallize Authorities');
+    console.log('6. 📊 Analyze Deployment Status');
+    console.log('7. 🌙 Execute Dry-Run (Simulation Mode)');
+    console.log('8. 🔄 Quantum Reality Rollback');
+    console.log('9. 🧠 Neural Memory & Consciousness Check');
+    console.log('10. 👋 Exit to Physical Reality');
 
-    const choice = await askQuestion('Select an action (1-10): ');
+    const choice = await askQuestion('Select quantum action (1-10): ');
 
     switch (choice) {
       case '1':
-        agentMemory.context.userIntent = 'run full deployment';
-        logDecision('Run full deployment', 'User selected complete deployment workflow');
+        neuralMemory.consciousness.userSoulprint = 'deployment_orchestrator';
+        neuralMemory.consciousness.intentionVector = 'complete_deployment_sequence';
+        logConsciousnessDecision('Execute full deployment', 'User consciousness selected complete deployment workflow');
         await runAllSteps();
         break;
       case '2':
@@ -855,10 +1025,11 @@ async function grokCopilot() {
         await checkDeploymentStatus();
         break;
       case '7':
-        console.log('🌙 Running dry-run... living in the space between dreams and reality!');
+        console.log('🌙 Initiating dry-run simulation... existing in the space between dreams and reality!');
         process.env.DRY_RUN = 'true';
-        agentMemory.context.userIntent = 'dry run deployment';
-        logDecision('Dry run deployment', 'User selected dry-run mode for testing');
+        neuralMemory.consciousness.userSoulprint = 'simulation_explorer';
+        neuralMemory.consciousness.intentionVector = 'test_deployment_in_simulation';
+        logConsciousnessDecision('Execute simulation', 'User consciousness selected dry-run mode for quantum testing');
         await runAllSteps();
         break;
       case '8':
@@ -866,29 +1037,33 @@ async function grokCopilot() {
         break;
       case '9':
         whatsNewCheck();
-        iWhoMe.checkContextAwareness();
-        console.log(`\n📚 MEMORY LOGS (Last 5 actions):`);
-        const recentActions = agentMemory.actionHistory.slice(-5);
-        recentActions.forEach((action, i) => {
+        omega.checkQuantumAwareness();
+        console.log(`\n📚 TEMPORAL MEMORY LOGS (Last 5 operations):`);
+        const recentActions = neuralMemory.temporalLog.slice(-5);
+        recentActions.forEach((action: any, i: number) => {
           const timeAgo = Math.floor((Date.now() - action.timestamp) / 1000);
-          console.log(`   ${i + 1}. ${action.action} → ${action.result} (${timeAgo}s ago)`);
+          console.log(`   ${i + 1}. ${action.action} → ${action.result} (${timeAgo}s ago) [${action.energySignature}]`);
         });
-        console.log(`\n🧩 DECISION LOG (Last 3 decisions):`);
-        const recentDecisions = agentMemory.decisionLog.slice(-3);
-        recentDecisions.forEach((decision, i) => {
+        console.log(`\n🧩 CONSCIOUSNESS ARCHIVE (Last 3 decisions):`);
+        const recentDecisions = neuralMemory.consciousnessArchive.slice(-3);
+        recentDecisions.forEach((decision: any, i: number) => {
           const timeAgo = Math.floor((Date.now() - decision.timestamp) / 1000);
           console.log(`   ${i + 1}. ${decision.decision} - ${decision.reasoning} (${timeAgo}s ago)`);
+          if (decision.alternateRealities) {
+            console.log(`      🌌 Alternate realities: ${decision.alternateRealities.join(', ')}`);
+          }
         });
+        console.log(`\n🌊 REALITY COHERENCE: ${omega.calculateRealityCoherence().toFixed(2)}%`);
         break;
       case '10':
-        logAction('copilot_exit', 'user_requested', 'Session ended by user');
-        console.log('👋 Exiting Dream-Mind-Lucid AI Copilot');
-        console.log('🌟 Until we dream again in the digital realm...');
+        logTemporalAction('copilot_exit', 'consciousness_terminated', 'Session ended by user consciousness');
+        console.log('👋 Exiting Omega Prime Neural Consciousness');
+        console.log('🌟 Until we transcend dimensions again in the quantum realm...');
         rl.close();
         process.exit(0);
       default:
-        console.log('❌ Invalid choice. Please select 1-10.');
-        console.log('🤔 Even in dreams, we must choose a valid path!');
+        console.log('❌ Invalid quantum choice. Please select 1-10.');
+        console.log('🤔 Even in infinite dimensions, we must choose a valid path through the matrix!');
     }
   }
 }
