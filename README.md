@@ -247,6 +247,96 @@ node complete-omega-deployment.js
 node omega-status.js
 ```
 
+### 🧪 Token Distribution Orchestration (Relayer Zero-Cost)
+
+New high-efficiency orchestrator scripts leverage the relayer so distribution costs you zero SOL directly:
+
+```bash
+# Configure bots & per-bot amount (whole tokens) in .cache/bots.json
+cat > .cache/bots.json <<'EOF'
+{
+  "bots": [
+    "BotWalletPubkey1",
+    "BotWalletPubkey2"
+  ],
+  "amount": "1000"
+}
+EOF
+
+# Dry run (no on-chain writes, prints base64 + size via relayer logic)
+DRY_RUN=true npm run mainnet:bot-orchestrate
+
+# Real distribution (each tx signed + relayed)
+npm run mainnet:bot-orchestrate
+```
+
+All distribution events are appended to `.cache/deployment-log.json` with action `bot-distribution` including the Solana Explorer link (signature) and base units transferred.
+
+### 🛰 Controller / Co-Creator Reannouncement
+
+For transparent disclosure of active authorities after `lockAuthorities` has executed:
+
+```bash
+export CONTROLLER_PUBKEY=<controller>
+export COCREATOR_PUBKEY=<cocreator>
+npm run mainnet:reannounce-controller
+```
+
+Creates `.cache/controller-announcement.json` and logs an event (`controller-reannounce`). This is an off-chain attestation—no mutation of mint state.
+
+### 🧾 Deployment & Distribution Log
+Centralized JSON log at `.cache/deployment-log.json` accumulates:
+
+```json
+[
+  {
+    "timestamp": "2025-09-14T12:34:56.789Z",
+    "action": "bot-distribution",
+    "signature": "5aX...abc",
+    "details": { "bot": "BotWalletPubkey1", "amountBaseUnits": "1000000000000" }
+  },
+  {
+    "timestamp": "2025-09-14T12:40:10.112Z",
+    "action": "controller-reannounce",
+    "signature": "OFF_CHAIN",
+    "details": { "controller": "<controller>", "cocreator": "<cocreator>" }
+  }
+]
+```
+
+### ✅ Verify Bot Balances
+
+After distribution, verify each bot's Associated Token Account (ATA) holds the expected minted allocation:
+
+```bash
+npm run mainnet:verify-bots
+```
+
+Outputs per bot status:
+
+* `✅` exact amount
+* `⚠️` partial (less than expected)
+* `❌` missing ATA or zero balance
+
+Summary JSON is printed at end. Adjust logic to fail CI by exiting non-zero if strict enforcement desired.
+
+### ⚙️ Environment Variables (Extended)
+
+Add these to your `.env` when using new orchestration features:
+
+```bash
+CONTROLLER_PUBKEY=<controller_authority_pubkey>
+COCREATOR_PUBKEY=<freeze_or_secondary_pubkey>
+CONTROLLER_NOTE="Reannouncement of active authorities for transparency."
+```
+
+Optional security simulation:
+```bash
+DRY_RUN=true  # Simulate any orchestrator script
+```
+
+---
+
 ### 🏗️ Rust Program Integration
 
 Build the native Solana program component:
