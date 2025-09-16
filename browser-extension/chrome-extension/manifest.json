@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Oneirobot Syndicate Viewer",
+  "version": "1.0.0",
+  "description": "Display Oneirobot NFT metadata and traits with dreamlike visualization",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.etherscan.io/*",
+    "*://*.opensea.io/*",
+    "*://*.rarible.com/*",
+    "*://*.foundation.app/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.etherscan.io/*",
+        "*://*.opensea.io/*",
+        "*://*.rarible.com/*",
+        "*://*.foundation.app/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Oneirobot Syndicate Viewer"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
