@@ -1,0 +1,3024 @@
+{
+  "timestamp": "2025-09-20T05:16:03.268Z",
+  "currentRepository": {
+    "name": "Omega-prime-deployer",
+    "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer",
+    "analysis": {
+      "structure": {
+        ".env": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/.env",
+          "size": 722,
+          "extension": "",
+          "modified": "2025-09-20T05:06:20.376Z"
+        },
+        ".env.sample": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/.env.sample",
+          "size": 1150,
+          "extension": ".sample",
+          "modified": "2025-09-20T05:06:20.376Z"
+        },
+        ".gitignore": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/.gitignore",
+          "size": 549,
+          "extension": "",
+          "modified": "2025-09-20T05:06:20.376Z"
+        },
+        ".gitleaks.toml": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/.gitleaks.toml",
+          "size": 1560,
+          "extension": ".toml",
+          "modified": "2025-09-20T05:06:20.376Z"
+        },
+        ".vscode": {
+          "type": "directory",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/.vscode",
+          "children": {
+            "extensions.json": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/.vscode/extensions.json",
+              "size": 82,
+              "extension": ".json",
+              "modified": "2025-09-20T05:06:20.376Z"
+            },
+            "settings.json": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/.vscode/settings.json",
+              "size": 57,
+              "extension": ".json",
+              "modified": "2025-09-20T05:06:20.376Z"
+            }
+          }
+        },
+        "ADDRESS_VERIFICATION_README.md": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/ADDRESS_VERIFICATION_README.md",
+          "size": 4910,
+          "extension": ".md",
+          "modified": "2025-09-20T05:06:20.376Z"
+        },
+        "ALL_CONTRACT_ADDRESSES.md": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/ALL_CONTRACT_ADDRESSES.md",
+          "size": 5257,
+          "extension": ".md",
+          "modified": "2025-09-20T05:06:20.377Z"
+        },
+        "ALL_FILES_IN_REPO.txt": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/ALL_FILES_IN_REPO.txt",
+          "size": 2638,
+          "extension": ".txt",
+          "modified": "2025-09-20T05:06:20.377Z"
+        },
+        "ALL_FILES_TREE.txt": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/ALL_FILES_TREE.txt",
+          "size": 4020,
+          "extension": ".txt",
+          "modified": "2025-09-20T05:06:20.377Z"
+        },
+        "CONTRACT-ADDRESS-CLEANUP-REPORT.md": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/CONTRACT-ADDRESS-CLEANUP-REPORT.md",
+          "size": 4675,
+          "extension": ".md",
+          "modified": "2025-09-20T05:06:20.377Z"
+        },
+        "GIT_COMMIT_47CAF46.txt": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/GIT_COMMIT_47CAF46.txt",
+          "size": 63492212,
+          "extension": ".txt",
+          "modified": "2025-09-20T05:06:20.564Z"
+        },
+        "LICENSE": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/LICENSE",
+          "size": 1073,
+          "extension": "",
+          "modified": "2025-09-20T05:06:20.564Z"
+        },
+        "MINT_GENE_AUDIT_REPORT.md": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/MINT_GENE_AUDIT_REPORT.md",
+          "size": 7224,
+          "extension": ".md",
+          "modified": "2025-09-20T05:06:20.564Z"
+        },
+        "ONEIROBOT_MINT_GENE_README.md": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/ONEIROBOT_MINT_GENE_README.md",
+          "size": 10262,
+          "extension": ".md",
+          "modified": "2025-09-20T05:06:20.564Z"
+        },
+        "README.md": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/README.md",
+          "size": 16595,
+          "extension": ".md",
+          "modified": "2025-09-20T05:06:20.564Z"
+        },
+        "REQUIRED_EXTENSIONS.ts": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/REQUIRED_EXTENSIONS.ts",
+          "size": 200,
+          "extension": ".ts",
+          "modified": "2025-09-20T05:06:20.564Z"
+        },
+        "Repo Structure": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/Repo Structure",
+          "size": 1898,
+          "extension": "",
+          "modified": "2025-09-20T05:06:20.564Z"
+        },
+        "SECURITY-AUDIT-REPORT.md": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/SECURITY-AUDIT-REPORT.md",
+          "size": 5612,
+          "extension": ".md",
+          "modified": "2025-09-20T05:06:20.564Z"
+        },
+        "SECURITY.md": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/SECURITY.md",
+          "size": 3096,
+          "extension": ".md",
+          "modified": "2025-09-20T05:06:20.565Z"
+        },
+        "activate-bot-army.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/activate-bot-army.js",
+          "size": 5530,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.565Z"
+        },
+        "address-audit-report.json": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/address-audit-report.json",
+          "size": 55344,
+          "extension": ".json",
+          "modified": "2025-09-20T05:08:09.717Z"
+        },
+        "address-audit.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/address-audit.js",
+          "size": 7595,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.565Z"
+        },
+        "address-security-report.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/address-security-report.js",
+          "size": 3885,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.565Z"
+        },
+        "address-verification-2025-09-11.json": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/address-verification-2025-09-11.json",
+          "size": 10802,
+          "extension": ".json",
+          "modified": "2025-09-20T05:06:20.565Z"
+        },
+        "address-verification-2025-09-20.json": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/address-verification-2025-09-20.json",
+          "size": 69297,
+          "extension": ".json",
+          "modified": "2025-09-20T05:09:31.996Z"
+        },
+        "address-verification-demo-2025-09-11.json": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/address-verification-demo-2025-09-11.json",
+          "size": 14872,
+          "extension": ".json",
+          "modified": "2025-09-20T05:06:20.565Z"
+        },
+        "address-verification-demo-report-2025-09-11.md": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/address-verification-demo-report-2025-09-11.md",
+          "size": 8138,
+          "extension": ".md",
+          "modified": "2025-09-20T05:06:20.565Z"
+        },
+        "address-verification-report-2025-09-11.md": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/address-verification-report-2025-09-11.md",
+          "size": 6326,
+          "extension": ".md",
+          "modified": "2025-09-20T05:06:20.565Z"
+        },
+        "address-verification-report-2025-09-20.md": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/address-verification-report-2025-09-20.md",
+          "size": 8954,
+          "extension": ".md",
+          "modified": "2025-09-20T05:09:31.996Z"
+        },
+        "address-verifier-demo.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/address-verifier-demo.js",
+          "size": 20411,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.565Z"
+        },
+        "analyze-mint-controller.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/analyze-mint-controller.js",
+          "size": 3184,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.565Z"
+        },
+        "analyze-new.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/analyze-new.js",
+          "size": 2072,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.565Z"
+        },
+        "audit-after-cleanup.txt": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/audit-after-cleanup.txt",
+          "size": 64566,
+          "extension": ".txt",
+          "modified": "2025-09-20T05:06:20.565Z"
+        },
+        "audit-reports": {
+          "type": "directory",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/audit-reports",
+          "children": {
+            "omega-prime-audit-2025-09-20.json": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/audit-reports/omega-prime-audit-2025-09-20.json",
+              "size": 17655,
+              "extension": ".json",
+              "modified": "2025-09-20T05:16:03.267Z"
+            },
+            "omega-prime-audit-2025-09-20.md": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/audit-reports/omega-prime-audit-2025-09-20.md",
+              "size": 2913,
+              "extension": ".md",
+              "modified": "2025-09-20T05:16:03.267Z"
+            },
+            "omega-prime-audit-summary-2025-09-20.csv": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/audit-reports/omega-prime-audit-summary-2025-09-20.csv",
+              "size": 2164,
+              "extension": ".csv",
+              "modified": "2025-09-20T05:16:03.267Z"
+            }
+          }
+        },
+        "bot-smart-contracts.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/bot-smart-contracts.js",
+          "size": 4504,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.565Z"
+        },
+        "browser-extension": {
+          "type": "directory",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/browser-extension",
+          "children": {
+            "chrome-extension": {
+              "type": "directory",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/browser-extension/chrome-extension",
+              "children": {
+                "background.js": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/browser-extension/chrome-extension/background.js",
+                  "size": 5159,
+                  "extension": ".js",
+                  "modified": "2025-09-20T05:06:20.566Z"
+                },
+                "content.js": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/browser-extension/chrome-extension/content.js",
+                  "size": 13292,
+                  "extension": ".js",
+                  "modified": "2025-09-20T05:06:20.566Z"
+                },
+                "manifest.json": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/browser-extension/chrome-extension/manifest.json",
+                  "size": 898,
+                  "extension": ".json",
+                  "modified": "2025-09-20T05:06:20.566Z"
+                },
+                "popup.html": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/browser-extension/chrome-extension/popup.html",
+                  "size": 3909,
+                  "extension": ".html",
+                  "modified": "2025-09-20T05:06:20.566Z"
+                },
+                "popup.js": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/browser-extension/chrome-extension/popup.js",
+                  "size": 5795,
+                  "extension": ".js",
+                  "modified": "2025-09-20T05:06:20.566Z"
+                }
+              }
+            }
+          }
+        },
+        "check-address.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/check-address.js",
+          "size": 1579,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.566Z"
+        },
+        "check-authority.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/check-authority.js",
+          "size": 3669,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.566Z"
+        },
+        "check-wallet-status.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/check-wallet-status.js",
+          "size": 3276,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.566Z"
+        },
+        "complete-analysis.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/complete-analysis.js",
+          "size": 2453,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.566Z"
+        },
+        "complete-omega-deployment.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/complete-omega-deployment.js",
+          "size": 7781,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.566Z"
+        },
+        "comprehensive-address-verifier.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/comprehensive-address-verifier.js",
+          "size": 16148,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.566Z"
+        },
+        "comprehensive-omega-audit.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/comprehensive-omega-audit.js",
+          "size": 30121,
+          "extension": ".js",
+          "modified": "2025-09-20T05:11:23.865Z"
+        },
+        "contract_addresses.json": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/contract_addresses.json",
+          "size": 5945,
+          "extension": ".json",
+          "modified": "2025-09-20T05:06:20.566Z"
+        },
+        "contracts": {
+          "type": "directory",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/contracts",
+          "children": {
+            "OneirobotSyndicate.sol": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/contracts/OneirobotSyndicate.sol",
+              "size": 10237,
+              "extension": ".sol",
+              "modified": "2025-09-20T05:06:20.566Z"
+            }
+          }
+        },
+        "deploy-impulse.ts": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/deploy-impulse.ts",
+          "size": 5246,
+          "extension": ".ts",
+          "modified": "2025-09-20T05:06:20.566Z"
+        },
+        "deploy-test.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/deploy-test.js",
+          "size": 1862,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.566Z"
+        },
+        "deploy-transfer-ownership.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/deploy-transfer-ownership.js",
+          "size": 17886,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.566Z"
+        },
+        "deploy-with-key.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/deploy-with-key.js",
+          "size": 7192,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.566Z"
+        },
+        "deploy-with-mint.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/deploy-with-mint.js",
+          "size": 2116,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.566Z"
+        },
+        "deploy.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/deploy.js",
+          "size": 1326,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.567Z"
+        },
+        "detailed-query.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/detailed-query.js",
+          "size": 1597,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.567Z"
+        },
+        "display-all-addresses.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/display-all-addresses.js",
+          "size": 4637,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.567Z"
+        },
+        "execute-bot-minting.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/execute-bot-minting.js",
+          "size": 5305,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.567Z"
+        },
+        "execute-fund-transfer.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/execute-fund-transfer.js",
+          "size": 3744,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.567Z"
+        },
+        "execute-funding-and-minting.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/execute-funding-and-minting.js",
+          "size": 6586,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.567Z"
+        },
+        "execute-transfer.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/execute-transfer.js",
+          "size": 4108,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.567Z"
+        },
+        "fix-security.sh": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/fix-security.sh",
+          "size": 2678,
+          "extension": ".sh",
+          "modified": "2025-09-20T05:06:20.567Z"
+        },
+        "free-ops.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/free-ops.js",
+          "size": 1238,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.567Z"
+        },
+        "full-deployment.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/full-deployment.js",
+          "size": 6231,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.567Z"
+        },
+        "fund-and-mint.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/fund-and-mint.js",
+          "size": 3597,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.567Z"
+        },
+        "fund-target-address.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/fund-target-address.js",
+          "size": 3043,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.567Z"
+        },
+        "generate-mint-keypair.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/generate-mint-keypair.js",
+          "size": 86,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.567Z"
+        },
+        "get-tx-hash.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/get-tx-hash.js",
+          "size": 2520,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.567Z"
+        },
+        "github-account-scanner.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/github-account-scanner.js",
+          "size": 35722,
+          "extension": ".js",
+          "modified": "2025-09-20T05:13:56.478Z"
+        },
+        "github-scan-reports": {
+          "type": "directory",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/github-scan-reports",
+          "children": {
+            "github-account-scan-2025-09-20.json": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/github-scan-reports/github-account-scan-2025-09-20.json",
+              "size": 99609,
+              "extension": ".json",
+              "modified": "2025-09-20T05:14:03.730Z"
+            },
+            "github-account-scan-2025-09-20.md": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/github-scan-reports/github-account-scan-2025-09-20.md",
+              "size": 6296,
+              "extension": ".md",
+              "modified": "2025-09-20T05:14:03.730Z"
+            }
+          }
+        },
+        "grok-copilot.ts": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/grok-copilot.ts",
+          "size": 45386,
+          "extension": ".ts",
+          "modified": "2025-09-20T05:06:20.567Z"
+        },
+        "hardhat.config.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/hardhat.config.js",
+          "size": 879,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.567Z"
+        },
+        "interact-mainnet.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/interact-mainnet.js",
+          "size": 1953,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.567Z"
+        },
+        "jupiter-implementation.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/jupiter-implementation.js",
+          "size": 7934,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.567Z"
+        },
+        "jupiter-strategy.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/jupiter-strategy.js",
+          "size": 4539,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.567Z"
+        },
+        "mainnet-auto-deploy.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/mainnet-auto-deploy.js",
+          "size": 7423,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.567Z"
+        },
+        "mainnet-deploy-live.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/mainnet-deploy-live.js",
+          "size": 1326,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.568Z"
+        },
+        "mainnet-deploy.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/mainnet-deploy.js",
+          "size": 1536,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.568Z"
+        },
+        "mainnet-final.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/mainnet-final.js",
+          "size": 1326,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.568Z"
+        },
+        "mainnet-live.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/mainnet-live.js",
+          "size": 840,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.568Z"
+        },
+        "mint-deploy.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/mint-deploy.js",
+          "size": 80,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.568Z"
+        },
+        "mint-to-address.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/mint-to-address.js",
+          "size": 1256,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.568Z"
+        },
+        "mint-to-bots.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/mint-to-bots.js",
+          "size": 3855,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:20.568Z"
+        },
+        "omega-bot-army.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/omega-bot-army.js",
+          "size": 3356,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:21.070Z"
+        },
+        "omega-deploy-transfer.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/omega-deploy-transfer.js",
+          "size": 4619,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:21.070Z"
+        },
+        "omega-program.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/omega-program.js",
+          "size": 13122,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:21.070Z"
+        },
+        "omega-status.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/omega-status.js",
+          "size": 2268,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:21.070Z"
+        },
+        "out": {
+          "type": "directory",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out",
+          "children": {
+            "REQUIRED_EXTENSIONS.js": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out/REQUIRED_EXTENSIONS.js",
+              "size": 316,
+              "extension": ".js",
+              "modified": "2025-09-20T05:07:23.167Z"
+            },
+            "deploy-impulse.js": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out/deploy-impulse.js",
+              "size": 5447,
+              "extension": ".js",
+              "modified": "2025-09-20T05:07:23.172Z"
+            },
+            "grok-copilot.js": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out/grok-copilot.js",
+              "size": 48081,
+              "extension": ".js",
+              "modified": "2025-09-20T05:07:23.166Z"
+            },
+            "src": {
+              "type": "directory",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out/src",
+              "children": {
+                "botOrchestrator.js": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out/src/botOrchestrator.js",
+                  "size": 6173,
+                  "extension": ".js",
+                  "modified": "2025-09-20T05:07:23.083Z"
+                },
+                "createMint.js": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out/src/createMint.js",
+                  "size": 7695,
+                  "extension": ".js",
+                  "modified": "2025-09-20T05:07:23.092Z"
+                },
+                "lockAuthorities.js": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out/src/lockAuthorities.js",
+                  "size": 4324,
+                  "extension": ".js",
+                  "modified": "2025-09-20T05:07:23.098Z"
+                },
+                "mintInitial.js": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out/src/mintInitial.js",
+                  "size": 4640,
+                  "extension": ".js",
+                  "modified": "2025-09-20T05:07:23.109Z"
+                },
+                "reannounceController.js": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out/src/reannounceController.js",
+                  "size": 3134,
+                  "extension": ".js",
+                  "modified": "2025-09-20T05:07:23.112Z"
+                },
+                "rollback.js": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out/src/rollback.js",
+                  "size": 2966,
+                  "extension": ".js",
+                  "modified": "2025-09-20T05:07:23.115Z"
+                },
+                "setMetadata.js": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out/src/setMetadata.js",
+                  "size": 5313,
+                  "extension": ".js",
+                  "modified": "2025-09-20T05:07:23.118Z"
+                },
+                "utils": {
+                  "type": "directory",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out/src/utils",
+                  "children": {
+                    "checkEnv.js": {
+                      "type": "file",
+                      "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out/src/utils/checkEnv.js",
+                      "size": 2521,
+                      "extension": ".js",
+                      "modified": "2025-09-20T05:07:23.129Z"
+                    },
+                    "pdas.js": {
+                      "type": "file",
+                      "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out/src/utils/pdas.js",
+                      "size": 827,
+                      "extension": ".js",
+                      "modified": "2025-09-20T05:07:23.066Z"
+                    },
+                    "relayer.js": {
+                      "type": "file",
+                      "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out/src/utils/relayer.js",
+                      "size": 2237,
+                      "extension": ".js",
+                      "modified": "2025-09-20T05:07:23.060Z"
+                    },
+                    "securityConfig.js": {
+                      "type": "file",
+                      "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out/src/utils/securityConfig.js",
+                      "size": 6273,
+                      "extension": ".js",
+                      "modified": "2025-09-20T05:07:23.073Z"
+                    },
+                    "txLogger.js": {
+                      "type": "file",
+                      "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out/src/utils/txLogger.js",
+                      "size": 2359,
+                      "extension": ".js",
+                      "modified": "2025-09-20T05:07:23.063Z"
+                    },
+                    "wallet.js": {
+                      "type": "file",
+                      "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out/src/utils/wallet.js",
+                      "size": 2300,
+                      "extension": ".js",
+                      "modified": "2025-09-20T05:07:23.053Z"
+                    }
+                  }
+                },
+                "verifyBotBalances.js": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out/src/verifyBotBalances.js",
+                  "size": 4974,
+                  "extension": ".js",
+                  "modified": "2025-09-20T05:07:23.121Z"
+                },
+                "withdraw_earnings.js": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/out/src/withdraw_earnings.js",
+                  "size": 8737,
+                  "extension": ".js",
+                  "modified": "2025-09-20T05:07:23.127Z"
+                }
+              }
+            }
+          }
+        },
+        "package-lock.json": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/package-lock.json",
+          "size": 250785,
+          "extension": ".json",
+          "modified": "2025-09-20T05:08:18.293Z"
+        },
+        "package.json": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/package.json",
+          "size": 2287,
+          "extension": ".json",
+          "modified": "2025-09-20T05:06:21.071Z"
+        },
+        "pentacle": {
+          "type": "directory",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/pentacle",
+          "children": {
+            "Cargo.toml": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/pentacle/Cargo.toml",
+              "size": 143,
+              "extension": ".toml",
+              "modified": "2025-09-20T05:06:21.071Z"
+            },
+            "src": {
+              "type": "directory",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/pentacle/src",
+              "children": {
+                "lib.rs": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/pentacle/src/lib.rs",
+                  "size": 2019,
+                  "extension": ".rs",
+                  "modified": "2025-09-20T05:06:21.071Z"
+                }
+              }
+            },
+            "tests": {
+              "type": "directory",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/pentacle/tests",
+              "children": {
+                "integration.rs": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/pentacle/tests/integration.rs",
+                  "size": 183,
+                  "extension": ".rs",
+                  "modified": "2025-09-20T05:06:21.071Z"
+                }
+              }
+            }
+          }
+        },
+        "query.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/query.js",
+          "size": 1953,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:21.071Z"
+        },
+        "quick-monitor.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/quick-monitor.js",
+          "size": 7900,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:21.071Z"
+        },
+        "scripts": {
+          "type": "directory",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/scripts",
+          "children": {
+            "demo.js": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/scripts/demo.js",
+              "size": 7309,
+              "extension": ".js",
+              "modified": "2025-09-20T05:06:21.071Z"
+            },
+            "deploy.ts": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/scripts/deploy.ts",
+              "size": 4549,
+              "extension": ".ts",
+              "modified": "2025-09-20T05:06:21.071Z"
+            },
+            "ipfs-metadata.js": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/scripts/ipfs-metadata.js",
+              "size": 11151,
+              "extension": ".js",
+              "modified": "2025-09-20T05:06:21.071Z"
+            }
+          }
+        },
+        "scripts-check-output.txt": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/scripts-check-output.txt",
+          "size": 2326,
+          "extension": ".txt",
+          "modified": "2025-09-20T05:06:21.071Z"
+        },
+        "secure-addresses.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/secure-addresses.js",
+          "size": 3231,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:21.071Z"
+        },
+        "security-fix-utility.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/security-fix-utility.js",
+          "size": 4331,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:21.071Z"
+        },
+        "security-verification.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/security-verification.js",
+          "size": 5794,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:21.071Z"
+        },
+        "send-remaining-funds.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/send-remaining-funds.js",
+          "size": 4674,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:21.071Z"
+        },
+        "src": {
+          "type": "directory",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/src",
+          "children": {
+            "botOrchestrator.ts": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/src/botOrchestrator.ts",
+              "size": 4593,
+              "extension": ".ts",
+              "modified": "2025-09-20T05:06:21.071Z"
+            },
+            "createMint.ts": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/src/createMint.ts",
+              "size": 5396,
+              "extension": ".ts",
+              "modified": "2025-09-20T05:06:21.072Z"
+            },
+            "lockAuthorities.ts": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/src/lockAuthorities.ts",
+              "size": 2733,
+              "extension": ".ts",
+              "modified": "2025-09-20T05:06:21.072Z"
+            },
+            "mintInitial.ts": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/src/mintInitial.ts",
+              "size": 3163,
+              "extension": ".ts",
+              "modified": "2025-09-20T05:06:21.072Z"
+            },
+            "reannounceController.ts": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/src/reannounceController.ts",
+              "size": 1543,
+              "extension": ".ts",
+              "modified": "2025-09-20T05:06:21.072Z"
+            },
+            "rollback.ts": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/src/rollback.ts",
+              "size": 1414,
+              "extension": ".ts",
+              "modified": "2025-09-20T05:06:21.072Z"
+            },
+            "setMetadata.ts": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/src/setMetadata.ts",
+              "size": 3374,
+              "extension": ".ts",
+              "modified": "2025-09-20T05:06:21.072Z"
+            },
+            "utils": {
+              "type": "directory",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/src/utils",
+              "children": {
+                "checkEnv.ts": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/src/utils/checkEnv.ts",
+                  "size": 1012,
+                  "extension": ".ts",
+                  "modified": "2025-09-20T05:06:21.072Z"
+                },
+                "pdas.ts": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/src/utils/pdas.ts",
+                  "size": 672,
+                  "extension": ".ts",
+                  "modified": "2025-09-20T05:06:21.072Z"
+                },
+                "relayer.ts": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/src/utils/relayer.ts",
+                  "size": 2070,
+                  "extension": ".ts",
+                  "modified": "2025-09-20T05:06:21.072Z"
+                },
+                "securityConfig.ts": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/src/utils/securityConfig.ts",
+                  "size": 4997,
+                  "extension": ".ts",
+                  "modified": "2025-09-20T05:06:21.072Z"
+                },
+                "txLogger.ts": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/src/utils/txLogger.ts",
+                  "size": 928,
+                  "extension": ".ts",
+                  "modified": "2025-09-20T05:06:21.072Z"
+                },
+                "wallet.ts": {
+                  "type": "file",
+                  "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/src/utils/wallet.ts",
+                  "size": 731,
+                  "extension": ".ts",
+                  "modified": "2025-09-20T05:06:21.072Z"
+                }
+              }
+            },
+            "verifyBotBalances.ts": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/src/verifyBotBalances.ts",
+              "size": 3221,
+              "extension": ".ts",
+              "modified": "2025-09-20T05:06:21.072Z"
+            },
+            "withdraw_earnings.ts": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/src/withdraw_earnings.ts",
+              "size": 7080,
+              "extension": ".ts",
+              "modified": "2025-09-20T05:06:21.072Z"
+            }
+          }
+        },
+        "status-check.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/status-check.js",
+          "size": 4926,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:21.072Z"
+        },
+        "termux-run.sh": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/termux-run.sh",
+          "size": 235,
+          "extension": ".sh",
+          "modified": "2025-09-20T05:06:21.072Z"
+        },
+        "termux-setup.sh": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/termux-setup.sh",
+          "size": 837,
+          "extension": ".sh",
+          "modified": "2025-09-20T05:06:21.072Z"
+        },
+        "test": {
+          "type": "directory",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/test",
+          "children": {
+            "OneirobotSyndicate.test.ts": {
+              "type": "file",
+              "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/test/OneirobotSyndicate.test.ts",
+              "size": 11760,
+              "extension": ".ts",
+              "modified": "2025-09-20T05:06:21.072Z"
+            }
+          }
+        },
+        "tsc-errors.txt": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/tsc-errors.txt",
+          "size": 8382,
+          "extension": ".txt",
+          "modified": "2025-09-20T05:06:21.072Z"
+        },
+        "tsconfig.json": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/tsconfig.json",
+          "size": 398,
+          "extension": ".json",
+          "modified": "2025-09-20T05:06:21.072Z"
+        },
+        "tx-checker.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/tx-checker.js",
+          "size": 1836,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:21.072Z"
+        },
+        "unified-audit-system.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/unified-audit-system.js",
+          "size": 26556,
+          "extension": ".js",
+          "modified": "2025-09-20T05:15:49.907Z"
+        },
+        "zero-cost.js": {
+          "type": "file",
+          "path": "/home/runner/work/Omega-prime-deployer/Omega-prime-deployer/zero-cost.js",
+          "size": 1326,
+          "extension": ".js",
+          "modified": "2025-09-20T05:06:21.072Z"
+        }
+      },
+      "addresses": [
+        {
+          "address": "x4eAbbE6EAD2c295b3f4eFD78f6A7e89eAb1DDfFb",
+          "file": "test/OneirobotSyndicate.test.ts",
+          "context": "const CONTROLLER_MASTER = \"0x4eAbbE6EAD2c295b3f4eFD78f6A7e89eAb1DDfFb\";"
+        },
+        {
+          "address": "QmYwAPJzv5CZsnA625s3Xf2nemtYgPpHdWEz79ojWnPb",
+          "file": "test/OneirobotSyndicate.test.ts",
+          "context": "const SAMPLE_IPFS_HASH = \"QmYwAPJzv5CZsnA625s3Xf2nemtYgPpHdWEz79ojWnPbdG\";"
+        },
+        {
+          "address": "EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6",
+          "file": "src/botOrchestrator.ts",
+          "context": "const TREASURY_ADDRESS = 'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6'; // existing hardcoded treas"
+        },
+        {
+          "address": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+          "file": "src/withdraw_earnings.ts",
+          "context": "const treasuryPubkey = new PublicKey(process.env.TREASURY_PUBKEY || '4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFB"
+        },
+        {
+          "address": "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
+          "file": "src/utils/pdas.ts",
+          "context": "[Buffer.from('metadata'), new PublicKey('metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s').toBuffer(), m"
+        },
+        {
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "file": "src/utils/pdas.ts",
+          "context": "[owner.toBuffer(), new PublicKey('TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA').toBuffer(), mint.toB"
+        },
+        {
+          "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+          "file": "src/utils/pdas.ts",
+          "context": "new PublicKey('ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL')"
+        },
+        {
+          "address": "x4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6",
+          "file": "scripts/deploy.ts",
+          "context": "const CONTROLLER_MASTER = \"0x4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a\";"
+        },
+        {
+          "address": "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ",
+          "file": "out/grok-copilot.js",
+          "context": "console.log('- 🌟 Master controller: CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ');"
+        },
+        {
+          "address": "HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR",
+          "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+          "context": "\"address\": \"HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR\","
+        },
+        {
+          "address": "EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6",
+          "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+          "context": "\"address\": \"EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6\","
+        },
+        {
+          "address": "NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d",
+          "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+          "context": "\"address\": \"NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d\","
+        },
+        {
+          "address": "HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76",
+          "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+          "context": "\"address\": \"HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76\","
+        },
+        {
+          "address": "DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA",
+          "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+          "context": "\"address\": \"DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA\","
+        },
+        {
+          "address": "FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1",
+          "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+          "context": "\"address\": \"FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1\","
+        },
+        {
+          "address": "7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41",
+          "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+          "context": "\"address\": \"7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41\","
+        },
+        {
+          "address": "5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p",
+          "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+          "context": "\"address\": \"5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p\","
+        },
+        {
+          "address": "3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw",
+          "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+          "context": "\"address\": \"3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw\","
+        },
+        {
+          "address": "DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD",
+          "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+          "context": "\"address\": \"DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD\","
+        },
+        {
+          "address": "8cRrU1NzNpjL3k2BwjW3VixAcX6VFc29KHr4KZg8cs2Y",
+          "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+          "context": "\"address\": \"8cRrU1NzNpjL3k2BwjW3VixAcX6VFc29KHr4KZg8cs2Y\","
+        },
+        {
+          "address": "9HUvuQHBHkihcrhiucdYFjk1q4jUgozakoYsubYrHiJS",
+          "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+          "context": "\"address\": \"9HUvuQHBHkihcrhiucdYFjk1q4jUgozakoYsubYrHiJS\","
+        },
+        {
+          "address": "Stake11111111111111111111111111111111111111",
+          "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+          "context": "\"address\": \"Stake11111111111111111111111111111111111111\","
+        },
+        {
+          "address": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+          "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+          "context": "\"address\": \"JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4\","
+        },
+        {
+          "address": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+          "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+          "context": "\"address\": \"LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo\","
+        },
+        {
+          "address": "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8",
+          "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+          "context": "\"address\": \"675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8\","
+        }
+      ],
+      "contracts": [
+        {
+          "file": "src/createMint.ts",
+          "type": "unknown",
+          "analysis": {
+            "hasWeb3": true,
+            "hasSplToken": true,
+            "hasMetaplex": false,
+            "hasBotFunctions": false,
+            "hasDeploymentLogic": true,
+            "lineCount": 127
+          }
+        },
+        {
+          "file": "src/mintInitial.ts",
+          "type": "minting_script",
+          "analysis": {
+            "hasWeb3": true,
+            "hasSplToken": true,
+            "hasMetaplex": false,
+            "hasBotFunctions": false,
+            "hasDeploymentLogic": true,
+            "lineCount": 90
+          }
+        },
+        {
+          "file": "scripts/deploy.ts",
+          "type": "deployment_script",
+          "analysis": {
+            "hasWeb3": false,
+            "hasSplToken": false,
+            "hasMetaplex": false,
+            "hasBotFunctions": true,
+            "hasDeploymentLogic": true,
+            "lineCount": 120
+          }
+        },
+        {
+          "file": "out/deploy-impulse.js",
+          "type": "deployment_script",
+          "analysis": {
+            "hasWeb3": true,
+            "hasSplToken": true,
+            "hasMetaplex": true,
+            "hasBotFunctions": false,
+            "hasDeploymentLogic": true,
+            "lineCount": 103
+          }
+        },
+        {
+          "file": "out/src/createMint.js",
+          "type": "unknown",
+          "analysis": {
+            "hasWeb3": true,
+            "hasSplToken": true,
+            "hasMetaplex": false,
+            "hasBotFunctions": false,
+            "hasDeploymentLogic": true,
+            "lineCount": 155
+          }
+        },
+        {
+          "file": "out/src/mintInitial.js",
+          "type": "minting_script",
+          "analysis": {
+            "hasWeb3": true,
+            "hasSplToken": true,
+            "hasMetaplex": false,
+            "hasBotFunctions": false,
+            "hasDeploymentLogic": true,
+            "lineCount": 99
+          }
+        }
+      ],
+      "configurations": [
+        {
+          "file": "package.json",
+          "analysis": {
+            "type": "config",
+            "structure": [
+              "name",
+              "version",
+              "description",
+              "main",
+              "scripts",
+              "dependencies",
+              "devDependencies",
+              "engines",
+              "keywords",
+              "author",
+              "license"
+            ],
+            "hasSecrets": true,
+            "lineCount": 65
+          },
+          "security_relevance": "high"
+        },
+        {
+          "file": "tsconfig.json",
+          "analysis": {
+            "type": "config",
+            "structure": [
+              "compilerOptions",
+              "include",
+              "exclude"
+            ],
+            "hasSecrets": false,
+            "lineCount": 17
+          },
+          "security_relevance": "low"
+        },
+        {
+          "file": "hardhat.config.js",
+          "analysis": {
+            "type": "config",
+            "lineCount": 32
+          },
+          "security_relevance": "high"
+        },
+        {
+          "file": ".env.sample",
+          "analysis": {
+            "type": "config",
+            "lineCount": 35
+          },
+          "security_relevance": "high"
+        },
+        {
+          "file": ".gitleaks.toml",
+          "analysis": {
+            "type": "config",
+            "lineCount": 64
+          },
+          "security_relevance": "high"
+        },
+        {
+          "file": "contract_addresses.json",
+          "analysis": {
+            "type": "config",
+            "structure": [
+              "omega_prime_addresses"
+            ],
+            "hasSecrets": true,
+            "lineCount": 141
+          },
+          "security_relevance": "high"
+        }
+      ],
+      "security": {
+        "sensitive_files": [
+          "src/utils/wallet.ts",
+          "out/src/utils/wallet.js"
+        ],
+        "environment_variables": [
+          {
+            "file": ".env",
+            "variable": "RPC_URL",
+            "sensitive": false
+          },
+          {
+            "file": ".env",
+            "variable": "HELIUS_API_KEY",
+            "sensitive": true
+          },
+          {
+            "file": ".env",
+            "variable": "RELAYER_URL",
+            "sensitive": false
+          },
+          {
+            "file": ".env",
+            "variable": "RELAYER_PUBKEY",
+            "sensitive": true
+          },
+          {
+            "file": ".env",
+            "variable": "RELAYER_API_KEY",
+            "sensitive": true
+          },
+          {
+            "file": ".env",
+            "variable": "TREASURY_PUBKEY",
+            "sensitive": true
+          },
+          {
+            "file": ".env",
+            "variable": "TARGET_WALLET_ADDRESS",
+            "sensitive": false
+          },
+          {
+            "file": ".env",
+            "variable": "AUTHORITY_MODE",
+            "sensitive": true
+          },
+          {
+            "file": ".env",
+            "variable": "DRY_RUN",
+            "sensitive": false
+          },
+          {
+            "file": ".env.sample",
+            "variable": "RPC_URL",
+            "sensitive": false
+          },
+          {
+            "file": ".env.sample",
+            "variable": "HELIUS_API_KEY",
+            "sensitive": true
+          },
+          {
+            "file": ".env.sample",
+            "variable": "RPC_URL_WITH_KEY",
+            "sensitive": true
+          },
+          {
+            "file": ".env.sample",
+            "variable": "RELAYER_URL",
+            "sensitive": false
+          },
+          {
+            "file": ".env.sample",
+            "variable": "RELAYER_PUBKEY",
+            "sensitive": true
+          },
+          {
+            "file": ".env.sample",
+            "variable": "RELAYER_API_KEY",
+            "sensitive": true
+          },
+          {
+            "file": ".env.sample",
+            "variable": "TREASURY_PUBKEY",
+            "sensitive": true
+          },
+          {
+            "file": ".env.sample",
+            "variable": "DAO_PUBKEY",
+            "sensitive": true
+          },
+          {
+            "file": ".env.sample",
+            "variable": "SOURCE_WALLET_ADDRESS",
+            "sensitive": false
+          },
+          {
+            "file": ".env.sample",
+            "variable": "TARGET_WALLET_ADDRESS",
+            "sensitive": false
+          },
+          {
+            "file": ".env.sample",
+            "variable": "CREATOR_ADDRESS",
+            "sensitive": false
+          },
+          {
+            "file": ".env.sample",
+            "variable": "CHECK_ADDRESS",
+            "sensitive": false
+          },
+          {
+            "file": ".env.sample",
+            "variable": "QUERY_ADDRESS",
+            "sensitive": false
+          },
+          {
+            "file": ".env.sample",
+            "variable": "ADDITIONAL_ADDRESSES",
+            "sensitive": false
+          },
+          {
+            "file": ".env.sample",
+            "variable": "BOT_ADDRESSES",
+            "sensitive": false
+          },
+          {
+            "file": ".env.sample",
+            "variable": "BOT_CONTRACTS",
+            "sensitive": false
+          },
+          {
+            "file": ".env.sample",
+            "variable": "AUTHORITY_MODE",
+            "sensitive": true
+          },
+          {
+            "file": ".env.sample",
+            "variable": "DRY_RUN",
+            "sensitive": false
+          },
+          {
+            "file": ".env.sample",
+            "variable": "PRIVATE_KEY_PATH",
+            "sensitive": true
+          },
+          {
+            "file": ".env.sample",
+            "variable": "USER_AUTH_PATH",
+            "sensitive": true
+          }
+        ],
+        "hardcoded_secrets": [
+          {
+            "file": "src/botOrchestrator.ts",
+            "type": "solana_address",
+            "context": "'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6'"
+          },
+          {
+            "file": "src/createMint.ts",
+            "type": "solana_address",
+            "context": "'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6'"
+          },
+          {
+            "file": "src/mintInitial.ts",
+            "type": "solana_address",
+            "context": "'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6'"
+          },
+          {
+            "file": "src/setMetadata.ts",
+            "type": "solana_address",
+            "context": "'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6'"
+          },
+          {
+            "file": "src/withdraw_earnings.ts",
+            "type": "solana_address",
+            "context": "'4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a'"
+          },
+          {
+            "file": "src/utils/pdas.ts",
+            "type": "solana_address",
+            "context": "'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'"
+          },
+          {
+            "file": "src/utils/pdas.ts",
+            "type": "solana_address",
+            "context": "'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'"
+          },
+          {
+            "file": "src/utils/pdas.ts",
+            "type": "solana_address",
+            "context": "'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA'"
+          },
+          {
+            "file": "src/utils/pdas.ts",
+            "type": "solana_address",
+            "context": "'ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL'"
+          },
+          {
+            "file": "out/deploy-impulse.js",
+            "type": "solana_address",
+            "context": "'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA'"
+          },
+          {
+            "file": "out/deploy-impulse.js",
+            "type": "solana_address",
+            "context": "'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'"
+          },
+          {
+            "file": "out/grok-copilot.js",
+            "type": "solana_address",
+            "context": "'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6'"
+          },
+          {
+            "file": "out/grok-copilot.js",
+            "type": "solana_address",
+            "context": "'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'"
+          },
+          {
+            "file": "out/grok-copilot.js",
+            "type": "solana_address",
+            "context": "'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'"
+          },
+          {
+            "file": "out/grok-copilot.js",
+            "type": "solana_address",
+            "context": "'ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL'"
+          },
+          {
+            "file": "out/src/botOrchestrator.js",
+            "type": "solana_address",
+            "context": "'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6'"
+          },
+          {
+            "file": "out/src/createMint.js",
+            "type": "solana_address",
+            "context": "'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6'"
+          },
+          {
+            "file": "out/src/mintInitial.js",
+            "type": "solana_address",
+            "context": "'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6'"
+          },
+          {
+            "file": "out/src/setMetadata.js",
+            "type": "solana_address",
+            "context": "'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6'"
+          },
+          {
+            "file": "out/src/withdraw_earnings.js",
+            "type": "solana_address",
+            "context": "'4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a'"
+          },
+          {
+            "file": "out/src/utils/pdas.js",
+            "type": "solana_address",
+            "context": "'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'"
+          },
+          {
+            "file": "out/src/utils/pdas.js",
+            "type": "solana_address",
+            "context": "'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'"
+          },
+          {
+            "file": "out/src/utils/pdas.js",
+            "type": "solana_address",
+            "context": "'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA'"
+          },
+          {
+            "file": "out/src/utils/pdas.js",
+            "type": "solana_address",
+            "context": "'ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"x4eAbbE6EAD2c295b3f4eFD78f6A7e89eAb1DDfFb\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"QmYwAPJzv5CZsnA625s3Xf2nemtYgPpHdWEz79ojWnPb\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"x4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"8cRrU1NzNpjL3k2BwjW3VixAcX6VFc29KHr4KZg8cs2Y\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"9HUvuQHBHkihcrhiucdYFjk1q4jUgozakoYsubYrHiJS\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"Stake11111111111111111111111111111111111111\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8\""
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA'"
+          },
+          {
+            "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+            "type": "solana_address",
+            "context": "'ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL'"
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"8cRrU1NzNpjL3k2BwjW3VixAcX6VFc29KHr4KZg8cs2Y\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"9HUvuQHBHkihcrhiucdYFjk1q4jUgozakoYsubYrHiJS\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"Stake11111111111111111111111111111111111111\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"8cRrU1NzNpjL3k2BwjW3VixAcX6VFc29KHr4KZg8cs2Y\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"8cRrU1NzNpjL3k2BwjW3VixAcX6VFc29KHr4KZg8cs2Y\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"9HUvuQHBHkihcrhiucdYFjk1q4jUgozakoYsubYrHiJS\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"9HUvuQHBHkihcrhiucdYFjk1q4jUgozakoYsubYrHiJS\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"Stake11111111111111111111111111111111111111\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"Stake11111111111111111111111111111111111111\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76\""
+          },
+          {
+            "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+            "type": "solana_address",
+            "context": "\"DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA\""
+          }
+        ],
+        "security_configurations": [
+          {
+            "file": ".gitleaks.toml",
+            "exists": true,
+            "purpose": "Secret detection configuration"
+          },
+          {
+            "file": "SECURITY.md",
+            "exists": true,
+            "purpose": "Security policy documentation"
+          },
+          {
+            "file": ".gitignore",
+            "exists": true,
+            "purpose": "Prevents sensitive files from being committed"
+          }
+        ],
+        "access_controls": [],
+        "recommendations": [
+          "Review and secure sensitive files found in repository",
+          "Replace hardcoded secrets with environment variables",
+          "Ensure sensitive environment variables are not committed"
+        ]
+      },
+      "dependencies": {
+        "production": {
+          "@metaplex-foundation/mpl-token-metadata": "^3.4.0",
+          "@metaplex-foundation/umi": "^1.4.1",
+          "@metaplex-foundation/umi-bundle-defaults": "^1.4.1",
+          "@solana/spl-token": "^0.4.14",
+          "@solana/web3.js": "^1.98.4",
+          "bs58": "^6.0.0",
+          "dotenv": "^16.6.1",
+          "ethers": "^6.15.0",
+          "node-fetch": "^2.7.0"
+        },
+        "development": {
+          "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+          "@openzeppelin/contracts": "^5.4.0",
+          "@types/node": "^22.7.4",
+          "@types/vscode": "^1.101.0",
+          "@vscode/extension-telemetry": "^0.6.2",
+          "eslint": "^8.50.0",
+          "hardhat": "^3.0.6",
+          "ts-node": "^10.9.2",
+          "typescript": "^5.6.2"
+        },
+        "security_analysis": {
+          "total_dependencies": 18,
+          "has_solana_deps": true,
+          "has_security_deps": true,
+          "outdated_risk": "unknown"
+        },
+        "outdated": [],
+        "vulnerabilities": []
+      },
+      "scripts": [
+        {
+          "file": "test/OneirobotSyndicate.test.ts",
+          "type": "test",
+          "analysis": {
+            "type": "test",
+            "hasSolanaAPI": false,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 278
+          }
+        },
+        {
+          "file": "src/botOrchestrator.ts",
+          "type": "automation",
+          "analysis": {
+            "type": "automation",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": false,
+            "lineCount": 128
+          }
+        },
+        {
+          "file": "src/createMint.ts",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": false,
+            "lineCount": 127
+          }
+        },
+        {
+          "file": "src/lockAuthorities.ts",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": false,
+            "lineCount": 70
+          }
+        },
+        {
+          "file": "src/mintInitial.ts",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": false,
+            "lineCount": 90
+          }
+        },
+        {
+          "file": "src/reannounceController.ts",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": false,
+            "lineCount": 43
+          }
+        },
+        {
+          "file": "src/rollback.ts",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": false,
+            "lineCount": 39
+          }
+        },
+        {
+          "file": "src/setMetadata.ts",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": false,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": true,
+            "lineCount": 99
+          }
+        },
+        {
+          "file": "src/verifyBotBalances.ts",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 92
+          }
+        },
+        {
+          "file": "src/withdraw_earnings.ts",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": false,
+            "lineCount": 196
+          }
+        },
+        {
+          "file": "src/utils/checkEnv.ts",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 36
+          }
+        },
+        {
+          "file": "src/utils/pdas.ts",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 16
+          }
+        },
+        {
+          "file": "src/utils/relayer.ts",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": true,
+            "lineCount": 52
+          }
+        },
+        {
+          "file": "src/utils/securityConfig.ts",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": false,
+            "lineCount": 154
+          }
+        },
+        {
+          "file": "src/utils/txLogger.ts",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": false,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 30
+          }
+        },
+        {
+          "file": "src/utils/wallet.ts",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 19
+          }
+        },
+        {
+          "file": "scripts/demo.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": false,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 188
+          }
+        },
+        {
+          "file": "scripts/deploy.ts",
+          "type": "deployment",
+          "analysis": {
+            "type": "deployment",
+            "hasSolanaAPI": false,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 120
+          }
+        },
+        {
+          "file": "scripts/ipfs-metadata.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": false,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": true,
+            "lineCount": 350
+          }
+        },
+        {
+          "file": "pentacle/tests/integration.rs",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": false,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 9
+          }
+        },
+        {
+          "file": "out/REQUIRED_EXTENSIONS.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": false,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 10
+          }
+        },
+        {
+          "file": "out/deploy-impulse.js",
+          "type": "deployment",
+          "analysis": {
+            "type": "deployment",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": false,
+            "lineCount": 103
+          }
+        },
+        {
+          "file": "out/grok-copilot.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": true,
+            "lineCount": 922
+          }
+        },
+        {
+          "file": "out/src/botOrchestrator.js",
+          "type": "automation",
+          "analysis": {
+            "type": "automation",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": false,
+            "lineCount": 127
+          }
+        },
+        {
+          "file": "out/src/createMint.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": false,
+            "lineCount": 155
+          }
+        },
+        {
+          "file": "out/src/lockAuthorities.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": false,
+            "lineCount": 90
+          }
+        },
+        {
+          "file": "out/src/mintInitial.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": false,
+            "lineCount": 99
+          }
+        },
+        {
+          "file": "out/src/reannounceController.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": false,
+            "lineCount": 77
+          }
+        },
+        {
+          "file": "out/src/rollback.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": false,
+            "lineCount": 68
+          }
+        },
+        {
+          "file": "out/src/setMetadata.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": false,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": true,
+            "lineCount": 127
+          }
+        },
+        {
+          "file": "out/src/verifyBotBalances.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 122
+          }
+        },
+        {
+          "file": "out/src/withdraw_earnings.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": false,
+            "lineCount": 173
+          }
+        },
+        {
+          "file": "out/src/utils/checkEnv.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 64
+          }
+        },
+        {
+          "file": "out/src/utils/pdas.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 12
+          }
+        },
+        {
+          "file": "out/src/utils/relayer.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": true,
+            "lineCount": 47
+          }
+        },
+        {
+          "file": "out/src/utils/securityConfig.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": false,
+            "lineCount": 158
+          }
+        },
+        {
+          "file": "out/src/utils/txLogger.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": false,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 66
+          }
+        },
+        {
+          "file": "out/src/utils/wallet.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 54
+          }
+        },
+        {
+          "file": "github-scan-reports/github-account-scan-2025-09-20.json",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": true,
+            "hasEnvironmentVars": true,
+            "hasNetworkCalls": true,
+            "lineCount": 2711
+          }
+        },
+        {
+          "file": "browser-extension/chrome-extension/background.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": false,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 167
+          }
+        },
+        {
+          "file": "browser-extension/chrome-extension/content.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": false,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": true,
+            "lineCount": 367
+          }
+        },
+        {
+          "file": "browser-extension/chrome-extension/manifest.json",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": false,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 40
+          }
+        },
+        {
+          "file": "browser-extension/chrome-extension/popup.js",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": false,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 154
+          }
+        },
+        {
+          "file": "audit-reports/omega-prime-audit-2025-09-20.json",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": false,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 545
+          }
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": false,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 5
+          }
+        },
+        {
+          "file": ".vscode/settings.json",
+          "type": "script",
+          "analysis": {
+            "type": "script",
+            "hasSolanaAPI": false,
+            "hasEnvironmentVars": false,
+            "hasNetworkCalls": false,
+            "lineCount": 3
+          }
+        }
+      ],
+      "documentation": [
+        {
+          "file": "github-scan-reports/github-account-scan-2025-09-20.md",
+          "type": "documentation",
+          "analysis": {
+            "wordCount": 515,
+            "hasAddresses": true,
+            "hasSecurityInfo": true,
+            "hasInstructions": true
+          }
+        },
+        {
+          "file": "audit-reports/omega-prime-audit-2025-09-20.md",
+          "type": "documentation",
+          "analysis": {
+            "wordCount": 393,
+            "hasAddresses": true,
+            "hasSecurityInfo": true,
+            "hasInstructions": true
+          }
+        }
+      ]
+    }
+  },
+  "repositoryAnalysis": {},
+  "crossRepoFindings": {
+    "external_references": [],
+    "related_projects": [],
+    "shared_addresses": [],
+    "common_patterns": []
+  },
+  "securityAnalysis": {},
+  "summary": {
+    "repository_health": "excellent",
+    "security_score": 0,
+    "total_addresses": 25,
+    "contract_files": 6,
+    "security_issues": 171,
+    "recommendations": [],
+    "key_findings": [
+      "Found 25 Solana addresses in repository",
+      "Identified 6 smart contract files",
+      "⚠️ Potential hardcoded secrets detected"
+    ]
+  }
+}
