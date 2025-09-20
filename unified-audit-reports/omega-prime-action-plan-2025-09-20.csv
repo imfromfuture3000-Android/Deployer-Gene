@@ -1,0 +1,9 @@
+Priority,Category,Issue,Action,Urgency,Status
+"CRITICAL","Missing Addresses","22 contract addresses not found on blockchain","Verify addresses exist, check network connection, or update configuration","Immediate","Open"
+"CRITICAL","Bot Operations","All bot agents appear to be offline","Investigate bot deployment, check private keys, restart agents","Immediate","Open"
+"HIGH","Security","Low security score: 0/100","Address security issues, implement additional safeguards","Within 24 hours","Open"
+"HIGH","Repository Security","171 security issues in repository","Review and fix security issues, audit commit history","Within 48 hours","Open"
+"MEDIUM","Funding","Low SOL balance across all addresses","Fund operational addresses with sufficient SOL","Within 1 week","Open"
+"CRITICAL","missing_addresses","22 addresses not found on blockchain","Verify these addresses exist or update configuration","Immediate","Open"
+"HIGH","bot_operations","5 bots appear inactive","Investigate bot operational status and restart if needed","Within 24 hours","Open"
+"CRITICAL","security","22 addresses have high security risks","Review access controls and implement additional security measures","Immediate","Open"
