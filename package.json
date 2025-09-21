@@ -23,6 +23,8 @@
     "audit:contracts": "node comprehensive-omega-audit.js",
     "audit:github": "node github-account-scanner.js",
     "audit:addresses": "node address-audit.js",
+    "scan:contracts": "node contract-address-transaction-scanner.js",
+    "scan:contracts:offline": "node contract-scanner-offline.js",
     "build": "tsc",
     "build:rust": "cargo build --manifest-path pentacle/Cargo.toml",
     "build:all": "npm run build && npm run build:rust",
