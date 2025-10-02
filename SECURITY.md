@@ -1,103 +1,75 @@
-# Security Best Practices for Omega Prime Deployer
+# 🔒 SECURITY GUIDELINES
 
-## Overview
+## 🚨 CRITICAL SECURITY WARNINGS
 
-This document outlines security best practices and guidelines for the Omega Prime Deployer project to prevent secrets leakage and maintain security standards.
+### ⚠️ NEVER COMMIT THESE FILES:
+- `.env` files containing real credentials
+- Private keys or wallet files
+- API keys or secrets
+- Real wallet addresses in production
 
-## 🔒 Environment Variable Security
+### 🛡️ PROTECTED BY .GITIGNORE:
+- All `.env*` files
+- Private keys (`*.key`, `*.pem`)
+- Wallet files (`wallet.json`, `keypair.json`)
+- API credentials and tokens
+- Cache and temporary files
 
-### Required Environment Variables
+## 🔐 SECURE PRACTICES
 
-Create a `.env` file based on `.env.sample` with the following variables:
+### ✅ DO:
+- Use GitHub Secrets for production deployment
+- Use `.env.example` as template (safe example values only)
+- Store real credentials in secure environment variables
+- Use hardware wallets for high-value operations
+- Enable 2FA on all accounts
+- Regularly rotate API keys
 
-```bash
-# Never commit your actual API keys or private information
-HELIUS_API_KEY=your_actual_helius_api_key_here
-SOURCE_WALLET_ADDRESS=your_source_wallet_address
-TARGET_WALLET_ADDRESS=your_target_wallet_address
-TREASURY_PUBKEY=your_treasury_public_key
-```
+### ❌ DON'T:
+- Commit `.env` files to version control
+- Share private keys in chat/email
+- Use production keys in development
+- Store credentials in code comments
+- Push sensitive data to public repositories
 
-### Security Guidelines
+## 🔑 ENVIRONMENT VARIABLES
 
-1. **Never commit `.env` files** - They are already in `.gitignore`
-2. **Use environment variables** instead of hardcoded values
-3. **Rotate API keys regularly** 
-4. **Use separate keys** for development and production
-5. **Enable DRY_RUN=true** for testing
+### Safe for Repository:
+- Program IDs (public)
+- Network endpoints (public)
+- Configuration flags (non-sensitive)
 
-## 🛡️ Private Key Management
+### NEVER in Repository:
+- `DEPLOYER_PRIVATE_KEY`
+- `HELIUS_API_KEY`
+- `RELAYER_API_KEY`
+- Real wallet addresses
+- Any private credentials
 
-### DO NOT:
-- ❌ Hardcode private keys in source code
-- ❌ Commit private keys to version control
-- ❌ Share private keys in chat or email
-- ❌ Store private keys in plain text files
+## 🛠️ SETUP SECURITY
 
-### DO:
-- ✅ Use secure key management systems
-- ✅ Store private keys in encrypted form
-- ✅ Use hardware wallets for production
-- ✅ Use environment variables for key file paths
-- ✅ Enable 2FA on all accounts
+1. **Copy template**: `cp .env.example .env`
+2. **Fill real values**: Edit `.env` with actual credentials
+3. **Verify .gitignore**: Ensure `.env` is ignored
+4. **Use GitHub Secrets**: For production deployment
+5. **Test locally**: Verify everything works before deployment
 
-## 🔍 Security Scanning
+## 🚨 INCIDENT RESPONSE
 
-This repository includes automated security scanning:
+If credentials are accidentally committed:
+1. **Immediately rotate** all exposed keys
+2. **Remove from git history** using `git filter-branch`
+3. **Update GitHub Secrets** with new credentials
+4. **Monitor accounts** for unauthorized access
+5. **Review access logs** for suspicious activity
 
-### GitHub Security Features
-- **Dependabot** - Automatic dependency updates
-- **CodeQL** - Static analysis for vulnerabilities
-- **Secret Scanning** - Detects committed secrets
-- **Security Advisories** - CVE monitoring
-
-### Additional Security Tools
-- **Gitleaks** - Detects secrets in git history
-- **Semgrep** - SAST security analysis
-- **TruffleHog** - Secret detection
-- **Snyk** - Dependency vulnerability scanning
-
-## 📋 Security Checklist
-
-Before deploying:
-
-- [ ] All environment variables properly configured
-- [ ] No hardcoded secrets in code
-- [ ] DRY_RUN enabled for testing
-- [ ] Security scans passing
-- [ ] Dependencies updated
-- [ ] Private keys secured
-- [ ] API keys rotated if compromised
-
-## 🚨 Incident Response
-
-If secrets are accidentally committed:
-
-1. **Immediately rotate** all exposed credentials
-2. **Remove secrets** from git history using BFG Repo-Cleaner
-3. **Force push** the cleaned history
-4. **Update** all team members
-5. **Review** access logs for unauthorized usage
-
-## 📞 Security Contacts
+## 📞 SECURITY CONTACT
 
 For security issues or questions:
-- Create a private security advisory on GitHub
-- Contact repository maintainers directly
-- Use encrypted communication channels
+- Create private GitHub issue
+- Follow responsible disclosure
+- Do not share vulnerabilities publicly
 
-## 🔄 Regular Security Maintenance
+---
 
-- Review and rotate API keys monthly
-- Update dependencies weekly (automated via Dependabot)
-- Conduct security reviews before major releases
-- Monitor security advisories and CVEs
-- Test backup and recovery procedures
-
-## 🎯 Compliance
-
-This project follows:
-- OWASP Top 10 security guidelines
-- GitHub security best practices
-- Solana development security standards
-- Industry standard secret management practices
+**🔒 Security is everyone's responsibility. When in doubt, ask!**

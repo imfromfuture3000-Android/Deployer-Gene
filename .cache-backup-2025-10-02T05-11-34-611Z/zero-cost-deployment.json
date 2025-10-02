@@ -1,0 +1,59 @@
+{
+  "timestamp": "2025-10-01T21:18:25.043Z",
+  "providers": [
+    "Azure",
+    "AWS"
+  ],
+  "deploymentScripts": 6,
+  "cicdWorkflows": 2,
+  "costAnalysis": {
+    "azure": {
+      "freeCredits": 200,
+      "services": {
+        "Azure Functions": {
+          "cost": 0,
+          "tier": "Free (1M executions)"
+        },
+        "Static Web Apps": {
+          "cost": 0,
+          "tier": "Free tier"
+        },
+        "Container Instances": {
+          "cost": 15,
+          "tier": "Pay-as-you-go"
+        },
+        "Storage Account": {
+          "cost": 2,
+          "tier": "Standard LRS"
+        }
+      },
+      "totalMonthlyCost": 17,
+      "freeMonths": 11
+    },
+    "aws": {
+      "freeCredits": 300,
+      "services": {
+        "Lambda": {
+          "cost": 0,
+          "tier": "Free (1M requests)"
+        },
+        "S3": {
+          "cost": 0,
+          "tier": "Free tier (5GB)"
+        },
+        "EC2 t2.micro": {
+          "cost": 0,
+          "tier": "Free tier (750 hours)"
+        },
+        "CloudFront": {
+          "cost": 1,
+          "tier": "Pay-as-you-go"
+        }
+      },
+      "totalMonthlyCost": 1,
+      "freeMonths": 300
+    }
+  },
+  "estimatedSavings": "$500+ per month",
+  "deploymentTime": "< 10 minutes"
+}

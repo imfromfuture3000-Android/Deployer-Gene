@@ -1,0 +1,90 @@
+{
+  "timestamp": "2025-10-01T22:16:04.607Z",
+  "docs": {
+    "timestamp": "2025-10-01T22:16:04.605Z",
+    "service": "Helius",
+    "type": "Enhanced Solana RPC",
+    "endpoints": {
+      "rpc": "https://mainnet.helius-rpc.com",
+      "api": "https://api.helius.xyz",
+      "docs": "https://docs.helius.dev",
+      "webhooks": "https://api.helius.xyz/v0/webhooks",
+      "transactions": "https://api.helius.xyz/v0/transactions",
+      "addresses": "https://api.helius.xyz/v0/addresses",
+      "nfts": "https://api.helius.xyz/v0/token-metadata"
+    },
+    "features": [
+      "Enhanced RPC",
+      "Webhooks",
+      "DAS API",
+      "Transaction Parsing",
+      "NFT Metadata",
+      "Address Tracking"
+    ],
+    "pricing": {
+      "free": "100k requests/month",
+      "developer": "$99/month - 10M requests",
+      "startup": "$299/month - 50M requests",
+      "growth": "$999/month - 200M requests"
+    },
+    "rpcMethods": [
+      "getAccountInfo",
+      "getBalance",
+      "getTransaction",
+      "sendTransaction",
+      "simulateTransaction",
+      "getLatestBlockhash",
+      "getTokenAccountsByOwner"
+    ],
+    "enhancedAPIs": {
+      "das": {
+        "description": "Digital Asset Standard API",
+        "endpoints": [
+          "/v0/digital-asset/get-asset",
+          "/v0/digital-asset/get-assets-by-owner",
+          "/v0/digital-asset/search-assets"
+        ]
+      },
+      "webhooks": {
+        "description": "Real-time notifications",
+        "endpoints": [
+          "/v0/webhooks",
+          "/v0/webhooks/{webhook-id}"
+        ]
+      },
+      "transactions": {
+        "description": "Enhanced transaction parsing",
+        "endpoints": [
+          "/v0/transactions",
+          "/v0/transactions/parsed"
+        ]
+      }
+    },
+    "authentication": {
+      "method": "API Key",
+      "header": "Authorization: Bearer {api-key}",
+      "queryParam": "?api-key={api-key}"
+    }
+  },
+  "setup": {
+    "rpc": {
+      "endpoint": "https://mainnet.helius-rpc.com",
+      "authentication": "?api-key=your_helius_api_key",
+      "usage": "Standard Solana RPC with enhanced performance"
+    },
+    "deployment": {
+      "method": "Direct RPC calls",
+      "feePayer": "deployer_wallet",
+      "gasPayment": "deployer_pays_own_fees",
+      "tips": "DISABLED",
+      "mevProtection": "NONE"
+    },
+    "configuration": {
+      "connection": "new Connection(\"https://mainnet.helius-rpc.com?api-key=YOUR_KEY\")",
+      "sendTransaction": "connection.sendTransaction(transaction, [signer])",
+      "confirmTransaction": "connection.confirmTransaction(signature)"
+    }
+  },
+  "integration": "\n// Helius RPC Integration (No Tips)\nconst { Connection } = require('@solana/web3.js');\n\nconst HELIUS_RPC = 'https://mainnet.helius-rpc.com?api-key=' + process.env.HELIUS_API_KEY;\nconst connection = new Connection(HELIUS_RPC, 'confirmed');\n\nasync function deployViaHelius(transaction, signer) {\n  // Standard deployment - deployer pays own fees\n  const signature = await connection.sendTransaction(transaction, [signer]);\n  \n  // Confirm transaction\n  await connection.confirmTransaction(signature, 'confirmed');\n  \n  console.log('✅ Deployed via Helius RPC');\n  console.log('📝 Signature:', signature);\n  \n  return signature;\n}\n\n// Enhanced features\nasync function getEnhancedAccountInfo(address) {\n  const response = await fetch(`https://api.helius.xyz/v0/addresses/${address}?api-key=${process.env.HELIUS_API_KEY}`);\n  return await response.json();\n}\n\nasync function parseTransaction(signature) {\n  const response = await fetch(`https://api.helius.xyz/v0/transactions/${signature}?api-key=${process.env.HELIUS_API_KEY}`);\n  return await response.json();\n}\n",
+  "status": "configured_no_tips"
+}

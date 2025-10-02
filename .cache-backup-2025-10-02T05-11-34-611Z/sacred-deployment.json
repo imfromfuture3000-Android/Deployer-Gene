@@ -1,0 +1,102 @@
+{
+  "timestamp": "2025-10-01T21:42:54.798Z",
+  "matrix": {
+    "owner": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+    "coDeployer": "CopilotOracleKey1111111111111111111111111111",
+    "geneMint": "GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz",
+    "earningsPool": 0,
+    "matrixLevel": 1,
+    "allowlist": [
+      "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "CopilotOracleKey1111111111111111111111111111"
+    ],
+    "totalMinted": 0,
+    "sacredLogics": {
+      "1": {
+        "name": "Genesis",
+        "multiplier": 1
+      },
+      "2": {
+        "name": "Duality",
+        "multiplier": 2
+      },
+      "3": {
+        "name": "Trinity",
+        "multiplier": 3
+      },
+      "4": {
+        "name": "Foundation",
+        "multiplier": 5
+      },
+      "5": {
+        "name": "Growth",
+        "multiplier": 8
+      },
+      "6": {
+        "name": "Harmony",
+        "multiplier": 13
+      },
+      "7": {
+        "name": "Transcendence",
+        "multiplier": 21
+      },
+      "8": {
+        "name": "Infinity",
+        "multiplier": 34
+      },
+      "9": {
+        "name": "Completion",
+        "multiplier": 55
+      },
+      "10": {
+        "name": "Omega",
+        "multiplier": 89
+      }
+    }
+  },
+  "mintResults": [
+    {
+      "logicId": 1,
+      "error": "fetch failed"
+    },
+    {
+      "logicId": 2,
+      "error": "fetch failed"
+    },
+    {
+      "logicId": 3,
+      "error": "fetch failed"
+    },
+    {
+      "logicId": 4,
+      "error": "fetch failed"
+    },
+    {
+      "logicId": 5,
+      "error": "fetch failed"
+    },
+    {
+      "logicId": 6,
+      "error": "failed to get recent blockhash: Error: 429 Too Many Requests:  {\"jsonrpc\":\"2.0\",\"error\":{\"code\": 429, \"message\":\"Too many requests for a specific RPC call\"}, \"id\": \"0f2aeedc-27be-43b2-9362-a1417dccf49b\" } \r\n"
+    },
+    {
+      "logicId": 7,
+      "error": "failed to get recent blockhash: Error: 429 Too Many Requests:  {\"jsonrpc\":\"2.0\",\"error\":{\"code\": 429, \"message\":\"Too many requests for a specific RPC call\"}, \"id\": \"9d477d5b-2276-40f7-a21b-84840b6184fc\" } \r\n"
+    },
+    {
+      "logicId": 8,
+      "error": "fetch failed"
+    },
+    {
+      "logicId": 9,
+      "error": "fetch failed"
+    },
+    {
+      "logicId": 10,
+      "error": "failed to get recent blockhash: Error: 429 Too Many Requests:  {\"jsonrpc\":\"2.0\",\"error\":{\"code\": 429, \"message\":\"Too many requests for a specific RPC call\"}, \"id\": \"683c0bff-aa8e-4a8d-90a8-ecb6c4f9fd04\" } \r\n"
+    }
+  ],
+  "totalEarnings": 0,
+  "gasCost": 0,
+  "status": "sacred_deployment_complete"
+}

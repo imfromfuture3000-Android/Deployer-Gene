@@ -1,0 +1,1331 @@
+{
+  "timestamp": "2025-10-01T21:36:50.398Z",
+  "collection": {
+    "metadata": {
+      "name": "Futuristic Gene Collection",
+      "symbol": "FGENE",
+      "description": "A collection of genetically evolved NFTs from the future, each with unique DNA traits and evolutionary stages.",
+      "image": "https://futuristic-gene.com/collection.png",
+      "external_url": "https://futuristic-gene.com",
+      "properties": {
+        "category": "image",
+        "creators": [
+          {
+            "address": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+            "share": 100
+          }
+        ]
+      }
+    },
+    "creator": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+    "config": {
+      "collection": "Futuristic Gene Collection",
+      "symbol": "FGENE",
+      "totalSupply": 10000,
+      "mintPrice": 0.1,
+      "royalties": 500,
+      "traits": {
+        "dna": [
+          "Alpha",
+          "Beta",
+          "Gamma",
+          "Delta",
+          "Omega"
+        ],
+        "evolution": [
+          "Gen1",
+          "Gen2",
+          "Gen3",
+          "Gen4",
+          "Gen5"
+        ],
+        "rarity": [
+          "Common",
+          "Uncommon",
+          "Rare",
+          "Epic",
+          "Legendary"
+        ],
+        "power": [
+          "Low",
+          "Medium",
+          "High",
+          "Ultra",
+          "Cosmic"
+        ],
+        "element": [
+          "Fire",
+          "Water",
+          "Earth",
+          "Air",
+          "Void"
+        ]
+      }
+    }
+  },
+  "nftBatch": [
+    {
+      "tokenId": 1,
+      "mint": "6z7XggJFKgXV4ab5TVn8iPUTjFKhFpftbdXurrY3rqqk",
+      "metadata": {
+        "name": "Futuristic Gene #1",
+        "symbol": "FGENE",
+        "description": "A genetically evolved NFT from the future. DNA: Gamma, Evolution: Gen3, Power: High",
+        "image": "https://futuristic-gene.com/images/1.png",
+        "external_url": "https://futuristic-gene.com",
+        "attributes": [
+          {
+            "trait_type": "DNA Type",
+            "value": "Gamma"
+          },
+          {
+            "trait_type": "Evolution Stage",
+            "value": "Gen3"
+          },
+          {
+            "trait_type": "Rarity",
+            "value": "Uncommon"
+          },
+          {
+            "trait_type": "Power Level",
+            "value": "High"
+          },
+          {
+            "trait_type": "Element",
+            "value": "Fire"
+          },
+          {
+            "trait_type": "Rarity Score",
+            "value": 2,
+            "display_type": "number"
+          }
+        ],
+        "properties": {
+          "category": "image",
+          "files": [
+            {
+              "uri": "https://futuristic-gene.com/images/1.png",
+              "type": "image/png"
+            }
+          ],
+          "creators": [
+            {
+              "address": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+              "share": 100
+            }
+          ]
+        },
+        "collection": {
+          "name": "Futuristic Gene Collection",
+          "family": "Futuristic Gene"
+        }
+      },
+      "mintKeypair": [
+        31,
+        132,
+        130,
+        5,
+        10,
+        97,
+        193,
+        148,
+        224,
+        178,
+        112,
+        154,
+        120,
+        108,
+        197,
+        63,
+        52,
+        50,
+        66,
+        213,
+        51,
+        110,
+        38,
+        6,
+        129,
+        209,
+        75,
+        16,
+        240,
+        122,
+        216,
+        135,
+        88,
+        235,
+        236,
+        83,
+        205,
+        121,
+        80,
+        204,
+        146,
+        242,
+        56,
+        143,
+        216,
+        142,
+        118,
+        172,
+        255,
+        0,
+        123,
+        250,
+        92,
+        169,
+        131,
+        67,
+        188,
+        196,
+        155,
+        166,
+        249,
+        251,
+        64,
+        179
+      ]
+    },
+    {
+      "tokenId": 2,
+      "mint": "ZXNgHKSAY1PYoS5VXHRE8wmWvaduVARzBAPuDoid6Uv",
+      "metadata": {
+        "name": "Futuristic Gene #2",
+        "symbol": "FGENE",
+        "description": "A genetically evolved NFT from the future. DNA: Delta, Evolution: Gen5, Power: Low",
+        "image": "https://futuristic-gene.com/images/2.png",
+        "external_url": "https://futuristic-gene.com",
+        "attributes": [
+          {
+            "trait_type": "DNA Type",
+            "value": "Delta"
+          },
+          {
+            "trait_type": "Evolution Stage",
+            "value": "Gen5"
+          },
+          {
+            "trait_type": "Rarity",
+            "value": "Common"
+          },
+          {
+            "trait_type": "Power Level",
+            "value": "Low"
+          },
+          {
+            "trait_type": "Element",
+            "value": "Void"
+          },
+          {
+            "trait_type": "Rarity Score",
+            "value": 1,
+            "display_type": "number"
+          }
+        ],
+        "properties": {
+          "category": "image",
+          "files": [
+            {
+              "uri": "https://futuristic-gene.com/images/2.png",
+              "type": "image/png"
+            }
+          ],
+          "creators": [
+            {
+              "address": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+              "share": 100
+            }
+          ]
+        },
+        "collection": {
+          "name": "Futuristic Gene Collection",
+          "family": "Futuristic Gene"
+        }
+      },
+      "mintKeypair": [
+        230,
+        112,
+        42,
+        177,
+        98,
+        225,
+        3,
+        130,
+        249,
+        179,
+        16,
+        85,
+        77,
+        253,
+        142,
+        255,
+        89,
+        198,
+        84,
+        36,
+        38,
+        179,
+        234,
+        106,
+        97,
+        251,
+        105,
+        197,
+        47,
+        182,
+        195,
+        120,
+        8,
+        84,
+        237,
+        249,
+        230,
+        118,
+        60,
+        15,
+        8,
+        47,
+        88,
+        17,
+        252,
+        75,
+        12,
+        191,
+        18,
+        49,
+        249,
+        65,
+        217,
+        73,
+        175,
+        16,
+        66,
+        102,
+        147,
+        204,
+        46,
+        180,
+        204,
+        247
+      ]
+    },
+    {
+      "tokenId": 3,
+      "mint": "4sffkDatiug3FhMqDhBuVpYFpr4pddbeo4LBpFYyiCby",
+      "metadata": {
+        "name": "Futuristic Gene #3",
+        "symbol": "FGENE",
+        "description": "A genetically evolved NFT from the future. DNA: Alpha, Evolution: Gen2, Power: Ultra",
+        "image": "https://futuristic-gene.com/images/3.png",
+        "external_url": "https://futuristic-gene.com",
+        "attributes": [
+          {
+            "trait_type": "DNA Type",
+            "value": "Alpha"
+          },
+          {
+            "trait_type": "Evolution Stage",
+            "value": "Gen2"
+          },
+          {
+            "trait_type": "Rarity",
+            "value": "Epic"
+          },
+          {
+            "trait_type": "Power Level",
+            "value": "Ultra"
+          },
+          {
+            "trait_type": "Element",
+            "value": "Water"
+          },
+          {
+            "trait_type": "Rarity Score",
+            "value": 10,
+            "display_type": "number"
+          }
+        ],
+        "properties": {
+          "category": "image",
+          "files": [
+            {
+              "uri": "https://futuristic-gene.com/images/3.png",
+              "type": "image/png"
+            }
+          ],
+          "creators": [
+            {
+              "address": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+              "share": 100
+            }
+          ]
+        },
+        "collection": {
+          "name": "Futuristic Gene Collection",
+          "family": "Futuristic Gene"
+        }
+      },
+      "mintKeypair": [
+        133,
+        55,
+        59,
+        140,
+        236,
+        144,
+        167,
+        139,
+        10,
+        18,
+        225,
+        33,
+        63,
+        87,
+        94,
+        64,
+        113,
+        184,
+        135,
+        182,
+        239,
+        217,
+        199,
+        79,
+        212,
+        224,
+        52,
+        232,
+        169,
+        53,
+        255,
+        120,
+        57,
+        141,
+        210,
+        195,
+        229,
+        94,
+        255,
+        76,
+        159,
+        254,
+        192,
+        85,
+        13,
+        80,
+        206,
+        47,
+        185,
+        219,
+        157,
+        70,
+        10,
+        8,
+        143,
+        23,
+        209,
+        157,
+        191,
+        76,
+        255,
+        9,
+        107,
+        192
+      ]
+    },
+    {
+      "tokenId": 4,
+      "mint": "4FgN1CBrxTyfD42JHSgvQE2ZyaDyPusooHqtc95XyXvm",
+      "metadata": {
+        "name": "Futuristic Gene #4",
+        "symbol": "FGENE",
+        "description": "A genetically evolved NFT from the future. DNA: Beta, Evolution: Gen5, Power: High",
+        "image": "https://futuristic-gene.com/images/4.png",
+        "external_url": "https://futuristic-gene.com",
+        "attributes": [
+          {
+            "trait_type": "DNA Type",
+            "value": "Beta"
+          },
+          {
+            "trait_type": "Evolution Stage",
+            "value": "Gen5"
+          },
+          {
+            "trait_type": "Rarity",
+            "value": "Uncommon"
+          },
+          {
+            "trait_type": "Power Level",
+            "value": "High"
+          },
+          {
+            "trait_type": "Element",
+            "value": "Earth"
+          },
+          {
+            "trait_type": "Rarity Score",
+            "value": 2,
+            "display_type": "number"
+          }
+        ],
+        "properties": {
+          "category": "image",
+          "files": [
+            {
+              "uri": "https://futuristic-gene.com/images/4.png",
+              "type": "image/png"
+            }
+          ],
+          "creators": [
+            {
+              "address": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+              "share": 100
+            }
+          ]
+        },
+        "collection": {
+          "name": "Futuristic Gene Collection",
+          "family": "Futuristic Gene"
+        }
+      },
+      "mintKeypair": [
+        239,
+        28,
+        93,
+        187,
+        91,
+        172,
+        113,
+        62,
+        108,
+        33,
+        81,
+        247,
+        249,
+        159,
+        211,
+        139,
+        52,
+        118,
+        63,
+        23,
+        150,
+        174,
+        34,
+        22,
+        221,
+        175,
+        214,
+        161,
+        162,
+        154,
+        130,
+        89,
+        48,
+        85,
+        178,
+        241,
+        240,
+        153,
+        117,
+        89,
+        251,
+        162,
+        194,
+        49,
+        45,
+        63,
+        153,
+        205,
+        82,
+        99,
+        121,
+        78,
+        5,
+        50,
+        122,
+        10,
+        121,
+        132,
+        185,
+        182,
+        146,
+        192,
+        114,
+        6
+      ]
+    },
+    {
+      "tokenId": 5,
+      "mint": "CfugAyo9psuHjjE9eJtBvCjk48NkRKyix9BpdkCofVNb",
+      "metadata": {
+        "name": "Futuristic Gene #5",
+        "symbol": "FGENE",
+        "description": "A genetically evolved NFT from the future. DNA: Gamma, Evolution: Gen2, Power: Ultra",
+        "image": "https://futuristic-gene.com/images/5.png",
+        "external_url": "https://futuristic-gene.com",
+        "attributes": [
+          {
+            "trait_type": "DNA Type",
+            "value": "Gamma"
+          },
+          {
+            "trait_type": "Evolution Stage",
+            "value": "Gen2"
+          },
+          {
+            "trait_type": "Rarity",
+            "value": "Rare"
+          },
+          {
+            "trait_type": "Power Level",
+            "value": "Ultra"
+          },
+          {
+            "trait_type": "Element",
+            "value": "Void"
+          },
+          {
+            "trait_type": "Rarity Score",
+            "value": 5,
+            "display_type": "number"
+          }
+        ],
+        "properties": {
+          "category": "image",
+          "files": [
+            {
+              "uri": "https://futuristic-gene.com/images/5.png",
+              "type": "image/png"
+            }
+          ],
+          "creators": [
+            {
+              "address": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+              "share": 100
+            }
+          ]
+        },
+        "collection": {
+          "name": "Futuristic Gene Collection",
+          "family": "Futuristic Gene"
+        }
+      },
+      "mintKeypair": [
+        190,
+        16,
+        12,
+        249,
+        29,
+        145,
+        42,
+        6,
+        49,
+        67,
+        64,
+        199,
+        89,
+        48,
+        143,
+        218,
+        144,
+        73,
+        194,
+        148,
+        242,
+        22,
+        215,
+        212,
+        255,
+        224,
+        30,
+        100,
+        245,
+        18,
+        225,
+        145,
+        173,
+        104,
+        47,
+        234,
+        214,
+        89,
+        225,
+        139,
+        228,
+        77,
+        161,
+        234,
+        229,
+        241,
+        71,
+        243,
+        99,
+        122,
+        159,
+        198,
+        212,
+        126,
+        40,
+        84,
+        196,
+        98,
+        4,
+        9,
+        40,
+        206,
+        127,
+        68
+      ]
+    },
+    {
+      "tokenId": 6,
+      "mint": "34J2mjjzBDotEetffpsMCda41xfAxJUoa38dS8Ln3aPc",
+      "metadata": {
+        "name": "Futuristic Gene #6",
+        "symbol": "FGENE",
+        "description": "A genetically evolved NFT from the future. DNA: Delta, Evolution: Gen1, Power: Medium",
+        "image": "https://futuristic-gene.com/images/6.png",
+        "external_url": "https://futuristic-gene.com",
+        "attributes": [
+          {
+            "trait_type": "DNA Type",
+            "value": "Delta"
+          },
+          {
+            "trait_type": "Evolution Stage",
+            "value": "Gen1"
+          },
+          {
+            "trait_type": "Rarity",
+            "value": "Rare"
+          },
+          {
+            "trait_type": "Power Level",
+            "value": "Medium"
+          },
+          {
+            "trait_type": "Element",
+            "value": "Earth"
+          },
+          {
+            "trait_type": "Rarity Score",
+            "value": 5,
+            "display_type": "number"
+          }
+        ],
+        "properties": {
+          "category": "image",
+          "files": [
+            {
+              "uri": "https://futuristic-gene.com/images/6.png",
+              "type": "image/png"
+            }
+          ],
+          "creators": [
+            {
+              "address": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+              "share": 100
+            }
+          ]
+        },
+        "collection": {
+          "name": "Futuristic Gene Collection",
+          "family": "Futuristic Gene"
+        }
+      },
+      "mintKeypair": [
+        16,
+        85,
+        109,
+        12,
+        30,
+        77,
+        240,
+        100,
+        179,
+        175,
+        140,
+        6,
+        88,
+        255,
+        16,
+        100,
+        92,
+        204,
+        24,
+        11,
+        220,
+        198,
+        99,
+        84,
+        143,
+        186,
+        32,
+        32,
+        51,
+        121,
+        255,
+        83,
+        30,
+        143,
+        95,
+        110,
+        13,
+        114,
+        82,
+        18,
+        49,
+        125,
+        171,
+        128,
+        154,
+        191,
+        93,
+        129,
+        82,
+        137,
+        150,
+        7,
+        89,
+        99,
+        137,
+        59,
+        218,
+        68,
+        129,
+        168,
+        99,
+        173,
+        174,
+        3
+      ]
+    },
+    {
+      "tokenId": 7,
+      "mint": "485X6pKcS5CRcBW1PsU1C37VcZzTAS9LdqtmNyqEuSrj",
+      "metadata": {
+        "name": "Futuristic Gene #7",
+        "symbol": "FGENE",
+        "description": "A genetically evolved NFT from the future. DNA: Beta, Evolution: Gen5, Power: High",
+        "image": "https://futuristic-gene.com/images/7.png",
+        "external_url": "https://futuristic-gene.com",
+        "attributes": [
+          {
+            "trait_type": "DNA Type",
+            "value": "Beta"
+          },
+          {
+            "trait_type": "Evolution Stage",
+            "value": "Gen5"
+          },
+          {
+            "trait_type": "Rarity",
+            "value": "Uncommon"
+          },
+          {
+            "trait_type": "Power Level",
+            "value": "High"
+          },
+          {
+            "trait_type": "Element",
+            "value": "Void"
+          },
+          {
+            "trait_type": "Rarity Score",
+            "value": 2,
+            "display_type": "number"
+          }
+        ],
+        "properties": {
+          "category": "image",
+          "files": [
+            {
+              "uri": "https://futuristic-gene.com/images/7.png",
+              "type": "image/png"
+            }
+          ],
+          "creators": [
+            {
+              "address": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+              "share": 100
+            }
+          ]
+        },
+        "collection": {
+          "name": "Futuristic Gene Collection",
+          "family": "Futuristic Gene"
+        }
+      },
+      "mintKeypair": [
+        99,
+        29,
+        254,
+        106,
+        114,
+        158,
+        86,
+        70,
+        160,
+        120,
+        71,
+        128,
+        57,
+        71,
+        74,
+        193,
+        234,
+        59,
+        58,
+        130,
+        133,
+        132,
+        248,
+        81,
+        131,
+        255,
+        79,
+        31,
+        198,
+        174,
+        12,
+        30,
+        46,
+        99,
+        60,
+        110,
+        84,
+        195,
+        110,
+        226,
+        228,
+        126,
+        166,
+        188,
+        22,
+        53,
+        204,
+        142,
+        43,
+        135,
+        1,
+        53,
+        24,
+        104,
+        148,
+        182,
+        111,
+        43,
+        69,
+        102,
+        127,
+        235,
+        160,
+        56
+      ]
+    },
+    {
+      "tokenId": 8,
+      "mint": "Dfj8vuTdHF2mgjHSeAnnjPpFoMLN3zxuR2S6CnPJMzzu",
+      "metadata": {
+        "name": "Futuristic Gene #8",
+        "symbol": "FGENE",
+        "description": "A genetically evolved NFT from the future. DNA: Delta, Evolution: Gen5, Power: Low",
+        "image": "https://futuristic-gene.com/images/8.png",
+        "external_url": "https://futuristic-gene.com",
+        "attributes": [
+          {
+            "trait_type": "DNA Type",
+            "value": "Delta"
+          },
+          {
+            "trait_type": "Evolution Stage",
+            "value": "Gen5"
+          },
+          {
+            "trait_type": "Rarity",
+            "value": "Uncommon"
+          },
+          {
+            "trait_type": "Power Level",
+            "value": "Low"
+          },
+          {
+            "trait_type": "Element",
+            "value": "Water"
+          },
+          {
+            "trait_type": "Rarity Score",
+            "value": 2,
+            "display_type": "number"
+          }
+        ],
+        "properties": {
+          "category": "image",
+          "files": [
+            {
+              "uri": "https://futuristic-gene.com/images/8.png",
+              "type": "image/png"
+            }
+          ],
+          "creators": [
+            {
+              "address": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+              "share": 100
+            }
+          ]
+        },
+        "collection": {
+          "name": "Futuristic Gene Collection",
+          "family": "Futuristic Gene"
+        }
+      },
+      "mintKeypair": [
+        156,
+        163,
+        232,
+        139,
+        174,
+        100,
+        192,
+        49,
+        125,
+        123,
+        13,
+        144,
+        246,
+        179,
+        221,
+        155,
+        187,
+        217,
+        119,
+        18,
+        226,
+        181,
+        97,
+        47,
+        223,
+        198,
+        82,
+        127,
+        250,
+        113,
+        136,
+        175,
+        188,
+        55,
+        245,
+        63,
+        41,
+        59,
+        170,
+        154,
+        31,
+        135,
+        142,
+        162,
+        47,
+        4,
+        51,
+        97,
+        126,
+        134,
+        172,
+        53,
+        26,
+        48,
+        70,
+        61,
+        94,
+        224,
+        144,
+        255,
+        112,
+        33,
+        254,
+        210
+      ]
+    },
+    {
+      "tokenId": 9,
+      "mint": "GJVkjHyc74PeCgSaUG9CiyfGKJtgjUA4rpcgCpH6ewHa",
+      "metadata": {
+        "name": "Futuristic Gene #9",
+        "symbol": "FGENE",
+        "description": "A genetically evolved NFT from the future. DNA: Delta, Evolution: Gen5, Power: High",
+        "image": "https://futuristic-gene.com/images/9.png",
+        "external_url": "https://futuristic-gene.com",
+        "attributes": [
+          {
+            "trait_type": "DNA Type",
+            "value": "Delta"
+          },
+          {
+            "trait_type": "Evolution Stage",
+            "value": "Gen5"
+          },
+          {
+            "trait_type": "Rarity",
+            "value": "Legendary"
+          },
+          {
+            "trait_type": "Power Level",
+            "value": "High"
+          },
+          {
+            "trait_type": "Element",
+            "value": "Water"
+          },
+          {
+            "trait_type": "Rarity Score",
+            "value": 25,
+            "display_type": "number"
+          }
+        ],
+        "properties": {
+          "category": "image",
+          "files": [
+            {
+              "uri": "https://futuristic-gene.com/images/9.png",
+              "type": "image/png"
+            }
+          ],
+          "creators": [
+            {
+              "address": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+              "share": 100
+            }
+          ]
+        },
+        "collection": {
+          "name": "Futuristic Gene Collection",
+          "family": "Futuristic Gene"
+        }
+      },
+      "mintKeypair": [
+        83,
+        241,
+        35,
+        8,
+        12,
+        136,
+        189,
+        16,
+        166,
+        6,
+        76,
+        159,
+        169,
+        31,
+        255,
+        85,
+        2,
+        250,
+        18,
+        87,
+        173,
+        78,
+        234,
+        130,
+        231,
+        119,
+        217,
+        228,
+        93,
+        1,
+        77,
+        135,
+        227,
+        90,
+        176,
+        153,
+        193,
+        93,
+        69,
+        70,
+        99,
+        226,
+        207,
+        23,
+        153,
+        24,
+        202,
+        136,
+        98,
+        209,
+        14,
+        208,
+        86,
+        231,
+        31,
+        154,
+        110,
+        148,
+        67,
+        102,
+        102,
+        235,
+        142,
+        177
+      ]
+    },
+    {
+      "tokenId": 10,
+      "mint": "E6quTaKogsHmsm3DFUdLTCZbFnn96bmycWLZMpivFzFo",
+      "metadata": {
+        "name": "Futuristic Gene #10",
+        "symbol": "FGENE",
+        "description": "A genetically evolved NFT from the future. DNA: Omega, Evolution: Gen2, Power: Ultra",
+        "image": "https://futuristic-gene.com/images/10.png",
+        "external_url": "https://futuristic-gene.com",
+        "attributes": [
+          {
+            "trait_type": "DNA Type",
+            "value": "Omega"
+          },
+          {
+            "trait_type": "Evolution Stage",
+            "value": "Gen2"
+          },
+          {
+            "trait_type": "Rarity",
+            "value": "Uncommon"
+          },
+          {
+            "trait_type": "Power Level",
+            "value": "Ultra"
+          },
+          {
+            "trait_type": "Element",
+            "value": "Water"
+          },
+          {
+            "trait_type": "Rarity Score",
+            "value": 2,
+            "display_type": "number"
+          }
+        ],
+        "properties": {
+          "category": "image",
+          "files": [
+            {
+              "uri": "https://futuristic-gene.com/images/10.png",
+              "type": "image/png"
+            }
+          ],
+          "creators": [
+            {
+              "address": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+              "share": 100
+            }
+          ]
+        },
+        "collection": {
+          "name": "Futuristic Gene Collection",
+          "family": "Futuristic Gene"
+        }
+      },
+      "mintKeypair": [
+        175,
+        49,
+        202,
+        159,
+        90,
+        253,
+        203,
+        153,
+        71,
+        178,
+        116,
+        232,
+        177,
+        72,
+        195,
+        251,
+        244,
+        134,
+        245,
+        234,
+        208,
+        129,
+        239,
+        155,
+        159,
+        148,
+        222,
+        98,
+        133,
+        27,
+        172,
+        225,
+        194,
+        167,
+        33,
+        106,
+        63,
+        89,
+        4,
+        113,
+        57,
+        226,
+        254,
+        218,
+        107,
+        211,
+        84,
+        44,
+        10,
+        251,
+        75,
+        195,
+        176,
+        7,
+        189,
+        148,
+        120,
+        55,
+        64,
+        80,
+        213,
+        117,
+        155,
+        62
+      ]
+    }
+  ],
+  "economics": {
+    "totalSupply": 10000,
+    "mintPrice": 0.1,
+    "primarySales": 1000,
+    "royaltyRate": 5,
+    "estimatedSecondaryVolume": 5000,
+    "estimatedRoyalties": 250,
+    "totalRevenue": 1250
+  },
+  "candyMachine": {
+    "price": 100000000,
+    "itemsAvailable": 10000,
+    "goLiveDate": "2025-10-02T21:36:50.398Z",
+    "endSettings": {
+      "endSettingType": "amount",
+      "number": 10000
+    },
+    "whitelistMintSettings": null,
+    "hiddenSettings": null,
+    "gatekeeper": null,
+    "creators": [
+      {
+        "address": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+        "verified": true,
+        "share": 100
+      }
+    ],
+    "retainAuthority": true,
+    "isMutable": true,
+    "maxSupply": 10000,
+    "symbol": "FGENE"
+  },
+  "status": "configured_ready_to_deploy"
+}

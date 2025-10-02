@@ -1,0 +1,146 @@
+{
+  "timestamp": "2025-10-01T21:27:16.719Z",
+  "phase": "MUTATION_TO_DAO",
+  "proposals": [
+    {
+      "id": "prop_1759354036135",
+      "title": "TRANSFER AUTHORITY Proposal",
+      "description": "Proposal to execute transfer_authority with specified parameters",
+      "action": "transfer_authority",
+      "params": {
+        "mint": "your_omega_mint_address_here",
+        "currentAuthority": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+        "newAuthority": "DAOmultisigAddress12345678901234567890123456",
+        "authorityType": "mint"
+      },
+      "proposer": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "created": "2025-10-01T21:27:16.135Z",
+      "votingStart": "2025-10-01T22:27:16.139Z",
+      "votingEnd": "2025-10-04T22:27:16.139Z",
+      "executionTime": "2025-10-05T22:27:16.139Z",
+      "status": "pending",
+      "votes": {
+        "yes": 0,
+        "no": 0,
+        "abstain": 0
+      },
+      "quorumMet": false
+    },
+    {
+      "id": "prop_1759354036140",
+      "title": "TRANSFER AUTHORITY Proposal",
+      "description": "Proposal to execute transfer_authority with specified parameters",
+      "action": "transfer_authority",
+      "params": {
+        "mint": "your_omega_mint_address_here",
+        "currentAuthority": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+        "newAuthority": "DAOmultisigAddress12345678901234567890123456",
+        "authorityType": "freeze"
+      },
+      "proposer": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "created": "2025-10-01T21:27:16.140Z",
+      "votingStart": "2025-10-01T22:27:16.140Z",
+      "votingEnd": "2025-10-04T22:27:16.140Z",
+      "executionTime": "2025-10-05T22:27:16.140Z",
+      "status": "pending",
+      "votes": {
+        "yes": 0,
+        "no": 0,
+        "abstain": 0
+      },
+      "quorumMet": false
+    },
+    {
+      "id": "prop_1759354036140",
+      "title": "TRANSFER AUTHORITY Proposal",
+      "description": "Proposal to execute transfer_authority with specified parameters",
+      "action": "transfer_authority",
+      "params": {
+        "account": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+        "currentOwner": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+        "newOwner": "DAOmultisigAddress12345678901234567890123456",
+        "type": "treasury"
+      },
+      "proposer": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "created": "2025-10-01T21:27:16.140Z",
+      "votingStart": "2025-10-01T22:27:16.140Z",
+      "votingEnd": "2025-10-04T22:27:16.140Z",
+      "executionTime": "2025-10-05T22:27:16.140Z",
+      "status": "pending",
+      "votes": {
+        "yes": 0,
+        "no": 0,
+        "abstain": 0
+      },
+      "quorumMet": false
+    },
+    {
+      "id": "prop_1759354036141",
+      "title": "DISTRIBUTE PROFITS Proposal",
+      "description": "Proposal to execute distribute_profits with specified parameters",
+      "action": "distribute_profits",
+      "params": {
+        "vault": "F2EkpVd3pKLUi9u9BU794t3mWscJXzUAVw1WSjogTQueR",
+        "distributionRatio": {
+          "dao": 0.3,
+          "treasury": 0.4,
+          "bots": 0.3
+        },
+        "frequency": "weekly"
+      },
+      "proposer": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "created": "2025-10-01T21:27:16.141Z",
+      "votingStart": "2025-10-01T22:27:16.141Z",
+      "votingEnd": "2025-10-04T22:27:16.141Z",
+      "executionTime": "2025-10-05T22:27:16.141Z",
+      "status": "pending",
+      "votes": {
+        "yes": 0,
+        "no": 0,
+        "abstain": 0
+      },
+      "quorumMet": false
+    }
+  ],
+  "governanceToken": {
+    "name": "OMEGA Governance",
+    "symbol": "ΩGOV",
+    "supply": 100000000,
+    "decimals": 9,
+    "distribution": {
+      "treasury": 0.4,
+      "community": 0.3,
+      "team": 0.2,
+      "dao": 0.1
+    },
+    "votingPower": "1 ΩGOV = 1 vote",
+    "stakingRewards": "5% APY for staked tokens"
+  },
+  "parameters": {
+    "governance": {
+      "proposalThreshold": 1000000,
+      "votingPeriod": "3 days",
+      "executionDelay": "1 days",
+      "quorum": "10%"
+    },
+    "treasury": {
+      "multisig": "DAOmultisigAddress12345678901234567890123456",
+      "signers": 5,
+      "threshold": 3,
+      "timelock": "24 hours"
+    },
+    "voting": {
+      "method": "Token-weighted voting",
+      "delegation": "Enabled",
+      "quadraticVoting": "Optional",
+      "snapshot": "Block-based"
+    }
+  },
+  "status": "pending_community_vote",
+  "transitionPlan": {
+    "phase1": "Create governance proposals (immediate)",
+    "phase2": "Community voting period (3 days)",
+    "phase3": "Execute authority transfers (after vote)",
+    "phase4": "Full DAO governance active (1 week)"
+  }
+}

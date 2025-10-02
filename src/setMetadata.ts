@@ -31,10 +31,10 @@ async function setTokenMetadata() {
   const umi = createUmi(process.env.RPC_URL!);
   const mintKeypair = umi.eddsa.createKeypairFromSecretKey(Uint8Array.from(mintKeypairJson));
   umi.use(keypairIdentity(mintKeypair));
-  const mint = mintKeypair.publicKey;
+  const mint = publicKey(mintKeypair.publicKey);
   
   // Use Metaplex's UMI-compatible PDA function
-  const metadataPda = findMetadataPda(umi, { mint });
+  const [metadataPda] = findMetadataPda(umi, { mint });
   
   const uri = `data:application/json;base64,${Buffer.from(JSON.stringify(METADATA)).toString('base64')}`;
 
@@ -42,7 +42,7 @@ async function setTokenMetadata() {
     // Try to fetch metadata account to see if it exists
     let metadataExists = false;
     try {
-      const metadataAccount = await umi.rpc.getAccount(metadataPda[0]);
+      const metadataAccount = await umi.rpc.getAccount(metadataPda);
       metadataExists = metadataAccount.exists;
     } catch (e) {
       metadataExists = false;
@@ -51,7 +51,7 @@ async function setTokenMetadata() {
     if (metadataExists) {
       // Update existing metadata
       await updateMetadataAccountV2(umi, {
-        metadata: metadataPda[0],
+        metadata: metadataPda,
         updateAuthority: umi.identity,
         data: {
           name: METADATA.name,
@@ -81,7 +81,7 @@ async function setTokenMetadata() {
           uses: null,
         },
         isMutable: true,
-        collectionDetails: null,
+        collectionDetails: null
       }).sendAndConfirm(umi);
       console.log(`✅ Metadata created for mint ${mint.toString()}. URI: ${uri.slice(0, 50)}...`);
     }

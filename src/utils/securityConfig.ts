@@ -62,7 +62,7 @@ export function getSecureConfig(): SecurityConfig {
     targetWalletAddress: process.env.TARGET_WALLET_ADDRESS,
     treasuryPubkey: process.env.TREASURY_PUBKEY,
     daoPubkey: process.env.DAO_PUBKEY,
-    controllerPubkey: process.env.CONTROLLER_PUBKEY,
+    controllerPubkey: undefined, // Deployer is master controller
     cocreatorPubkey: process.env.COCREATOR_PUBKEY,
     relayerUrl: process.env.RELAYER_URL,
     relayerPubkey: process.env.RELAYER_PUBKEY,
@@ -80,7 +80,7 @@ export function getSecureConfig(): SecurityConfig {
   validatePublicKey(config.targetWalletAddress, 'TARGET_WALLET_ADDRESS');
   validatePublicKey(config.treasuryPubkey, 'TREASURY_PUBKEY');
   validatePublicKey(config.daoPubkey, 'DAO_PUBKEY');
-  validatePublicKey(config.controllerPubkey, 'CONTROLLER_PUBKEY');
+  // Controller validation removed - deployer is master controller
   validatePublicKey(config.cocreatorPubkey, 'COCREATOR_PUBKEY');
   validatePublicKey(config.relayerPubkey, 'RELAYER_PUBKEY');
 

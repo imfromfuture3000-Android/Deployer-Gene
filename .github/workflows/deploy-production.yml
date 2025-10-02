@@ -1,0 +1,84 @@
+name: Deploy OMEGA Production
+
+on:
+  workflow_dispatch:
+    inputs:
+      deployment_type:
+        description: 'Deployment Type'
+        required: true
+        default: 'agent-bots'
+        type: choice
+        options:
+        - agent-bots
+        - earnings-distribution
+        - full-deployment
+  push:
+    branches: [main]
+    paths: ['src/**', 'package.json']
+
+jobs:
+  security-check:
+    runs-on: ubuntu-latest
+    outputs:
+      allowed: ${{ steps.allowlist.outputs.allowed }}
+    steps:
+    - uses: actions/checkout@v4
+    - name: Check allowlist
+      id: allowlist
+      run: |
+        if [[ "${{ github.actor }}" == "imfromfuture3000-Android" ]]; then
+          echo "allowed=true" >> $GITHUB_OUTPUT
+        else
+          echo "allowed=false" >> $GITHUB_OUTPUT
+        fi
+
+  deploy:
+    needs: security-check
+    if: needs.security-check.outputs.allowed == 'true'
+    runs-on: ubuntu-latest
+    environment: production
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Build project
+      run: npm run build
+    
+    - name: Setup deployer key
+      run: echo "${{ secrets.DEPLOYER_PRIVATE_KEY }}" > .deployer.key
+    
+    - name: Activate I-WHO-ME 10x Agent
+      env:
+        RPC_URL: ${{ secrets.RPC_URL }}
+        RELAYER_URL: ${{ secrets.RELAYER_URL }}
+        RELAYER_PUBKEY: ${{ secrets.RELAYER_PUBKEY }}
+        RELAYER_API_KEY: ${{ secrets.RELAYER_API_KEY }}
+        TREASURY_PUBKEY: ${{ secrets.TREASURY_PUBKEY }}
+        MINT_ADDRESS: ${{ secrets.MINT_ADDRESS }}
+        BOT_1_PUBKEY: ${{ secrets.BOT_1_PUBKEY }}
+        BOT_2_PUBKEY: ${{ secrets.BOT_2_PUBKEY }}
+        BOT_3_PUBKEY: ${{ secrets.BOT_3_PUBKEY }}
+        BOT_4_PUBKEY: ${{ secrets.BOT_4_PUBKEY }}
+        BOT_5_PUBKEY: ${{ secrets.BOT_5_PUBKEY }}
+        DEPLOYMENT_TYPE: ${{ github.event.inputs.deployment_type || 'agent-bots' }}
+      run: npm run iwho:activate
+    
+    - name: Setup Helius webhook
+      env:
+        HELIUS_API_KEY: ${{ secrets.HELIUS_API_KEY }}
+        WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+        TREASURY_PUBKEY: ${{ secrets.TREASURY_PUBKEY }}
+        MINT_ADDRESS: ${{ secrets.MINT_ADDRESS }}
+      run: npm run helius:setup
+    
+    - name: Cleanup secrets
+      run: rm -f .deployer.key

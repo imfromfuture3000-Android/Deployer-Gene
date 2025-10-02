@@ -1,6 +1,7 @@
 import { Connection, PublicKey } from '@solana/web3.js';
 import * as dotenv from 'dotenv';
 import { getSecureConfig, logSecurityWarnings } from './securityConfig';
+import { getValidatedRpcUrl } from './allowlist';
 
 dotenv.config();
 
@@ -15,8 +16,11 @@ async function checkEnv() {
     // Log security warnings
     logSecurityWarnings();
     
+    // Validate RPC endpoint against allowlist
+    const validatedRpcUrl = getValidatedRpcUrl(config.rpcUrlWithKey);
+    
     // Test RPC connection
-    const connection = new Connection(config.rpcUrlWithKey, 'confirmed');
+    const connection = new Connection(validatedRpcUrl, 'confirmed');
     await connection.getLatestBlockhash();
     console.log('✅ RPC connection successful');
     
