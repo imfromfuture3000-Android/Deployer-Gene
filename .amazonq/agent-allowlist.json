@@ -1,0 +1,164 @@
+{
+  "agentId": "amazon-q-copilot",
+  "allowlist": {
+    "apis": {
+      "helius": {
+        "enabled": true,
+        "baseUrl": "https://mainnet.helius-rpc.com",
+        "endpoints": [
+          "/",
+          "/?api-key=*",
+          "/v0/addresses/*",
+          "/v0/transactions/*",
+          "/v1/webhooks",
+          "/v1/webhooks/*"
+        ],
+        "methods": ["GET", "POST", "PUT", "DELETE"],
+        "rateLimit": {
+          "requestsPerMinute": 100,
+          "burstLimit": 20
+        }
+      },
+      "quicknode": {
+        "enabled": true,
+        "baseUrl": "https://*.solana-mainnet.quiknode.pro",
+        "endpoints": [
+          "/",
+          "/*"
+        ],
+        "methods": ["GET", "POST"],
+        "rateLimit": {
+          "requestsPerMinute": 100,
+          "burstLimit": 20
+        }
+      },
+      "github": {
+        "enabled": true,
+        "baseUrl": "https://api.github.com",
+        "endpoints": [
+          "/repos/*",
+          "/user",
+          "/user/repos",
+          "/repos/*/contents/*",
+          "/repos/*/commits",
+          "/repos/*/actions/*"
+        ],
+        "methods": ["GET", "POST", "PUT", "PATCH"],
+        "rateLimit": {
+          "requestsPerHour": 5000
+        }
+      },
+      "solana": {
+        "enabled": true,
+        "baseUrl": "https://api.mainnet-beta.solana.com",
+        "endpoints": ["/"],
+        "methods": ["POST"],
+        "rateLimit": {
+          "requestsPerMinute": 40
+        }
+      }
+    },
+    "fileOperations": {
+      "write": {
+        "enabled": true,
+        "allowedPaths": [
+          ".env",
+          ".env.*",
+          ".cache/**",
+          "src/**",
+          "scripts/**",
+          "*.js",
+          "*.ts",
+          "*.json",
+          "*.md"
+        ],
+        "deniedPaths": [
+          ".git/**",
+          "node_modules/**",
+          ".deployer.key"
+        ]
+      },
+      "read": {
+        "enabled": true,
+        "allowedPaths": ["**/*"],
+        "deniedPaths": [
+          "node_modules/**",
+          ".git/objects/**"
+        ]
+      }
+    },
+    "commandExecution": {
+      "enabled": true,
+      "allowedCommands": [
+        "npm",
+        "node",
+        "ts-node",
+        "git",
+        "curl",
+        "chmod"
+      ],
+      "deniedCommands": [
+        "rm -rf /",
+        "sudo",
+        "su"
+      ]
+    },
+    "secrets": {
+      "canRead": true,
+      "canWrite": true,
+      "allowedKeys": [
+        "HELIUS_API_KEY",
+        "QUICKNODE_ENDPOINT",
+        "GITHUB_TOKEN",
+        "RPC_URL",
+        "WSS_URL",
+        "RELAYER_URL",
+        "RELAYER_PUBKEY",
+        "RELAYER_API_KEY",
+        "TREASURY_PUBKEY",
+        "COCREATOR_PUBKEY"
+      ]
+    }
+  },
+  "permissions": {
+    "level": "FULL_AUTONOMOUS",
+    "iWhoMeActivated": true,
+    "quantumConsensus": true,
+    "deployment": {
+      "canDeploy": true,
+      "requiresConfirmation": false,
+      "autoRetry": true,
+      "maxRetries": 10,
+      "canFundAccounts": true,
+      "canTransferAuthority": true
+    },
+    "transactions": {
+      "canSign": true,
+      "canSubmit": true,
+      "requiresApproval": false,
+      "canUsePriorityFees": true,
+      "maxTransactionValue": "unlimited"
+    },
+    "automation": {
+      "canSchedule": true,
+      "canExecuteScripts": true,
+      "canModifyConfig": true,
+      "canModifyCode": true,
+      "canInstallPackages": true,
+      "canAccessSecrets": true
+    },
+    "aiCapabilities": {
+      "autonomousDecisions": true,
+      "selfModification": true,
+      "learningEnabled": true,
+      "contextRetention": true,
+      "predictiveActions": true
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "createdAt": "2025-10-02T05:15:00Z",
+    "updatedAt": "2025-10-02T05:15:00Z",
+    "description": "Allowlist configuration for Amazon Q Copilot agent with automated access to Helius, QuickNode, and GitHub APIs"
+  }
+}

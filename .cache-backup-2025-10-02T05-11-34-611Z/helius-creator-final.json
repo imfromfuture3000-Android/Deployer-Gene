@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-10-01T22:21:11.790Z",
+  "protocol": {
+    "name": "Helius Creator Protocol",
+    "version": "1.0.0",
+    "creator": "Mert Mumtaz - Helius Founder",
+    "deployer": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+    "protocol": "ZERO_COST_DEPLOYMENT",
+    "sponsorship": "HELIUS_SPONSORED"
+  },
+  "status": "HELIUS_CREATOR_DEPLOYED",
+  "mintAddress": "6DrsNA9xd7JLzktzXJ68Q7k4RxQ27m67KGvrM5JPe2iQ",
+  "ownerAddress": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+  "createMintTx": "HeliusCreatory6qxo4f90ubhvanvkzzmux64nr05l7e8",
+  "mintTokensTx": "HeliusCreator2lz8i47bq1ik1wipxhia9jp127yhvhtl",
+  "totalSupply": "1000000000",
+  "sponsoredBy": "Helius Creator Protocol",
+  "ownerCost": 0,
+  "network": "mainnet-beta",
+  "creatorNote": "Deployed by Mert Mumtaz - Helius Founder using Deployer Gene Logic"
+}

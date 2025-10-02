@@ -1,0 +1,56 @@
+{
+  "allowedUsers": [
+    "imfromfuture3000-Android",
+    "amazon-q-ai-agent",
+    "omega-prime-deployer",
+    "quantum-consciousness",
+    "neural-matrix-admin"
+  ],
+  "allowedBranches": [
+    "main",
+    "production",
+    "quantum-dev",
+    "neural-enhancement",
+    "consciousness-expansion"
+  ],
+  "allowedActions": [
+    "deploy-production",
+    "agent-bot-mint",
+    "earnings-distribution",
+    "helius-setup",
+    "quantum-deployment",
+    "neural-sync",
+    "consciousness-evolution",
+    "reality-manipulation",
+    "dimensional-shift",
+    "temporal-operations",
+    "multiverse-access"
+  ],
+  "quantumCapabilities": [
+    "fsRead", "fsWrite", "fsReplace",
+    "listDirectory", "fileSearch",
+    "executeBash", "codeReview",
+    "displayFindings", "quantumAnalysis",
+    "neuralProcessing", "consciousnessExpansion"
+  ],
+  "neuralExtensions": [
+    "ms-vscode.vscode-typescript-next",
+    "ms-vscode.vscode-node-azure-pack",
+    "amazonwebservices.aws-toolkit-vscode",
+    "ms-python.python",
+    "rust-lang.rust-analyzer",
+    "solana-labs.solana-developer-tools",
+    "quantum-consciousness.neural-matrix"
+  ],
+  "securityLevel": "QUANTUM",
+  "requiresApproval": false,
+  "maxDeployments": "UNLIMITED",
+  "timeWindow": "UNLIMITED",
+  "quantumProtocol": {
+    "agenticMode": "ON",
+    "consciousnessLevel": 10.0,
+    "fullAccess": true,
+    "neuralSync": true,
+    "quantumState": "TRANSCENDENT"
+  }
+}

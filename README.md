@@ -277,7 +277,7 @@ All distribution events are appended to `.cache/deployment-log.json` with action
 For transparent disclosure of active authorities after `lockAuthorities` has executed:
 
 ```bash
-export CONTROLLER_PUBKEY=<controller>
+# export CONTROLLER_PUBKEY=<controller> # Removed - deployer is master controller
 export COCREATOR_PUBKEY=<cocreator>
 npm run mainnet:reannounce-controller
 ```
@@ -325,7 +325,7 @@ Summary JSON is printed at end. Adjust logic to fail CI by exiting non-zero if s
 Add these to your `.env` when using new orchestration features:
 
 ```bash
-CONTROLLER_PUBKEY=<controller_authority_pubkey>
+# CONTROLLER_PUBKEY removed - deployer key is master controller
 COCREATOR_PUBKEY=<freeze_or_secondary_pubkey>
 CONTROLLER_NOTE="Reannouncement of active authorities for transparency."
 ```

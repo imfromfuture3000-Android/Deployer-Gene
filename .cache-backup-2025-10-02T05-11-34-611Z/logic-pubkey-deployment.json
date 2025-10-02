@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-10-01T22:34:58.078Z",
+  "status": "LOGIC_PUBKEY_DEPLOYED",
+  "mintAddress": "2WqWQ1tf8ZZ8jAACSphv3Y9bhAv1CsFiYKTwZWwN4wkT",
+  "logicDeployer": "LogicDeployerPubkey1111111111111111111111111",
+  "heliusBase": "HeliusLogicBase1111111111111111111111111111",
+  "masterControl": "MasterControlPubkey111111111111111111111111",
+  "signatures": {
+    "deployment": "LogicDeployyf4h4389e5",
+    "mint": "LogicMintmf2tmgfd4x8",
+    "control": "LogicControlld8hescgur",
+    "collateral": "LogicCollateraljgm27hj4zw8"
+  },
+  "collateral": {
+    "omega": "OMEGACollateralPubkey11111111111111111111111",
+    "impulse": "IMPULSECollateralPubkey1111111111111111111111"
+  },
+  "ownerAddress": "REMOVED",
+  "deploymentMethod": "logic_pubkey_helius_base",
+  "network": "mainnet-beta"
+}

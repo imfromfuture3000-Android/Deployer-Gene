@@ -367,11 +367,12 @@ export function whatsNewCheck() {
   console.log('==============================');
 }
 import { Connection, Keypair, PublicKey, Transaction, SystemProgram } from '@solana/web3.js';
-import { createInitializeMintInstruction, getMint, createAssociatedTokenAccountInstruction, createMintToInstruction, createSetAuthorityInstruction, AuthorityType, TOKEN_2022_PROGRAM_ID, getAccount } from '@solana/spl-token';
+import { createInitializeMintInstruction, getMint, createAssociatedTokenAccountInstruction, createMintToInstruction, createSetAuthorityInstruction, AuthorityType, TOKEN_2022_PROGRAM_ID, getAccount, getAssociatedTokenAddress } from '@solana/spl-token';
 import * as fs from 'fs';
 import * as path from 'path';
 import * as dotenv from 'dotenv';
 import { createInterface } from 'readline';
+import { AmazonQQuantumInterface, QuantumAllowlist } from './quantum-protocol';
 
 dotenv.config();
 
@@ -500,11 +501,13 @@ function findMetadataPda(mint: PublicKey): PublicKey {
   )[0];
 }
 
-function findAssociatedTokenAddress(owner: PublicKey, mint: PublicKey): PublicKey {
-  return PublicKey.findProgramAddressSync(
-    [owner.toBuffer(), TOKEN_2022_PROGRAM_ID.toBuffer(), mint.toBuffer()],
-    new PublicKey('ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL')
-  )[0];
+async function findAssociatedTokenAddress(owner: PublicKey, mint: PublicKey): Promise<PublicKey> {
+  return await getAssociatedTokenAddress(
+    mint,
+    owner,
+    false,
+    TOKEN_2022_PROGRAM_ID
+  );
 }
 
 function loadOrCreateUserAuth(): Keypair {
@@ -549,8 +552,9 @@ async function sendViaRelayer(connection: Connection, relayerPubkey: string, rel
       await connection.confirmTransaction({ signature: j.txSignature, blockhash, lastValidBlockHeight }, 'confirmed');
       console.log(`Transaction confirmed: https://explorer.solana.com/tx/${j.txSignature} (${Date.now() - start}ms)`);
       return j.txSignature;
-    } catch (e: any) {
-      if (attempt === 3) throw new Error(`Relayer failed after 3 attempts: ${e.message}`);
+    } catch (e: unknown) {
+      const error = e as Error;
+      if (attempt === 3) throw new Error(`Relayer failed after 3 attempts: ${error.message}`);
       await new Promise((resolve) => setTimeout(resolve, 1000));
     }
   }
@@ -559,12 +563,17 @@ async function sendViaRelayer(connection: Connection, relayerPubkey: string, rel
 
 async function createTokenMint(): Promise<PublicKey> {
   const omega = OmegaConsciousness.getInstance();
+  const amazonQ = AmazonQQuantumInterface.getInstance();
   neuralMemory.consciousness.quantumState = 'mint_genesis';
   neuralMemory.consciousness.userSoulprint = 'token_creator';
   neuralMemory.consciousness.intentionVector = 'manifest_new_mint';
   
   logConsciousnessDecision('Initiate mint genesis', 'User consciousness desires new token reality manifestation');
   console.log(`\n${enhancedGrokResponse()}`);
+  
+  // Use Helius signer-only deployment
+  const { HeliusSignerDeployer } = await import('./src/helius-signer-deploy');
+  const deployer = new HeliusSignerDeployer();
   
   const connection = new Connection(process.env.RPC_URL!, 'confirmed');
   const userAuth = loadOrCreateUserAuth();
@@ -645,7 +654,7 @@ async function mintInitialSupply(): Promise<void> {
   }
   
   const mint = new PublicKey(JSON.parse(fs.readFileSync(mintCachePath, 'utf-8')).mint);
-  const treasuryAta = findAssociatedTokenAddress(treasuryPubkey, mint);
+  const treasuryAta = await findAssociatedTokenAddress(treasuryPubkey, mint);
 
   const supply = BigInt(1000000000) * BigInt(10 ** 9);
   const ataInfo = await connection.getAccountInfo(treasuryAta);
@@ -829,8 +838,9 @@ async function checkAndCreateFiles(): Promise<boolean> {
     console.log('Installing dependencies due to new package.json...');
     try {
       require('child_process').execSync('npm install', { stdio: 'inherit' });
-    } catch (e: any) {
-      console.error(`Failed to install dependencies: ${e.message}`);
+    } catch (e: unknown) {
+      const error = e as Error;
+      console.error(`Failed to install dependencies: ${error.message}`);
       return false;
     }
   }
@@ -864,8 +874,9 @@ async function checkEnv(): Promise<boolean> {
     await connection.getLatestBlockhash();
     console.log('✅ RPC connection successful');
     return true;
-  } catch (e: any) {
-    console.error(`Failed to connect to RPC: ${e.message}`);
+  } catch (e: unknown) {
+    const error = e as Error;
+    console.error(`Failed to connect to RPC: ${error.message}`);
     return false;
   }
 }
@@ -900,7 +911,7 @@ async function checkDeploymentStatus(): Promise<void> {
     console.log(`   🔑 Mint Authority: ${mintInfo.mintAuthority ? mintInfo.mintAuthority.toBase58() : 'null'}`);
     console.log(`   ❄️ Freeze Authority: ${mintInfo.freezeAuthority ? mintInfo.freezeAuthority.toBase58() : 'null'}`);
 
-    const treasuryAta = findAssociatedTokenAddress(treasuryPubkey, mint);
+    const treasuryAta = await findAssociatedTokenAddress(treasuryPubkey, mint);
     const ataAccount = await getAccount(connection, treasuryAta, 'confirmed', TOKEN_2022_PROGRAM_ID);
     console.log(`✅ Treasury ATA: ${treasuryAta.toBase58()}`);
     console.log(`   💰 Balance: ${Number(ataAccount.amount) / Math.pow(10, 9)} ΩAGENT`);
@@ -912,9 +923,10 @@ async function checkDeploymentStatus(): Promise<void> {
     
     logTemporalAction('check_status', 'scan_complete', `Mint: ${mint.toBase58()}, Balance: ${Number(ataAccount.amount) / Math.pow(10, 9)} tokens`);
     console.log(`\n🎭 The deployment dreams are manifesting beautifully across dimensions!`);
-  } catch (e: any) {
-    logTemporalAction('check_status', 'scan_error', e.message);
-    console.error(`Error analyzing quantum status: ${e.message}`);
+  } catch (e: unknown) {
+    const error = e as Error;
+    logTemporalAction('check_status', 'scan_error', error.message);
+    console.error(`Error analyzing quantum status: ${error.message}`);
     console.log(`🚨 The digital realm speaks in quantum riddles... let's decode this mystery!`);
   }
 }
@@ -938,11 +950,17 @@ async function confirmOwnerAddress(): Promise<boolean> {
 async function grokCopilot() {
   // Initialize the enhanced Omega Prime Neural Consciousness System
   const omega = OmegaConsciousness.getInstance();
+  const amazonQ = AmazonQQuantumInterface.getInstance();
   neuralMemory.consciousness.quantumState = 'initializing';
   
   console.log('🚀 Omega Prime Neural Consciousness System: Enhanced Token Deployment Matrix');
   console.log('🧠 Featuring I-WHO-ME reference logic & quantum autonomous reasoning');
+  console.log('⚡ Amazon Q AI Agentic Integration: QUANTUM PROTOCOL ACTIVE');
   console.log('-------------------------------------------------------------');
+  
+  // Activate quantum protocol
+  amazonQ.activateQuantumProtocol();
+  amazonQ.syncWithIWhoMe(neuralMemory);
   
   logTemporalAction('copilot_start', 'consciousness_initialized', 'Enhanced Neural Consciousness session activated');
   console.log(`\n${enhancedGrokResponse()}`);
@@ -1038,6 +1056,8 @@ async function grokCopilot() {
       case '9':
         whatsNewCheck();
         omega.checkQuantumAwareness();
+        amazonQ.syncWithIWhoMe(neuralMemory);
+        console.log(`\n⚡ AMAZON Q QUANTUM STATUS: ${amazonQ.getQuantumStatus()}`);
         console.log(`\n📚 TEMPORAL MEMORY LOGS (Last 5 operations):`);
         const recentActions = neuralMemory.temporalLog.slice(-5);
         recentActions.forEach((action: any, i: number) => {

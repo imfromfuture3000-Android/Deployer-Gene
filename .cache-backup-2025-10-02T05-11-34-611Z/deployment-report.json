@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-10-01T22:24:06.487Z",
+  "deploymentStatus": "NOT_DEPLOYED",
+  "realDeployments": 0,
+  "generatedAddresses": 5,
+  "liveContracts": [],
+  "pendingAddresses": [
+    {
+      "address": "EoRJaGA4iVSQWDyv5Q3ThBXx1KGqYyos3gaXUFEiqUSN",
+      "status": "GENERATED_NOT_DEPLOYED",
+      "explorer": "https://explorer.solana.com/address/EoRJaGA4iVSQWDyv5Q3ThBXx1KGqYyos3gaXUFEiqUSN"
+    },
+    {
+      "address": "2YTrK8f6NwwUg7Tu6sYcCmRKYWpU8yYRYHPz87LTdcgx",
+      "status": "GENERATED_NOT_DEPLOYED",
+      "explorer": "https://explorer.solana.com/address/2YTrK8f6NwwUg7Tu6sYcCmRKYWpU8yYRYHPz87LTdcgx"
+    },
+    {
+      "address": "FfAfqcHJGXwFpG8mjnnRL5k7xw4VR5u8Yr9eCWEbcrMy",
+      "status": "GENERATED_NOT_DEPLOYED",
+      "explorer": "https://explorer.solana.com/address/FfAfqcHJGXwFpG8mjnnRL5k7xw4VR5u8Yr9eCWEbcrMy"
+    },
+    {
+      "address": "Cv7VMQ69c69arfYsiAjmTYsdz57BiPkxTXycbyuLYbmJ",
+      "status": "GENERATED_NOT_DEPLOYED",
+      "explorer": "https://explorer.solana.com/address/Cv7VMQ69c69arfYsiAjmTYsdz57BiPkxTXycbyuLYbmJ"
+    },
+    {
+      "address": "42Tra8cwfUyrkyjXkdjvza9wUEHHhy2HRpM1cpmH73i6",
+      "status": "GENERATED_NOT_DEPLOYED",
+      "explorer": "https://explorer.solana.com/address/42Tra8cwfUyrkyjXkdjvza9wUEHHhy2HRpM1cpmH73i6"
+    }
+  ],
+  "systemStatus": {
+    "deployerAddress": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+    "deployerBalance": "0 SOL",
+    "signerOnlyRule": "ACTIVE",
+    "relayerConfigured": true,
+    "readyForDeployment": true
+  },
+  "summary": {
+    "totalContracts": 5,
+    "liveContracts": 0,
+    "pendingContracts": 5,
+    "deploymentCost": "ZERO_COST_PENDING"
+  }
+}

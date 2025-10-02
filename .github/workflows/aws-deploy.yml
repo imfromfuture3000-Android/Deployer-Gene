@@ -1,0 +1,28 @@
+name: Deploy to AWS
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy-aws:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+        
+    - name: Deploy to Lambda
+      run: |
+        zip -r function.zip .
+        aws lambda update-function-code --function-name genemint-processor --zip-file fileb://function.zip
+        
+    - name: Deploy to S3
+      run: |
+        npm run build
+        aws s3 sync ./build s3://nft-empire-storage --delete

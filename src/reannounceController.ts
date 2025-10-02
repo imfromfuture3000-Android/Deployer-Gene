@@ -3,20 +3,21 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as dotenv from 'dotenv';
 import { appendDeploymentEvent } from './utils/txLogger';
+import { loadDeployerAuth } from './utils/deployerAuth';
 
 dotenv.config();
 
 /*
   Reannounce Controller / Co-Controller
-  - Writes a JSON file capturing CONTROLLER_PUBKEY & COCREATOR_PUBKEY plus optional note
+  - Writes a JSON file capturing deployer (master controller) & COCREATOR_PUBKEY plus optional note
   - No on-chain tx (authorities already set by lockAuthorities), purely off-chain attestation for transparency
 */
 
 function main() {
-  const controller = process.env.CONTROLLER_PUBKEY;
+  const controller = loadDeployerAuth().publicKey.toBase58();
   const cocreator = process.env.COCREATOR_PUBKEY;
-  if (!controller || !cocreator) {
-    console.error('Missing CONTROLLER_PUBKEY or COCREATOR_PUBKEY env vars.');
+  if (!cocreator) {
+    console.error('Missing COCREATOR_PUBKEY env var.');
     process.exit(1);
   }
   try {

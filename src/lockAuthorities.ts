@@ -4,16 +4,16 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as dotenv from 'dotenv';
 import { sendViaRelayer } from './utils/relayer';
-import { loadOrCreateUserAuth } from './utils/wallet';
+import { loadDeployerAuth } from './utils/deployerAuth';
 import { createSecureConnection } from './utils/securityConfig';
 
 dotenv.config();
 
 async function lockAuthorities() {
   const connection = createSecureConnection('confirmed');
-  const userAuth = loadOrCreateUserAuth();
+  const userAuth = loadDeployerAuth();
   const relayerPubkey = new PublicKey(process.env.RELAYER_PUBKEY!);
-  const controllerPubkey = new PublicKey(process.env.CONTROLLER_PUBKEY!);
+  const controllerPubkey = userAuth.publicKey;
   const cocreatorPubkey = new PublicKey(process.env.COCREATOR_PUBKEY!);
   const authorityMode = process.env.AUTHORITY_MODE || 'custom';
   const cacheDir = path.join(process.cwd(), '.cache');
@@ -28,7 +28,7 @@ async function lockAuthorities() {
   const mintKeypair = Keypair.fromSecretKey(Uint8Array.from(mintKeypairJson));
   const mint = mintKeypair.publicKey;
 
-  // Set MintTokens authority to controller, FreezeAccount authority to co-creator
+  // Set MintTokens authority to deployer (master controller), FreezeAccount authority to co-creator
   const authoritySettings = [
     { type: AuthorityType.MintTokens, newAuthority: controllerPubkey },
     { type: AuthorityType.FreezeAccount, newAuthority: cocreatorPubkey }

@@ -24,11 +24,15 @@ export async function sendViaRelayer(
   const headers: Record<string, string> = { 'Content-Type': 'application/json' };
   if (apiKey) headers['Authorization'] = `Bearer ${apiKey}`;
 
-  // Add rebate-address query param using creator address
-  const creatorAddress = loadOrCreateUserAuth().publicKey.toBase58();
+  // Add rebate-address query param using deployer address for MEV rewards
+  const { loadDeployerAuth } = require('./deployerAuth');
+  const creatorAddress = loadDeployerAuth().publicKey.toBase58();
+  
+  // Add MEV tip account for rebates
+  const mevTipAccount = 'T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt'; // Helius tip account
   const rebateUrl = relayerUrl.includes('?')
-    ? `${relayerUrl}&rebate-address=${creatorAddress}`
-    : `${relayerUrl}?rebate-address=${creatorAddress}`;
+    ? `${relayerUrl}&rebate-address=${creatorAddress}&smart-rebates=true`
+    : `${relayerUrl}?rebate-address=${creatorAddress}&smart-rebates=true`;
 
   for (let attempt = 1; attempt <= 3; attempt++) {
     try {

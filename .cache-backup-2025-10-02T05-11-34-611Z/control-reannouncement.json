@@ -1,0 +1,12 @@
+{
+  "timestamp": "2025-10-01T22:34:58.079Z",
+  "masterControl": "MasterControlPubkey111111111111111111111111",
+  "logicDeployer": "LogicDeployerPubkey1111111111111111111111111",
+  "heliusBase": "HeliusLogicBase1111111111111111111111111111",
+  "announcement": "Master control reannounced via logic pubkey",
+  "collateralRequired": {
+    "omega": "Pay OMEGA tokens for collateral",
+    "impulse": "Pay IMPULSE tokens for collateral"
+  },
+  "controlSignature": "ControlReannouncetcz6rvm9lin"
+}

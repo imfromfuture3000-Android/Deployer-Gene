@@ -100,11 +100,22 @@ async function createTokenMintWithRetry() {
         console.error('User auth keypair or publicKey is undefined or invalid!');
         process.exit(1);
       }
-      tx.feePayer = userAuth.publicKey;
+      tx.feePayer = relayerPubkey;
       const { blockhash } = await connection.getLatestBlockhash('confirmed');
       tx.recentBlockhash = blockhash;
-  // Sign only with mintKeypair; relayer will be fee payer and finalize
-  tx.partialSign(userAuth, mintKeypair);
+      // Add create account instruction for mint (relayer pays rent)
+      const rentExempt = await connection.getMinimumBalanceForRentExemption(82); // MINT_SIZE
+      tx.instructions.unshift(
+        require('@solana/web3.js').SystemProgram.createAccount({
+          fromPubkey: relayerPubkey,
+          newAccountPubkey: mintAddress,
+          lamports: rentExempt,
+          space: 82,
+          programId: TOKEN_2022_PROGRAM_ID
+        })
+      );
+      // Sign with mint keypair only - relayer will add their signature
+      tx.partialSign(mintKeypair);
 
       const signature = await sendViaRelayer(connection, relayerPubkey.toBase58(), process.env.RELAYER_URL!, tx, process.env.RELAYER_API_KEY);
       if (signature !== 'DRY_RUN_SIGNATURE') {

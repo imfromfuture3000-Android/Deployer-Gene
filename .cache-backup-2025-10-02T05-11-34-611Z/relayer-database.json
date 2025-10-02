@@ -1,0 +1,199 @@
+{
+  "timestamp": "2025-10-01T22:01:20.333Z",
+  "relayerData": {
+    "timestamp": "2025-10-01T22:01:20.331Z",
+    "totalServices": 6,
+    "gaslessServices": 5,
+    "supportedChains": [
+      "ethereum",
+      "polygon",
+      "bsc",
+      "avalanche",
+      "arbitrum",
+      "optimism",
+      "solana"
+    ],
+    "services": {
+      "biconomy": {
+        "name": "Biconomy",
+        "endpoint": "https://api.biconomy.io/api/v2/meta-tx/native",
+        "gasless": true,
+        "chains": [
+          "ethereum",
+          "polygon",
+          "bsc",
+          "avalanche"
+        ],
+        "features": [
+          "meta-transactions",
+          "gasless",
+          "account-abstraction"
+        ],
+        "category": "ethereum",
+        "status": "active"
+      },
+      "gelato": {
+        "name": "Gelato Network",
+        "endpoint": "https://relay.gelato.network",
+        "gasless": true,
+        "chains": [
+          "ethereum",
+          "polygon",
+          "arbitrum",
+          "optimism"
+        ],
+        "features": [
+          "automated-execution",
+          "gasless",
+          "keeper-network"
+        ],
+        "category": "ethereum",
+        "status": "active"
+      },
+      "opengsn": {
+        "name": "OpenGSN",
+        "endpoint": "https://api.opengsn.org",
+        "gasless": true,
+        "chains": [
+          "ethereum",
+          "polygon"
+        ],
+        "features": [
+          "gas-station-network",
+          "meta-transactions"
+        ],
+        "category": "ethereum",
+        "status": "active"
+      },
+      "defender": {
+        "name": "OpenZeppelin Defender",
+        "endpoint": "https://api.defender.openzeppelin.com",
+        "gasless": true,
+        "chains": [
+          "ethereum",
+          "polygon",
+          "bsc",
+          "arbitrum"
+        ],
+        "features": [
+          "autotasks",
+          "relayer",
+          "security"
+        ],
+        "category": "ethereum",
+        "status": "active"
+      },
+      "octane": {
+        "name": "Octane",
+        "endpoint": "https://api.octane.so/v1/transactions",
+        "gasless": true,
+        "chains": [
+          "solana"
+        ],
+        "features": [
+          "fee-sponsorship",
+          "gasless-transactions"
+        ],
+        "category": "solana",
+        "status": "active"
+      },
+      "helius": {
+        "name": "Helius",
+        "endpoint": "https://mainnet.helius-rpc.com",
+        "gasless": false,
+        "chains": [
+          "solana"
+        ],
+        "features": [
+          "rpc",
+          "webhooks",
+          "das-api"
+        ],
+        "category": "solana",
+        "status": "active"
+      }
+    }
+  },
+  "signerConfig": {
+    "rule": "DEPLOYER_SIGNS_ONLY",
+    "description": "Deployer wallet signs transactions but never pays gas fees",
+    "implementation": {
+      "ethereum": {
+        "method": "meta-transactions",
+        "relayer": "biconomy",
+        "gasPayment": "relayer-sponsored",
+        "signerRole": "transaction-signer",
+        "feePayerRole": "relayer-service"
+      },
+      "solana": {
+        "method": "fee-payer-override",
+        "relayer": "octane",
+        "gasPayment": "relayer-sponsored",
+        "signerRole": "transaction-signer",
+        "feePayerRole": "octane-relayer"
+      }
+    },
+    "benefits": [
+      "Zero SOL/ETH required in deployer wallet",
+      "Deployer maintains transaction authority",
+      "Relayer handles all gas payments",
+      "Secure key separation"
+    ]
+  },
+  "integration": {
+    "ethereum": "\n// Biconomy Meta-Transaction\nconst biconomy = new Biconomy(web3.currentProvider, {\n  apiKey: process.env.BICONOMY_API_KEY,\n  debug: true\n});\n\nasync function executeMetaTransaction(contract, method, params) {\n  const userAddress = deployer.address;\n  const nonce = await contract.getNonce(userAddress);\n  \n  const functionSignature = contract.interface.encodeFunctionData(method, params);\n  const messageToSign = constructMetaTransactionMessage(nonce, functionSignature);\n  \n  const signature = await deployer.signMessage(messageToSign);\n  \n  return await biconomy.executeMetaTransaction({\n    userAddress,\n    functionSignature,\n    signature,\n    nonce\n  });\n}",
+    "solana": "\n// Octane Fee-Payer Override\nasync function sendViaOctane(transaction, signer) {\n  transaction.feePayer = new PublicKey('9WzDXwBbmkg8ZTbNMqUxvQRAyrZzDsGYdLVL9zYtAWWM');\n  transaction.recentBlockhash = (await connection.getLatestBlockhash()).blockhash;\n  \n  // Signer signs, Octane pays\n  transaction.partialSign(signer);\n  \n  const serialized = transaction.serialize({ requireAllSignatures: false });\n  \n  return await fetch('https://api.octane.so/v1/transactions', {\n    method: 'POST',\n    headers: { 'Content-Type': 'application/json' },\n    body: JSON.stringify({\n      signedTransactionBase64: serialized.toString('base64')\n    })\n  });\n}"
+  },
+  "multiChainConfig": {
+    "ethereum": {
+      "chainId": 1,
+      "rpc": "https://eth-mainnet.alchemyapi.io/v2/demo",
+      "relayers": [
+        "biconomy",
+        "gelato",
+        "defender"
+      ]
+    },
+    "polygon": {
+      "chainId": 137,
+      "rpc": "https://polygon-mainnet.alchemyapi.io/v2/demo",
+      "relayers": [
+        "biconomy",
+        "gelato",
+        "opengsn"
+      ]
+    },
+    "arbitrum": {
+      "chainId": 42161,
+      "rpc": "https://arb-mainnet.alchemyapi.io/v2/demo",
+      "relayers": [
+        "gelato",
+        "defender"
+      ]
+    },
+    "optimism": {
+      "chainId": 10,
+      "rpc": "https://opt-mainnet.alchemyapi.io/v2/demo",
+      "relayers": [
+        "gelato",
+        "defender"
+      ]
+    },
+    "bsc": {
+      "chainId": 56,
+      "rpc": "https://bsc-dataseed.binance.org",
+      "relayers": [
+        "biconomy",
+        "defender"
+      ]
+    },
+    "solana": {
+      "chainId": "mainnet-beta",
+      "rpc": "https://api.mainnet-beta.solana.com",
+      "relayers": [
+        "octane"
+      ]
+    }
+  },
+  "deploymentRule": "SIGNER_ONLY_DEPLOYER"
+}

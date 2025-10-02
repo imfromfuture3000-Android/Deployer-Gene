@@ -1,0 +1,155 @@
+{
+  "timestamp": "2025-10-01T20:56:51.029Z",
+  "deployer": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+  "evmAddress": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+  "contracts": [
+    {
+      "network": "solana",
+      "type": "program/token",
+      "address": "EoRJaGA4iVSQWDyv5Q3ThBXx1KGqYyos3gaXUFEiqUSN",
+      "source": "deployment_history",
+      "controlled": true
+    },
+    {
+      "network": "solana",
+      "type": "program/token",
+      "address": "2YTrK8f6NwwUg7Tu6sYcCmRKYWpU8yYRYHPz87LTdcgx",
+      "source": "deployment_history",
+      "controlled": true
+    },
+    {
+      "network": "solana",
+      "type": "program/token",
+      "address": "F2EkpVd3pKLUi9u9BU794t3mWscJXzUAVw1WSjogTQuR",
+      "source": "deployment_history",
+      "controlled": true
+    },
+    {
+      "network": "solana",
+      "type": "program/token",
+      "address": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz9hXHNYt99MQ59qw1",
+      "source": "deployment_history",
+      "controlled": false
+    },
+    {
+      "network": "solana",
+      "type": "program/token",
+      "address": "TOKEN_2022_PROGRAM_ID",
+      "source": "deployment_history",
+      "controlled": false
+    },
+    {
+      "network": "solana",
+      "type": "program/token",
+      "address": "ASSOCIATED_TOKEN_PROGRAM_ID",
+      "source": "deployment_history",
+      "controlled": false
+    },
+    {
+      "network": "ethereum",
+      "type": "erc20/contract",
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "source": "deployment_history",
+      "controlled": true
+    },
+    {
+      "network": "ethereum",
+      "type": "erc20/contract",
+      "address": "0xA0b86a33E6441e6e80D0c4C34F0b1e4E6a7c4b8d",
+      "source": "deployment_history",
+      "controlled": false
+    },
+    {
+      "network": "ethereum",
+      "type": "erc20/contract",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "source": "deployment_history",
+      "controlled": false
+    },
+    {
+      "network": "polygon",
+      "type": "erc20/contract",
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "source": "deployment_history",
+      "controlled": true
+    },
+    {
+      "network": "polygon",
+      "type": "erc20/contract",
+      "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+      "source": "deployment_history",
+      "controlled": false
+    },
+    {
+      "network": "bsc",
+      "type": "erc20/contract",
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "source": "deployment_history",
+      "controlled": true
+    },
+    {
+      "network": "bsc",
+      "type": "erc20/contract",
+      "address": "0x55d398326f99059fF775485246999027B3197955",
+      "source": "deployment_history",
+      "controlled": false
+    }
+  ],
+  "controlled": [
+    {
+      "network": "solana",
+      "type": "program/token",
+      "address": "EoRJaGA4iVSQWDyv5Q3ThBXx1KGqYyos3gaXUFEiqUSN",
+      "source": "deployment_history",
+      "controlled": true
+    },
+    {
+      "network": "solana",
+      "type": "program/token",
+      "address": "2YTrK8f6NwwUg7Tu6sYcCmRKYWpU8yYRYHPz87LTdcgx",
+      "source": "deployment_history",
+      "controlled": true
+    },
+    {
+      "network": "solana",
+      "type": "program/token",
+      "address": "F2EkpVd3pKLUi9u9BU794t3mWscJXzUAVw1WSjogTQuR",
+      "source": "deployment_history",
+      "controlled": true
+    },
+    {
+      "network": "ethereum",
+      "type": "erc20/contract",
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "source": "deployment_history",
+      "controlled": true
+    },
+    {
+      "network": "polygon",
+      "type": "erc20/contract",
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "source": "deployment_history",
+      "controlled": true
+    },
+    {
+      "network": "bsc",
+      "type": "erc20/contract",
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "source": "deployment_history",
+      "controlled": true
+    }
+  ],
+  "summary": {
+    "solana": 6,
+    "ethereum": 3,
+    "polygon": 2,
+    "bsc": 2
+  },
+  "keyContracts": {
+    "omegaPrimary": "EoRJaGA4iVSQWDyv5Q3ThBXx1KGqYyos3gaXUFEiqUSN",
+    "omegaAlt": "2YTrK8f6NwwUg7Tu6sYcCmRKYWpU8yYRYHPz87LTdcgx",
+    "earningsVault": "F2EkpVd3pKLUi9u9BU794t3mWscJXzUAVw1WSjogTQuR",
+    "dexProgram": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz9hXHNYt99MQ59qw1",
+    "evmAddress": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6"
+  }
+}

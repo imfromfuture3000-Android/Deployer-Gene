@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-10-01T20:59:30.642Z",
+  "rebateRecipient": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+  "providers": {
+    "helius": {
+      "endpoint": "https://mainnet.helius-rpc.com",
+      "rebateAddress": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "tipAccount": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+      "rebateRate": 0.5
+    },
+    "quicknode": {
+      "endpoint": "https://api.mainnet-beta.solana.com",
+      "rebateAddress": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "tipAccount": "Cw8CFyM9FkoMi7K7Crf6HNQqf4uEMzpKw6QNghXLvLkY",
+      "rebateRate": 0.3
+    }
+  },
+  "relayerConfig": {
+    "feePayerPubkey": "9WzDXwBbmkg8ZTbNMqUxvQRAyrZzDsGYdLVL9zYtAWWM",
+    "rebateAddress": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+    "mevTipAccounts": [
+      "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+      "Cw8CFyM9FkoMi7K7Crf6HNQqf4uEMzpKw6QNghXLvLkY"
+    ],
+    "rebateSettings": {
+      "enabled": true,
+      "recipient": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "percentage": 50
+    }
+  },
+  "estimatedRewards": {
+    "daily": 0.04000000000000001,
+    "monthly": 1.2000000000000002,
+    "annual": 14.400000000000002
+  },
+  "status": "configured"
+}
