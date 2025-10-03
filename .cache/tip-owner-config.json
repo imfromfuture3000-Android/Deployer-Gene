@@ -1,0 +1,12 @@
+{
+  "coreDeployProgram": {
+    "programId": "CoreDeployProgram1111111111111111111111111111",
+    "tipOwner": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+    "tipPercentage": 0.05
+  },
+  "proxyProgram": {
+    "programId": "ProxyProgram1111111111111111111111111111111111",
+    "tipOwner": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+    "tipPercentage": 0.05
+  }
+}

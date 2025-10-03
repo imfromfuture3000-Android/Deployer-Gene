@@ -1,82 +1,19 @@
-# Environment Variables & Secrets
+node_modules/
 .env
 .env.local
 .env.production
 .env.staging
-*.env
-
-# Private Keys & Wallets
-*.key
-*.pem
-*.p12
-*.pfx
-wallet.json
-keypair.json
-id.json
-
-# API Keys & Tokens
-*api-key*
-*secret*
-*token*
-*credentials*
-
-# Node.js
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.npm
-.yarn-integrity
-
-# Build & Distribution
+*.log
 dist/
 build/
-out/
-target/
 
-# Cache & Temporary Files
-.cache/
-*.tmp
-*.temp
-.DS_Store
-Thumbs.db
+# Private Keys - NEVER COMMIT
+.deployer.key
+private.key
+*.pem
+wallet.json
+keypair.json
 
-# IDE & Editor Files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# Logs
-logs/
-*.log
-*.log.*
-
-# Database & Storage
-*.db
-*.sqlite
-*.sqlite3
-
-# Solana Specific
-.anchor/
-test-ledger/
-validator-keypair.json
-faucet-keypair.json
-
-# Security Sensitive
-DEPLOYER_PRIVATE_KEY*
-*PRIVATE_KEY*
-*SECRET*
-*PASSWORD*
-*MNEMONIC*
-
-# Deployment Artifacts
-deployment-log.json
-controller-announcement.json
-bots.json
-
-# Backup Files
-*.bak
-*.backup
-*.old
+# Sensitive Files
+2AHAs1gdHSGn2REJbARigh5CLoRuR9gdNTMTKu5UJBVVovXUxhPYeLFYTVgov7gyes4QkwLhgw89PAsGZbUjK2Yv
+deployer-private-key.txt

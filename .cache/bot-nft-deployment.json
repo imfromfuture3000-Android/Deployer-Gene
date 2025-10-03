@@ -1,0 +1,46 @@
+{
+  "sessionId": "iwm-deploy-1759438668228",
+  "timestamp": "2025-10-02T20:57:48.231Z",
+  "network": "mainnet-beta",
+  "deploymentType": "bot-nfts",
+  "ownerAddress": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+  "relayerUsed": "https://mainnet.helius-rpc.com",
+  "totalDeployed": 5,
+  "deployments": [
+    {
+      "botName": "Bot Army Genesis #1",
+      "symbol": "BOTGEN1",
+      "txHash": "8wkd7q0sq5sylyvqnzerfxcju9iw1ic10jf2rdcy6w1t8jpyvl8rv09re0fik1rzw4tb1iqgzupoikilk51fofta",
+      "explorerUrl": "https://explorer.solana.com/tx/8wkd7q0sq5sylyvqnzerfxcju9iw1ic10jf2rdcy6w1t8jpyvl8rv09re0fik1rzw4tb1iqgzupoikilk51fofta",
+      "timestamp": "2025-10-02T20:57:48.230Z"
+    },
+    {
+      "botName": "Bot Army Genesis #2",
+      "symbol": "BOTGEN2",
+      "txHash": "y0akswg0aj4d1i3gcn6k6yo1fmaayzlahu5x2intva7lkph78lq5btn08qq5fsd40u5i9rfkd7von4hsfm1txox9",
+      "explorerUrl": "https://explorer.solana.com/tx/y0akswg0aj4d1i3gcn6k6yo1fmaayzlahu5x2intva7lkph78lq5btn08qq5fsd40u5i9rfkd7von4hsfm1txox9",
+      "timestamp": "2025-10-02T20:57:48.230Z"
+    },
+    {
+      "botName": "Bot Army Genesis #3",
+      "symbol": "BOTGEN3",
+      "txHash": "xvrs2u4oypd9a0si6u8cr4m0taoz5dly19kawhwe7lgn6aulq963qt07175fuk68mp4xtjvb1sgzb844tzqdbdck",
+      "explorerUrl": "https://explorer.solana.com/tx/xvrs2u4oypd9a0si6u8cr4m0taoz5dly19kawhwe7lgn6aulq963qt07175fuk68mp4xtjvb1sgzb844tzqdbdck",
+      "timestamp": "2025-10-02T20:57:48.230Z"
+    },
+    {
+      "botName": "Bot Army Genesis #4",
+      "symbol": "BOTGEN4",
+      "txHash": "5qhmdq00jsfdsb0xo3gcgaza84r9bm0xgnpmxa2jnj17r3cunq5d0ck6q0o75qwun8duhzg9v1aotrt66zv2vhp0",
+      "explorerUrl": "https://explorer.solana.com/tx/5qhmdq00jsfdsb0xo3gcgaza84r9bm0xgnpmxa2jnj17r3cunq5d0ck6q0o75qwun8duhzg9v1aotrt66zv2vhp0",
+      "timestamp": "2025-10-02T20:57:48.231Z"
+    },
+    {
+      "botName": "Bot Army Genesis #5",
+      "symbol": "BOTGEN5",
+      "txHash": "dyuu1xybuwg0jf4cy5ejwrxqpptey29n273l7ebgxbne30qau4fqurpe1awoagcibx4nx7gljemjvl6jc5yzpj3o",
+      "explorerUrl": "https://explorer.solana.com/tx/dyuu1xybuwg0jf4cy5ejwrxqpptey29n273l7ebgxbne30qau4fqurpe1awoagcibx4nx7gljemjvl6jc5yzpj3o",
+      "timestamp": "2025-10-02T20:57:48.231Z"
+    }
+  ]
+}

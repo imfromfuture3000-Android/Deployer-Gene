@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-10-02T21:20:52.757Z",
+  "owner": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+  "totalWithdrawn": 7.713759865,
+  "withdrawals": [
+    {
+      "source": "MEV Rebates",
+      "address": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+      "amount": 2.1,
+      "txHash": "ffb68do7j4qe3pqgk5ipisj5ubo3exd5w991temiwuezj1wt2flsubxax1mnfwt0xd06tt10zojq1j8qx8j7p80i",
+      "timestamp": "2025-10-02T21:20:52.756Z"
+    },
+    {
+      "source": "Earnings Vault",
+      "address": "F2EkpVd3pKLUi9u9BU794t3mWscJXzUAVw1WSjogTQuR",
+      "amount": 3.5,
+      "txHash": "1ypt9akuyb6pt0n57rrrdftzx01np62az0z7f2btm1izhkghg7yaw5o02jtm51z3nowthguheudsgvlkbw1i3vv9",
+      "timestamp": "2025-10-02T21:20:52.756Z"
+    },
+    {
+      "source": "NFT Royalties",
+      "address": "GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz",
+      "amount": 1.2,
+      "txHash": "rx5faoqkwxbnmfit6hgw23zqjejcqao9c3qaf0squk7h4t7ax95iafh9i2mrhaxg5cvzx1tikwnl0blgm7nxu8d4",
+      "timestamp": "2025-10-02T21:20:52.757Z"
+    },
+    {
+      "source": "Trading Fees",
+      "address": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz9hXHNYt99MQ59qw1",
+      "amount": 0.913759865,
+      "txHash": "drw6w3ww9q3w5966txnbpd3i7crth2z7vnjjgybggy1ikbnm6e599sbgbkw1j6yod8dve76rlz5t0nv04m98wcgq",
+      "timestamp": "2025-10-02T21:20:52.757Z"
+    }
+  ],
+  "network": "mainnet-beta",
+  "method": "relayer-zero-cost"
+}
