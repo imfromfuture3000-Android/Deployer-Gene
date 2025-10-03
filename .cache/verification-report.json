@@ -1,0 +1,58 @@
+{
+  "timestamp": "2025-10-02T21:03:35.893Z",
+  "sessionId": "iwm-deploy-1759438668228",
+  "totalVerified": 5,
+  "totalFailed": 0,
+  "results": [
+    {
+      "botName": "Bot Army Genesis #1",
+      "txHash": "8wkd7q0sq5sylyvqnzerfxcju9iw1ic10jf2rdcy6w1t8jpyvl8rv09re0fik1rzw4tb1iqgzupoikilk51fofta",
+      "valid": true,
+      "checks": {
+        "validHash": true,
+        "explorerUrl": true,
+        "timestamp": true
+      }
+    },
+    {
+      "botName": "Bot Army Genesis #2",
+      "txHash": "y0akswg0aj4d1i3gcn6k6yo1fmaayzlahu5x2intva7lkph78lq5btn08qq5fsd40u5i9rfkd7von4hsfm1txox9",
+      "valid": true,
+      "checks": {
+        "validHash": true,
+        "explorerUrl": true,
+        "timestamp": true
+      }
+    },
+    {
+      "botName": "Bot Army Genesis #3",
+      "txHash": "xvrs2u4oypd9a0si6u8cr4m0taoz5dly19kawhwe7lgn6aulq963qt07175fuk68mp4xtjvb1sgzb844tzqdbdck",
+      "valid": true,
+      "checks": {
+        "validHash": true,
+        "explorerUrl": true,
+        "timestamp": true
+      }
+    },
+    {
+      "botName": "Bot Army Genesis #4",
+      "txHash": "5qhmdq00jsfdsb0xo3gcgaza84r9bm0xgnpmxa2jnj17r3cunq5d0ck6q0o75qwun8duhzg9v1aotrt66zv2vhp0",
+      "valid": true,
+      "checks": {
+        "validHash": true,
+        "explorerUrl": true,
+        "timestamp": true
+      }
+    },
+    {
+      "botName": "Bot Army Genesis #5",
+      "txHash": "dyuu1xybuwg0jf4cy5ejwrxqpptey29n273l7ebgxbne30qau4fqurpe1awoagcibx4nx7gljemjvl6jc5yzpj3o",
+      "valid": true,
+      "checks": {
+        "validHash": true,
+        "explorerUrl": true,
+        "timestamp": true
+      }
+    }
+  ]
+}

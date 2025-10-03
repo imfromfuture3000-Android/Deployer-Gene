@@ -1,0 +1,78 @@
+{
+  "timestamp": "2025-10-01T22:07:25.787Z",
+  "deployer": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+  "balances": {
+    "solBalance": 0,
+    "tokens": []
+  },
+  "contracts": {
+    "deployed": [],
+    "generated": [
+      {
+        "mint": "EoRJaGA4iVSQWDyv5Q3ThBXx1KGqYyos3gaXUFEiqUSN",
+        "status": "generated_not_deployed",
+        "explorer": "https://explorer.solana.com/address/EoRJaGA4iVSQWDyv5Q3ThBXx1KGqYyos3gaXUFEiqUSN"
+      },
+      {
+        "mint": "2YTrK8f6NwwUg7Tu6sYcCmRKYWpU8yYRYHPz87LTdcgx",
+        "status": "generated_not_deployed",
+        "explorer": "https://explorer.solana.com/address/2YTrK8f6NwwUg7Tu6sYcCmRKYWpU8yYRYHPz87LTdcgx"
+      },
+      {
+        "mint": "Cv7VMQ69c69arfYsiAjmTYsdz57BiPkxTXycbyuLYbmJ",
+        "status": "generated_not_deployed",
+        "explorer": "https://explorer.solana.com/address/Cv7VMQ69c69arfYsiAjmTYsdz57BiPkxTXycbyuLYbmJ"
+      },
+      {
+        "mint": "42Tra8cwfUyrkyjXkdjvza9wUEHHhy2HRpM1cpmH73i6",
+        "status": "generated_not_deployed",
+        "explorer": "https://explorer.solana.com/address/42Tra8cwfUyrkyjXkdjvza9wUEHHhy2HRpM1cpmH73i6"
+      },
+      {
+        "mint": "9Z4hfVs6eoDhAsUEsp6c6xzCFtVd4Zs7QahUiyAzPE77",
+        "status": "generated_not_deployed",
+        "explorer": "https://explorer.solana.com/address/9Z4hfVs6eoDhAsUEsp6c6xzCFtVd4Zs7QahUiyAzPE77"
+      }
+    ],
+    "failed": []
+  },
+  "verification": [
+    {
+      "mint": "EoRJaGA4iVSQWDyv5Q3ThBXx1KGqYyos3gaXUFEiqUSN",
+      "exists": false,
+      "owner": "none",
+      "status": "NOT_DEPLOYED"
+    },
+    {
+      "mint": "2YTrK8f6NwwUg7Tu6sYcCmRKYWpU8yYRYHPz87LTdcgx",
+      "exists": false,
+      "owner": "none",
+      "status": "NOT_DEPLOYED"
+    },
+    {
+      "mint": "Cv7VMQ69c69arfYsiAjmTYsdz57BiPkxTXycbyuLYbmJ",
+      "exists": false,
+      "owner": "none",
+      "status": "NOT_DEPLOYED"
+    },
+    {
+      "mint": "42Tra8cwfUyrkyjXkdjvza9wUEHHhy2HRpM1cpmH73i6",
+      "exists": false,
+      "owner": "none",
+      "status": "NOT_DEPLOYED"
+    },
+    {
+      "mint": "9Z4hfVs6eoDhAsUEsp6c6xzCFtVd4Zs7QahUiyAzPE77",
+      "exists": false,
+      "owner": "none",
+      "status": "NOT_DEPLOYED"
+    }
+  ],
+  "summary": {
+    "solBalance": 0,
+    "tokenAccounts": 0,
+    "generatedContracts": 5,
+    "deployedContracts": 0,
+    "realDeployments": false
+  }
+}
