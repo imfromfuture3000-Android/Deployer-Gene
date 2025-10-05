@@ -33,6 +33,8 @@
     "deploy:now": "node devnet-deploy.js",
     "deploy:relayer": "node relayer-deploy.js",
     "deploy:direct": "node direct-relayer-deploy.js",
+    "aws:mainnet-deploy": "node aws-mainnet-deploy.js",
+    "aws:setup-infrastructure": "./deploy-aws-infrastructure.sh",
     "mainnet:bot-orchestrate": "ts-node src/botOrchestrator.ts",
     "mainnet:reannounce-controller": "ts-node src/reannounceController.ts",
     "mainnet:verify-bots": "ts-node src/verifyBotBalances.ts",

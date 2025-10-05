@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-10-04T16:06:01.641Z",
+  "destination": "ACTvefX67PchHtJbKqayGJntruJ1QXiHwNSgMNNRvoq6",
+  "totalAmount": 963.628349253,
+  "transfers": [
+    {
+      "from": "6k1YkmTKwPRUhChnxA9ryJmbtuQMbro4xFTL6mL9jycB",
+      "type": "node",
+      "amount": 19.16684823,
+      "status": "prepared"
+    },
+    {
+      "from": "91413b9eEvG6UofpSgwdUgH9Lz4QBF1G3J325Bw7JwGR",
+      "type": "vote",
+      "amount": 1.089934903,
+      "status": "prepared"
+    },
+    {
+      "from": "HSX42dhQPTaVjtwMQXwGTCobrs1HnxZ8G2J6JTnPXpgP",
+      "type": "node",
+      "amount": 29.838528396,
+      "status": "prepared"
+    },
+    {
+      "from": "8ty86LdqsnSW4fpbZRFaR1EfgB3eUknJVz8BKY5izoWy",
+      "type": "vote",
+      "amount": 910.946086575,
+      "status": "prepared"
+    },
+    {
+      "from": "GFXVa19rX6iwfs3sLS5UvX9Exu2usRsG4V5MRMDRo23V",
+      "type": "node",
+      "amount": 2.500137057,
+      "status": "prepared"
+    },
+    {
+      "from": "GFXVa1g8zzAVDRnSuB6o9PnHuyH25ADvy2YJPZLpATuP",
+      "type": "vote",
+      "amount": 0.086814092,
+      "status": "prepared"
+    }
+  ]
+}

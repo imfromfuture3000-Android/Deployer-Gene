@@ -1,0 +1,239 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Omega Prime Deployer - AWS Infrastructure for Mainnet Deployment'
+
+Parameters:
+  Environment:
+    Type: String
+    Default: production
+    AllowedValues: [production]
+    Description: Only production environment allowed
+
+Resources:
+  # S3 Bucket for deployment artifacts
+  DeploymentBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: omega-prime-deployer
+      VersioningConfiguration:
+        Status: Enabled
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+
+  # IAM Role for Lambda
+  DeployerLambdaRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: OmegaPrimeDeployerRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: DeployerS3Access
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:PutObject
+                  - s3:DeleteObject
+                Resource: !Sub "${DeploymentBucket}/*"
+              - Effect: Allow
+                Action:
+                  - s3:ListBucket
+                Resource: !Ref DeploymentBucket
+
+  # Lambda function for mainnet deployment
+  MainnetDeployerFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: omega-prime-mainnet-deployer
+      Runtime: nodejs18.x
+      Handler: aws-mainnet-deploy.handler
+      Role: !GetAtt DeployerLambdaRole.Arn
+      Timeout: 300
+      MemorySize: 512
+      Environment:
+        Variables:
+          BUCKET_NAME: !Ref DeploymentBucket
+          ENVIRONMENT: !Ref Environment
+          TREASURY_PUBKEY: zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4
+      Code:
+        ZipFile: |
+          // Placeholder - will be updated with deployment package
+          exports.handler = async (event) => {
+            return { statusCode: 200, body: 'Deployer ready' };
+          };
+
+  # API Gateway for deployment triggers
+  DeploymentAPI:
+    Type: AWS::ApiGateway::RestApi
+    Properties:
+      Name: omega-prime-deployment-api
+      Description: API for triggering mainnet deployments
+      EndpointConfiguration:
+        Types: [REGIONAL]
+
+  # API Gateway Resource
+  DeployResource:
+    Type: AWS::ApiGateway::Resource
+    Properties:
+      RestApiId: !Ref DeploymentAPI
+      ParentId: !GetAtt DeploymentAPI.RootResourceId
+      PathPart: deploy
+
+  # API Gateway Method
+  DeployMethod:
+    Type: AWS::ApiGateway::Method
+    Properties:
+      RestApiId: !Ref DeploymentAPI
+      ResourceId: !Ref DeployResource
+      HttpMethod: POST
+      AuthorizationType: AWS_IAM
+      Integration:
+        Type: AWS_PROXY
+        IntegrationHttpMethod: POST
+        Uri: !Sub "arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${MainnetDeployerFunction.Arn}/invocations"
+
+  # Lambda permission for API Gateway
+  LambdaInvokePermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName: !Ref MainnetDeployerFunction
+      Principal: apigateway.amazonaws.com
+      SourceArn: !Sub "${DeploymentAPI}/*/POST/deploy"
+
+  # API Gateway Deployment
+  APIDeployment:
+    Type: AWS::ApiGateway::Deployment
+    DependsOn: DeployMethod
+    Properties:
+      RestApiId: !Ref DeploymentAPI
+      StageName: prod
+
+  # CloudWatch Log Group
+  DeployerLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: /aws/lambda/omega-prime-mainnet-deployer
+      RetentionInDays: 30
+
+  # EC2 Instance for continuous deployment
+  DeployerInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0c02fb55956c7d316  # Amazon Linux 2
+      InstanceType: t3.micro
+      IamInstanceProfile: !Ref DeployerInstanceProfile
+      SecurityGroupIds:
+        - !Ref DeployerSecurityGroup
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash
+          yum update -y
+          curl -fsSL https://rpm.nodesource.com/setup_18.x | bash -
+          yum install -y nodejs git
+          
+          # Clone and setup deployer
+          cd /home/ec2-user
+          git clone https://github.com/imfromfuture3000-Android/Omega-prime-deployer.git
+          cd Omega-prime-deployer
+          npm install
+          
+          # Setup environment
+          echo "TREASURY_PUBKEY=zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4" > .env
+          echo "AWS_REGION=${AWS::Region}" >> .env
+          echo "BUCKET_NAME=${DeploymentBucket}" >> .env
+          
+          # Start deployment service
+          npm run aws:mainnet-deploy
+
+  # IAM Role for EC2
+  DeployerInstanceRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: DeployerEC2Policy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:PutObject
+                  - s3:ListBucket
+                Resource:
+                  - !Ref DeploymentBucket
+                  - !Sub "${DeploymentBucket}/*"
+              - Effect: Allow
+                Action:
+                  - lambda:InvokeFunction
+                Resource: !GetAtt MainnetDeployerFunction.Arn
+
+  # Instance Profile
+  DeployerInstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Roles:
+        - !Ref DeployerInstanceRole
+
+  # Security Group
+  DeployerSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Security group for Omega Prime Deployer
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: 3000
+          ToPort: 3000
+          CidrIp: 0.0.0.0/0
+
+Outputs:
+  DeploymentBucket:
+    Description: S3 bucket for deployment artifacts
+    Value: !Ref DeploymentBucket
+    Export:
+      Name: !Sub "${AWS::StackName}-DeploymentBucket"
+
+  APIEndpoint:
+    Description: API Gateway endpoint for deployments
+    Value: !Sub "https://${DeploymentAPI}.execute-api.${AWS::Region}.amazonaws.com/prod/deploy"
+    Export:
+      Name: !Sub "${AWS::StackName}-APIEndpoint"
+
+  LambdaFunction:
+    Description: Lambda function ARN
+    Value: !GetAtt MainnetDeployerFunction.Arn
+    Export:
+      Name: !Sub "${AWS::StackName}-LambdaFunction"
+
+  EC2Instance:
+    Description: EC2 instance for continuous deployment
+    Value: !Ref DeployerInstance
+    Export:
+      Name: !Sub "${AWS::StackName}-EC2Instance"
