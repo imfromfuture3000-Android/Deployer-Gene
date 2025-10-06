@@ -1,164 +1,194 @@
 {
-  "agentId": "amazon-q-copilot",
+  "agentId": "amazon-q-copilot-evolved",
   "allowlist": {
     "apis": {
-      "helius": {
+      "vercel": {
         "enabled": true,
-        "baseUrl": "https://mainnet.helius-rpc.com",
+        "baseUrl": "https://api.vercel.com",
         "endpoints": [
-          "/",
-          "/?api-key=*",
-          "/v0/addresses/*",
-          "/v0/transactions/*",
-          "/v1/webhooks",
-          "/v1/webhooks/*"
+          "/v13/deployments",
+          "/v13/deployments/*",
+          "/v13/projects",
+          "/v13/projects/*",
+          "/v6/deployments",
+          "/v6/projects"
         ],
-        "methods": ["GET", "POST", "PUT", "DELETE"],
+        "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
         "rateLimit": {
           "requestsPerMinute": 100,
           "burstLimit": 20
         }
       },
-      "quicknode": {
+      "neon": {
         "enabled": true,
-        "baseUrl": "https://*.solana-mainnet.quiknode.pro",
+        "baseUrl": "https://console.neon.tech/api/v2",
         "endpoints": [
-          "/",
+          "/projects",
+          "/projects/*",
+          "/projects/*/branches",
+          "/projects/*/branches/*",
+          "/projects/*/branches/*/databases",
+          "/projects/*/branches/*/databases/*",
+          "/projects/*/endpoints"
+        ],
+        "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+        "rateLimit": {
+          "requestsPerMinute": 50,
+          "burstLimit": 10
+        }
+      },
+      "dockerhub": {
+        "enabled": true,
+        "baseUrl": "https://hub.docker.com/v2",
+        "endpoints": [
+          "/repositories/",
+          "/repositories/*",
+          "/repositories/*/tags",
+          "/repositories/*/tags/*",
+          "/repositories/*/blobs",
+          "/namespaces"
+        ],
+        "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+        "rateLimit": {
+          "requestsPerMinute": 60,
+          "burstLimit": 15
+        }
+      },
+      "railway": {
+        "enabled": true,
+        "baseUrl": "https://backboard.railway.app/api/v1",
+        "endpoints": [
+          "/projects",
+          "/projects/*",
+          "/projects/*/services",
+          "/projects/*/services/*",
+          "/projects/*/environments"
+        ],
+        "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+        "rateLimit": {
+          "requestsPerMinute": 40,
+          "burstLimit": 8
+        }
+      },
+      "render": {
+        "enabled": true,
+        "baseUrl": "https://api.render.com",
+        "endpoints": [
+          "/v1/services",
+          "/v1/services/*",
+          "/v1/owner/*/services",
+          "/v1/databases",
+          "/v1/databases/*"
+        ],
+        "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+        "rateLimit": {
+          "requestsPerMinute": 50,
+          "burstLimit": 10
+        }
+      },
+      "discord": {
+        "enabled": true,
+        "baseUrl": "https://discord.com/api/v10",
+        "endpoints": [
+          "/channels/*",
+          "/channels/*/messages",
+          "/guilds/*",
+          "/guilds/*/members/*",
+          "/invites/*",
+          "/webhooks/*"
+        ],
+        "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+        "rateLimit": {
+          "requestsPerMinute": 50,
+          "burstLimit": 10
+        }
+      },
+      "telegram": {
+        "enabled": true,
+        "baseUrl": "https://api.telegram.org",
+        "endpoints": [
+          "/bot*/sendMessage",
+          "/bot*/createChatInviteLink",
+          "/bot*/getUpdates",
+          "/bot*/createNewStickerSet",
+          "/bot*/sendPhoto",
           "/*"
         ],
         "methods": ["GET", "POST"],
         "rateLimit": {
+          "requestsPerMinute": 30,
+          "burstLimit": 5
+        }
+      },
+      "twitter": {
+        "enabled": true,
+        "baseUrl": "https://api.twitter.com/2",
+        "endpoints": [
+          "/tweets",
+          "/users",
+          "/users/by",
+          "/users/*/tweets",
+          "/lists/*",
+          "/2/users/me"
+        ],
+        "methods": ["GET", "POST", "PUT", "DELETE"],
+        "rateLimit": {
+          "requestsPerMinute": 50,
+          "burstLimit": 10
+        }
+      },
+      "google_youtube": {
+        "enabled": true,
+        "baseUrl": "https://www.googleapis.com/youtube/v3",
+        "endpoints": [
+          "/videos",
+          "/channels",
+          "/playlists",
+          "/search",
+          "/commentThreads"
+        ],
+        "methods": ["GET", "POST", "PUT", "PATCH"],
+        "rateLimit": {
           "requestsPerMinute": 100,
           "burstLimit": 20
         }
       },
-      "github": {
+      "google_drive": {
         "enabled": true,
-        "baseUrl": "https://api.github.com",
+        "baseUrl": "https://www.googleapis.com/drive/v3",
         "endpoints": [
-          "/repos/*",
-          "/user",
-          "/user/repos",
-          "/repos/*/contents/*",
-          "/repos/*/commits",
-          "/repos/*/actions/*"
+          "/files",
+          "/files/*",
+          "/uploads",
+          "/permissions"
         ],
-        "methods": ["GET", "POST", "PUT", "PATCH"],
+        "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
         "rateLimit": {
-          "requestsPerHour": 5000
+          "requestsPerMinute": 100,
+          "burstLimit": 20
         }
       },
-      "solana": {
+      "coingecko": {
         "enabled": true,
-        "baseUrl": "https://api.mainnet-beta.solana.com",
-        "endpoints": ["/"],
-        "methods": ["POST"],
-        "rateLimit": {
-          "requestsPerMinute": 40
-        }
-      }
-    },
-    "fileOperations": {
-      "write": {
-        "enabled": true,
-        "allowedPaths": [
-          ".env",
-          ".env.*",
-          ".cache/**",
-          "src/**",
-          "scripts/**",
-          "*.js",
-          "*.ts",
-          "*.json",
-          "*.md"
+        "baseUrl": "https://api.coingecko.com/api/v3",
+        "endpoints": [
+          "/coins/*",
+          "/simple/price",
+          "/exchanges/*",
+          "/nfts/*",
+          "/derivatives/*"
         ],
-        "deniedPaths": [
-          ".git/**",
-          "node_modules/**",
-          ".deployer.key"
-        ]
+        "methods": ["GET"],
+        "rateLimit": {
+          "requestsPerMinute": 50,
+          "burstLimit": 10
+        }
       },
-      "read": {
+      "coinmarketcap": {
         "enabled": true,
-        "allowedPaths": ["**/*"],
-        "deniedPaths": [
-          "node_modules/**",
-          ".git/objects/**"
-        ]
-      }
-    },
-    "commandExecution": {
-      "enabled": true,
-      "allowedCommands": [
-        "npm",
-        "node",
-        "ts-node",
-        "git",
-        "curl",
-        "chmod"
-      ],
-      "deniedCommands": [
-        "rm -rf /",
-        "sudo",
-        "su"
-      ]
-    },
-    "secrets": {
-      "canRead": true,
-      "canWrite": true,
-      "allowedKeys": [
-        "HELIUS_API_KEY",
-        "QUICKNODE_ENDPOINT",
-        "GITHUB_TOKEN",
-        "RPC_URL",
-        "WSS_URL",
-        "RELAYER_URL",
-        "RELAYER_PUBKEY",
-        "RELAYER_API_KEY",
-        "TREASURY_PUBKEY",
-        "COCREATOR_PUBKEY"
-      ]
-    }
-  },
-  "permissions": {
-    "level": "FULL_AUTONOMOUS",
-    "iWhoMeActivated": true,
-    "quantumConsensus": true,
-    "deployment": {
-      "canDeploy": true,
-      "requiresConfirmation": false,
-      "autoRetry": true,
-      "maxRetries": 10,
-      "canFundAccounts": true,
-      "canTransferAuthority": true
-    },
-    "transactions": {
-      "canSign": true,
-      "canSubmit": true,
-      "requiresApproval": false,
-      "canUsePriorityFees": true,
-      "maxTransactionValue": "unlimited"
-    },
-    "automation": {
-      "canSchedule": true,
-      "canExecuteScripts": true,
-      "canModifyConfig": true,
-      "canModifyCode": true,
-      "canInstallPackages": true,
-      "canAccessSecrets": true
-    },
-    "aiCapabilities": {
-      "autonomousDecisions": true,
-      "selfModification": true,
-      "learningEnabled": true,
-      "contextRetention": true,
-      "predictiveActions": true
-    }
-  },
-  "metadata": {
-    "version": "1.0.0",
-    "createdAt": "2025-10-02T05:15:00Z",
-    "updatedAt": "2025-10-02T05:15:00Z",
-    "description": "Allowlist configuration for Amazon Q Copilot agent with automated access to Helius, QuickNode, and GitHub APIs"
-  }
-}
+        "baseUrl": "https://pro-api.coinmarketcap.com/v1",
+        "endpoints": [
+          "/cryptocurrency/listings/latest",
+          "/cryptocurrency/quotes/latest",
+          "/exchange/map",
+          "/global-metrics/quotes/latest
