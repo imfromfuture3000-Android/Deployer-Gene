@@ -2,6 +2,7 @@ use solana_program::{
     account_info::AccountInfo,
     entrypoint::ProgramResult,
     pubkey::Pubkey,
+    pubkey,
     msg,
 };
 use core::str::FromStr;
@@ -13,7 +14,7 @@ pub struct BotSwarm {
 }
 
 impl BotSwarm {
-    pub fn expand(&self, depth: u64) -> ProgramResult {
+    pub fn expand(&self, _depth: u64) -> ProgramResult {
         for (i, bot) in self.bots.iter().enumerate() {
             msg!("🌀 Ω-PRIME: Activating Bot{} at {}", i+1, bot);
             // Simulate call or emit event for off-chain bot to detect

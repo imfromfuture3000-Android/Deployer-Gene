@@ -29,3 +29,14 @@ terraform/.terraform/
 terraform/*.tfstate
 terraform/*.tfstate.backup
 terraform/.terraform.lock.hcl
+
+# Security - Critical Files
+*.key
+*.pem
+private-key*
+secret-*
+setup-secure-withdrawal.sh
+simple-auto-deploy.js
+unified-audit-reports/
+gitleaks.tar.gz
+gitleaks

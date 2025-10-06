@@ -1,114 +1,63 @@
-# ⚡ OMEGA PRIME DEPLOYER ⚡
-## 🌟 Next-Generation Solana Token Deployment Matrix
+# Gitleaks
 
-> *"In the convergence of code and consciousness, we architect the future of decentralized dreams"*
-
-**OMEGA PRIME DEPLOYER** is an advanced, AI-enhanced token deployment system for Solana's SPL Token-2022 protocol. Featuring zero-cost deployment via relayer technology and an intelligent **I-WHO-ME Copilot** with autonomous reasoning capabilities.
-
-## 🚀 SYSTEM ARCHITECTURE
-
-### 🧬 Core Matrix Structure
 ```
-Omega-prime-deployer/
-├── 🧠 AI Copilot & Intelligence Layer
-│   ├── grok-copilot.ts              # I-WHO-ME Enhanced AI Copilot
-│   └── REQUIRED_EXTENSIONS.ts       # Neural Extension Requirements
-├── 
-├── 🔧 Deployment Engine
-│   ├── src/                         # Core TypeScript Source Matrix
-│   │   ├── createMint.ts            # Mint Genesis Protocol
-│   │   ├── mintInitial.ts           # Initial Supply Manifestation
-│   │   ├── setMetadata.ts           # Digital Identity Assignment
-│   │   ├── lockAuthorities.ts       # Authority Lock Mechanism
-│   │   ├── rollback.ts              # Quantum State Rollback
-│   │   ├── withdraw_earnings.ts     # Treasury Extraction Protocol
-│   │   └── utils/                   # System Utilities
-│   │       ├── checkEnv.ts          # Environment Validation
-│   │       ├── relayer.ts           # Zero-Cost Relayer Interface
-│   │       ├── wallet.ts            # Cryptographic Wallet Management
-│   │       ├── pdas.ts              # Program Derived Address Logic
-│   │       └── securityConfig.ts    # Security Configuration Matrix
-│   │
-│   ├── deploy-impulse.ts            # Legacy Deployment Protocol
-│   └── dist/                        # Compiled JavaScript Output
-│
-├── 🤖 Bot Army & Automation
-│   ├── activate-bot-army.js         # Bot Army Activation
-│   ├── omega-bot-army.js           # Omega Bot Coordination
-│   ├── execute-bot-minting.js      # Automated Minting Operations
-│   ├── bot-smart-contracts.js      # Smart Contract Bot Integration
-│   └── mainnet-*.js                # Live Deployment Protocols
-│
-├── 🔍 Security & Audit Matrix
-│   ├── .github/workflows/          # CI/CD Security Pipelines
-│   │   ├── security-scan.yml       # Automated Security Scanning
-│   │   ├── codeql.yml             # Code Quality Analysis
-│   │   └── deploy.yml             # Deployment Automation
-│   ├── address-audit.js           # Address Verification Engine
-│   ├── security-verification.js    # Security Validation Protocol
-│   ├── SECURITY-AUDIT-REPORT.md   # Comprehensive Security Report
-│   └── .gitleaks.toml             # Secret Detection Configuration
-│
-├── 🏗️ Rust Programs
-│   └── pentacle/                   # Solana Program (Rust)
-│       ├── Cargo.toml             # Rust Dependencies
-│       ├── src/lib.rs             # Core Program Logic
-│       └── tests/integration.rs   # Integration Test Suite
-│
-├── 📊 Analysis & Monitoring
-│   ├── complete-analysis.js       # Comprehensive System Analysis
-│   ├── omega-status.js           # Real-time Status Monitoring
-│   ├── quick-monitor.js          # Rapid Health Checks
-│   └── query.js                  # Blockchain Query Interface
-│
-├── 🌐 Environment & Configuration
-│   ├── .env                      # Environment Variables (Secured)
-│   ├── .env.sample              # Environment Template
-│   ├── contract_addresses.json  # Contract Address Registry
-│   └── package.json             # Node.js Project Configuration
-│
-└── 📚 Documentation Matrix
-    ├── README.md                # This Neural Interface Guide
-    ├── ADDRESS_VERIFICATION_README.md
-    ├── ALL_CONTRACT_ADDRESSES.md
-    ├── CONTRACT-ADDRESS-CLEANUP-REPORT.md
-    └── SECURITY.md
+┌─○───┐
+│ │╲  │
+│ │ ○ │
+│ ○ ░ │
+└─░───┘
 ```
 
-## 🔮 PREREQUISITES & NEURAL CONNECTIONS
+<p align="left">
+  <p align="left">
+	  <a href="https://github.com/gitleaks/gitleaks/actions/workflows/test.yml">
+		  <img alt="Github Test" src="https://github.com/gitleaks/gitleaks/actions/workflows/test.yml/badge.svg">
+	  </a>
+	  <a href="https://hub.docker.com/r/zricethezav/gitleaks">
+		  <img src="https://img.shields.io/docker/pulls/zricethezav/gitleaks.svg" />
+	  </a>
+	  <a href="https://github.com/gitleaks/gitleaks-action">
+        	<img alt="gitleaks badge" src="https://img.shields.io/badge/protected%20by-gitleaks-blue">
+    	 </a>
+	  <a href="https://twitter.com/intent/follow?screen_name=zricethezav">
+		  <img src="https://img.shields.io/twitter/follow/zricethezav?label=Follow%20zricethezav&style=social&color=blue" alt="Follow @zricethezav" />
+	  </a>
+  </p>
+</p>
 
-### 🧬 System Requirements
-- **Node.js** ≥ 18.0 (Neural Processing Engine)
-- **npm** ≥ 9.0 (Package Consciousness Manager)
-- **TypeScript** ≥ 5.0 (Type-Safe Reality Compiler)
+### Join our Discord! [![Discord](https://img.shields.io/discord/1102689410522284044.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/8Hzbrnkr7E)
 
-### 🌐 Network Dependencies
-- **Solana RPC Endpoint** (Mainnet-Beta Gateway)
-- **Funded Relayer** (Zero-Cost Transaction Processing)
-  - `RELAYER_PUBKEY`: Fee-payer public key
-  - `RELAYER_URL`: Transaction relay endpoint
-- **Treasury Address** (Token Destination Wallet)
-- **Optional DAO Multisig** (Decentralized Governance Layer)
+Gitleaks is a SAST tool for **detecting** and **preventing** hardcoded secrets like passwords, API keys, and tokens in git repos. Gitleaks is an **easy-to-use, all-in-one solution** for detecting secrets, past or present, in your code.
 
-### 🔑 Security Matrix
-- **Environment Variables** (No hardcoded secrets)
-- **Address Verification** (Automated security scanning)
-- **Authority Management** (Reversible/Irreversible locks)
+```
+➜  ~/code(master) gitleaks git -v
 
-## ⚡ QUICK START: NEURAL INITIALIZATION
+    ○
+    │╲
+    │ ○
+    ○ ░
+    ░    gitleaks
 
-### 1. 🧬 Clone the Reality Matrix
-```bash
-git clone https://github.com/imfromfuture3000-Android/Omega-prime-deployer.git
-cd Omega-prime-deployer
+
+Finding:     "export BUNDLE_ENTERPRISE__CONTRIBSYS__COM=cafebabe:deadbeef",
+Secret:      cafebabe:deadbeef
+RuleID:      sidekiq-secret
+Entropy:     2.609850
+File:        cmd/generate/config/rules/sidekiq.go
+Line:        23
+Commit:      cd5226711335c68be1e720b318b7bc3135a30eb2
+Author:      John
+Email:       john@users.noreply.github.com
+Date:        2022-08-03T12:31:40Z
+Fingerprint: cd5226711335c68be1e720b318b7bc3135a30eb2:cmd/generate/config/rules/sidekiq.go:sidekiq-secret:23
 ```
 
-### 2. 🔗 Install Neural Dependencies
-```bash
-npm install
-```
+## Getting Started
 
-### 3. 🌐 Configure Environment Matrix
+Gitleaks can be installed using Homebrew, Docker, or Go. Gitleaks is also available in binary form for many popular platforms and OS types on the [releases page](https://github.com/gitleaks/gitleaks/releases). In addition, Gitleaks can be implemented as a pre-commit hook directly in your repo or as a GitHub action using [Gitleaks-Action](https://github.com/gitleaks/gitleaks-action).
+
+### Installing
+
 ```bash
 cp .env.sample .env
 # Edit .env with your quantum configuration
