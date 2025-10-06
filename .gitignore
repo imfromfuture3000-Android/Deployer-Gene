@@ -23,3 +23,9 @@ nodes_votes/
 votes.json
 vote_accounts.json
 validator_votes.log
+
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/.terraform.lock.hcl
