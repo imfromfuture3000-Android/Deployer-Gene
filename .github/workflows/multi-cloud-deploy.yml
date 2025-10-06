@@ -1,0 +1,159 @@
+name: Multi-Cloud Mainnet Deployment
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      deployment_type:
+        description: 'Deployment Type'
+        required: true
+        default: 'full'
+        type: choice
+        options:
+        - full
+        - token-only
+        - nft-only
+
+env:
+  NODE_VERSION: '18'
+  MAINNET_ONLY: true
+
+jobs:
+  aws-deployment:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+    
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+    
+    - name: Install Dependencies
+      run: npm ci
+    
+    - name: Deploy AWS Lambda
+      run: |
+        aws lambda create-function \
+          --function-name omega-deployer \
+          --runtime nodejs18.x \
+          --role ${{ secrets.AWS_LAMBDA_ROLE }} \
+          --handler index.handler \
+          --zip-file fileb://deployment.zip \
+          --environment Variables='{
+            "RPC_URL":"${{ secrets.RPC_URL }}",
+            "RELAYER_URL":"${{ secrets.RELAYER_URL }}",
+            "RELAYER_PUBKEY":"${{ secrets.RELAYER_PUBKEY }}",
+            "TREASURY_PUBKEY":"${{ secrets.TREASURY_PUBKEY }}",
+            "DEPLOYER_PRIVATE_KEY":"${{ secrets.DEPLOYER_PRIVATE_KEY }}"
+          }' || aws lambda update-function-code \
+          --function-name omega-deployer \
+          --zip-file fileb://deployment.zip
+    
+    - name: Create AWS EC2 Instance
+      run: |
+        aws ec2 run-instances \
+          --image-id ami-0c02fb55956c7d316 \
+          --count 1 \
+          --instance-type t3.micro \
+          --key-name ${{ secrets.AWS_KEY_PAIR }} \
+          --security-group-ids ${{ secrets.AWS_SECURITY_GROUP }} \
+          --user-data file://aws-userdata.sh \
+          --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=omega-deployer}]'
+
+  azure-deployment:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    
+    - name: Deploy Azure Function
+      uses: Azure/functions-action@v1
+      with:
+        app-name: omega-deployer-func
+        package: .
+        publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
+    
+    - name: Create Azure Container Instance
+      run: |
+        az container create \
+          --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} \
+          --name omega-deployer-container \
+          --image node:18-alpine \
+          --cpu 1 \
+          --memory 1 \
+          --environment-variables \
+            RPC_URL="${{ secrets.RPC_URL }}" \
+            RELAYER_URL="${{ secrets.RELAYER_URL }}" \
+            RELAYER_PUBKEY="${{ secrets.RELAYER_PUBKEY }}" \
+            TREASURY_PUBKEY="${{ secrets.TREASURY_PUBKEY }}" \
+            DEPLOYER_PRIVATE_KEY="${{ secrets.DEPLOYER_PRIVATE_KEY }}" \
+          --command-line "npm start"
+
+  mainnet-deployment:
+    needs: [aws-deployment, azure-deployment]
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+    
+    - name: Install Dependencies
+      run: npm ci
+    
+    - name: Verify Mainnet Connection
+      run: |
+        node -e "
+        const { Connection } = require('@solana/web3.js');
+        const connection = new Connection('${{ secrets.RPC_URL }}');
+        connection.getGenesisHash().then(hash => {
+          if (hash !== '5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d') {
+            throw new Error('NOT MAINNET');
+          }
+          console.log('✅ MAINNET VERIFIED');
+        });
+        "
+    
+    - name: Execute Full Deployment
+      run: |
+        export RPC_URL="${{ secrets.RPC_URL }}"
+        export RELAYER_URL="${{ secrets.RELAYER_URL }}"
+        export RELAYER_PUBKEY="${{ secrets.RELAYER_PUBKEY }}"
+        export TREASURY_PUBKEY="${{ secrets.TREASURY_PUBKEY }}"
+        export DEPLOYER_PRIVATE_KEY="${{ secrets.DEPLOYER_PRIVATE_KEY }}"
+        export MAINNET_ONLY=true
+        
+        npm run mainnet:all
+    
+    - name: Upload Deployment Logs
+      uses: actions/upload-artifact@v4
+      with:
+        name: deployment-logs
+        path: .cache/
+    
+    - name: Notify Success
+      run: |
+        echo "🚀 MULTI-CLOUD MAINNET DEPLOYMENT COMPLETE"
+        echo "📊 AWS: Lambda + EC2 Active"
+        echo "🌐 Azure: Function + Container Active"
+        echo "⚡ Mainnet: Token Deployed"

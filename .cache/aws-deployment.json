@@ -1,0 +1,10 @@
+{
+  "provider": "aws",
+  "services": [
+    "lambda",
+    "ec2"
+  ],
+  "region": "us-east-1",
+  "status": "active",
+  "timestamp": "2025-10-05T22:39:09.901Z"
+}

@@ -1,0 +1,54 @@
+{
+  "solana": {
+    "mainnet-beta": {
+      "programs": {
+        "primary-program": "jaJrDgf4U8DAZcUD3t5AwL7Cfe2QnkpXZXGegdUHc4ZE"
+      },
+      "controllers": {
+        "master-controller": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+        "treasury-deployer": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+        "rebate-address": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a"
+      },
+      "transactions": [
+        "rbnuBdmraMViDnWH1actWGoS5o6fSmqJKmKpmW5S8twwAvhCnXBS54eaVV7y1QRpZitp53T9zBWwFq23pA6wJgoH",
+        "udcyK55j8CURPELb2PxPJjRMYwYd6Hu6VPaKX7dMEF4GpDNk8GCyJT5V31MT1MffpGxB9MDrRzvYhquBdoakz3UX",
+        "ThY6SHYpzDq5KEaQxEgPvUhsJ9HfDJwjz7tGnA3bmZKennXB7W1fDFhN1EjcNUY1Q4Lec9mNnmDHPrWkLpc34gTc",
+        "kmY699qtZ8QM1TjM6FfXysACCU4epQbMqhRLdJ9uVVCvbtP5WVaPeWK4ANhoLu48j1jC2a8eNiLsZeZpBEiWowAL",
+        "TxhBFGvurRz26oYLMzj5GBG1JFe64h83R2Zc2tbuDzFQpVFGn8yW4iPixfDghN35Eub9ZpQpXZu3Bo4UxUPAtcBd"
+      ]
+    },
+    "octane": {
+      "endpoint": "https://octane-devnet.breakroom.show",
+      "fee-token": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "max-signatures": 2,
+      "lamports-per-signature": 5000
+    }
+  },
+  "ethereum": {
+    "skale": {
+      "contracts": {
+        "opt-token": "0xc6D31F2F6CcBcd101604a92C6c08e0aee2937B3a"
+      },
+      "network": "honorable-steel-rasalhague",
+      "rpc": "https://mainnet.skalenodes.com/v1/honorable-steel-rasalhague",
+      "fee-token": "0xD2Aaa00700000000000000000000000000000000",
+      "relayer": "https://relayer.skale.network"
+    }
+  },
+  "azure": {
+    "services": {
+      "key-vault": "https://omegaprime-kv.vault.azure.net/",
+      "storage": "omegaprimestore",
+      "cosmos-db": "omegaprime-cosmos",
+      "functions": "omegaprime-functions"
+    },
+    "resource-group": "Gene_Mint",
+    "location": "eastus"
+  },
+  "metrics": {
+    "total-value": 49000,
+    "active-services": 1,
+    "wealth-generated": 8200,
+    "deployment-cost-sol": 0.2366435809334396
+  }
+}

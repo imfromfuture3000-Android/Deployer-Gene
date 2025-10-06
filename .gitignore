@@ -17,3 +17,9 @@ keypair.json
 # Sensitive Files
 2AHAs1gdHSGn2REJbARigh5CLoRuR9gdNTMTKu5UJBVVovXUxhPYeLFYTVgov7gyes4QkwLhgw89PAsGZbUjK2Yv
 deployer-private-key.txt
+
+# Node Votes
+nodes_votes/
+votes.json
+vote_accounts.json
+validator_votes.log

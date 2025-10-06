@@ -1,0 +1,20 @@
+{
+  "endpoints": {
+    "mainnet": "https://mainnet.helius-rpc.com",
+    "devnet": "https://devnet.helius-rpc.com",
+    "websocket": "wss://mainnet.helius-rpc.com"
+  },
+  "features": [
+    "Enhanced RPC methods",
+    "Webhooks",
+    "NFT API",
+    "DAS API",
+    "Priority fees",
+    "Transaction parsing"
+  ],
+  "setup": {
+    "step1": "Get API key from https://helius.xyz",
+    "step2": "Set HELIUS_API_KEY in .env",
+    "step3": "Use https://mainnet.helius-rpc.com/?api-key=YOUR_KEY"
+  }
+}

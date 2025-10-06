@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-10-05T17:26:57.206Z",
+  "network": "mainnet-beta",
+  "totalSOL": 0.01350088,
+  "totalUSD": 1.8901232,
+  "breakdown": {
+    "createMint": 1461600,
+    "createTokenAccount": 2039280,
+    "mintTokens": 0,
+    "setMetadata": 0,
+    "lockAuthorities": 0,
+    "transferTokens": 0,
+    "buffer": 10000000
+  },
+  "priorityFee": 0,
+  "recommendation": "0.016201 SOL"
+}

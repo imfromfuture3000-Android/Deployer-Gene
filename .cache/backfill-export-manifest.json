@@ -1,0 +1,33 @@
+{
+  "action": "exportBackfillData",
+  "timestamp": "2025-10-05T21:49:55.632Z",
+  "contract": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+  "controller": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+  "networks": [
+    "ethereum",
+    "bsc",
+    "polygon"
+  ],
+  "exportFormat": "json",
+  "totalRecords": 28568,
+  "files": [
+    {
+      "network": "ethereum",
+      "filename": "backfill-ethereum-1759700995632.json",
+      "records": 13240,
+      "size": "6620KB"
+    },
+    {
+      "network": "bsc",
+      "filename": "backfill-bsc-1759700995633.json",
+      "records": 9114,
+      "size": "4557KB"
+    },
+    {
+      "network": "polygon",
+      "filename": "backfill-polygon-1759700995633.json",
+      "records": 6214,
+      "size": "3107KB"
+    }
+  ]
+}

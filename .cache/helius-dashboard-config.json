@@ -1,0 +1,21 @@
+{
+  "plan": "Free Plan",
+  "features": {
+    "basicAccess": true,
+    "solRebates": true,
+    "enhancedWebsocket": false,
+    "accessControl": true
+  },
+  "endpoints": {
+    "mainnetRPC": "https://mainnet.helius-rpc.com/?api-key=YOUR_API_KEY",
+    "devnetRPC": "https://devnet.helius-rpc.com/?api-key=YOUR_API_KEY",
+    "websocket": "wss://mainnet.helius-rpc.com/?api-key=YOUR_API_KEY",
+    "parseTransactions": "https://api.helius.xyz/v0/transactions/?api-key=YOUR_API_KEY",
+    "parseHistory": "https://api.helius.xyz/v0/addresses/{address}/transactions/?api-key=YOUR_API_KEY"
+  },
+  "rebates": {
+    "enabled": true,
+    "parameter": "rebate-address=zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+    "description": "Automatic SOL rebates via post-trade backruns"
+  }
+}

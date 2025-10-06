@@ -1,0 +1,73 @@
+{
+  "version": "1.0",
+  "allowedActions": [
+    "*"
+  ],
+  "allowedDomains": [
+    "*"
+  ],
+  "allowedAPIs": [
+    "github.com",
+    "api.github.com",
+    "raw.githubusercontent.com",
+    "helius-rpc.com",
+    "mainnet.helius-rpc.com",
+    "quicknode.com",
+    "api.mainnet-beta.solana.com",
+    "solana-api.projectserum.com",
+    "aws.amazon.com",
+    "*.amazonaws.com",
+    "ec2.amazonaws.com",
+    "lambda.amazonaws.com",
+    "s3.amazonaws.com",
+    "cloudformation.amazonaws.com",
+    "azure.microsoft.com",
+    "*.azure.com",
+    "management.azure.com",
+    "portal.azure.com",
+    "login.microsoftonline.com",
+    "etherscan.io",
+    "api.etherscan.io",
+    "bscscan.com",
+    "api.bscscan.com",
+    "polygonscan.com",
+    "api.polygonscan.com",
+    "infura.io",
+    "*.infura.io",
+    "alchemy.com",
+    "*.alchemy.com",
+    "moralis.io",
+    "*.moralis.io"
+  ],
+  "cloudProviders": {
+    "aws": {
+      "enabled": true,
+      "services": ["*"],
+      "regions": ["*"],
+      "permissions": "full"
+    },
+    "azure": {
+      "enabled": true,
+      "services": ["*"],
+      "regions": ["*"],
+      "permissions": "full"
+    },
+    "github": {
+      "enabled": true,
+      "actions": true,
+      "secrets": true,
+      "workflows": true
+    }
+  },
+  "deployment": {
+    "mainnetOnly": true,
+    "relayerRequired": true,
+    "multiCloud": true,
+    "autoScale": true
+  },
+  "security": {
+    "secretsManagement": true,
+    "keyVault": true,
+    "encryption": true
+  }
+}

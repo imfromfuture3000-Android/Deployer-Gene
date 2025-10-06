@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-10-05T22:21:31.706Z",
+  "deploymentTimestamp": "2025-10-05T22:18:38.396Z",
+  "verificationResults": {
+    "ethWithdrawal": {
+      "verified": true,
+      "amount": "6.664047",
+      "txHash": "0x5e2565c1e803e82d2134f41d1d2431d521ddc95ef1e36ee69e1d9c9eeca5dcd8",
+      "destination": "0x4B1a58A3057d03888510d93B52ABad9Fee9b351d"
+    },
+    "controlDeployment": {
+      "verified": true,
+      "controller": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "creator": "0x4B1a58A3057d03888510d93B52ABad9Fee9b351d",
+      "deploymentTx": "0xec1b092090d15d3b8e34b5a2bf02df8b93c55f4e7a56a0d967d0d1e081b60743"
+    },
+    "nftContract": {
+      "verified": "Gene-Mint NFT Collection - Advanced genetic algorithm NFTs",
+      "name": "Gene-Mint",
+      "symbol": "GENE",
+      "contract": "0x99ac00a92e6fde15f3672dc2f8093cc72df0e2ba",
+      "supply": 10000,
+      "price": "0.01"
+    },
+    "backfillData": {
+      "verified": true,
+      "creator": "0x4B1a58A3057d03888510d93B52ABad9Fee9b351d",
+      "blocks": 1131,
+      "transactions": 2497,
+      "completed": true
+    },
+    "overallStatus": "VERIFIED"
+  },
+  "summary": {
+    "ethWithdrawn": "6.664047 ETH",
+    "nftContract": "0x99ac00a92e6fde15f3672dc2f8093cc72df0e2ba",
+    "totalSupply": 10000,
+    "backfillCompleted": true,
+    "overallStatus": "VERIFIED"
+  }
+}

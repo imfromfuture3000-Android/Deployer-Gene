@@ -1,0 +1,118 @@
+{
+  "timestamp": "2025-10-05T21:49:55.634Z",
+  "contract": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+  "controller": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+  "executedActions": 4,
+  "results": [
+    {
+      "action": "startBackfillSync",
+      "timestamp": "2025-10-05T21:49:55.630Z",
+      "networks": [
+        "ethereum",
+        "bsc",
+        "polygon"
+      ],
+      "status": "initiated",
+      "details": {
+        "ethereum": {
+          "status": "active",
+          "startBlock": 18531323,
+          "syncSpeed": "1200 blocks/min"
+        },
+        "bsc": {
+          "status": "active",
+          "startBlock": 18905431,
+          "syncSpeed": "631 blocks/min"
+        },
+        "polygon": {
+          "status": "active",
+          "startBlock": 18088832,
+          "syncSpeed": "1024 blocks/min"
+        }
+      }
+    },
+    {
+      "action": "updateSyncParameters",
+      "timestamp": "2025-10-05T21:49:55.631Z",
+      "parameters": {
+        "batchSize": 1000,
+        "maxRetries": 3,
+        "timeout": 30000,
+        "priorityMode": "high",
+        "compression": true
+      },
+      "networks": [
+        "ethereum",
+        "bsc",
+        "polygon"
+      ],
+      "status": "updated"
+    },
+    {
+      "action": "exportBackfillData",
+      "timestamp": "2025-10-05T21:49:55.632Z",
+      "contract": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
+      "controller": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "networks": [
+        "ethereum",
+        "bsc",
+        "polygon"
+      ],
+      "exportFormat": "json",
+      "totalRecords": 28568,
+      "files": [
+        {
+          "network": "ethereum",
+          "filename": "backfill-ethereum-1759700995632.json",
+          "records": 13240,
+          "size": "6620KB"
+        },
+        {
+          "network": "bsc",
+          "filename": "backfill-bsc-1759700995633.json",
+          "records": 9114,
+          "size": "4557KB"
+        },
+        {
+          "network": "polygon",
+          "filename": "backfill-polygon-1759700995633.json",
+          "records": 6214,
+          "size": "3107KB"
+        }
+      ]
+    },
+    {
+      "action": "clearBackfillCache",
+      "timestamp": "2025-10-05T21:49:55.634Z",
+      "networks": [
+        "ethereum",
+        "bsc",
+        "polygon"
+      ],
+      "clearedItems": {
+        "ethereum": {
+          "cacheSize": "566MB",
+          "tempFiles": 21,
+          "status": "cleared"
+        },
+        "bsc": {
+          "cacheSize": "550MB",
+          "tempFiles": 16,
+          "status": "cleared"
+        },
+        "polygon": {
+          "cacheSize": "430MB",
+          "tempFiles": 51,
+          "status": "cleared"
+        }
+      },
+      "totalCleared": 1546
+    }
+  ],
+  "summary": {
+    "syncStarted": true,
+    "parametersUpdated": true,
+    "dataExported": true,
+    "cacheCleared": true
+  }
+}

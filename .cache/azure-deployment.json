@@ -1,0 +1,10 @@
+{
+  "provider": "azure",
+  "services": [
+    "function-app",
+    "container-instance"
+  ],
+  "region": "eastus",
+  "status": "active",
+  "timestamp": "2025-10-05T22:39:09.904Z"
+}
