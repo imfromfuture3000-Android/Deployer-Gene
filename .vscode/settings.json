@@ -1,3 +1,6 @@
 {
-    "terminal.integrated.automationProfile.linux": {}
+    "terminal.integrated.automationProfile.linux": {},
+    "amazonQ.ignoredSecurityIssues": [
+        ""
+    ]
 }
