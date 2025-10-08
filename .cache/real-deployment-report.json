@@ -1,0 +1,16 @@
+{
+  "timestamp": "2025-10-08T03:36:25.334Z",
+  "deployer": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+  "network": "solana-mainnet-beta",
+  "real": true,
+  "balance": null,
+  "tokenAccounts": 0,
+  "transactions": 0,
+  "deployment": null,
+  "earnings": {
+    "staked": 0,
+    "yearlyRewards": 0
+  },
+  "status": "unfunded",
+  "deploymentReady": false
+}

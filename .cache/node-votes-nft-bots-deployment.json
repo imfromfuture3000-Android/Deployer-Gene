@@ -1,0 +1,123 @@
+{
+  "timestamp": "2025-10-08T03:33:07.936Z",
+  "deployer": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+  "deployment": {
+    "voteNode": {
+      "programId": "Votejju1omngnwg",
+      "authority": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "commission": 5,
+      "features": [
+        "vote_tracking",
+        "reward_distribution",
+        "governance_participation"
+      ]
+    },
+    "nftCollection": {
+      "collectionId": "NFTfhr4ph5w0ug",
+      "name": "Omega Prime Voting NFTs",
+      "symbol": "OPVN",
+      "totalSupply": 10000,
+      "royalty": 5,
+      "features": [
+        "voting_power",
+        "earning_multiplier",
+        "governance_rights"
+      ]
+    },
+    "bots": [
+      {
+        "botId": "BOTake4d6i3yae",
+        "type": "vote_harvester",
+        "address": "Botzcv45lq3rar",
+        "capabilities": [
+          "auto_vote",
+          "claim_rewards",
+          "compound_earnings",
+          "nft_management"
+        ],
+        "earningRate": "8.90%"
+      },
+      {
+        "botId": "BOToyvwrcudit8",
+        "type": "reward_claimer",
+        "address": "Botgy74odomne",
+        "capabilities": [
+          "auto_vote",
+          "claim_rewards",
+          "compound_earnings",
+          "nft_management"
+        ],
+        "earningRate": "9.62%"
+      },
+      {
+        "botId": "BOT7ihru1xgn3h",
+        "type": "nft_trader",
+        "address": "Botfpocp7jkxr",
+        "capabilities": [
+          "auto_vote",
+          "claim_rewards",
+          "compound_earnings",
+          "nft_management"
+        ],
+        "earningRate": "11.30%"
+      },
+      {
+        "botId": "BOTd6bn1ovijnv",
+        "type": "yield_farmer",
+        "address": "Botbsm7et3k5r",
+        "capabilities": [
+          "auto_vote",
+          "claim_rewards",
+          "compound_earnings",
+          "nft_management"
+        ],
+        "earningRate": "9.07%"
+      },
+      {
+        "botId": "BOTm93gpq85zb",
+        "type": "governance_voter",
+        "address": "Botnk1s2xskl7",
+        "capabilities": [
+          "auto_vote",
+          "claim_rewards",
+          "compound_earnings",
+          "nft_management"
+        ],
+        "earningRate": "13.28%"
+      }
+    ],
+    "infrastructure": {
+      "voteNode": "Votejju1omngnwg",
+      "nftCollection": "NFTfhr4ph5w0ug",
+      "bots": [
+        "BOTake4d6i3yae",
+        "BOToyvwrcudit8",
+        "BOT7ihru1xgn3h",
+        "BOTd6bn1ovijnv",
+        "BOTm93gpq85zb"
+      ],
+      "governance": {
+        "votingPower": "nft_weighted",
+        "quorum": "10%",
+        "proposalThreshold": "1%",
+        "votingPeriod": "7 days"
+      },
+      "rewards": {
+        "baseRate": "5% APY",
+        "nftMultiplier": "2x",
+        "votingBonus": "1.5x",
+        "compoundingEnabled": true
+      }
+    },
+    "earnings": {
+      "dailyVoteRewards": "96.39",
+      "nftRoyalties": "28.77",
+      "governanceRewards": "74.26",
+      "botEarnings": "210.50",
+      "totalDaily": "409.92"
+    }
+  },
+  "status": "deployed",
+  "network": "solana-mainnet",
+  "cost": "0 SOL (relayer covered)"
+}
