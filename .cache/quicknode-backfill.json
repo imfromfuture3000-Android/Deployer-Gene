@@ -1,9 +1,9 @@
 {
-  "timestamp": "2025-10-08T17:31:45.166Z",
+  "timestamp": "2025-10-08T23:18:06.418Z",
   "deployer": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
-  "rpcEndpoint": "https://api.mainnet-beta.solana.com",
+  "rpcEndpoint": "https://mainnet.helius-rpc.com/?api-key=16b9324a-5b8c-47b9-9b02-6efa868958e5",
   "assets": {
-    "sol": null,
+    "sol": 0,
     "programs": [],
     "tokens": [],
     "stakes": [],
@@ -11,7 +11,7 @@
     "nfts": []
   },
   "summary": {
-    "totalSOL": null,
+    "totalSOL": 0,
     "totalPrograms": 0,
     "totalTokens": 0,
     "totalStakes": 0,

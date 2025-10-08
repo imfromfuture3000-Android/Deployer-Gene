@@ -1,0 +1,24 @@
+{
+  "name": "Deployer Gene DAO",
+  "description": "Decentralized governance for the Deployer Gene ecosystem",
+  "votingMechanism": "token-weighted",
+  "proposalTypes": [
+    "treasury-allocation",
+    "parameter-changes",
+    "upgrade-proposals",
+    "partnership-approvals"
+  ],
+  "votingPeriods": {
+    "proposal": 259200,
+    "voting": 604800,
+    "execution": 172800
+  },
+  "quorumRequirements": {
+    "standard": 0.1,
+    "critical": 0.25,
+    "emergency": 0.5
+  },
+  "authorities": {},
+  "created": "2025-10-08T22:23:04.293Z",
+  "status": "active"
+}

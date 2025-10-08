@@ -1,0 +1,93 @@
+{
+  "timestamp": "2025-10-08T22:43:41.791Z",
+  "repository": "solana-labs/solana",
+  "searchResults": {
+    "releases": [
+      {
+        "name": "Release v1.18.26",
+        "tag": "v1.18.26",
+        "published": "2024-10-12T16:56:55Z",
+        "body": "This is a stable release suitable for use on Mainnet Beta.\r\n\r\n## What's Changed\r\n* refreshes ContactInfo.outset before initializing validator by @behzadnouri in https://github.com/anza-xyz/agave/pull/3135\r\n\r\n...",
+        "url": "https://github.com/solana-labs/solana/releases/tag/v1.18.26"
+      },
+      {
+        "name": "Release v1.18.25",
+        "tag": "v1.18.25",
+        "published": "2024-10-04T04:09:57Z",
+        "body": "This is a stable release suitable for use on Mainnet Beta.\r\n\r\nNote: `solana-install` no longer supports channel names (edge, beta, stable). It still works with explicit version numbers like this: `solana-install init v1.18.25`. `agave-install` is the maintained fork; it supports channel names and explicit version numbers.\r\n\r\nAll v1.18 releases will be available from both this repo and [Agave](https://github.com/anza-xyz/agave/releases). After v1.18 this repo will be archived. More information ab...",
+        "url": "https://github.com/solana-labs/solana/releases/tag/v1.18.25"
+      },
+      {
+        "name": "Release v1.18.23",
+        "tag": "v1.18.23",
+        "published": "2024-08-31T00:57:53Z",
+        "body": "This is a stable release suitable for use on Mainnet Beta.\r\n\r\nNote: `solana-install` no longer supports channel names (edge, beta, stable). It still works with explicit version numbers like this: `solana-install init v1.18.21`. `agave-install` is the maintained fork; it supports channel names and explicit version numbers.\r\n\r\nAll v1.18 releases will be available from both this repo and [Agave](https://github.com/anza-xyz/agave/releases). After v1.18 this repo will be archived. More information ab...",
+        "url": "https://github.com/solana-labs/solana/releases/tag/v1.18.23"
+      },
+      {
+        "name": "Release v1.18.22",
+        "tag": "v1.18.22",
+        "published": "2024-08-09T00:03:55Z",
+        "body": "This is a stable release suitable for use on Mainnet Beta.\r\n\r\nNote: `solana-install` no longer supports channel names (edge, beta, stable). It still works with explicit version numbers like this: `solana-install init v1.18.21`. `agave-install` is the maintained fork; it supports channel names and explicit version numbers.\r\n\r\nAll v1.18 releases will be available from both this repo and [Agave](https://github.com/anza-xyz/agave/releases). After v1.18 this repo will be archived. More information ab...",
+        "url": "https://github.com/solana-labs/solana/releases/tag/v1.18.22"
+      },
+      {
+        "name": "Release v1.18.21",
+        "tag": "v1.18.21",
+        "published": "2024-08-03T05:36:34Z",
+        "body": "This is a stable release suitable for use on Mainnet Beta.\r\n\r\nNote: `solana-install` no longer supports channel names (edge, beta, stable). It still works with explicit version numbers like this: `solana-install init v1.18.21`. `agave-install` is the maintained fork; it supports channel names and explicit version numbers.\r\n\r\nAll v1.18 releases will be available from both this repo and [Agave](https://github.com/anza-xyz/agave/releases). After v1.18 this repo will be archived. More information ab...",
+        "url": "https://github.com/solana-labs/solana/releases/tag/v1.18.21"
+      }
+    ],
+    "changelogFiles": [],
+    "recentCommits": [
+      {
+        "sha": "7700cb31",
+        "message": "chore: readme",
+        "author": "nickfrosty",
+        "date": "2025-01-22T19:41:49Z",
+        "url": "https://github.com/solana-labs/solana/commit/7700cb3128c1f19820de67b81aa45d18f73d2ac0"
+      },
+      {
+        "sha": "de3c7982",
+        "message": "chore: readme",
+        "author": "nickfrosty",
+        "date": "2025-01-22T19:37:45Z",
+        "url": "https://github.com/solana-labs/solana/commit/de3c79828c6ff1f1870b6cdae0192a73dd9c8c6f"
+      },
+      {
+        "sha": "27eff840",
+        "message": "Revert \"Allow configuration of replay thread pools from CLI (#236)\"",
+        "author": "GHA: Update Upstream From Fork",
+        "date": "2024-03-22T20:58:10Z",
+        "url": "https://github.com/solana-labs/solana/commit/27eff8408b7223bb3c4ab70523f8a8dca3ca6645"
+      },
+      {
+        "sha": "973d05c0",
+        "message": "Allow configuration of replay thread pools from CLI (#236)",
+        "author": "steviez",
+        "date": "2024-03-20T20:07:04Z",
+        "url": "https://github.com/solana-labs/solana/commit/973d05c098b24364ad29a5066e78884c5c3a7537"
+      },
+      {
+        "sha": "1d89ea01",
+        "message": "Rename LoadedPrograms to ProgramCache for readability (#339)",
+        "author": "Dmitri Makarov",
+        "date": "2024-03-20T19:26:45Z",
+        "url": "https://github.com/solana-labs/solana/commit/1d89ea01cc6b597a66c4c5986cb2a34310a307eb"
+      }
+    ],
+    "timestamp": "2025-10-08T22:43:40.451Z"
+  },
+  "changelogContent": {
+    "found": true,
+    "content": "# Changelog\n\nAll notable changes to this project will be documented in this file.\n\nPlease follow the [guidance](#adding-to-this-changelog) at the bottom of this file when making changes\nThe format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).\nThis project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)\nand follows a [Backwards Compatibility Policy](https://docs.solanalabs.com/backwards-compatibility)\n\nRelease channels have their own copy of this changelog:\n* [edge - v2.0](#edge-channel)\n* [beta - v1.18](https://github.com/solana-labs/solana/blob/v1.18/CHANGELOG.md)\n* [stable - v1.17](https://github.com/solana-labs/solana/blob/v1.17/CHANGELOG.md)\n\n<a name=\"edge-channel\"></a>\n## [2.0.0] - Unreleased\n* Changes\n  * `central-scheduler` as default option for `--block-production-method` (#34891)\n  * `solana-rpc-client-api`: `RpcFilterError` depends on `base64` version 0.22, so users may need to upgrade to `base64` version 0.22\n\n## [1.18.0]\n* Changes\n  * Added a github check to support `changelog` label\n  * The default for `--use-snapshot-archives-at-startup` is now `when-newest` (#33883)\n    * The default for `solana-ledger-tool`, however, remains `always` (#34228)\n  * Added `central-scheduler` option for `--block-production-method` (#33890)\n  * Updated to Borsh v1\n  * Added allow_commission_decrease_at_any_time feature which will allow commission on a vote account to be\n    decreased even in the second half of epochs when the commission_updates_only_allowed_in_first_half_of_epoch\n    feature would have prevented it\n  * Updated local ledger storage so that the RPC endpoint\n    `getSignaturesForAddress` always returns signatures in block-inclusion order\n  * RPC's `simulateTransaction` now returns `innerInstructions` as `json`/`jsonParsed` (#34313).\n  * Bigtable upload now includes entry summary data for each slot, stored in a\n    new `entries` table\n  * Forbid multiple values for the `--signer` CLI flag, forcing users to specify multiple occurrences of `--signer`, one for each signature\n  * New program deployments default to the exact size of a program, instead of\n    double the size. Program accounts must be extended with `solana program extend`\n    before an upgrade if they need to accommodate larger programs.\n  * Interface for `gossip_service::get_client()` has changed. `gossip_service::get_multi_client()` has been removed.\n* Upgrade Notes\n  * `solana-program` and `solana-sdk` default to support for Borsh v1, with\nlimited backward compatibility for v0.10 and v0.9. Please upgrade to Borsh v1.\n  * Operators running their own bigtable instances need to create the `entries`\n    table before upgrading their warehouse nodes\n\n## [1.17.0]\n* Changes\n  * Added a changelog.\n  * Added `--use-snapshot-archives-at-startup` for faster validator restarts",
+    "url": "https://github.com/solana-labs/solana/blob/master/CHANGELOG.md"
+  },
+  "summary": {
+    "totalReleases": 5,
+    "totalChangelogFiles": 0,
+    "totalCommits": 5,
+    "latestRelease": "v1.18.26"
+  }
+}

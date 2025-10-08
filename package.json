@@ -8,7 +8,11 @@
     "mainnet:all": "node deploy-all.js",
     "mainnet:bot-orchestrate": "node bot-orchestrator.js",
     "mainnet:verify-bots": "node verify-bots.js",
-    "mainnet:reannounce-controller": "node reannounce-controller.js"
+    "mainnet:reannounce-controller": "node reannounce-controller.js",
+    "deploy:full": "node master-deployment-orchestrator.js",
+    "deploy:bots": "node activate-full-deployment.js",
+    "deploy:gene-nfts": "node gene-nft-deployer.js",
+    "deploy:dao": "node dao-governance-setup.js"
   },
   "dependencies": {
     "@metaplex-foundation/js": "^0.20.1",

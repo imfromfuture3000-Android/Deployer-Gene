@@ -1,0 +1,20 @@
+{
+  "id": "PROP-001",
+  "title": "Initialize Deployer Gene DAO",
+  "description": "Proposal to officially initialize the Deployer Gene DAO with initial parameters and treasury allocation",
+  "type": "initialization",
+  "created": "2025-10-08T22:23:04.295Z",
+  "votingStart": "2025-10-09T22:23:04.295Z",
+  "votingEnd": "2025-10-16T22:23:04.295Z",
+  "status": "pending",
+  "votes": {
+    "for": 0,
+    "against": 0,
+    "abstain": 0
+  },
+  "actions": [
+    "Set initial governance parameters",
+    "Allocate 10% of treasury for development",
+    "Establish bot operator rewards program"
+  ]
+}

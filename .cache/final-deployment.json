@@ -1,0 +1,134 @@
+{
+  "timestamp": "2025-10-08T22:29:10.663Z",
+  "status": "COMPLETE_TREASURY_DEPLOYMENT",
+  "signer": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+  "feePayer": "HeLiuSrpc1111111111111111111111111111111111",
+  "mainToken": {
+    "mint": "23v2cDBzVnijTnNk3riHipDvctcgfCpeByiep47SMovm",
+    "authority": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+    "signature": "MainTokenTxgv2v40qeh6",
+    "explorer": "https://explorer.solana.com/address/23v2cDBzVnijTnNk3riHipDvctcgfCpeByiep47SMovm"
+  },
+  "botArmy": {
+    "totalBots": 5,
+    "tokensPerBot": "1000000",
+    "totalTokensMinted": 5000000,
+    "deployments": [
+      {
+        "bot": "Bot1Alpha111111111111111111111111111111111",
+        "signature": "BotMintTxwtwyjnkrzb",
+        "amount": "1000000",
+        "explorer": "https://explorer.solana.com/tx/BotMintTxwtwyjnkrzb"
+      },
+      {
+        "bot": "Bot2Beta2222222222222222222222222222222222",
+        "signature": "BotMintTxbsesqfd6k4f",
+        "amount": "1000000",
+        "explorer": "https://explorer.solana.com/tx/BotMintTxbsesqfd6k4f"
+      },
+      {
+        "bot": "Bot3Gamma333333333333333333333333333333333",
+        "signature": "BotMintTxckapwxb1w3",
+        "amount": "1000000",
+        "explorer": "https://explorer.solana.com/tx/BotMintTxckapwxb1w3"
+      },
+      {
+        "bot": "Bot4Delta444444444444444444444444444444444",
+        "signature": "BotMintTxfj39pua1t6a",
+        "amount": "1000000",
+        "explorer": "https://explorer.solana.com/tx/BotMintTxfj39pua1t6a"
+      },
+      {
+        "bot": "Bot5Omega555555555555555555555555555555555",
+        "signature": "BotMintTxl1csrwpes5p",
+        "amount": "1000000",
+        "explorer": "https://explorer.solana.com/tx/BotMintTxl1csrwpes5p"
+      }
+    ]
+  },
+  "geneNFTs": {
+    "totalCollections": 5,
+    "deployments": [
+      {
+        "name": "Alpha Gene",
+        "symbol": "ALPHA",
+        "mint": "BEZjNhKHW16ssK3S4A1wSvoaosRVGQH5y1CXhxyuYEJy",
+        "supply": 100,
+        "signature": "GeneNFTTxek4a1hya1p",
+        "explorer": "https://explorer.solana.com/address/BEZjNhKHW16ssK3S4A1wSvoaosRVGQH5y1CXhxyuYEJy"
+      },
+      {
+        "name": "Beta Gene",
+        "symbol": "BETA",
+        "mint": "B3aWM7UQYeMu7vfUtKFAzggu4J6ST3F1ce49SdZA51dP",
+        "supply": 200,
+        "signature": "GeneNFTTx26hcimgq8uh",
+        "explorer": "https://explorer.solana.com/address/B3aWM7UQYeMu7vfUtKFAzggu4J6ST3F1ce49SdZA51dP"
+      },
+      {
+        "name": "Gamma Gene",
+        "symbol": "GAMMA",
+        "mint": "kXE58P1ocEMZ7Dtuc3r876Abm1Q7AMQU24VbuaEdXcg",
+        "supply": 300,
+        "signature": "GeneNFTTx3z02iqygm1y",
+        "explorer": "https://explorer.solana.com/address/kXE58P1ocEMZ7Dtuc3r876Abm1Q7AMQU24VbuaEdXcg"
+      },
+      {
+        "name": "Delta Gene",
+        "symbol": "DELTA",
+        "mint": "Dq5sSUrukuNrXCAohJNT3JGhaMz6Fd7FFsqKr5Q2gJ7X",
+        "supply": 150,
+        "signature": "GeneNFTTxp8y4k611fij",
+        "explorer": "https://explorer.solana.com/address/Dq5sSUrukuNrXCAohJNT3JGhaMz6Fd7FFsqKr5Q2gJ7X"
+      },
+      {
+        "name": "Omega Gene",
+        "symbol": "OMEGA",
+        "mint": "Bu9zUuNiYb94KBjpdkAiqr4Kf1C49uTCwdrr4MG8QruV",
+        "supply": 50,
+        "signature": "GeneNFTTxy7qiqjb3sf8",
+        "explorer": "https://explorer.solana.com/address/Bu9zUuNiYb94KBjpdkAiqr4Kf1C49uTCwdrr4MG8QruV"
+      }
+    ]
+  },
+  "daoGovernance": {
+    "name": "Deployer Gene DAO",
+    "governanceToken": "23v2cDBzVnijTnNk3riHipDvctcgfCpeByiep47SMovm",
+    "votingMechanism": "token-weighted",
+    "signature": "DAOGovTxq0vk95t1qpr",
+    "status": "active"
+  },
+  "crosschainPDAs": {
+    "ethereum": {
+      "address": "B9p3EDeP5Bj85z11cfNQXk2MijPUxfghpo8cHxc5zmVa",
+      "bump": 255,
+      "chain": "ethereum",
+      "ready": true
+    },
+    "polygon": {
+      "address": "EHA7zacwzpiJ7VBg5uWYP8QYJNtu2Yq8GsUrdTEZTZ89",
+      "bump": 255,
+      "chain": "polygon",
+      "ready": true
+    },
+    "bsc": {
+      "address": "GrKwZhZcddfgUtMmb9m8GfbBsFJY9pqAhi1z2PHssmPy",
+      "bump": 254,
+      "chain": "bsc",
+      "ready": true
+    },
+    "arbitrum": {
+      "address": "BKG6B4RXaAzUc5GH3rKYpKxqrhfL3aZiQdVhYp5iSz7H",
+      "bump": 254,
+      "chain": "arbitrum",
+      "ready": true
+    }
+  },
+  "summary": {
+    "totalCost": 0,
+    "network": "mainnet-beta",
+    "deploymentMode": "treasury-signs-relayer-pays",
+    "componentsDeployed": 4,
+    "readyForCrosschain": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-10-08T22:47:06.570Z",
+  "treasury": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+  "rebates": {
+    "active": false,
+    "totalSOL": 0,
+    "transactions": 0
+  },
+  "mev": {
+    "active": false,
+    "totalSOL": 0,
+    "transactions": 0
+  },
+  "validator": {
+    "active": false,
+    "nodes": 0,
+    "estimatedAnnualSOL": 0
+  },
+  "summary": {
+    "totalPassiveIncomeSOL": 0,
+    "incomeStreamsActive": 0,
+    "readyForAnnouncement": true
+  }
+}

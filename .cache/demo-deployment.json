@@ -1,0 +1,49 @@
+{
+  "timestamp": "2025-10-08T22:24:12.034Z",
+  "status": "DEMO_DEPLOYMENT_COMPLETE",
+  "mainToken": {
+    "mint": "DemoMint1111111111111111111111111111111111",
+    "deployer": "UWS7C6KHmfpuZXskcgQK85ex5hAXUC5hQTcUeu3JDmH",
+    "mintTxSignature": "DemoTx1111111111111111111111111111111111111"
+  },
+  "botMinting": [
+    {
+      "bot": "Bot1Alpha111111111111111111111111111111111",
+      "signature": "BotTx1111111111111111111111111111111111111",
+      "amount": "1000000"
+    },
+    {
+      "bot": "Bot2Beta2222222222222222222222222222222222",
+      "signature": "BotTx2222222222222222222222222222222222222",
+      "amount": "1000000"
+    },
+    {
+      "bot": "Bot3Gamma333333333333333333333333333333333",
+      "signature": "BotTx3333333333333333333333333333333333333",
+      "amount": "1000000"
+    },
+    {
+      "bot": "Bot4Delta444444444444444444444444444444444",
+      "signature": "BotTx4444444444444444444444444444444444444",
+      "amount": "1000000"
+    },
+    {
+      "bot": "Bot5Omega555555555555555555555555555555555",
+      "signature": "BotTx5555555555555555555555555555555555555",
+      "amount": "1000000"
+    }
+  ],
+  "geneNFTs": {
+    "nftMint": "GeneNFT111111111111111111111111111111111111",
+    "nftTxSignature": "NFTTx1111111111111111111111111111111111111"
+  },
+  "daoGovernance": {
+    "governanceToken": "DemoMint1111111111111111111111111111111111",
+    "votingPeriod": 604800,
+    "quorum": 0.1,
+    "authority": "UWS7C6KHmfpuZXskcgQK85ex5hAXUC5hQTcUeu3JDmH"
+  },
+  "network": "mainnet-beta",
+  "relayer": "helius",
+  "totalCost": 0
+}

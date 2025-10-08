@@ -1,0 +1,101 @@
+{
+  "timestamp": "2025-10-08T22:38:11.050Z",
+  "treasury": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+  "profits": {
+    "solana": {
+      "sol": null,
+      "tokens": [],
+      "stakes": [],
+      "votes": []
+    },
+    "ethereum": {
+      "eth": 0,
+      "tokens": [
+        {
+          "name": "OPT Token",
+          "contract": "OPTtoken.sol",
+          "supply": "1,000,000,000",
+          "network": "SKALE Europa"
+        }
+      ],
+      "contracts": [
+        {
+          "name": "for",
+          "file": "ImmutableEmpireEarnings.sol",
+          "type": "solidity",
+          "network": "ethereum"
+        },
+        {
+          "name": "for",
+          "file": "MintGene.sol",
+          "type": "solidity",
+          "network": "ethereum"
+        },
+        {
+          "name": "OPTToken",
+          "file": "OPTtoken.sol",
+          "type": "solidity",
+          "network": "ethereum"
+        }
+      ]
+    },
+    "aws": {
+      "services": [
+        "lambda",
+        "ec2",
+        {
+          "name": "omegaprime-kv",
+          "type": "azure",
+          "status": "simulated",
+          "cost": 0
+        },
+        {
+          "name": "omegaprimestore",
+          "type": "azure",
+          "status": "simulated",
+          "cost": 0
+        },
+        {
+          "name": "omegaprime-functions",
+          "type": "azure",
+          "status": "simulated",
+          "cost": 0
+        }
+      ],
+      "costs": 0,
+      "revenue": 0
+    },
+    "nodes": {
+      "validators": [],
+      "rewards": 0
+    },
+    "total": {
+      "usd": null,
+      "breakdown": {
+        "solana": {
+          "balance": null,
+          "stakes": 0,
+          "rewards": 0,
+          "total": null
+        },
+        "ethereum": {
+          "balance": 0,
+          "contracts": 3000,
+          "total": 3000
+        },
+        "aws": {
+          "costs": 0,
+          "revenue": 0,
+          "total": 0
+        }
+      }
+    }
+  },
+  "summary": {
+    "totalValueUSD": null,
+    "solanaAssets": null,
+    "ethereumContracts": 3,
+    "awsServices": 5,
+    "validatorNodes": 0
+  }
+}

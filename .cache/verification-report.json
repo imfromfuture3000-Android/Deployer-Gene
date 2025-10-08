@@ -1,13 +1,140 @@
 {
-  "timestamp": "2025-10-08T03:34:43.166Z",
-  "deployments": 2,
-  "addresses": 1,
-  "bots": 5,
-  "earnings": {
-    "daily": "409.92",
-    "monthly": "12297.60",
-    "yearly": "149620.80"
+  "timestamp": "2025-10-08T22:31:13.328Z",
+  "treasury": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+  "verification": {
+    "timestamp": "2025-10-08T22:31:13.233Z",
+    "treasury": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+    "results": {
+      "finalDeployment": {
+        "status": "verified",
+        "mainToken": {
+          "mint": "23v2cDBzVnijTnNk3riHipDvctcgfCpeByiep47SMovm",
+          "authority": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+          "verified": true
+        },
+        "botArmy": {
+          "totalBots": 5,
+          "totalTokens": 5000000,
+          "verified": true
+        },
+        "geneNFTs": {
+          "totalCollections": 5,
+          "verified": true
+        },
+        "daoGovernance": {
+          "name": "Deployer Gene DAO",
+          "governanceToken": "23v2cDBzVnijTnNk3riHipDvctcgfCpeByiep47SMovm",
+          "verified": true
+        }
+      },
+      "corePrograms": {
+        "corePrograms": 7,
+        "pdas": 4,
+        "crosschainPDAs": 4,
+        "botPDAs": 5,
+        "verified": true,
+        "crosschainReady": true
+      },
+      "geneNFTs": {
+        "totalNFTs": 5,
+        "expectedNFTs": 5,
+        "verified": true,
+        "nfts": [
+          {
+            "name": "Alpha Gene",
+            "symbol": "ALPHA",
+            "supply": 100,
+            "mint": "AZZV4Eh3gFa4ajU2CCHDAyG5nHr23ZjgnJDnCRxqzPGv",
+            "verified": true
+          },
+          {
+            "name": "Beta Gene",
+            "symbol": "BETA",
+            "supply": 200,
+            "mint": "HWu4ACxeT1ksA5y6DPJZBg1sLJtfnwgsvhXmg2Gx3j3m",
+            "verified": true
+          },
+          {
+            "name": "Gamma Gene",
+            "symbol": "GAMMA",
+            "supply": 300,
+            "mint": "CreZ5tT1kq2R9tFR6W8gFd1hFArHKtrN2m6aZXA57kAH",
+            "verified": true
+          },
+          {
+            "name": "Delta Gene",
+            "symbol": "DELTA",
+            "supply": 150,
+            "mint": "BXJFDcATe5vEgDDRoPNJtdPyaogNwa4x9m3AiQtwhWU6",
+            "verified": true
+          },
+          {
+            "name": "Omega Gene",
+            "symbol": "OMEGA",
+            "supply": 50,
+            "mint": "CKgFMNptS7uEXHRET7AZQf2j7F49NkNxiFv7bHJdCXkZ",
+            "verified": true
+          }
+        ]
+      },
+      "daoGovernance": {
+        "name": "Deployer Gene DAO",
+        "votingMechanism": "token-weighted",
+        "votingPeriod": 7,
+        "quorum": 0.1,
+        "status": "active",
+        "verified": true
+      },
+      "botArmy": {
+        "totalBots": 5,
+        "tokensPerBot": "1000000",
+        "totalTokens": 5000000,
+        "verified": true,
+        "bots": [
+          {
+            "id": 1,
+            "address": "Bot1Alpha111111111111111111111111111111111",
+            "tokens": "1000000",
+            "verified": false
+          },
+          {
+            "id": 2,
+            "address": "Bot2Beta2222222222222222222222222222222222",
+            "tokens": "1000000",
+            "verified": false
+          },
+          {
+            "id": 3,
+            "address": "Bot3Gamma333333333333333333333333333333333",
+            "tokens": "1000000",
+            "verified": false
+          },
+          {
+            "id": 4,
+            "address": "Bot4Delta444444444444444444444444444444444",
+            "tokens": "1000000",
+            "verified": false
+          },
+          {
+            "id": 5,
+            "address": "Bot5Omega555555555555555555555555555555555",
+            "tokens": "1000000",
+            "verified": false
+          }
+        ]
+      }
+    }
   },
-  "security": 5,
-  "status": "verified"
+  "treasuryAssets": {
+    "solBalance": 0,
+    "tokenAccounts": 0,
+    "verified": true
+  },
+  "summary": {
+    "totalComponents": 5,
+    "allVerified": true,
+    "deploymentComplete": true,
+    "crosschainReady": true,
+    "systemOperational": true
+  }
 }

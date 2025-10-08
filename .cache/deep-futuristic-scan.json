@@ -1,0 +1,277 @@
+{
+  "timestamp": "2025-10-08T22:34:11.930Z",
+  "scanPath": "./The-Futuristic-Kami-Omni-Engine",
+  "findings": {
+    "contracts": [
+      {
+        "name": "for",
+        "file": "ImmutableEmpireEarnings.sol",
+        "type": "solidity",
+        "network": "ethereum"
+      },
+      {
+        "name": "for",
+        "file": "MintGene.sol",
+        "type": "solidity",
+        "network": "ethereum"
+      },
+      {
+        "name": "OPTToken",
+        "file": "OPTtoken.sol",
+        "type": "solidity",
+        "network": "ethereum"
+      }
+    ],
+    "nodes": [
+      {
+        "type": "azure-service",
+        "name": "omegaprime-kv",
+        "status": "simulated"
+      },
+      {
+        "type": "azure-service",
+        "name": "omegaprimestore",
+        "status": "simulated"
+      },
+      {
+        "type": "azure-service",
+        "name": "omegaprime-functions",
+        "status": "simulated"
+      },
+      {
+        "type": "deployment-node",
+        "script": "azure-deploy.js",
+        "network": "ethereum"
+      },
+      {
+        "type": "deployment-node",
+        "script": "dashboard-mainnet-deploy.js",
+        "network": "ethereum"
+      },
+      {
+        "type": "deployment-node",
+        "script": "deploy-simple.js",
+        "network": "solana"
+      },
+      {
+        "type": "deployment-node",
+        "script": "mainnet-deployment-demo.js",
+        "network": "ethereum"
+      },
+      {
+        "type": "deployment-node",
+        "script": "master-deploy.js",
+        "network": "solana"
+      },
+      {
+        "type": "deployment-node",
+        "script": "mock-solana-deploy.js",
+        "network": "solana"
+      },
+      {
+        "type": "deployment-node",
+        "script": "skale-consensus-deploy.js",
+        "network": "ethereum"
+      },
+      {
+        "type": "deployment-node",
+        "script": "skale_zero_cost_deploy.js",
+        "network": "ethereum"
+      },
+      {
+        "type": "deployment-node",
+        "script": "solana_zero_cost_deploy.js",
+        "network": "solana"
+      },
+      {
+        "type": "config-node",
+        "file": "allowlist.json",
+        "format": "json"
+      },
+      {
+        "type": "config-node",
+        "file": "package-lock.json",
+        "format": "json"
+      },
+      {
+        "type": "config-node",
+        "file": "package.json",
+        "format": "json"
+      }
+    ],
+    "votes": [],
+    "programs": [
+      {
+        "type": "solana-program",
+        "id": "jaJrDgf4U8DAZcUD3t5AwL7Cfe2QnkpXZXGegdUHc4ZE",
+        "network": "mainnet-beta",
+        "status": "active"
+      },
+      {
+        "type": "rust-program",
+        "name": "lucid-app",
+        "features": [
+          "anchor-framework"
+        ],
+        "network": "solana"
+      }
+    ],
+    "addresses": [
+      {
+        "address": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+        "source": "master-deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+        "source": "master-deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+        "source": "master-deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+        "source": "master-deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijk",
+        "source": "mock-solana-deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijk",
+        "source": "mock-solana-deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+        "source": "skale-consensus-deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+        "source": "skale-consensus-deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+        "source": "skale-consensus-deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "x8c9b3c6e4f5a7b9d2e1c8a6f4b9e3d7c5a2f8b6e4",
+        "source": "skale-consensus-deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "x6f4e8c9a2b7d5f3e9c8a6b4f2d7e5c9a8b6f4e2d",
+        "source": "skale-consensus-deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "x3d7c9e2f8a6b4d5f9c7e3a8b6f2d9c5e7a4f8b2d",
+        "source": "skale-consensus-deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "x8c9b3c6e4f5a7b9d2e1c8a6f4b9e3d7c5a2f8b6e4",
+        "source": "skale-consensus-deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "x6f4e8c9a2b7d5f3e9c8a6b4f2d7e5c9a8b6f4e2d",
+        "source": "skale-consensus-deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "x3d7c9e2f8a6b4d5f9c7e3a8b6f2d9c5e7a4f8b2d",
+        "source": "skale-consensus-deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "x9e2f8a6b4d5f9c7e3a8b6f2d9c5e7a4f8b2d3c6e",
+        "source": "skale-consensus-deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+        "source": "skale_zero_cost_deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+        "source": "skale_zero_cost_deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+        "source": "skale_zero_cost_deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+        "source": "solana_zero_cost_deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+        "source": "solana_zero_cost_deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+        "source": "solana_zero_cost_deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "source": "solana_zero_cost_deploy.js",
+        "type": "deployment-script"
+      },
+      {
+        "address": "BPFLoader2111111111111111111111111111111111",
+        "source": "solana_zero_cost_deploy.js",
+        "type": "deployment-script"
+      }
+    ],
+    "deployments": [
+      {
+        "type": "solana-transaction",
+        "signature": "rbnuBdmraMViDnWH1actWGoS5o6fSmqJKmKpmW5S8twwAvhCnXBS54eaVV7y1QRpZitp53T9zBWwFq23pA6wJgoH",
+        "network": "solana"
+      },
+      {
+        "type": "solana-transaction",
+        "signature": "udcyK55j8CURPELb2PxPJjRMYwYd6Hu6VPaKX7dMEF4GpDNk8GCyJT5V31MT1MffpGxB9MDrRzvYhquBdoakz3UX",
+        "network": "solana"
+      },
+      {
+        "type": "solana-transaction",
+        "signature": "ThY6SHYpzDq5KEaQxEgPvUhsJ9HfDJwjz7tGnA3bmZKennXB7W1fDFhN1EjcNUY1Q4Lec9mNnmDHPrWkLpc34gTc",
+        "network": "solana"
+      },
+      {
+        "type": "solana-transaction",
+        "signature": "kmY699qtZ8QM1TjM6FfXysACCU4epQbMqhRLdJ9uVVCvbtP5WVaPeWK4ANhoLu48j1jC2a8eNiLsZeZpBEiWowAL",
+        "network": "solana"
+      },
+      {
+        "type": "solana-transaction",
+        "signature": "TxhBFGvurRz26oYLMzj5GBG1JFe64h83R2Zc2tbuDzFQpVFGn8yW4iPixfDghN35Eub9ZpQpXZu3Bo4UxUPAtcBd",
+        "network": "solana"
+      }
+    ]
+  },
+  "summary": {
+    "totalContracts": 3,
+    "totalPrograms": 2,
+    "totalNodes": 15,
+    "totalVotes": 0,
+    "totalAddresses": 24,
+    "totalDeployments": 5
+  }
+}
