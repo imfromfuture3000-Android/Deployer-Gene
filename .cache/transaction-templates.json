@@ -1,0 +1,81 @@
+{
+  "timestamp": "2025-10-08T17:58:24.215Z",
+  "status": "TEMPLATES_CREATED",
+  "total_transfers": 3,
+  "total_amount": 8.727563727,
+  "templates": [
+    {
+      "id": 1,
+      "from": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+      "to": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "lamports": 114920971,
+      "sol_amount": 0.114920971,
+      "instruction": {
+        "program_id": "11111111111111111111111111111111",
+        "accounts": [
+          {
+            "pubkey": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+            "is_signer": true,
+            "is_writable": true
+          },
+          {
+            "pubkey": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+            "is_signer": false,
+            "is_writable": true
+          }
+        ],
+        "data": "transfer_114920971_lamports"
+      },
+      "explorer_after_execution": "https://explorer.solana.com/address/zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4"
+    },
+    {
+      "id": 2,
+      "from": "GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz",
+      "to": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "lamports": 6451541913,
+      "sol_amount": 6.451541913,
+      "instruction": {
+        "program_id": "11111111111111111111111111111111",
+        "accounts": [
+          {
+            "pubkey": "GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz",
+            "is_signer": true,
+            "is_writable": true
+          },
+          {
+            "pubkey": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+            "is_signer": false,
+            "is_writable": true
+          }
+        ],
+        "data": "transfer_6451541913_lamports"
+      },
+      "explorer_after_execution": "https://explorer.solana.com/address/zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4"
+    },
+    {
+      "id": 3,
+      "from": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz9hXHNYt99MQ59qw1",
+      "to": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "lamports": 2161100843,
+      "sol_amount": 2.161100843,
+      "instruction": {
+        "program_id": "11111111111111111111111111111111",
+        "accounts": [
+          {
+            "pubkey": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz9hXHNYt99MQ59qw1",
+            "is_signer": true,
+            "is_writable": true
+          },
+          {
+            "pubkey": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+            "is_signer": false,
+            "is_writable": true
+          }
+        ],
+        "data": "transfer_2161100843_lamports"
+      },
+      "explorer_after_execution": "https://explorer.solana.com/address/zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4"
+    }
+  ],
+  "note": "Use these templates with proper transaction signing"
+}

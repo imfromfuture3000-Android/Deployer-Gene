@@ -1,0 +1,68 @@
+{
+  "mcpServers": {
+    "solana-web3": {
+      "enabled": true,
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-solana"],
+      "env": {
+        "SOLANA_RPC_URL": "${RPC_URL}",
+        "SOLANA_NETWORK": "mainnet-beta"
+      },
+      "capabilities": [
+        "getBalance",
+        "getAccountInfo",
+        "sendTransaction",
+        "confirmTransaction",
+        "getRecentBlockhash",
+        "getTokenAccountsByOwner"
+      ]
+    },
+    "spl-token": {
+      "enabled": true,
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-spl-token"],
+      "env": {
+        "SOLANA_RPC_URL": "${RPC_URL}"
+      },
+      "capabilities": [
+        "createMint",
+        "mintTo",
+        "transfer",
+        "getTokenSupply",
+        "createAssociatedTokenAccount",
+        "setAuthority",
+        "freezeAccount"
+      ]
+    },
+    "metaplex": {
+      "enabled": true,
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-metaplex"],
+      "env": {
+        "SOLANA_RPC_URL": "${RPC_URL}"
+      },
+      "capabilities": [
+        "createMetadata",
+        "updateMetadata",
+        "verifyCollection",
+        "uploadMetadata"
+      ]
+    },
+    "relayer": {
+      "enabled": true,
+      "command": "node",
+      "args": ["mcp-relayer-server.js"],
+      "env": {
+        "RELAYER_URL": "${RELAYER_URL}",
+        "RELAYER_PUBKEY": "${RELAYER_PUBKEY}",
+        "RELAYER_API_KEY": "${RELAYER_API_KEY}"
+      },
+      "capabilities": [
+        "sendRawTransaction",
+        "estimateFees",
+        "getRelayerStatus",
+        "batchTransactions"
+      ]
+    }
+  }
+}

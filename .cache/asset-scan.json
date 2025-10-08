@@ -1,0 +1,93 @@
+{
+  "timestamp": "2025-10-08T19:39:59.185Z",
+  "deployed": [
+    {
+      "mint": "3i62KXuWERyTZJ5HbE7HNbhvBAhEdMjMjLQk3m39PpN4",
+      "treasuryAta": "DGWGgSKbdCjePhH7ULWHWBLjcE7XktGk2ohnCSRQ6Unx",
+      "deployer": "7V4aUYVwrYj7jFBbGWDAJhkfejf8ArKkPjyobLBTEw7U",
+      "mintAuthority": "7V4aUYVwrYj7jFBbGWDAJhkfejf8ArKkPjyobLBTEw7U",
+      "freezeAuthority": "7V4aUYVwrYj7jFBbGWDAJhkfejf8ArKkPjyobLBTEw7U",
+      "decimals": 9,
+      "supply": 1000000000,
+      "network": "mainnet-beta",
+      "timestamp": "2025-10-08T19:33:58.811Z",
+      "status": "ready_for_relayer",
+      "explorer": "https://explorer.solana.com/address/3i62KXuWERyTZJ5HbE7HNbhvBAhEdMjMjLQk3m39PpN4"
+    }
+  ],
+  "contracts": [
+    {
+      "name": "bot1_stake_master",
+      "generation": 1,
+      "bot_address": "HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR",
+      "contract_address": "EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6",
+      "specialty": "liquid_staking_yield_farming",
+      "intelligence_level": 10,
+      "status": "ready"
+    },
+    {
+      "name": "bot2_mint_operator",
+      "generation": 2,
+      "bot_address": "NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d",
+      "contract_address": "HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76",
+      "specialty": "token_minting_supply_management",
+      "intelligence_level": 15,
+      "status": "ready",
+      "note": "Contract address may be incomplete"
+    },
+    {
+      "name": "bot3_contract_deployer",
+      "generation": 3,
+      "bot_address": "DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA",
+      "contract_address": "FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1",
+      "specialty": "smart_contracts_governance",
+      "intelligence_level": 20,
+      "status": "ready"
+    },
+    {
+      "name": "bot4_mev_hunter",
+      "generation": 4,
+      "bot_address": "7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41",
+      "contract_address": "5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p",
+      "specialty": "arbitrage_mev_operations",
+      "intelligence_level": 25,
+      "status": "ready"
+    },
+    {
+      "name": "bot5_loot_extractor",
+      "generation": 5,
+      "bot_address": "3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw",
+      "contract_address": "DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD",
+      "specialty": "flash_loans_liquidations",
+      "intelligence_level": 30,
+      "status": "ready"
+    },
+    {
+      "name": "treasury_address",
+      "address": "EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6",
+      "type": "treasury"
+    },
+    {
+      "name": "target_wallet",
+      "address": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "type": "treasury"
+    },
+    {
+      "name": "relayer_address",
+      "address": "8cRrU1NzNpjL3k2BwjW3VixAcX6VFc29KHr4KZg8cs2Y",
+      "type": "treasury"
+    },
+    {
+      "name": "secondary_wallet",
+      "address": "9HUvuQHBHkihcrhiucdYFjk1q4jUgozakoYsubYrHiJS",
+      "type": "treasury"
+    }
+  ],
+  "summary": {
+    "totalDeployed": 1,
+    "totalContracts": 9,
+    "network": "mainnet-beta",
+    "relayerMode": true,
+    "userCost": 0
+  }
+}

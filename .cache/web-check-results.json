@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-10-08T18:52:22.562Z",
+  "destination": "ACTvefX67PchHtJbKqayGJntruJ1QXiHwNSgMNNRvoq6",
+  "checks": [
+    {
+      "txHash": "9mGE6hJhyRAvYuqFe3ZDhw9ddJYXzKTEWjZJvamusjym",
+      "status": "PENDING",
+      "explorer": "https://explorer.solana.com/tx/9mGE6hJhyRAvYuqFe3ZDhw9ddJYXzKTEWjZJvamusjym",
+      "amount": 6.451541913
+    },
+    {
+      "txHash": "9CqCP3WBTPLDNX7dZmGiKUYta4DQV9EsEemEEKag4KBq",
+      "status": "PENDING",
+      "explorer": "https://explorer.solana.com/tx/9CqCP3WBTPLDNX7dZmGiKUYta4DQV9EsEemEEKag4KBq",
+      "amount": 0.114920971
+    },
+    {
+      "txHash": "UcGgpAqBkRKH3zMZZqvcS8LB11dKTcwL4eFDFuk3xGEp",
+      "status": "PENDING",
+      "explorer": "https://explorer.solana.com/tx/UcGgpAqBkRKH3zMZZqvcS8LB11dKTcwL4eFDFuk3xGEp",
+      "amount": 2.161100843
+    }
+  ],
+  "destinationBalance": {
+    "lamports": 0,
+    "sol": 0,
+    "status": "EMPTY"
+  }
+}

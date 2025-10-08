@@ -1,0 +1,16 @@
+{
+  "timestamp": "2025-10-08T20:31:20.784Z",
+  "foundSOL": {
+    "address": "8cRrU1NzNpjL3k2BwjW3VixAcX6VFc29KHr4KZg8cs2Y",
+    "balance": 0.111274966,
+    "status": "locked_no_private_key",
+    "note": "SOL found but cannot be transferred without private key"
+  },
+  "destination": {
+    "address": "ACTvefX67PchHtJbKqayGJntruJ1QXiHwNSgMNNRvoq6",
+    "balance": 0,
+    "type": "backpack_wallet"
+  },
+  "recommendation": "SOL is documented but inaccessible without private key. Consider this address as archived.",
+  "explorer": "https://explorer.solana.com/address/8cRrU1NzNpjL3k2BwjW3VixAcX6VFc29KHr4KZg8cs2Y"
+}

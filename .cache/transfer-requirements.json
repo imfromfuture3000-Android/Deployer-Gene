@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-10-08T18:54:21.817Z",
+  "destination": "ACTvefX67PchHtJbKqayGJntruJ1QXiHwNSgMNNRvoq6",
+  "requiredKeys": [
+    {
+      "address": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+      "keyType": "UPGRADE_AUTHORITY",
+      "purpose": "Transfer 0.114921 SOL from PROGRAM"
+    },
+    {
+      "address": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz9hXHNYt99MQ59qw1",
+      "keyType": "PROGRAM_AUTHORITY",
+      "purpose": "Transfer 2.161101 SOL from PROGRAM"
+    }
+  ],
+  "transfers": [
+    {
+      "asset": "GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz",
+      "type": "TOKEN_MINT",
+      "lamports": 6451541913,
+      "solAmount": 6.451541913,
+      "requiredKey": "MINT_AUTHORITY_BURNED",
+      "transferMethod": "close_mint_account",
+      "status": "IMPOSSIBLE"
+    },
+    {
+      "asset": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+      "type": "PROGRAM",
+      "lamports": 114920971,
+      "solAmount": 0.114920971,
+      "requiredKey": "UPGRADE_AUTHORITY",
+      "transferMethod": "close_program_account",
+      "status": "NEEDS_KEY"
+    },
+    {
+      "asset": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz9hXHNYt99MQ59qw1",
+      "type": "PROGRAM",
+      "lamports": 2161100843,
+      "solAmount": 2.161100843,
+      "requiredKey": "PROGRAM_AUTHORITY",
+      "transferMethod": "close_program_data",
+      "status": "NEEDS_KEY"
+    }
+  ]
+}

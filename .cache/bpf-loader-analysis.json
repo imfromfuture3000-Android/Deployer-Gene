@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-10-08T19:00:24.336Z",
+  "program": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz9hXHNYt99MQ59qw1",
+  "owner": "BPFLoader2111111111111111111111111111111111",
+  "ownerType": "BPF_LOADER_V2",
+  "transferability": "SYSTEM_OWNED",
+  "conclusion": "Cannot transfer - owned by system program",
+  "alternatives": [
+    "Program is owned by BPF Loader v2 system program",
+    "No private key can control system-owned programs",
+    "SOL is permanently locked in program account",
+    "Only program upgrade/close instructions could release funds"
+  ],
+  "accountData": {
+    "lamports": 2161991723,
+    "executable": true,
+    "dataLength": 310464
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "timestamp": "2025-10-08T19:50:38.063Z",
+  "signer": "7V4aUYVwrYj7jFBbGWDAJhkfejf8ArKkPjyobLBTEw7U",
+  "mainWallet": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+  "backupWallet": "9HUvuQHBHkihcrhiucdYFjk1q4jUgozakoYsubYrHiJS",
+  "balances": {
+    "signer": 0,
+    "main": 0,
+    "backup": 0.013407132
+  },
+  "transfers": []
+}

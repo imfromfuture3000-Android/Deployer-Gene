@@ -1,0 +1,710 @@
+{
+  "timestamp": "2025-10-08T17:24:24.514Z",
+  "wallets": [
+    "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+    "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6"
+  ],
+  "assets": {
+    "solana": {
+      "sol": null,
+      "tokens": [],
+      "nfts": [],
+      "programs": [],
+      "stakes": [],
+      "votes": []
+    },
+    "ethereum": {
+      "balance": 0,
+      "tokens": [],
+      "nfts": [],
+      "contracts": [],
+      "transactions": 0
+    },
+    "polygon": {
+      "balance": 0,
+      "tokens": [],
+      "nfts": [],
+      "contracts": [],
+      "transactions": 0
+    },
+    "bsc": {
+      "balance": 0,
+      "tokens": [],
+      "nfts": [],
+      "contracts": [],
+      "transactions": 0
+    }
+  },
+  "secrets": {
+    "envFiles": [
+      {
+        "file": ".env",
+        "lines": 7,
+        "hasPrivateKey": true,
+        "hasApiKey": true,
+        "size": 327
+      },
+      {
+        "file": ".env.helius",
+        "lines": 20,
+        "hasPrivateKey": false,
+        "hasApiKey": true,
+        "size": 542
+      },
+      {
+        "file": ".cache/user_auth.json",
+        "lines": 1,
+        "hasPrivateKey": false,
+        "hasApiKey": false,
+        "size": 230
+      },
+      {
+        "file": ".cache/mint-keypair.json",
+        "lines": 1,
+        "hasPrivateKey": false,
+        "hasApiKey": false,
+        "size": 230
+      }
+    ],
+    "configFiles": [],
+    "keyFiles": [],
+    "exposedSecrets": []
+  },
+  "scripts": {
+    "deploymentScripts": [
+      {
+        "file": "The-Futuristic-Kami-Omni-Engine/azure-deploy.js",
+        "lines": 372,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": false
+      },
+      {
+        "file": "The-Futuristic-Kami-Omni-Engine/dashboard-mainnet-deploy.js",
+        "lines": 329,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "The-Futuristic-Kami-Omni-Engine/deploy-simple.js",
+        "lines": 116,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "The-Futuristic-Kami-Omni-Engine/mainnet-deployment-demo.js",
+        "lines": 241,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "The-Futuristic-Kami-Omni-Engine/master-deploy.js",
+        "lines": 364,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "The-Futuristic-Kami-Omni-Engine/mock-solana-deploy.js",
+        "lines": 211,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "The-Futuristic-Kami-Omni-Engine/scripts/azure-mcp-deploy.js",
+        "lines": 242,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "The-Futuristic-Kami-Omni-Engine/scripts/deploy.js",
+        "lines": 28,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": false
+      },
+      {
+        "file": "The-Futuristic-Kami-Omni-Engine/scripts/skale_mainnet_zero_cost_deploy.js",
+        "lines": 246,
+        "hasPrivateKey": true,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "The-Futuristic-Kami-Omni-Engine/scripts/solana_zero_cost_deploy.js",
+        "lines": 341,
+        "hasPrivateKey": true,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "The-Futuristic-Kami-Omni-Engine/skale-consensus-deploy.js",
+        "lines": 676,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "The-Futuristic-Kami-Omni-Engine/skale_zero_cost_deploy.js",
+        "lines": 235,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "The-Futuristic-Kami-Omni-Engine/solana_zero_cost_deploy.js",
+        "lines": 357,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "agent-bot-deploy.js",
+        "lines": 30,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": false
+      },
+      {
+        "file": "anchor-build-deploy.js",
+        "lines": 293,
+        "hasPrivateKey": true,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "automated-reclaim-deploy.js",
+        "lines": 142,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "aws-mainnet-deploy.js",
+        "lines": 235,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "azure-aws-deployer.js",
+        "lines": 257,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "calculate-deployment-cost.js",
+        "lines": 85,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "check-mainnet-metadata.js",
+        "lines": 130,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "complete-omega-deployment.js",
+        "lines": 223,
+        "hasPrivateKey": true,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "deploy-bot-nfts-mainnet.js",
+        "lines": 127,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "deploy-bot-nfts-simple.js",
+        "lines": 111,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "deploy-gene-mint-nft.js",
+        "lines": 193,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "deploy-gene-nft.js",
+        "lines": 159,
+        "hasPrivateKey": true,
+        "hasRelayer": false,
+        "hasMainnet": false
+      },
+      {
+        "file": "deploy-impulse.ts",
+        "lines": 116,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "deploy-mainnet-now.js",
+        "lines": 150,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "deploy-node-votes-nft-bots.js",
+        "lines": 241,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "deploy-program-helius.js",
+        "lines": 104,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "deploy-script.js",
+        "lines": 17,
+        "hasPrivateKey": true,
+        "hasRelayer": false,
+        "hasMainnet": false
+      },
+      {
+        "file": "deploy-test.js",
+        "lines": 29,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": false
+      },
+      {
+        "file": "deploy-transfer-ownership.js",
+        "lines": 236,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": false
+      },
+      {
+        "file": "deploy-with-key.js",
+        "lines": 179,
+        "hasPrivateKey": true,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "deploy-with-mint.js",
+        "lines": 3,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "deploy.js",
+        "lines": 2,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": false
+      },
+      {
+        "file": "deployment-report.js",
+        "lines": 131,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "deployment-scanner.js",
+        "lines": 83,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": false
+      },
+      {
+        "file": "devnet-deploy.js",
+        "lines": 102,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": false
+      },
+      {
+        "file": "dex-proxy-deploy.js",
+        "lines": 89,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "direct-deploy.js",
+        "lines": 130,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "direct-mainnet-deploy.js",
+        "lines": 144,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "direct-relayer-deploy.js",
+        "lines": 120,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "full-auto-deploy.js",
+        "lines": 183,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": false
+      },
+      {
+        "file": "full-deployment-automated.ts",
+        "lines": 99,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "full-deployment.js",
+        "lines": 193,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "helius-deploy-main.ts",
+        "lines": 231,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "helius-live-deploy.js",
+        "lines": 141,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "helius-rebate-deploy.js",
+        "lines": 52,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "helius-relayer-deploy.js",
+        "lines": 204,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "helius-standard-deploy.js",
+        "lines": 147,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "interact-mainnet.js",
+        "lines": 3,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "logic-pubkey-deployer.js",
+        "lines": 137,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "mainnet-auto-deploy.js",
+        "lines": 196,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "mainnet-deploy-live.js",
+        "lines": 2,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": false
+      },
+      {
+        "file": "mainnet-deploy.js",
+        "lines": 2,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "mainnet-final.js",
+        "lines": 2,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": false
+      },
+      {
+        "file": "mainnet-live-deploy.js",
+        "lines": 127,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "mainnet-live.js",
+        "lines": 3,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "mainnet-only-real.js",
+        "lines": 37,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "mainnet-rebate-announcer-bot.js",
+        "lines": 98,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "mainnet-rebate-announcer.js",
+        "lines": 52,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": false
+      },
+      {
+        "file": "mainnet-relayer-deploy.js",
+        "lines": 46,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "mainnet-verify-broadcast.js",
+        "lines": 62,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "mint-deploy.js",
+        "lines": 2,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": false
+      },
+      {
+        "file": "multi-cloud-deploy.js",
+        "lines": 133,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "omega-deploy-transfer.js",
+        "lines": 110,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "out/deploy-impulse.js",
+        "lines": 103,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "out/src/utils/deployerAuth.js",
+        "lines": 26,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": false
+      },
+      {
+        "file": "out/src/utils/relayer.js",
+        "lines": 49,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": false
+      },
+      {
+        "file": "premium-deploy.js",
+        "lines": 198,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "real-deployment.js",
+        "lines": 250,
+        "hasPrivateKey": true,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "relayer-deploy.js",
+        "lines": 137,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "relayer-scanner.js",
+        "lines": 255,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "scan-deployment-status.js",
+        "lines": 72,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "scan-verify-deployment.js",
+        "lines": 211,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "scripts/deploy.ts",
+        "lines": 120,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": false
+      },
+      {
+        "file": "signer-only-deployer.js",
+        "lines": 187,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      },
+      {
+        "file": "simple-auto-deploy.js",
+        "lines": 150,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": false
+      },
+      {
+        "file": "simple-mainnet-deploy.js",
+        "lines": 65,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "smart-deploy.js",
+        "lines": 103,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "src/helius-signer-deploy.ts",
+        "lines": 11,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": false
+      },
+      {
+        "file": "src/utils/deployerAuth.ts",
+        "lines": 23,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": false
+      },
+      {
+        "file": "src/utils/relayer.ts",
+        "lines": 56,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": false
+      },
+      {
+        "file": "verify-bot-nft-deployment.js",
+        "lines": 111,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "verify-dex-deployment.js",
+        "lines": 86,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "verify-gene-mint-deployment.js",
+        "lines": 228,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": false
+      },
+      {
+        "file": "verify-mainnet-contracts.js",
+        "lines": 74,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "very-low-gas-deployment.js",
+        "lines": 97,
+        "hasPrivateKey": false,
+        "hasRelayer": false,
+        "hasMainnet": true
+      },
+      {
+        "file": "zero-cost-deploy.js",
+        "lines": 178,
+        "hasPrivateKey": false,
+        "hasRelayer": true,
+        "hasMainnet": true
+      }
+    ],
+    "configFiles": [],
+    "totalScripts": 89
+  },
+  "summary": {
+    "totalSOL": null,
+    "totalTokens": 0,
+    "totalPrograms": 0,
+    "totalStakes": 0,
+    "totalSecretFiles": 4,
+    "totalScripts": 89
+  }
+}

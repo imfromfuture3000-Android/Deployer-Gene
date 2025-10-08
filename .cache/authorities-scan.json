@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-10-08T18:56:31.300Z",
+  "programs": [
+    {
+      "program": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz9hXHNYt99MQ59qw1",
+      "type": "STANDARD",
+      "programAuthority": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz9hXHNYt99MQ59qw1",
+      "keyRequired": "PROGRAM_AUTHORITY_KEY"
+    }
+  ]
+}

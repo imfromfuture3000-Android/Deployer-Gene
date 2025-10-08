@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-10-08T17:31:45.166Z",
+  "deployer": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+  "rpcEndpoint": "https://api.mainnet-beta.solana.com",
+  "assets": {
+    "sol": null,
+    "programs": [],
+    "tokens": [],
+    "stakes": [],
+    "votes": [],
+    "nfts": []
+  },
+  "summary": {
+    "totalSOL": null,
+    "totalPrograms": 0,
+    "totalTokens": 0,
+    "totalStakes": 0,
+    "totalVotes": 0,
+    "totalNFTs": 0,
+    "totalAssets": 0
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-10-08T18:32:43.012Z",
+  "scanned": 3,
+  "assets": [
+    {
+      "address": "GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz",
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "lamports": 6452432793,
+      "executable": false,
+      "dataLength": 0,
+      "type": "TOKEN_MINT",
+      "mintAuthority": null,
+      "supply": "99999185370922394",
+      "decimals": 9
+    },
+    {
+      "address": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "lamports": 115811851,
+      "executable": true,
+      "dataLength": 0,
+      "type": "PROGRAM"
+    },
+    {
+      "address": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz9hXHNYt99MQ59qw1",
+      "owner": "BPFLoader2111111111111111111111111111111111",
+      "lamports": 2161991723,
+      "executable": true,
+      "dataLength": 2,
+      "type": "PROGRAM"
+    }
+  ]
+}

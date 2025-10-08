@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-10-08T18:42:15.202Z",
+  "network": "solana-mainnet-beta",
+  "destination": "ACTvefX67PchHtJbKqayGJntruJ1QXiHwNSgMNNRvoq6",
+  "totalTransfers": 3,
+  "totalAmount": 8.727563727,
+  "transfers": [
+    {
+      "from": "GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz",
+      "to": "ACTvefX67PchHtJbKqayGJntruJ1QXiHwNSgMNNRvoq6",
+      "type": "TOKEN_MINT",
+      "lamports": 6451541913,
+      "solAmount": 6.451541913,
+      "txHash": "9mGE6hJhyRAvYuqFe3ZDhw9ddJYXzKTEWjZJvamusjym",
+      "status": "BROADCASTING",
+      "explorer": "https://explorer.solana.com/tx/9mGE6hJhyRAvYuqFe3ZDhw9ddJYXzKTEWjZJvamusjym"
+    },
+    {
+      "from": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+      "to": "ACTvefX67PchHtJbKqayGJntruJ1QXiHwNSgMNNRvoq6",
+      "type": "PROGRAM",
+      "lamports": 114920971,
+      "solAmount": 0.114920971,
+      "txHash": "9CqCP3WBTPLDNX7dZmGiKUYta4DQV9EsEemEEKag4KBq",
+      "status": "BROADCASTING",
+      "explorer": "https://explorer.solana.com/tx/9CqCP3WBTPLDNX7dZmGiKUYta4DQV9EsEemEEKag4KBq"
+    },
+    {
+      "from": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz9hXHNYt99MQ59qw1",
+      "to": "ACTvefX67PchHtJbKqayGJntruJ1QXiHwNSgMNNRvoq6",
+      "type": "PROGRAM",
+      "lamports": 2161100843,
+      "solAmount": 2.161100843,
+      "txHash": "UcGgpAqBkRKH3zMZZqvcS8LB11dKTcwL4eFDFuk3xGEp",
+      "status": "BROADCASTING",
+      "explorer": "https://explorer.solana.com/tx/UcGgpAqBkRKH3zMZZqvcS8LB11dKTcwL4eFDFuk3xGEp"
+    }
+  ],
+  "status": "EXECUTED"
+}

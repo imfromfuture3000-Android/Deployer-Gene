@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-10-08T17:49:28.469Z",
+  "action": "sol_consolidation",
+  "deployer": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+  "transfers": [
+    {
+      "from": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+      "to": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "lamports": 114920971,
+      "solAmount": 0.114920971
+    },
+    {
+      "from": "GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz",
+      "to": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "lamports": 6451541913,
+      "solAmount": 6.451541913
+    },
+    {
+      "from": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz9hXHNYt99MQ59qw1",
+      "to": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "lamports": 2161100843,
+      "solAmount": 2.161100843
+    }
+  ],
+  "totalAmount": 8.727563727,
+  "method": "relayer_batch_transfer"
+}

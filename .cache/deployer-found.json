@@ -1,0 +1,13 @@
+{
+  "timestamp": "2025-10-08T19:04:49.712Z",
+  "program": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz9hXHNYt99MQ59qw1",
+  "deployer": "CdTkRbgfxDThnFZjZCGnjqYvMqoswu2fJwkU4mzM9QFo",
+  "deploymentTx": "3z8nYpgmKQ5Rt27YoZ7AJQ7gcDSD6bDNp5fb2cTVNX3kjvVCa1c75CuQKeCHVfWJUwNFsUa8Y1jo4z4MwhQFmrcQ",
+  "deploymentSlot": 372066933,
+  "explorer": "https://explorer.solana.com/tx/3z8nYpgmKQ5Rt27YoZ7AJQ7gcDSD6bDNp5fb2cTVNX3kjvVCa1c75CuQKeCHVfWJUwNFsUa8Y1jo4z4MwhQFmrcQ",
+  "note": "This address deployed the program and may have authority",
+  "deployerBalance": {
+    "lamports": 170212998,
+    "sol": 0.170212998
+  }
+}

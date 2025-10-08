@@ -1,0 +1,137 @@
+{
+  "timestamp": "2025-10-08T19:44:03.043Z",
+  "corePrograms": [
+    {
+      "name": "vote",
+      "address": "Vote111111111111111111111111111111111111111",
+      "exists": true,
+      "executable": true,
+      "owner": "NativeLoader1111111111111111111111111111111",
+      "lamports": 1e-9
+    },
+    {
+      "name": "stake",
+      "address": "Stake11111111111111111111111111111111111111",
+      "exists": true,
+      "executable": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "lamports": 0.00114144
+    },
+    {
+      "name": "system",
+      "address": "11111111111111111111111111111111",
+      "exists": true,
+      "executable": true,
+      "owner": "NativeLoader1111111111111111111111111111111",
+      "lamports": 1e-9
+    },
+    {
+      "name": "token",
+      "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "exists": true,
+      "executable": true,
+      "owner": "BPFLoader2111111111111111111111111111111111",
+      "lamports": 5.289313643
+    },
+    {
+      "name": "associated_token",
+      "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+      "exists": true,
+      "executable": true,
+      "owner": "BPFLoader2111111111111111111111111111111111",
+      "lamports": 0.789146954
+    },
+    {
+      "name": "bpf_loader",
+      "address": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "exists": true,
+      "executable": true,
+      "owner": "NativeLoader1111111111111111111111111111111",
+      "lamports": 1e-9
+    }
+  ],
+  "voteAccounts": [
+    {
+      "rank": 1,
+      "nodePubkey": "farbZXR7aBQSMCYiUXzoS4pRUsvuCZ38f6AXMXiKACf",
+      "votePubkey": "Ej35PiU6wxfrQeJJwuqoT7s2gYSwCjcxQtEpHvpvWBu2",
+      "commission": 0,
+      "activatedStake": 5980.224981452,
+      "status": "active"
+    },
+    {
+      "rank": 2,
+      "nodePubkey": "ELE1xBTfmHB7vuhSH94q23r6j3tuvTXYTqgm1u4uzMLk",
+      "votePubkey": "ELE2xaC6i6pmeu7bfrYjBv4whBeTAbgwcg5hf2ythiBs",
+      "commission": 5,
+      "activatedStake": 53484.724095762,
+      "status": "active"
+    },
+    {
+      "rank": 3,
+      "nodePubkey": "AnKWYWA1zktynzWqPC5KQFYWrTEWNny2CAHbAVU9zSXT",
+      "votePubkey": "9DR48EtgDzh3Gx5HiiQikZn9c2y12casm1bcUMuurV2x",
+      "commission": 5,
+      "activatedStake": 102911.515638685,
+      "status": "active"
+    },
+    {
+      "rank": 4,
+      "nodePubkey": "7VZM7YHcX73TpGoXDeBu61g4QKC86GwAEnew8dA7Y2xn",
+      "votePubkey": "HMk1qny4fvMnajErxjXG5kT89JKV4cx1PKa9zhQBF9ib",
+      "commission": 5,
+      "activatedStake": 245128.551524161,
+      "status": "active"
+    },
+    {
+      "rank": 5,
+      "nodePubkey": "Awes4Tr6TX8JDzEhCZY2QVNimT6iD1zWHzf1vNyGvpLM",
+      "votePubkey": "DumiCKHVqoCQKD8roLApzR5Fit8qGV5fVQsJV9sTZk4a",
+      "commission": 0,
+      "activatedStake": 6756582.667460346,
+      "status": "active"
+    }
+  ],
+  "transferReady": [
+    {
+      "address": "EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6",
+      "exists": false,
+      "balance": 0,
+      "owner": "N/A",
+      "canTransfer": null,
+      "status": "NOT_FOUND"
+    },
+    {
+      "address": "HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76",
+      "exists": false,
+      "balance": 0,
+      "owner": "N/A",
+      "canTransfer": null,
+      "status": "NOT_FOUND"
+    },
+    {
+      "address": "FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1",
+      "exists": false,
+      "balance": 0,
+      "owner": "N/A",
+      "canTransfer": null,
+      "status": "NOT_FOUND"
+    },
+    {
+      "address": "5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p",
+      "exists": false,
+      "balance": 0,
+      "owner": "N/A",
+      "canTransfer": null,
+      "status": "NOT_FOUND"
+    },
+    {
+      "address": "DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD",
+      "exists": false,
+      "balance": 0,
+      "owner": "N/A",
+      "canTransfer": null,
+      "status": "NOT_FOUND"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-10-08T19:10:23.910Z",
+  "status": "SOLUTION_READY",
+  "backpackWallet": "ACTvefX67PchHtJbKqayGJntruJ1QXiHwNSgMNNRvoq6",
+  "programDeployer": "CdTkRbgfxDThnFZjZCGnjqYvMqoswu2fJwkU4mzM9QFo",
+  "fixes": [
+    {
+      "type": "DEPLOYER_TRANSFER",
+      "from": "CdTkRbgfxDThnFZjZCGnjqYvMqoswu2fJwkU4mzM9QFo",
+      "to": "ACTvefX67PchHtJbKqayGJntruJ1QXiHwNSgMNNRvoq6",
+      "amount": 0.169213,
+      "lamports": 169213000,
+      "txHash": "gVg1Rk1d5VrNFPhg7M4PG4vGkFdF4W9Lm4XbYtpBnbCs",
+      "status": "EXECUTED",
+      "explorer": "https://explorer.solana.com/tx/gVg1Rk1d5VrNFPhg7M4PG4vGkFdF4W9Lm4XbYtpBnbCs",
+      "note": "Transfer available SOL from program deployer",
+      "executedAt": "2025-10-08T19:10:23.911Z"
+    },
+    {
+      "type": "PROGRAM_CLOSE",
+      "program": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz9hXHNYt99MQ59qw1",
+      "authority": "CdTkRbgfxDThnFZjZCGnjqYvMqoswu2fJwkU4mzM9QFo",
+      "recipient": "ACTvefX67PchHtJbKqayGJntruJ1QXiHwNSgMNNRvoq6",
+      "amount": 2.161992,
+      "lamports": 2161992000,
+      "txHash": "42hm3g4YibNBCK9sp6Z6qVhLFkjNpFyxxsvhs2vniGx2",
+      "status": "REQUIRES_AUTHORITY",
+      "explorer": "https://explorer.solana.com/tx/42hm3g4YibNBCK9sp6Z6qVhLFkjNpFyxxsvhs2vniGx2",
+      "note": "Close program and recover SOL if deployer has authority"
+    },
+    {
+      "type": "TOKEN_MINT",
+      "mint": "GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz",
+      "amount": 6.452433,
+      "status": "IMPOSSIBLE",
+      "reason": "Mint authority burned - cannot transfer",
+      "note": "SOL permanently locked in mint account"
+    }
+  ],
+  "summary": {
+    "totalFixes": 3,
+    "executed": 1,
+    "totalTransferred": 0.169213,
+    "locked": 6.452433,
+    "pending": 2.161992
+  }
+}
