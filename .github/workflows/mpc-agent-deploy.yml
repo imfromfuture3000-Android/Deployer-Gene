@@ -1,0 +1,80 @@
+name: MPC Agent Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      deployment_mode:
+        description: 'Deployment Mode'
+        required: true
+        default: 'mainnet'
+        type: choice
+        options:
+          - mainnet
+          - dry-run
+
+permissions:
+  contents: write
+  actions: write
+  id-token: write
+
+jobs:
+  mpc-deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          
+      - name: Install Dependencies
+        run: npm ci
+        
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: us-east-1
+          
+      - name: Setup Environment
+        run: |
+          echo "RPC_URL=${{ secrets.RPC_URL }}" >> .env
+          echo "RELAYER_URL=${{ secrets.RELAYER_URL }}" >> .env
+          echo "RELAYER_PUBKEY=${{ secrets.RELAYER_PUBKEY }}" >> .env
+          echo "TREASURY_PUBKEY=${{ secrets.TREASURY_PUBKEY }}" >> .env
+          echo "HELIUS_API_KEY=${{ secrets.HELIUS_API_KEY }}" >> .env
+          echo "MAINNET_ONLY=true" >> .env
+          
+      - name: Security Scan
+        run: |
+          node address-audit.js
+          node security-verification.js
+          
+      - name: MPC Agent Deploy
+        run: |
+          npm run mainnet:bot-orchestrate
+          npm run mainnet:verify-bots
+        env:
+          DRY_RUN: ${{ github.event.inputs.deployment_mode == 'dry-run' }}
+          
+      - name: Upload Deployment Logs
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: deployment-logs
+          path: .cache/deployment-log.json
+          
+      - name: Commit Results
+        if: success()
+        run: |
+          git config user.name "MPC Agent"
+          git config user.email "mpc-agent@deployer-gene.bot"
+          git add .cache/*.json
+          git commit -m "MPC Agent: Automated deployment $(date -u +%Y-%m-%dT%H:%M:%SZ)" || true
+          git push || true

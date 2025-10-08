@@ -1,0 +1,31 @@
+name: Auto Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+      - name: Install Dependencies
+        run: npm install
+        
+      - name: Run Security Scan
+        run: |
+          node address-audit.js || true
+          node security-verification.js || true
+          
+      - name: Deploy Status Check
+        run: node deployment-status.js || true
+        env:
+          RPC_URL: ${{ secrets.RPC_URL }}
+          HELIUS_API_KEY: ${{ secrets.HELIUS_API_KEY }}

@@ -1,0 +1,70 @@
+name: Allowlist Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      allowlist_addresses:
+        description: 'Comma-separated allowlist addresses'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  allowlist-deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+      - name: Install Dependencies
+        run: npm ci
+        
+      - name: Create Allowlist Config
+        run: |
+          cat > .cache/allowlist.json <<EOF
+          {
+            "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+            "addresses": $(echo '${{ github.event.inputs.allowlist_addresses }}' | jq -R 'split(",") | map(gsub("^\\s+|\\s+$";""))')
+          }
+          EOF
+          
+      - name: Setup Environment
+        run: |
+          echo "RPC_URL=${{ secrets.RPC_URL }}" >> .env
+          echo "RELAYER_URL=${{ secrets.RELAYER_URL }}" >> .env
+          echo "RELAYER_PUBKEY=${{ secrets.RELAYER_PUBKEY }}" >> .env
+          echo "TREASURY_PUBKEY=${{ secrets.TREASURY_PUBKEY }}" >> .env
+          echo "HELIUS_API_KEY=${{ secrets.HELIUS_API_KEY }}" >> .env
+          echo "MAINNET_ONLY=true" >> .env
+          
+      - name: Deploy to Allowlist
+        run: node -e "
+          const fs = require('fs');
+          const allowlist = JSON.parse(fs.readFileSync('.cache/allowlist.json'));
+          const bots = { bots: allowlist.addresses, amount: '1000' };
+          fs.writeFileSync('.cache/bots.json', JSON.stringify(bots, null, 2));
+          console.log('✅ Allowlist configured:', allowlist.addresses.length, 'addresses');
+        "
+        
+      - name: Execute Deployment
+        run: npm run mainnet:bot-orchestrate
+        
+      - name: Verify Deployment
+        run: npm run mainnet:verify-bots
+        
+      - name: Commit Results
+        run: |
+          git config user.name "Allowlist Agent"
+          git config user.email "allowlist@deployer-gene.bot"
+          git add .cache/*.json
+          git commit -m "Allowlist deployment: ${{ github.event.inputs.allowlist_addresses }}" || true
+          git push || true
