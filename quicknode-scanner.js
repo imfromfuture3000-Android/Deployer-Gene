@@ -2,14 +2,14 @@ const fetch = require('node-fetch');
 require('dotenv').config();
 
 const QUICKNODE_ENDPOINTS = {
-  solana: 'https://cosmopolitan-divine-glade.solana-mainnet.quiknode.pro/7841a43ec7721a54d6facb64912eca1f1dc7237e',
-  ethereum: 'https://cosmopolitan-divine-glade.ethereum-mainnet.quiknode.pro/7841a43ec7721a54d6facb64912eca1f1dc7237e',
-  polygon: 'https://cosmopolitan-divine-glade.polygon-mainnet.quiknode.pro/7841a43ec7721a54d6facb64912eca1f1dc7237e',
-  bsc: 'https://cosmopolitan-divine-glade.bsc-mainnet.quiknode.pro/7841a43ec7721a54d6facb64912eca1f1dc7237e'
+  solana: process.env.QUICKNODE_SOLANA_URL || 'https://api.mainnet-beta.solana.com',
+  ethereum: process.env.QUICKNODE_ETH_URL || 'https://eth.llamarpc.com',
+  polygon: process.env.QUICKNODE_POLYGON_URL || 'https://polygon.llamarpc.com',
+  bsc: process.env.QUICKNODE_BSC_URL || 'https://bsc.llamarpc.com'
 };
 
-const DEPLOYER_ADDRESS = 'zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4';
-const ETH_ADDRESS = '0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6'; // Derived from Solana key
+const DEPLOYER_ADDRESS = process.env.DEPLOYER_ADDRESS || 'EXAMPLE_ADDRESS';
+const ETH_ADDRESS = process.env.ETH_ADDRESS || '0xEXAMPLE_ADDRESS';
 
 async function rpcCall(endpoint, method, params = []) {
   const response = await fetch(endpoint, {

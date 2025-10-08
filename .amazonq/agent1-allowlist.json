@@ -191,4 +191,14 @@
           "/cryptocurrency/listings/latest",
           "/cryptocurrency/quotes/latest",
           "/exchange/map",
-          "/global-metrics/quotes/latest
+          "/global-metrics/quotes/latest"
+        ],
+        "methods": ["GET"],
+        "rateLimit": {
+          "requestsPerMinute": 30,
+          "burstLimit": 5
+        }
+      }
+    }
+  }
+}
