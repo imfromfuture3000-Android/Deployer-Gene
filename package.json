@@ -1,26 +1,39 @@
 {
   "name": "deployer-gene",
-  "version": "1.0.0",
+  "version": "1.3.0",
+  "description": "Revolutionary Zero-Cost AI-Powered Blockchain Deployment System",
+  "main": "index.js",
   "scripts": {
-    "mcp:relayer": "node mcp-relayer-server.js",
-    "mcp:spl": "node mcp-spl-token-server.js",
-    "mainnet:copilot": "node copilot.js",
-    "mainnet:all": "node deploy-all.js",
-    "mainnet:bot-orchestrate": "node bot-orchestrator.js",
-    "mainnet:verify-bots": "node verify-bots.js",
-    "mainnet:reannounce-controller": "node reannounce-controller.js",
-    "deploy:full": "node master-deployment-orchestrator.js",
-    "deploy:bots": "node activate-full-deployment.js",
-    "deploy:gene-nfts": "node gene-nft-deployer.js",
-    "deploy:dao": "node dao-governance-setup.js"
+    "mainnet:deploy-empire": "node deploy-10-bots-empire.js",
+    "mainnet:create-bots": "bash bot-empire-cli.sh",
+    "mainnet:jupiter": "node jupiter-graduation.js",
+    "mainnet:treasury": "node treasury-tax-system.js",
+    "mainnet:lure-ai": "node ai-agent-lure.js",
+    "mainnet:usd-bot1": "node deploy-usd-stablecoin-bot1.js",
+    "mainnet:fund-all-bots": "node fund-all-bots.js",
+    "mainnet:mint-bots": "node mint-to-all-bots.js",
+    "mainnet:helius-mint": "node helius-relayer-mint.js",
+    "mainnet:batch-rebates": "node batch-rebate-processor.js",
+    "announce:rebates": "node announce-500-rebate-system.js",
+    "demo:trading-bots": "node live-trading-bot-demo.js",
+    "demo:glitch-monitor": "node glitch-trading-monitor.js",
+    "mainnet:full-empire": "npm run mainnet:create-bots && npm run mainnet:deploy-empire && npm run mainnet:jupiter && npm run mainnet:treasury && npm run mainnet:lure-ai"
   },
+  "keywords": [
+    "solana",
+    "blockchain",
+    "deployment",
+    "ai",
+    "zero-cost",
+    "jupiter",
+    "dex",
+    "bot-army"
+  ],
+  "author": "Paulpete Cercenia",
+  "license": "MIT",
   "dependencies": {
-    "@metaplex-foundation/js": "^0.20.1",
-    "@modelcontextprotocol/sdk": "^0.5.0",
-    "@solana/spl-token": "^0.3.9",
     "@solana/web3.js": "^1.87.6",
-    "bs58": "^6.0.0",
-    "dotenv": "^17.2.3",
-    "node-fetch": "^2.7.0"
+    "@solana/spl-token": "^0.3.9",
+    "axios": "^1.6.2"
   }
 }

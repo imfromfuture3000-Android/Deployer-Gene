@@ -11,3 +11,11 @@
 - NO testnet deployments
 - MAINNET-BETA only
 - Production environment required
+
+## Rule 3: Real Deployments Only
+- NO simulated transactions
+- ALL contracts must be REAL on-chain
+- ALWAYS have valid mainnet transaction hash
+- ALWAYS have valid contract address
+- ALL Solana/EVM programs must be verifiable on explorer
+- MANDATORY transaction hash validation

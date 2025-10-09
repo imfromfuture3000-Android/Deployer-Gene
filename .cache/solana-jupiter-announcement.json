@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-10-09T06:33:32.896Z",
+  "version": "v1.3.0",
+  "network": "mainnet-beta",
+  "title": "Deployer-Gene v1.3.0 - Solana & Jupiter Integration",
+  "integration": {
+    "solana": {
+      "network": "mainnet-beta",
+      "verified": true,
+      "contracts": 27
+    },
+    "jupiter": {
+      "program": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+      "version": "V6",
+      "verified": true
+    },
+    "meteora": {
+      "program": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+      "verified": true
+    },
+    "raydium": {
+      "program": "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8",
+      "verified": true
+    }
+  },
+  "deployment": {
+    "mint": "3i62KXuWERyTZJ5HbE7HNbhvBAhEdMjMjLQk3m39PpN4",
+    "deployer": "7V4aUYVwrYj7jFBbGWDAJhkfejf8ArKkPjyobLBTEw7U",
+    "supply": "1000000000",
+    "decimals": 9
+  },
+  "links": {
+    "repository": "https://github.com/imfromfuture3000-Android/Omega-prime-deployer",
+    "mint": "https://explorer.solana.com/address/3i62KXuWERyTZJ5HbE7HNbhvBAhEdMjMjLQk3m39PpN4",
+    "jupiter": "https://explorer.solana.com/address/JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4"
+  }
+}

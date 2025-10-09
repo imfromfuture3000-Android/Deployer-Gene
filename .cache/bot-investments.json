@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-10-09T04:59:00.075Z",
+  "totalInvestment": 1000000,
+  "bots": [
+    {
+      "name": "BOT1-STAKE",
+      "address": "HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR",
+      "investment": 100000,
+      "multiplier": 10,
+      "mintLogic": "stake_rewards_compound"
+    },
+    {
+      "name": "BOT2-MINT",
+      "address": "NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d",
+      "investment": 150000,
+      "multiplier": 15,
+      "mintLogic": "token_supply_management"
+    },
+    {
+      "name": "BOT3-CONTRACT",
+      "address": "DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA",
+      "investment": 200000,
+      "multiplier": 20,
+      "mintLogic": "contract_deployment_fees"
+    },
+    {
+      "name": "BOT4-MEV",
+      "address": "7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41",
+      "investment": 250000,
+      "multiplier": 25,
+      "mintLogic": "mev_profit_extraction"
+    },
+    {
+      "name": "BOT5-LOOT",
+      "address": "3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw",
+      "investment": 300000,
+      "multiplier": 30,
+      "mintLogic": "liquidation_rewards"
+    }
+  ],
+  "mint": {
+    "address": "GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz",
+    "decimals": 9,
+    "authority": "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ"
+  },
+  "relayer": {
+    "zeroCost": true,
+    "endpoint": "https://api.helius.xyz/v0/transactions/submit"
+  },
+  "expectedReturns": 22500000
+}

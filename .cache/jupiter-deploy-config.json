@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-10-09T04:54:45.586Z",
+  "jupiter": {
+    "program": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+    "usdcMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "apiEndpoint": "https://quote-api.jup.ag/v6"
+  },
+  "relayer": {
+    "url": "https://api.helius.xyz/v0/transactions/submit",
+    "pubkey": "HeLiuSrpc1111111111111111111111111111111111",
+    "zeroCost": true
+  },
+  "deployment": {
+    "network": "mainnet-beta",
+    "mode": "signer-only",
+    "ready": true
+  }
+}

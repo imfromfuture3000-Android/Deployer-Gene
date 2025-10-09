@@ -33,7 +33,12 @@ const ALL_CONTRACTS = [
   'CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ', // Master Controller
   
   // Tokens
-  'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'  // USDC
+  'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', // USDC
+  '3i62KXuWERyTZJ5HbE7HNbhvBAhEdMjMjLQk3m39PpN4', // Primary Mint
+  
+  // Deployer & Authority
+  '4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a', // Deployer (Signer)
+  '7V4aUYVwrYj7jFBbGWDAJhkfejf8ArKkPjyobLBTEw7U'  // Deployer Authority
 ];
 
 async function verifyAndForceAddRebates() {

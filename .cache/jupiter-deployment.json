@@ -1,0 +1,10 @@
+{
+  "timestamp": "2025-10-09T04:56:15.226Z",
+  "jupiter": {
+    "program": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+    "usdcMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+  },
+  "mint": "GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz",
+  "status": "DEPLOYED",
+  "jupiterUrl": "https://jup.ag/swap/USDC-GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz"
+}

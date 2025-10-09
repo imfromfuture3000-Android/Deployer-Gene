@@ -1,0 +1,9 @@
+{
+  "timestamp": "2025-10-09T05:20:37.270Z",
+  "network": "mainnet-beta",
+  "rpcUrl": "https://api.mainnet-beta.solana.com",
+  "health": "ok",
+  "slot": 372160937,
+  "addressChecks": 3,
+  "status": "ONLINE"
+}

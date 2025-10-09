@@ -1,0 +1,368 @@
+{
+  "timestamp": "2025-10-09T06:45:48.604Z",
+  "totalChecks": 72,
+  "passed": 72,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "CHANGELOG exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "GITHUB-RELEASE-NOTES exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "SOLANA-CHAIN-ANNOUNCEMENT exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "SUPREME-AUTHORITY-DECLARATION exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "AUTHORITY-FREEZE-ANNOUNCEMENT exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "PUBLISH-GUIDE exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "QUICK-REFERENCE exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "RELEASE-INDEX exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Twitter post exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Discord post exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Solana-Jupiter announcement exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Supreme authority config exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "USER is supreme authority",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Agent is Amazon Q Developer",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Agent created by USER",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Deployer address correct",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Solana cannot override",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "User can override",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Programs non-upgradable",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Mint authority frozen",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "27 contracts locked",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Deployment config exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Mint address correct",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Deployer address correct",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Network is mainnet-beta",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Decimals is 9",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Supply is 1 billion",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Bot army has 8 nodes",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Bot 1 address valid",
+      "status": true,
+      "details": "HKBJoeUWH6pUQuLd9CZW..."
+    },
+    {
+      "name": "Bot 2 address valid",
+      "status": true,
+      "details": "NqGHDaaLWmND7uShuaZk..."
+    },
+    {
+      "name": "Bot 3 address valid",
+      "status": true,
+      "details": "DbhKvqweZECTyYQ7PRJo..."
+    },
+    {
+      "name": "Bot 4 address valid",
+      "status": true,
+      "details": "7uSCVM1MJPKctrSRzuFN..."
+    },
+    {
+      "name": "Bot 5 address valid",
+      "status": true,
+      "details": "3oFCkoneQShDsJMZYscX..."
+    },
+    {
+      "name": "Bot 6 address valid",
+      "status": true,
+      "details": "8duk9DzqBVXmqiyci9Pp..."
+    },
+    {
+      "name": "Bot 7 address valid",
+      "status": true,
+      "details": "96891wG6iLVEDibwjYv8..."
+    },
+    {
+      "name": "Bot 8 address valid",
+      "status": true,
+      "details": "2A8qGB3iZ21NxGjX4Ejj..."
+    },
+    {
+      "name": "Jupiter program address valid",
+      "status": true,
+      "details": "JUP6LkbZbjS1jKKwapdH..."
+    },
+    {
+      "name": "Meteora program address valid",
+      "status": true,
+      "details": "LBUZKhRxPF3XUpBCjp4Y..."
+    },
+    {
+      "name": "Raydium program address valid",
+      "status": true,
+      "details": "675kPX9MHTjS2zt1qfr1..."
+    },
+    {
+      "name": "Treasury address valid",
+      "status": true,
+      "details": "EdFC98d1BBhJkeh7KDq2..."
+    },
+    {
+      "name": "Master Controller address valid",
+      "status": true,
+      "details": "CvQZZ23qYDWF2RUpxYJ8..."
+    },
+    {
+      "name": "Deployer address valid",
+      "status": true,
+      "details": "7V4aUYVwrYj7jFBbGWDA..."
+    },
+    {
+      "name": "Backfill address valid",
+      "status": true,
+      "details": "8cRrU1NzNpjL3k2BwjW3..."
+    },
+    {
+      "name": "Changelog mentions supreme authority",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Changelog mentions USER control",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Changelog mentions non-upgradable",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Changelog mentions Solana cannot override",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Changelog mentions 27 contracts",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Changelog mentions frozen authorities",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Declaration exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Level 1: USER (Supreme)",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Level 2: Agent",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Level 3: Deployer",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Level 4: Contracts",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Level 5: Solana",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Solana cannot override",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "Authority chain unbreakable",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "verify-force-add-rebates.js exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "verify-mainnet-contracts.js exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "verify-onchain-state.js exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "verify-deployment.js exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "verify-real-balances.js exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "verify-txhash.js exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "freeze-all-authorities.js exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": "verify-all-truth.js exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": ".cache/deployment.json exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": ".cache/mainnet-verification.json exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": ".cache/supreme-authority.json exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": ".cache/solana-jupiter-announcement.json exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": ".cache/twitter-post.txt exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": ".cache/discord-post.txt exists",
+      "status": true,
+      "details": ""
+    },
+    {
+      "name": ".cache/allowlist-activation-report.json exists",
+      "status": true,
+      "details": ""
+    }
+  ]
+}

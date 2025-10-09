@@ -1,0 +1,68 @@
+{
+  "deployment": "Bot Army Initial Investment",
+  "network": "mainnet-beta",
+  "mint": "3i62KXuWERyTZJ5HbE7HNbhvBAhEdMjMjLQk3m39PpN4",
+  "total_investment": "22,500 tokens",
+  "total_supply_needed": "22,500,000,000,000",
+  "cost": "$0.00 (Relayer pays)",
+  "bots": [
+    {
+      "id": 1,
+      "name": "Bot 1 - Stake Master",
+      "address": "HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR",
+      "investment": "1,000 tokens",
+      "amount_with_decimals": "1,000,000,000,000"
+    },
+    {
+      "id": 2,
+      "name": "Bot 2 - Mint Operator",
+      "address": "NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d",
+      "investment": "1,500 tokens",
+      "amount_with_decimals": "1,500,000,000,000"
+    },
+    {
+      "id": 3,
+      "name": "Bot 3 - Contract Deployer",
+      "address": "DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA",
+      "investment": "2,000 tokens",
+      "amount_with_decimals": "2,000,000,000,000"
+    },
+    {
+      "id": 4,
+      "name": "Bot 4 - MEV Hunter",
+      "address": "7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41",
+      "investment": "2,500 tokens",
+      "amount_with_decimals": "2,500,000,000,000"
+    },
+    {
+      "id": 5,
+      "name": "Bot 5 - Loot Extractor",
+      "address": "3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw",
+      "investment": "3,000 tokens",
+      "amount_with_decimals": "3,000,000,000,000"
+    },
+    {
+      "id": 6,
+      "name": "Bot 6 - Advanced",
+      "address": "8duk9DzqBVXmqiyci9PpBsKuRCwg6ytzWywjQztM6VzS",
+      "investment": "3,500 tokens",
+      "amount_with_decimals": "3,500,000,000,000"
+    },
+    {
+      "id": 7,
+      "name": "Bot 7 - Elite",
+      "address": "96891wG6iLVEDibwjYv8xWFGFiEezFQkvdyTrM69ou24",
+      "investment": "4,000 tokens",
+      "amount_with_decimals": "4,000,000,000,000"
+    },
+    {
+      "id": 8,
+      "name": "Bot 8 - Master",
+      "address": "2A8qGB3iZ21NxGjX4EjjWJKc9PFG1r7F4jkcR66dc4mb",
+      "investment": "5,000 tokens",
+      "amount_with_decimals": "5,000,000,000,000"
+    }
+  ],
+  "execution_script": "./execute-mint-all-bots.sh",
+  "status": "ready_to_execute"
+}

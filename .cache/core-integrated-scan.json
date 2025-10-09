@@ -1,0 +1,91 @@
+{
+  "timestamp": "2025-10-09T05:35:04.776Z",
+  "corePrograms": {
+    "SYSTEM_PROGRAM": "11111111111111111111111111111112",
+    "TOKEN_PROGRAM": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+    "TOKEN_2022_PROGRAM": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "ASSOCIATED_TOKEN": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+    "METADATA_PROGRAM": "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
+    "STAKE_PROGRAM": "Stake11111111111111111111111111111111111111",
+    "VOTE_PROGRAM": "Vote111111111111111111111111111111111111111"
+  },
+  "botIntegration": {
+    "bot1": {
+      "address": "HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR",
+      "contract": "EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6",
+      "pda": "8z2ym34RAfcEszfdZwuDNGtRG6mMymYCAHK9BKwu2KTh"
+    },
+    "bot2": {
+      "address": "NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d",
+      "contract": "HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76",
+      "pda": "CXhRRQSif3PdwghaXxzPzS7JsEmwXE9zpBHoVZGU7EiV"
+    },
+    "bot3": {
+      "address": "DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA",
+      "contract": "FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1",
+      "pda": "3UcZpTDPwWqgm9YhtCb9ZikybBpmunchG9EoWUDSqv9h"
+    },
+    "bot4": {
+      "address": "7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41",
+      "contract": "5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p",
+      "pda": "DznxZ3Jmeau6ZKVEK8EYgaPGmqdwPjUGvYj9bbAPsZQC"
+    },
+    "bot5": {
+      "address": "3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw",
+      "contract": "DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD",
+      "pda": "3ZymXM3H6axCkMvak3mDhFuoYNSNzXqrFAPwVmhwKwYR"
+    }
+  },
+  "daoGovernance": {
+    "masterController": "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ",
+    "authority": "7V4aUYVwrYj7jFBbGWDAJhkfejf8ArKkPjyobLBTEw7U",
+    "treasury": "EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6",
+    "geneMint": "GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz",
+    "jupiterProgram": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4"
+  },
+  "crosschainPDAs": {
+    "ethereum": {
+      "address": "B9p3EDeP5Bj85z11cfNQXk2MijPUxfghpo8cHxc5zmVa",
+      "bump": 255,
+      "chain": "ethereum",
+      "ready": true
+    },
+    "polygon": {
+      "address": "EHA7zacwzpiJ7VBg5uWYP8QYJNtu2Yq8GsUrdTEZTZ89",
+      "bump": 255,
+      "chain": "polygon",
+      "ready": true
+    },
+    "bsc": {
+      "address": "GrKwZhZcddfgUtMmb9m8GfbBsFJY9pqAhi1z2PHssmPy",
+      "bump": 254,
+      "chain": "bsc",
+      "ready": true
+    },
+    "arbitrum": {
+      "address": "BKG6B4RXaAzUc5GH3rKYpKxqrhfL3aZiQdVhYp5iSz7H",
+      "bump": 254,
+      "chain": "arbitrum",
+      "ready": true
+    }
+  },
+  "integrationStatus": {
+    "botsConnected": 5,
+    "daoActive": true,
+    "crosschainReady": 4,
+    "corePrograms": 7
+  },
+  "governance": {
+    "votingPower": {
+      "masterController": 100,
+      "authority": 90,
+      "bots": 50,
+      "treasury": 75
+    },
+    "proposals": {
+      "active": 0,
+      "executed": 0,
+      "pending": 0
+    }
+  }
+}

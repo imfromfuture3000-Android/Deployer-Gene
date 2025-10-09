@@ -1,18 +1,10 @@
 {
-  "timestamp": "2025-10-08T22:23:04.473Z",
-  "status": "SUCCESS",
+  "timestamp": "2025-10-09T04:55:53.327Z",
+  "status": "FAILED",
   "steps": [
     {
       "step": "gene-nft-deployer.js",
-      "success": true
-    },
-    {
-      "step": "dao-governance-setup.js",
-      "success": true
-    },
-    {
-      "step": "activate-full-deployment.js",
-      "success": true
+      "success": false
     }
   ],
   "network": "mainnet-beta",

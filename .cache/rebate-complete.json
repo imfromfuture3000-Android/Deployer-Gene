@@ -1,0 +1,4010 @@
+{
+  "deployer": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+  "timestamp": "2025-10-09T08:52:03.740Z",
+  "totalPrograms": 500,
+  "rebateRate": 0.15,
+  "autoSweep": 0.1,
+  "mevProtection": true,
+  "results": [
+    {
+      "program": "HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "8duk9DzqBVXmqiyci9PpBsKuRCwg6ytzWywjQztM6VzS",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "96891wG6iLVEDibwjYv8xWFGFiEezFQkvdyTrM69ou24",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2A8qGB3iZ21NxGjX4EjjWJKc9PFG1r7F4jkcR66dc4mb",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "6MWVTis8rmmk6Vt9zmAJJbmb3VuLpzoQ1aHH4N6wQEGh",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "9H6tua7jkLhdm3w8BvgpTn5LZNU7g4ZynDmCiNN3q6Rp",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "DF1ow4tspfHX9JwWJsAb9epbkA8hmpSEAtxXy1V27QBH",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Stake11111111111111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ComputeBudget111111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "EdFC98d1BBhJkeh7KDq26TwEGLeznhoyYsY6Y8LFY4y6",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "7V4aUYVwrYj7jFBbGWDAJhkfejf8ArKkPjyobLBTEw7U",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "8cRrU1NzNpjL3k2BwjW3VixAcX6VFc29KHr4KZg8cs2Y",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "3i62KXuWERyTZJ5HbE7HNbhvBAhEdMjMjLQk3m39PpN4",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2MgqMXdwSf3bRZ6S8uKJSffZAaoZBhD2mjst3phJXE7p",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "89FnbsKH8n6FXCghGUijxh3snqx3e6VXJ7q1fQAHWkQQ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "BYidGfUnfoQtqi4nHiuo57Fjreizbej6hawJLnbwJmYr",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "CHRDWWqUs6LyeeoD7pJb3iRfnvYeMfwMUtf2N7zWk7uh",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Dg5NLa5JuwfRMkuwZEguD9RpVrcQD3536GxogUv7pLNV",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "EhJqf1p39c8NnH5iuZAJyw778LQua1AhZWxarT5SF8sT",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "GGG2JyBtwbPAsYwUQED8GBbj9UMi7NQa3uwN3DmyGNtz",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "EAy5Nfn6fhs4ixC4sMcKQYQaoedLokpWqbfDtWURCnk6",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "HUwjG8LFabw28vJsQNoLXjxuzgdLhjGQw1DHZggzt76",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "FZxmYkA6axyK3Njh3YNWXtybw9GgniVrXowS1pAAyrD1",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "5ynYfAM7KZZXwT4dd2cZQnYhFNy1LUysE8m7Lxzjzh2p",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "DHBDPUkLLYCRAiyrgFBgvWfevquFkLR1TjGXKD4M4JPD",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "9HUvuQHBHkihcrhiucdYFjk1q4jUgozakoYsubYrHiJS",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "7EYnhQoR9YM3N7UoaKRoA44Uy8JeaZV3qyouov87awMs",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "8Uf81Ley5FPxPbLBMfLqqfPLpjqGjdvHmFCGF6FBuMKu",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "SHDWyBxihqiCj6YekG2GUr7wqKLeLAMK1gHZck9pL6y",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "DUSTawucrTsGU8hcqRdHDCbuYhCPADMLM2VcCb8VnFnQ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Vote111111111111111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "11111111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "6fKgdNkR23ockagCAP4QbxrRdwvvVRDVCLYhG4WbwxKu",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ACTvefX67PchHtJbKqayGJntruJ1QXiHwNSgMNNRvoq6",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "DGWGgSKbdCjePhH7ULWHWBLjcE7XktGk2ohnCSRQ6Unx",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "9HUvuQHBHkihcrhiucdYFjk1q4jUgozakoYsY6Y8LFY4",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "6ri2NzogWQMTeaMnMHVqEMypuwb1ip5iWDTzS9zNDZos",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "61mEVp3rgoHbfJKQg4sDx6CUmYPLWkLn5Bhwknfw8utV",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "fEx1xK7JAqyJtSdVNTxu5yyLtADT1XWmcyFC4kQ8Y3uD",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2YGvF7gnonyQBP4eYy2LuQs5ZvwY4CzS93rG646L16Bb",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "mDhg6zxyMhGeD2TNrRdCQspmiV3Gmb8TmEmXZCVVyFL9",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "4PpStYGhZeYghsie9GPzEt22S2xDc3PutpeoiweHfycP",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "c4mBohoCvEV3ydzEuqTH9rFkGnUSZaA3yEbfQCrBNev4",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "BcA6acyPw8qqeeerDv7SnmyK3B7CMKCTvoZN2hzXwSig",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "jaJrDgf4U8DAZcUD3t5AwL7Cfe2QnkpXZXGegdUHc4ZE",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "rbnuBdmraMViDnWH1actWGoS5o6fSmqJKmKpmW5S8tww",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "AvhCnXBS54eaVV7y1QRpZitp53T9zBWwFq23pA6wJgoH",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "udcyK55j8CURPELb2PxPJjRMYwYd6Hu6VPaKX7dMEF4G",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "pDNk8GCyJT5V31MT1MffpGxB9MDrRzvYhquBdoakz3UX",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ThY6SHYpzDq5KEaQxEgPvUhsJ9HfDJwjz7tGnA3bmZKe",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "nnXB7W1fDFhN1EjcNUY1Q4Lec9mNnmDHPrWkLpc34gTc",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "kmY699qtZ8QM1TjM6FfXysACCU4epQbMqhRLdJ9uVVCv",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "btP5WVaPeWK4ANhoLu48j1jC2a8eNiLsZeZpBEiWowAL",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "TxhBFGvurRz26oYLMzj5GBG1JFe64h83R2Zc2tbuDzFQ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "pVFGn8yW4iPixfDghN35Eub9ZpQpXZu3Bo4UxUPAtcBd",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2dB",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "EoRJaGA4iVSQWDyv5Q3ThBXx1KGqYyos3gaXUFEiqUSN",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2YTrK8f6NwwUg7Tu6sYcCmRKYWpU8yYRYHPz87LTdcgx",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "F2EkpVd3pKLUi9u9BU794t3mWscJXzUAVw1WSjogTQuR",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Config1111111111111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "F2EkpVd3pKLUi9u9BU794t3mWscJXzUAVw1WSjogTQue",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "7841a43ec7721a54d6facb64912eca1f1dc7237e",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "SysvarRent111111111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "SysvarC1ock11111111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "So11111111111111111111111111111111111111112",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "MintNewEditionFromMasterEditionViaTokenArgsA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "getMintNewEditionFromMasterEditionViaTokenAr",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ProxyProgram11111111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "x4eAbbE6EAD2c295b3f4eFD78f6A7e89eAb1DDfFb",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "QmYwAPJzv5CZsnA625s3Xf2nemtYgPpHdWEz79ojWnPb",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "EUusnMaMbfEZJcK3iPdhrFjDjL5dyv8prMCuQ6uuC2mu",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "TKR7CX2713rsJX76Sbr1YK77ZbqraHGbadn6gAUcQCc",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "etPubkey1111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "etPubkey2222222222222222222222222222",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "etPubkey3333333333333333333333333333",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "84KD1L5cFyw5xnntHwL4uPwfcrkKSiwuDeypiVr92qCU",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "whc75uwGhPX2Mr67NzVSoSTkTpUb29zrg",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "DYQoVjN2h7ta1W1hPrwzarcFLBq9UpX1UjNXsNpT9dn",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "G1RD2boZTcxmwUWnKCaJJExQ5qNKwbpSyDdWfFJfM5Jh",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "fDu2PugxHrvRebmYauvSumZ3cTfQ4HJJX6PG5rN852qy",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "PxsThRCgSdgTWJDQeZvucQ9PT6Y3HiVXJ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "6KhSAtY1hFR2hfFwgqfFWzSY9E9GDvFVNYU",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "GzhWjEHEGNPSibiDTxFhsFWxNaz8LbMDPjBUE69r9wmd",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "xz7wQ8xDhdyP7tQxwdteLYeFfS68tSMNCZ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2uM9rYjPvyq39NwLRqaiLtWHyDC1FvryJDa2ATTVims5",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoY",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "qwsUp6BZzyiy4RdZpzWGub9bqLJMvZDD",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "JQbbmxZTZehdc2iszGKs5oC3NFnjeay7mtAWrdt7qNtA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Deqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3u",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "AQrSatSG6vdNYUqdc83tkQi2eHfF98ubzQLA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "WDtdLmJvAuNNPzByAYpRo2rF1Mmradw6gvWsQKf63476",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpt",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "EkBU7Qi5nnhonjUb8yTXcxH3cdcWrV2cRyk",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "rNgRaM9SsBUBVbb8M6DTV7ZHRTKugureoYEncY5c65H",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "PchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Z2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "DWpWsitgmSgYmy2dQdWyKC1694ELPqMs",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "PcSPyyvBcH5sDdoV8DFs5E4W2pTr7aiM",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "7KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGLeznhoyYsY",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "GrKC896KGzHSh8orNjfRyiYqkHqSF9xzKyoabftfDiow",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "SMPLecH534NA9acpos4G6x7uf3LWbCAwZQE9e8ZekMu",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "7ZyDFzet6sKgZLN4D89JLfo7chu2n7nYdkFt5RCFk8Sf",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "x4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "nbQATh4H9GxUgH1kFsEyQMxwiLFKUS6Rg",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "YVEoJHeqJm9VhG9Dh2BYaJritkYK3vMaXrf7",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "6MQUdBCpcSfuiN72AbqeBFu5LVQTjfXDE2A6Q",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "yo5v71YfXWJxLVxgy1kyt1MQaD8wZJgJfG4gq4DpQGpg",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "JytyDpFvQtNrEsAgNG2CY1CLMwGXfFTKGBGQT3b",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "CQAhJAqS3St3nJzDEgsgFixcfZeyGPCd6eJBWzke5piZ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "xNiMVXKh6Fa7HEJQbrpP3m3DDn43jKxMjxLLRjWnRsfx",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "hX3C8QQP6UHQK4ZtN56oFWvVXvz2VkDoe6fbG8T",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "hsq1t2Dy24wCmGXGe4q9Gu3smhLYALJrr473ZH27MsnS",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Rfu3D3XEeLbicvoXJTYnhZiPmsZUxgdzXwNKxRPbA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ZdkmLpPCk7fxZSu3gBiEGuoC1XYxv9cGx3Z6cpTggCgW",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "yCS3R8jJm8iiWuvWbG76RUmyEG53oqv6GMVWqunjA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "uDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "f9yc6svM8c56dB5BAtW4Qbw5jHTwwXXcTLoRMkpDJp6V",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "tvPkRPTXWH6YeBB7WTS3qKCDVrjEhGpb",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "YgR8aDmBPizNhER7icEcd4b9itNTZf3XjekE3rEPF",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "EiYxyTmRmMaeCo85RZAUSjbJgpz8DFwLmLceptFiTwk5",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Tzjcja4SMyws3UP58kD2edFPNb7BJtx5uCgwf",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "uSgFPM1BLMRRwjoten9YBbn4pJRbCT4PigLnj748knmW",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "JTtpZC1FfFU9b1fmDKDKtFoUSrPzEh1qz",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "wsToSL17Rf6HNaqfp3v4G9AGwjzfCa3momYw9QhMiELf",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "B4nPm93qt3pwwuiCCqqpdURFdC8oYmVHfg",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "aBe22ybgRdgSCVBtw5x8w25wwHhQa1B1mrcmHeFadW5",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "168VcV9HcUY6rRmZNb2wHWWQJ82BZmu4if17MnQSeqT",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "G4XGPWvxs9DJhZ6PE1wdvKjHkjErWbsETf4c7Yx",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "b6tiShXUrp1sQRiPfqoCMUE7QLUzoFifzGV97",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "LYe9k9W56dimt6mY6SA1SjadSKKyHZC2S",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "cRqKxSjw5y54MK2AZMgZfJWMaNE4nYUHgi1XE",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "CtLd2MiXvMNTBD33dContTZ9TWETwNFwg7JTJT5Q9HEe",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "aArc8z3C3BRQdWX4mtLQuABG4yzp76ZrS",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "J3TJYubDm3nMbgubNNYS62eXeUpoLUC8",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "XwbVt52eFS8ECyXhyKcjDLCBEqBExKuiZb7Q",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "68kP9yzs4LMp7VNh8gdzMSPZFL44MLGqiHWvttYJe",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Ao7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "cnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "wxLuaaCRcBAZtDCjNYSisAXz3FWsSqAha5nhHcYxx2ZP",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "puzPjM5GBgT4aAcFGKZzSgAXvuZ27shJP6NEpie",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXt",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "TSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "dYCMJJupxRic61hwquNtppB3hgcuq9SVSH1Q",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "KCS2QuhEdbcQHFhVksz2N2U9hXJo8odG7ETyW",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "b54ntNyW6sjtoqxqRk3LTmXzaJoh71zMsDCjM",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLc",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "LB2GxVYQroAjMJZRVM1Y4BCjCKc3vAamxSz",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "eiWE7fUvbHaeNBQH13UftjpXxsfLkMpgw",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "xWGAtETPXNSAjHo48JfLdPWcMng33Xe4znFvQweqc",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGx",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "EENocKGx6D2Bch9PE2KzCUf5SceBdeijg",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbc",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "3Ek9H3X6pj5TgenXYtNWdaBon1tgYCaebd",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "5efTR7y5HRD7gACw9yQjqMVvEMLBHmboM",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Hmyrgjh6YncVKK122YZkXrLudzTuAukUw9FnMf7",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "9Xq1CETHo4Hcuo87WyWHpAF1aSLjLRf5",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvR",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7aht",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "idnE3eBoQrFJ3w7sFuzSX4DpmZ3v5sZpUiV5Swcf6mQE",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdz",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUij",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "gFKDg4BCdsjW8EnT69eqdYGmRpJwiPVYNrCaW3g",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtE",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "W9pACdk3XWmmTXG8m3upGUJst5XRGzxMRjXzAuJ1Xn",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "uYkDvysnPQ7qzqVzLt78BCruntqRhWQbA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "dbi9tBFU2Rd9QKiDZFAYrhPh2JUf7rZR",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ypowyDxpVSYpkXr9WPv2PAZCtNip1Mv5KTW",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "zcYtJqExdx99rF6aAcnRxHmcUHcz6sQsg",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "gFrGaGYzvGAJQmJ3JKj77Mk9G98T84rA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "LuC7kCMRio1EMSyqRK3BEAUD7sXRq4iT4AzTVuZdhgQ2",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Xck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "fhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERS",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxn",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "sq7QF38pKjZHsGNiSQF5r4FtoKDWabFD",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2jDYs5eHBpYHPcBEVSiipAvn2Ko2HnPe2",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "efqw7U2CCebsc74kiY6awiGogKtoSGbgjYE",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "r86f4d6AX6zSU55HfB4ydCEuXLXc5FcYe",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "awConJSVCHVGND6x3tmMaKcQvwXLhjdkmomy2W",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "G9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "mKaMBwuC48sYni5HUw2DvsC8LjGTLK9h",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ieHtK3hasLz4qeCRjYcqfB6AQrBggRKppKF8L52",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "AanLiqh1WTiJgEj26ZuYQ9fbkLomzGchCws4FyrSd4Vk",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5T",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "dEuTuR82pmtxH2spWG9h6etwfr1pLBqQ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1H",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "oFLztSjNzhcKA3WDuJxxAPXzPuPtKkjEY9UUoEW",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "3Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdb",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "p3EcsicXjit7SaskXHs1hA91QxgTw46Fv6EFKKGS5DRF",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "nKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugr",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qs",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "jkVj2cfPqSeWXv1NEAJ1qZ5zb1X6z1mFhbf",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "XgdrR5UE12gMXCiN9D5Xq2o5mddV2QEcX",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "s6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "FcL14TaCWy1qiczg1VwRmPrpQCdq5ESXQMqUc2t",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "wtDoFvCaXHGgUkeHzf3Xc1xKumFKREuT7f7DARNZ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "tfiR5hcQebtudP56gUurs2CLkGarnCiB",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "em41oRswvw31146GiSaoCT7s3Xi2gMUg",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "LXmv2TkDxBLUkiBeZ7bAx4GnnNMr8xFpGn",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDV",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "1brpG6mBUFHtb7NUmtABCb2WZZmm2wNi",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezu",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "fPV4uhuuqrTZyok4DC7vFzi7HLUFiUNEmpbyh59htKWk",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "anM3wGwNGsZN2cVTYPArw454xnXj5qmWF1bEoAc4",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "7GVh7odevjp1FNHduHc3KZMcFduxU5Xc6uJRQ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "uLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Xa4Nw17FS9ApQFJ9umLiJS4orGjm7ZzwUrwamcGQuHSz",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Dyth9boKDaycYdDcZDuqYATXw4HFXgaqWTctW",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "koMB6ete7czJcnNnqRpcoWQBLqatqXXme",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "AsjMv2j8cLavQ8VGagDFUwwTAdF8FmRKVeNpbTTEwNHC",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fs",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaX",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "sniCrY3D5WdsERHzHE4G2YCXqoG5FTHUiCC4S",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "cXjMsGdhL4XnbShKpAcSqPMzQoYkYyhbEaeSko47MjRP",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "EQXP73GVsN9cw3fdx8X63cEmWhJGi2PPCF23",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "kCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAG",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "RFE35NHZkAbqZeWNd3BpzppeVisAqpDjcp8dyf6u",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "SezKcYhmDg15zXVBswHmctSAQKznqNW2L",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "617WB9J63U6XcazHHF2f2dbJix4XzpUF",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "9NThjpgZnifTkJpzTZ7Eue85S49QwpNhZTq6GRJw",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ivAWyPuTkHzuTCJqrK9sWxYQZUq6Nq3cuyv3bm734",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "VtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiT",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "uqC875uE5NMcaA7YYMN7XsNiFQuMvasF8HT",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "EaQayHXb7WA7ZaHY6hN8WgfvHNQ3t1PnU91",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "eUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5x",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "kA6AQZjVbtK6duGontcQm1WSG1MD94YLqK",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "xWppSAHzidGiRrqe4bK4XP9pTRyKFgGJp",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "faBvTNELraWj22wSVUMWxZUvYgJYcKh6jGG",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "B6Te481jgFrPXhCPnQA3p4DN63fFwBtcxDZXa3DhGXNo",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "9KbHY9SMs6B78UCzTLn5kmSwGUDNmVgKPaFvnBAmXiJ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "64ZvpKJTbpKyWS7qBU13EL9ENgNTvmjtrmbab9q1LPF1",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "YEZxzA2ygA9KV5dvs6fzF1qBfifV3yYBqGAJg2agymrj",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "TZrMhMsHXkFqYmpEVwhbYk71WdNhiRgzu7GnYEpFbRbs",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "XF2TA8rbubjVFdNvNGoBwUjT3Z6vwnndvgcChgVT1nf",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "5fso31qSz7HdJTH9aBgnNCoGWNuWpTx9bcqq4KaaMvsZ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ssgB1LT46xFMNAvRS9zvVvuVLDbEsLJ4h1xfyXjfUz3q",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "deTbsPgTbZxpkmR2adi4xyTuWjQcTnLDdM1JFGB8dt55",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "F1guuCWCEKzhbrN8RcEip1gSxEkz542LXgdDYKNKVgg",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "3579sGkwoUcuW8JeM5qeiai7dTXrfXEaMcgjWUwUucgp",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "b14n2aRR6MWdZKqk3SNKngXqXKqvguwuRGX9w15BdouB",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2wt1ukBaXjowgPAKWgqGstZAf8paGmeu9pHKn16WdgQP",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Gpc8rffDKeyTxhL9CpmSDjHmJh8HJYNiPUX8NchpQMVS",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "5rgcZirDPDTT1RPtx3aG1HJQUW5665NHoyxU4cNe76F1",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "QRsVsN2b75zxKzoL69MZA746iUjFqNtzvbE8uYZvYcF8",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "5mzy4Qr9xk8QQnWuZ93T6nm6MweKCHzwAca6QCVyPitJ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "gQW2Lkt4k5zy1nA9EJw1QiYiukD7j24eszc8V9dioRGA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "GwJuBh72ytrpWrdg4b3XZf8Pxpj8oaDTSAeppqvskukR",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "BwDPE5iPyzrmHwNDxkK9irjbNFNDxSkjXhQNP1CDbWW",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "4CZ1rJTpHZiP1KmbPjmstPhV6cAiCqJfkQFfbsuvXSHR",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "f3xh1D3QbbcekKizSfVBb3nCnvK8caTk8kbQr1ZmHQqk",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2635rwgwvPekyQzkDPiPh1PH3WkqYydaBKY42rfUFnzq",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "NtdWaApexipp32XGzcTHiGNdifSXEfuNWRMQovLHdoSd",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "5zJ31EqEK647V2SPrryXnUJmDvE92EK2LZirLKGcS6Do",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "qt2XapWFatLnLsgNWo16nqASgz3ZBZBfnF79bp9sciXc",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "M9MGq4wEN2e2xUsQ1Dp5tvR3MAxN93Xt4xUhzwp3YeHq",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "wqDuG3bKAkkCaijpavgFfn2559bgSZe1WwGa76LbwuB",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2bybZQ9nh1o1v2pb63yrw3J6R6fLRZnWcxANEJqAJdJW",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "xNUnRGDwqFCjmQ4nFYepaz8BuadMAqb5ccDpp36RuCju",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2QKgY4Dse6WMyE7cKcWhYFsyLtMq7rMnPwFFnQSy2kjC",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ZAbuQc91yterQh9Ei13tBitZJ2ZB3LLNdYdDxdVS2mmn",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "4QKzomfrZVgJ8cKpWqsSY2PnPDeFbzuNZyam1hvD3vvc",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "gpkASK2qKu1bqmeb7KaLac59UgGpDk3RSN35j3pfTg6Y",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "cJs3yjc1eTfYkzYZvzT227GyTgwtindDnR9kfAUqpGFM",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "s8PMGjkfco7R7W6d2RoowokQJt1udnENGm8wzcAV5G8",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "55N9U6n2xb7HQas8ZpJg2XRnQZG4uJAYXnPh3g8jU82m",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "4p6NLp8S5rXWgCzC7nNFmRTBRPZJPQFu7Q4jBFfW9AQw",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2FVSeJQX3Sd8tVUSFGN7fY1fW5cKcnph9XzSYruvf88C",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "4geMimDQNqkKadWXqioGwpwbvCsGQ9cjbKXUvNuZR1ca",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "3ankn2c1yiASMFCTvSjooEtzhMRhoprWvSq6qaXN6RR5",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "MJM6HVoJPKv9pJBF9UP8EXdiB9Najyvxxxg4aKpRuHN9",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2dd9UC22jhZYrnpGDLYLGtuTPojSntVHhz6kcyRXHxkK",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "WstkVE1LBW3zHKWC9gdnAuHwasUtBcK1TjMc34mjGMTa",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "5fPeNz1bwPvWZGQJRUAN16rJhjGN2MkMCqDFr6yACKaa",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "PhC7gZSFiHCdsME19cqRmWTwV43iNnuUcGRS8AR42LKm",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "4KzLqv5XafJ2Fvq6eetd1kVAK8P6ov6UtiiuraYN11Hs",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "UgNTr42mU6fhVQEP3iHBHtM7DEGMoohHTXvGKJjziUbG",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2WdPy9vrwHeDRRBjkWa7RDMBgvW1q1u1sEMtoJiTDsez",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "AtaGu9KyBJNMDcUvqGCvjtQdE5gT4V5JQ3zwF3EJdS6C",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2GtCKQ5AY1NMupCqDBrA58YZ48BaouMxoFRWiQLET2vn",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "973BhuFUqeDXKzBiubvLqb5kzQ5huAxoCN5z2CE5ZeUU",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "3puT7WM8qFziLdacP19NoZikstGHvLk7C3sJc7RAieva",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "48JWDu4ftV7LQQcgbzx4DUXGMApNfzmsmAFYHrQ3BL5Z",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "6WU8Nxarf9fudRK5atWwjLY4vFaw5UrrWhL88qz7iCMJ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "BPFLoader2111111111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "PwDiXFxQsGra4sFFTT8r1QWRMd4vfumiWC1jfWNfdYT",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "6Vwz7AXYG6V1TUPP3KWYZncMEvUv6iPSFbfHDCLRcjtz",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "5tWikB1iL59FTgs2cSiJMjzXpBzGYAYWwTrEr2BaVtPG",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "LDyn2wa8Vd51waUNq1YGa1mcyXW4KSJozNSxLA6Ye17D",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2kB5GKGRhHhheV6PUezKjp8Ji1sMPQhvPzgmhrjeym6a",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "mTLS39czyXnxHfGAEK9zT2wBXE4ojGt8UZaZXwNUsSm",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "57H1JmvuTwJgxK3xu3TFrYWzBKbmGs4S79DhqZWM6ZjE",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "9KDMnVfcNVLAjpZdgQjb134aDone9sS6nUcJYzBXgCM1",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "5GixivzCQgBH7oeZA5NynTLWBFWX2imPhUoneSe2fqVr",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "qpvPuKTBMrxwKoLy4S8T8XM8BJp9RRqbDaR4hVAKzbjM",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2kB5GKGRhHhheV6PUezKjonsyFt5szH6ttDswKJ8hjDE",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "NNdTabj3t1w1wT8kFAWnvnxfN4csCzvFZ7r92aPbYnz",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2YSYPEUfWBRJ7xzjq1AGjLrt6XASwwzSD8r7hyyRiTto",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ggdgMY1YvChXiCYvApkr2rh24q3diEhaeVzggKDQYaRf",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "38Rrjc9MroZzjZKDRxYnoBrYAozorUPkK19yndFNYugR",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Dwpf1sAHSh2AjuyNzpWfgcm8Z4DbyAb3eXxeejB4G1QA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "4172cVpob4LiPhmHRiAaZhrZmwejEzHtYhRCrqnEjMBU",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "y7tcPAzpqWh7SAB83yjA6k8ggQ2twJgeY9t5LubPFD9s",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "6585qZycADWEF6YRiXHnKp4A2TNiP1BcTGpqHY3c5i5J",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "jQELGpKF8bJWuv9JV1bKd5D3QFmeLzoxyvj5wu7hUewS",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "giq9v7zmrCHV7Er5WUMfnrVSpyKrYfTs6XZ5SEU5FPRh",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "xhbUNdazfAmMiRkeCsmaq2A7ChUdDoDUwCFiUiJpUNn",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "JHsnUUz77nEQGr7SG5FvNP7rHfZiXoVZpF7a5562Zubr",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "6Euas4wnvgP4QNMngzeGRwcadVsiPGDRXejbAz1P5hM",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "51MBkY6krBWM6q4SviHPAHK6HffCLK6tpSJPSF1LgBLT",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "CnqrWABNkhsiK5shDkjsDudAomXaGdJ7W81PKkYZb69H",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "4Ec7ZxZS6Sbdg5UGSLHbAnM7GQHp2eFd4KYWRexAipQT",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "46baXWDoo1TaR8e9vR7WgTSd5WUZwWTzFajWECVkNz6f",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "MZtWmcQ6KrbvHRE7u3Y16sp1ECYSjToTKsCwxUyz6DHT",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "43TJTmTQdCyBAXc9TgrWry2tJm3JpZ69SXBh5iKm38CC",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "13iFNWoVudwMYJJNXMtNcFzSXMDqeHNi12YbeR6kdjPp",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "5xkzWHrk3RuwEoK8zWC4VC7AQemCtVzitS5sSQVQVydy",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ZfnRxkt2M6c2iyB2ZZSkqjrYRiMwModTvY1f8Yd61625",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "4boh3T3aGKNmPpwid8ihJL2ft8qSWAPY9iZo56xAq6bn",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "3vxemJ17MRmRKtEekPy4nysX2QJnttBGJM4SyrRVuGDK",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "9JnJVEXYgVukiC1roVChEHNwgwnULA4F3Qpurkb2oPkP",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "KEdwJyCTAfNh7RkjDfdaqUgcGfcVnwwarbyWWvAy3Gg",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "3JAgtwCf9H5EEvSnSsTqXCLJiiFD6RkBTzFZthoydcg9",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "wM6aSSMX5CZudrSd7mpFnVUBk6YD9aGUbMVMUXy2R3zA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "4PLhLMASMUhTn4qKx7pTRZ9RYvVEVsbH5Wd7j4dDjJQK",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "TTfiD3JdWdnoYXijCpieQRz1HnfsvAL1jUVUhGnN4BqU",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "4Mbb32Nnac19eu4jiTo9wZSonKobUUfx6CGmHZie16vw",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "KjZUyrwYj4ZggQj8TN5z8K2de19xjWtVqmTLKsxYkdo1",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "5fzxZo3JQVUwic9dWKMxJ34AFo2GamZ7SjxQTBxCGoQC",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "5nioB6CEEjUUw4omKfZRCLHuKCKX5137mzzt7oBcgmuA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "67MRXzkkbEWXW41oEn8UFEJFeY5RryeNcghZDKnX5Y63",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "scURV8MnUxX1q286gcoSaE1fYSHAh6GkqVeucgbV92Qv",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "HZcJwcJ2njPDxZtpPoKnF8v2w9QAx2rS7TdJPSRkbEhu",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "JADaUV8kvDpDbJr55wxXJHVaBS3VCj8thZZHjfeuCVLd",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "A7ZG7ByDi8DpzT9Ab7CiXhvgYTJQmaDPJkMDoPitaCQV",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "GThUX1Atko4tqhN2NaiTazWSeFWMuiUvfFnyJyUghFMJ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ATQ3MU2UX2Ar72fr34jAC7bQNa7NG9RGJHCr36jXdv5k",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "CH8T1CnPXi8MFcS1es9imPbeMw7auFwZqeRj3TDcPNs",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "5NXWk5nNpkzoapW3jpJF3iZLJckfsLc62UVYQUo3xSWz",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "1nEfnkVqqTCt4GjiJDr8Y84LQigUCgKLMmv4s3pjupbW",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "61nCQHfmV5Co7gK7tMaXZHFRGBXQ8EE8apUMCzQHFnZB",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "s8LjfB11nY7qAKgdDZCrYThZsPmscDxrkP1tbsroTeDA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "41dMR8Jc91KzjHCR7pPSrQGypsqfooC9Av4reBe3qea3",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "6KU7zqmut1DnaQ6WKCdBEVY5DsQVAmjYt28ZWcbguvC7",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "3PUSX1qxNzcR6SELQfAyVUPqBbdPHefaEKr2Q3SPYhw4",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "MPHL4Jxi7MQHsRRw2QcJNn8wNdkGZ3MaXskA4B1D8cZA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "PUXgCED3bsSzt4MvM6iEC5mgtKNTYeo28sbhfN16Z63t",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "YUGi3Dxqv6z5setFQQkY1FcZUp8z3ZGGBJqpMs5ze4y",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "4MYRdKtkhHdBaJKKRbwo8m7iRfSxA5tJ8STwNZwXJsnJ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "giCeadbkfgWWzpKFQ2QkVWoo91XnDUsRhptfvZNe3CUZ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "4UBD3aU3hNsFuNGeAhQANQKyMrUQZH6J5pXa5rWvX2iB",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "V6adMdNLxNuasoyarvq7ubp3PxaJpHwizrPJiHAGLP58",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2bowjkaJHZDi1wcFQ7tRZstdhSVgob31FQtuMCxK4njN",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "zrdEyUuUaG2kUsSvqJKi7mrvCTXS7W9eDqpaNppsh7f",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "fhdKdE6rHNLXP4gaFod3HZZh9sw51H2Aj99nsPFYviSo",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "wAs7CSYFH9m2rv4gY4TKuhNyA2r7esc3Kh6GAezdMF2",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "MintGene111111111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz9hXHNYt99MQ59qw1",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "11111111111111111111111111111112",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ8w6a",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "PentacLe1111111111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ACTvefX5o1hXbE9JNYFRGJyWjv3FyBjVvvZ3HedBUxx",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "CRAXrE1qyxJqV7FDNhcXqKSo7MN6j7gXZSYq7W1VFsT9",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Cw8CFyM9FkoMi7K7Crf6HNQqf4uEMzpKw6QNghXLvLkY",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "DttWaMuVvTiduZRnguLF7jNxTgiMBZ1hyAumKUiL2KRL",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "96gYZGLnJYVFmbjzopPSU6QiEV5fGqZNyN9nmNhvrZU5",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "HFqU5x63VTqvQss8hp11i4wVV8bD44PvwucfZ2bU7gRe",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "HeLiuSrpc1111111111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Cv7VMQ69c69arfYsiAjmTYsdz57BiPkxTXycbyuLYbmJ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "42Tra8cwfUyrkyjXkdjvza9wUEHHhy2HRpM1cpmH73i6",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "9Z4hfVs6eoDhAsUEsp6c6xzCFtVd4Zs7QahUiyAzPE77",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "5h6xBEauJ3PK6SWCZ1PGjBvj8vDdWG3KpwATGy1ARAXF",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "SDwt8GFXM7W5Ncn16wmqokgpiKRLuS83KUxyZyv2sUYv",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "91413b9eEvG6UofpSgwdUgH9Lz4QBF1G3J325Bw7JwGR",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "8ty86LdqsnSW4fpbZRFaR1EfgB3eUknJVz8BKY5izoWy",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "GFXVa1g8zzAVDRnSuB6o9PnHuyH25ADvy2YJPZLpATuP",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "B9p3EDeP5Bj85z11cfNQXk2MijPUxfghpo8cHxc5zmVa",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "EHA7zacwzpiJ7VBg5uWYP8QYJNtu2Yq8GsUrdTEZTZ89",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "GrKwZhZcddfgUtMmb9m8GfbBsFJY9pqAhi1z2PHssmPy",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "BKG6B4RXaAzUc5GH3rKYpKxqrhfL3aZiQdVhYp5iSz7H",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ContractAddressTransactionScanner",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijk",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "FfAfqcHJGXwFpG8mjnnRL5k7xw4VR5u8Yr9eCWEbcrMy",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "MCP2SmartContract24x7Runner111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ayerZeroCostExecutor11111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "CdTkRbgfxDThnFZjZCGnjqYvMqoswu2fJwkU4mzM9QFo",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "DemoMint1111111111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "DemoTx1111111111111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "pha111111111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "BotTx1111111111111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Bot2Beta2222222222222222222222222222222222",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "BotTx2222222222222222222222222222222222222",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Bot3Gamma333333333333333333333333333333333",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "BotTx3333333333333333333333333333333333333",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ta444444444444444444444444444444444",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "BotTx4444444444444444444444444444444444444",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "mega555555555555555555555555555555555",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "BotTx5555555555555555555555555555555555555",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "GeneNFT111111111111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "NFTTx1111111111111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "oyProgram1111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2AHAs1gdHSGn2REJbARigh5CLoRuR9gdNTMTKu5UJBVV",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ovXUxhPYeLFYTVgov7gyes4QkwLhgw89PAsGZbUjK2Yv",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "23v2cDBzVnijTnNk3riHipDvctcgfCpeByiep47SMovm",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "oyerPubkey1111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "iusLogicBase1111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "83xggkQTVNkERX8HurXT867qN51LMGhCPFnZpe4rBqzt",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "B1d8E8eF31E21C99d1Db9A6444d3ADf127",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "eFjGz9GtuAi6MZwhb4uvUM216F38xiuR",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "JtYZp8fSDZtn9y5EaXTE87zDwzxRoTFk11w",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "9GiKu4ajxovnrDbwxAKdHjW8jNcwfz8PAz4A",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "TBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvn",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELR",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "rRwpmfeY2jjuUN4taQMsULKUVo1K4DvZ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "vHbZ239yRwAMtJhf5992BPFdT4oifjyE",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "GD7gMKcqK2D49eVXZ144xiowC5H1iBeu",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "2VEVQxN769dupsKGtrsS8o5RzXCeap3wrCtDSNxN3dnW",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "vorP7umBuRFvBZrC6XCk51aKidBHe5LPVPA5AjGPbV3o",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "VQkuCn3RPgypfUMEKWmCznzaw4sApDxy6CFS4qmJw",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "ua5PY1PDFnpVYqdMgQ7c4dyeZsfqMjE7CtgzdqupgTYC",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Fk83oLLFK7nz4thawpdv9bGyMVQ2i48iUtZEVYhuuuqe",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "nwRMQBvSxDa7UxMb61xTiH3MxTgUfhyPUALV",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "FfXNK7QaJFE4pjbxDGfPjbXBEsEaCn9FN15F",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "3kAXrkutGiD26wUKzSMgNNaPARTUDQmE",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "H7wUZRn8WpTq9jocdxQ2c8x2sKo9ZVmzfRE13GiNJXfp",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Jkpd4QL3TVqnd3U683gzXmZUVqBUy17DdJDuL",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "4cYPccV8LdmBLiX8CYvf9Sp3vQsrqu2QNXRcrbiWvcx",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "FiqUJJzxRQxgsZmvhXhn4cSKeSmoFjVdupA",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "7ibXvhpT2c5pyAFgvuA5q1H9uDy6dEGpjV8jmymh3MTY",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "KTk8SrYvCqwP2WcgQjoRCiF5b4QDvkkz8EmgD",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "j8AC5dt8wSP3BQAoeX58NoHyCU8P8zGkNXStjTSi6fz",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "s45A2zg5jns87GAFa34BBm2kXw4XpNcbdg",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8L",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "5APsT7FpqJtEhhieDCvrE2MK5Qk9MyffgQyuxQTm6BCh",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "BW2QWUTJNzjktHsztGLhncP2h8mcF9V9Y2Ha59pAViQ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "5H76ANWinB1H3twpJ6JY8uvAtpmFvHNArpi",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "sSefzHpj5qimhFSE5a8nufZYAM3sBSVMAPtYkmC",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "YrMcwqYQnwjsAS2cTmmPGBBjAjpCW7RrSodNSoE2",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "aWP9UCdtWrotXWWF9t8PWgQDcxqgAnpM9rMqxb3",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "fz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3j",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "aXjTnew8QtYQmLjzn974BnmWEAJgCY6ZP1DeQ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "VrihNs9pj5SUvY8Zz1sQcQG2tG1hSr8PDxfgEB8RNKDh",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "SQPTHozfE2sUu5AviFYk5QV7fYGb6YiD",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "Pi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "aodjPa2wPQFkra1G8CzJBTHXhgk3EVSwxSWXNPr1fgdF",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "6k1YkmTKwPRUhChnxA9ryJmbtuQMbro4xFTL6mL9jycB",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "5aX7bKZX9YzQm3N8vR2pL4wE6tS1cF9dH8jK2mP5nQ7r",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "T3uV6xA9bC4eG1hJ8kL2mN5pR7sT9vW2xZ4aB6cE8fH",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "9WzDXwBbmkg8ZTbNMqUxvQRAyrZzDsGYdLVL9zYtAWWM",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "eKey1111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "HSX42dhQPTaVjtwMQXwGTCobrs1HnxZ8G2J6JTnPXpgP",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "GFXVa19rX6iwfs3sLS5UvX9Exu2usRsG4V5MRMDRo23V",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "d1111111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "BGfQAFUmjcomg6CcM4aTqh3RcSUt9p21qwEGoYnrm4QU",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "6VH5NPvMoRbTYt5QyAubm6EH97y44Y569K2yrxFTgXfx",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    },
+    {
+      "program": "1111111111111111111111111111111111",
+      "rebateReceiver": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+      "rebateRate": 0.15,
+      "autoSweep": 0.1,
+      "mevProtection": true,
+      "status": "configured"
+    }
+  ]
+}

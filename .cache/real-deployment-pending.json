@@ -1,0 +1,12 @@
+{
+  "timestamp": "2025-10-09T05:27:10.598Z",
+  "status": "PENDING_REAL_EXECUTION",
+  "targetAddress": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+  "authority": "7V4aUYVwrYj7jFBbGWDAJhkfejf8ArKkPjyobLBTEw7U",
+  "relayerEndpoint": "https://api.helius.xyz/v0/transactions/submit",
+  "network": "mainnet-beta",
+  "realTxRequired": true,
+  "simulationMode": false,
+  "validTxHash": null,
+  "error": "AWAITING_REAL_RELAYER_EXECUTION"
+}

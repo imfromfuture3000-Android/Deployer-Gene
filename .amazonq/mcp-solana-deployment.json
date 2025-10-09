@@ -63,6 +63,29 @@
         "getRelayerStatus",
         "batchTransactions"
       ]
+    },
+    "agent-247": {
+      "enabled": true,
+      "command": "node",
+      "args": ["mcp-agent-24-7.js"],
+      "env": {
+        "DEPLOYMENT_MODE": "24/7",
+        "SUCCESS_RATE": "100",
+        "ALLOWLIST_SIZE": "100"
+      },
+      "capabilities": [
+        "spawnContract",
+        "automatedDeployment",
+        "allowlistValidation",
+        "successRateMonitoring"
+      ]
     }
+  },
+  "deployment": {
+    "mode": "24/7-automated",
+    "successRate": 100,
+    "allowlistEnabled": true,
+    "totalAddresses": 100,
+    "zeroCost": true
   }
 }

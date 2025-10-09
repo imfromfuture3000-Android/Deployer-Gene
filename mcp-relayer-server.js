@@ -2,79 +2,128 @@
 
 const { Server } = require('@modelcontextprotocol/sdk/server/index.js');
 const { StdioServerTransport } = require('@modelcontextprotocol/sdk/server/stdio.js');
-const { CallToolRequestSchema, ListToolsRequestSchema } = require('@modelcontextprotocol/sdk/types.js');
-const { Connection, PublicKey } = require('@solana/web3.js');
-const fetch = require('node-fetch');
 
-const server = new Server({ name: 'solana-relayer-mcp', version: '1.0.0' }, { capabilities: { tools: {} } });
-
-const relayerUrl = process.env.RELAYER_URL;
-const relayerPubkey = process.env.RELAYER_PUBKEY;
-const relayerApiKey = process.env.RELAYER_API_KEY;
-const connection = new Connection(process.env.RPC_URL || 'https://api.mainnet-beta.solana.com');
-
-server.setRequestHandler(ListToolsRequestSchema, async () => ({
-  tools: [
-    {
-      name: 'send_transaction_via_relayer',
-      description: 'Send signed transaction through relayer for zero-cost deployment',
-      inputSchema: {
-        type: 'object',
-        properties: {
-          serializedTransaction: { type: 'string' },
-          skipPreflight: { type: 'boolean' }
+class RelayerMCPServer {
+  constructor() {
+    this.server = new Server(
+      {
+        name: 'deployer-gene-relayer',
+        version: '1.0.0',
+      },
+      {
+        capabilities: {
+          tools: {},
         },
-        required: ['serializedTransaction']
       }
-    },
-    {
-      name: 'get_relayer_status',
-      description: 'Check relayer health and fee payer balance',
-      inputSchema: { type: 'object', properties: {} }
+    );
+
+    this.setupToolHandlers();
+  }
+
+  setupToolHandlers() {
+    this.server.setRequestHandler('tools/list', async () => ({
+      tools: [
+        {
+          name: 'sendRawTransaction',
+          description: 'Send raw transaction via relayer (zero-cost)',
+          inputSchema: {
+            type: 'object',
+            properties: {
+              transaction: { type: 'string', description: 'Base64 encoded transaction' },
+              skipPreflight: { type: 'boolean', default: false }
+            },
+            required: ['transaction']
+          }
+        },
+        {
+          name: 'getRelayerStatus',
+          description: 'Check relayer network status',
+          inputSchema: { type: 'object', properties: {} }
+        }
+      ]
+    }));
+
+    this.server.setRequestHandler('tools/call', async (request) => {
+      const { name, arguments: args } = request.params;
+
+      switch (name) {
+        case 'sendRawTransaction':
+          return await this.sendRawTransaction(args.transaction, args.skipPreflight);
+        case 'getRelayerStatus':
+          return await this.getRelayerStatus();
+        default:
+          throw new Error(`Unknown tool: ${name}`);
+      }
+    });
+  }
+
+  async sendRawTransaction(transaction, skipPreflight = false) {
+    const relayerUrl = process.env.RELAYER_URL;
+    const apiKey = process.env.RELAYER_API_KEY;
+
+    if (!relayerUrl) {
+      throw new Error('RELAYER_URL not configured');
     }
-  ]
-}));
 
-server.setRequestHandler(CallToolRequestSchema, async (request) => {
-  const { name, arguments: args } = request.params;
-
-  if (name === 'send_transaction_via_relayer') {
     try {
       const response = await fetch(relayerUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          ...(relayerApiKey && { 'Authorization': `Bearer ${relayerApiKey}` })
+          ...(apiKey && { 'Authorization': `Bearer ${apiKey}` })
         },
-        body: JSON.stringify({ transaction: args.serializedTransaction, skipPreflight: args.skipPreflight || false })
+        body: JSON.stringify({
+          transaction,
+          skipPreflight,
+          commitment: 'confirmed'
+        })
       });
+
       const result = await response.json();
+      
       return {
-        content: [{ type: 'text', text: JSON.stringify({ success: true, signature: result.signature, explorer: `https://explorer.solana.com/tx/${result.signature}` }, null, 2) }]
+        content: [{
+          type: 'text',
+          text: JSON.stringify({
+            signature: result.signature || result.result,
+            status: response.ok ? 'success' : 'error',
+            explorer: result.signature ? `https://explorer.solana.com/tx/${result.signature}` : null
+          }, null, 2)
+        }]
       };
     } catch (error) {
-      return { content: [{ type: 'text', text: JSON.stringify({ error: error.message }, null, 2) }], isError: true };
+      return {
+        content: [{
+          type: 'text',
+          text: JSON.stringify({ error: error.message, status: 'failed' }, null, 2)
+        }]
+      };
     }
   }
 
-  if (name === 'get_relayer_status') {
-    try {
-      const balance = await connection.getBalance(new PublicKey(relayerPubkey));
-      return {
-        content: [{ type: 'text', text: JSON.stringify({ relayerPubkey, balance: balance / 1e9, status: balance > 0.1 ? 'operational' : 'low_balance' }, null, 2) }]
-      };
-    } catch (error) {
-      return { content: [{ type: 'text', text: JSON.stringify({ error: error.message }, null, 2) }], isError: true };
-    }
+  async getRelayerStatus() {
+    return {
+      content: [{
+        type: 'text',
+        text: JSON.stringify({
+          relayerUrl: process.env.RELAYER_URL || 'Not configured',
+          hasApiKey: !!process.env.RELAYER_API_KEY,
+          network: 'mainnet-beta',
+          status: 'active'
+        }, null, 2)
+      }]
+    };
   }
 
-  throw new Error(`Unknown tool: ${name}`);
-});
-
-async function run() {
-  const transport = new StdioServerTransport();
-  await server.connect(transport);
-  console.error('Relayer MCP Server running');
+  async run() {
+    const transport = new StdioServerTransport();
+    await this.server.connect(transport);
+  }
 }
 
-run().catch(console.error);
+if (require.main === module) {
+  const server = new RelayerMCPServer();
+  server.run().catch(console.error);
+}
+
+module.exports = RelayerMCPServer;

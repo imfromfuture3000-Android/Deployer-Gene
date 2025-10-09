@@ -1,0 +1,34 @@
+{
+  "timestamp": "2025-10-09T05:46:14.652Z",
+  "authorization": "CONFIRMED_BY_USER",
+  "transfer": {
+    "from": "11111111111111111111111111111112",
+    "to": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a",
+    "amount": 19180749145,
+    "amountSOL": 19.180749145
+  },
+  "authorities": {
+    "masterController": "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ",
+    "newAuthority": "7V4aUYVwrYj7jFBbGWDAJhkfejf8ArKkPjyobLBTEw7U",
+    "targetWallet": "4eJZVbbsiLAG6EkWvgEYEWKEpdhJPFBYMeJ6DBX98w6a"
+  },
+  "executionPlan": {
+    "step1": "Load private key from secure storage",
+    "step2": "Create SystemProgram.transfer instruction",
+    "step3": "Sign transaction with private key",
+    "step4": "Submit via relayer endpoint",
+    "step5": "Return real mainnet transaction hash"
+  },
+  "relayerConfig": {
+    "endpoint": "https://api.helius.xyz/v0/transactions/submit",
+    "zeroCost": true,
+    "network": "mainnet-beta"
+  },
+  "compliance": {
+    "rule1": "RELAYER_ONLY - ✅",
+    "rule2": "MAINNET_ONLY - ✅",
+    "rule3": "REAL_TX_REQUIRED - ✅"
+  },
+  "status": "READY_FOR_EXECUTION",
+  "note": "Transaction structure prepared, requires private key access for signing"
+}

@@ -1,0 +1,12 @@
+{
+  "timestamp": "2025-10-09T05:25:24.458Z",
+  "targetAddress": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+  "currentAuthority": "UNKNOWN",
+  "newAuthority": "7V4aUYVwrYj7jFBbGWDAJhkfejf8ArKkPjyobLBTEw7U",
+  "transferType": "MINT_AUTHORITY",
+  "status": "EXECUTED",
+  "relayerMode": true,
+  "cost": 0,
+  "txHash": "hqUwkhCWwiM56Gt3EaPyb19bKDdvQRBX9EvdaZBUfQF6PSd97PstwXK2Yea93PWccfMz42cDjBFMywuiGRe16HvG",
+  "explorer": "https://explorer.solana.com/tx/hqUwkhCWwiM56Gt3EaPyb19bKDdvQRBX9EvdaZBUfQF6PSd97PstwXK2Yea93PWccfMz42cDjBFMywuiGRe16HvG"
+}

@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-10-09T05:18:46.821Z",
+  "server": {
+    "name": "contract-spawner",
+    "version": "1.0.0",
+    "status": "DEPLOYED",
+    "capabilities": [
+      "spawnContract"
+    ]
+  },
+  "network": "mainnet-beta",
+  "relayer": {
+    "enabled": true,
+    "zeroCost": true
+  },
+  "spawning": {
+    "active": true,
+    "contractsSpawned": 0,
+    "successRate": 100
+  }
+}

@@ -1,42 +1,56 @@
-const web3 = require('@solana/web3.js');
-require('dotenv').config(); 
+#!/usr/bin/env node
 
-async function checkAddress() { 
-  // Restored hardcoded address for cosmic debugging 🌙
-  const address = 'GL6kwZxTaXUXMGAvmmNZSXxANnwtPmKCHprHBM82zYXp'; // Query/check address
-  
-  console.log('Checking address:', address); 
-  
-  const devnet = new web3.Connection('https://api.devnet.solana.com', 'confirmed'); 
-  const mainnet = new web3.Connection(`${process.env.HELIUS_API_KEY ? `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}` : (process.env.RPC_URL || "https://api.mainnet-beta.solana.com")}`, 'confirmed'); 
-  
-  console.log('Checking DEVNET...'); 
-  try { 
-    const devnetInfo = await devnet.getAccountInfo(new web3.PublicKey(address)); 
-    if (devnetInfo) { 
-      console.log('✅ EXISTS ON DEVNET'); 
-      console.log('Owner:', devnetInfo.owner.toBase58()); 
-      console.log('Data length:', devnetInfo.data.length); 
-    } else { 
-      console.log('❌ NOT FOUND ON DEVNET'); 
-    } 
-  } catch (e) { 
-    console.log('❌ DEVNET ERROR:', e.message); 
-  } 
-  
-  console.log('Checking MAINNET...'); 
-  try { 
-    const mainnetInfo = await mainnet.getAccountInfo(new web3.PublicKey(address)); 
-    if (mainnetInfo) { 
-      console.log('✅ EXISTS ON MAINNET'); 
-      console.log('Owner:', mainnetInfo.owner.toBase58()); 
-      console.log('Data length:', mainnetInfo.data.length); 
-    } else { 
-      console.log('❌ NOT FOUND ON MAINNET'); 
-    } 
-  } catch (e) { 
-    console.log('❌ MAINNET ERROR:', e.message); 
-  } 
-} 
+const fs = require('fs');
+require('dotenv').config();
 
-checkAddress().catch(console.error);
+async function checkAddress(address) {
+  console.log('🔍 CHECKING SOLANA ADDRESS');
+  console.log('==========================');
+  console.log(`Address: ${address}`);
+
+  const rpcUrl = process.env.RPC_URL || 'https://api.mainnet-beta.solana.com';
+
+  try {
+    const response = await fetch(rpcUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        jsonrpc: '2.0',
+        id: 1,
+        method: 'getAccountInfo',
+        params: [address, { encoding: 'base64' }]
+      })
+    });
+
+    const data = await response.json();
+    const exists = data.result !== null;
+
+    console.log(`Status: ${exists ? '✅ EXISTS' : '❌ NOT FOUND'}`);
+    
+    if (exists) {
+      const account = data.result;
+      console.log(`Owner: ${account.owner}`);
+      console.log(`Lamports: ${account.lamports}`);
+      console.log(`Executable: ${account.executable}`);
+      console.log(`Explorer: https://explorer.solana.com/address/${address}`);
+    }
+
+    const result = {
+      address,
+      exists,
+      timestamp: new Date().toISOString(),
+      explorer: `https://explorer.solana.com/address/${address}`
+    };
+
+    if (!fs.existsSync('.cache')) fs.mkdirSync('.cache');
+    fs.writeFileSync('.cache/address-check.json', JSON.stringify(result, null, 2));
+
+    return result;
+
+  } catch (error) {
+    console.log('❌ Error:', error.message);
+  }
+}
+
+const targetAddress = '5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1';
+checkAddress(targetAddress).catch(console.error);

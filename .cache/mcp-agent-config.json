@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-10-09T04:52:44.213Z",
+  "agent": {
+    "name": "deployer-gene-mcp",
+    "version": "1.0.0",
+    "status": "ACTIVE",
+    "capabilities": [
+      "solana-web3",
+      "spl-token",
+      "metaplex",
+      "relayer-zero-cost"
+    ]
+  },
+  "servers": {
+    "solana-web3": {
+      "enabled": true,
+      "rpcUrl": "https://api.mainnet-beta.solana.com",
+      "network": "mainnet-beta"
+    },
+    "relayer": {
+      "enabled": true,
+      "url": "https://api.helius.xyz/v0/transactions/submit",
+      "pubkey": "HeLiuSrpc1111111111111111111111111111111111",
+      "hasApiKey": false
+    }
+  },
+  "deployment": {
+    "mode": "mainnet-only",
+    "zeroCost": true,
+    "signerOnly": true,
+    "relayerRequired": true
+  }
+}

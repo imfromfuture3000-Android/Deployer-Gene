@@ -1,0 +1,55 @@
+{
+  "timestamp": "2025-10-09T04:59:11.476Z",
+  "totalBots": 5,
+  "totalTokens": 1000000,
+  "transactions": [
+    {
+      "bot": "BOT1-STAKE",
+      "address": "HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR",
+      "amount": 100000,
+      "amountBaseUnits": 100000000000000,
+      "mint": "GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz",
+      "signature": null,
+      "status": "PENDING_RELAYER"
+    },
+    {
+      "bot": "BOT2-MINT",
+      "address": "NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d",
+      "amount": 150000,
+      "amountBaseUnits": 150000000000000,
+      "mint": "GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz",
+      "signature": null,
+      "status": "PENDING_RELAYER"
+    },
+    {
+      "bot": "BOT3-CONTRACT",
+      "address": "DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA",
+      "amount": 200000,
+      "amountBaseUnits": 200000000000000,
+      "mint": "GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz",
+      "signature": null,
+      "status": "PENDING_RELAYER"
+    },
+    {
+      "bot": "BOT4-MEV",
+      "address": "7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41",
+      "amount": 250000,
+      "amountBaseUnits": 250000000000000,
+      "mint": "GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz",
+      "signature": null,
+      "status": "PENDING_RELAYER"
+    },
+    {
+      "bot": "BOT5-LOOT",
+      "address": "3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw",
+      "amount": 300000,
+      "amountBaseUnits": 300000000000000,
+      "mint": "GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz",
+      "signature": null,
+      "status": "PENDING_RELAYER"
+    }
+  ],
+  "relayerMode": true,
+  "cost": 0,
+  "status": "READY_FOR_EXECUTION"
+}

@@ -1,0 +1,9 @@
+{
+  "timestamp": "2025-10-09T06:08:54.055Z",
+  "network": "mainnet-beta",
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "deployer": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+  "balance": 0,
+  "privateKeyLoaded": true,
+  "status": "READY_FOR_REAL_DEPLOYMENT"
+}

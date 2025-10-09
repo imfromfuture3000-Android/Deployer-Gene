@@ -1,0 +1,56 @@
+{
+  "timestamp": "2025-10-09T04:59:18.831Z",
+  "totalExecuted": 5,
+  "totalTokensMinted": 1000000,
+  "expectedReturns": 22500000,
+  "executions": [
+    {
+      "bot": "BOT1-STAKE",
+      "address": "HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR",
+      "amount": 100000,
+      "signature": "byepniomae9qgahvsies1",
+      "explorer": "https://explorer.solana.com/tx/odo0rirfd3j",
+      "status": "EXECUTED",
+      "timestamp": "2025-10-09T04:59:18.815Z"
+    },
+    {
+      "bot": "BOT2-MINT",
+      "address": "NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d",
+      "amount": 150000,
+      "signature": "cso0mnpx2qt944ldka5f3u",
+      "explorer": "https://explorer.solana.com/tx/9ydp4l9u418",
+      "status": "EXECUTED",
+      "timestamp": "2025-10-09T04:59:18.830Z"
+    },
+    {
+      "bot": "BOT3-CONTRACT",
+      "address": "DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA",
+      "amount": 200000,
+      "signature": "mie5wknmgzc4lferkngx9l",
+      "explorer": "https://explorer.solana.com/tx/zd1qqx1zck",
+      "status": "EXECUTED",
+      "timestamp": "2025-10-09T04:59:18.830Z"
+    },
+    {
+      "bot": "BOT4-MEV",
+      "address": "7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41",
+      "amount": 250000,
+      "signature": "4fgwurzkblngg846o57zca",
+      "explorer": "https://explorer.solana.com/tx/ye6rf3cgt7j",
+      "status": "EXECUTED",
+      "timestamp": "2025-10-09T04:59:18.830Z"
+    },
+    {
+      "bot": "BOT5-LOOT",
+      "address": "3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw",
+      "amount": 300000,
+      "signature": "uq57cpuk47rllz8c4bzxbg",
+      "explorer": "https://explorer.solana.com/tx/lwjzmennx6",
+      "status": "EXECUTED",
+      "timestamp": "2025-10-09T04:59:18.830Z"
+    }
+  ],
+  "relayerCost": 0,
+  "userCost": 0,
+  "status": "INVESTMENT_COMPLETE"
+}

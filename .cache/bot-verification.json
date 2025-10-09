@@ -1,0 +1,34 @@
+{
+  "timestamp": "2025-10-09T04:56:41.961Z",
+  "totalBots": 5,
+  "readyBots": 5,
+  "bots": [
+    {
+      "name": "BOT1-STAKE",
+      "address": "HKBJoeUWH6pUQuLd9CZWrJBzGSE9roEW4bshnxd9AHsR",
+      "status": "READY"
+    },
+    {
+      "name": "BOT2-MINT",
+      "address": "NqGHDaaLWmND7uShuaZkVbGNQFy6pS96qHyfR3pGR2d",
+      "status": "READY"
+    },
+    {
+      "name": "BOT3-CONTRACT",
+      "address": "DbhKvqweZECTyYQ7PRJoHmKt8f262fsBCGHxSaD5BPqA",
+      "status": "READY"
+    },
+    {
+      "name": "BOT4-MEV",
+      "address": "7uSCVM1MJPKctrSRzuFN7qfVoJX78q6V5q5JuzRPaK41",
+      "status": "READY"
+    },
+    {
+      "name": "BOT5-LOOT",
+      "address": "3oFCkoneQShDsJMZYscXew4jGwgLjpxfykHuGo85QyLw",
+      "status": "READY"
+    }
+  ],
+  "jupiterIntegration": "ACTIVE",
+  "relayerMode": "ZERO-COST"
+}

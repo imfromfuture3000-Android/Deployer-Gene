@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-10-09T05:25:06.749Z",
+  "addresses": {
+    "target": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+    "authority": "7V4aUYVwrYj7jFBbGWDAJhkfejf8ArKkPjyobLBTEw7U",
+    "geneMint": "GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz"
+  },
+  "ownership": {
+    "target": "VERIFIED",
+    "authority": "CLAIMED",
+    "geneMint": "CONTROLLED"
+  },
+  "permissions": {
+    "mintAuthority": true,
+    "freezeAuthority": false,
+    "updateAuthority": true
+  },
+  "status": "OWNERSHIP_VERIFIED"
+}
