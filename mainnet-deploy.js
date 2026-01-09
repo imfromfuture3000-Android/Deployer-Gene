@@ -4,6 +4,11 @@ const spl = require('@solana/spl-token');
 const { loadHeliusConfig } = require('./src/helius/config');
 const { createHeliusMpcClient } = require('./src/helius/mpcClient');
 
+/**
+ * Deploys a new SPL Token 2022 mint to Solana mainnet using the Helius MPC relay, falling back to a direct RPC submission if MPC relay submission fails.
+ *
+ * Performs a payer balance check (requires at least 0.01 SOL), determines rent-exempt funding for the mint, attempts to obtain a priority fee recommendation from the MPC client, builds a transaction that includes compute budget and mint-initialization instructions, and submits the signed transaction via the MPC relay or via standard send-and-confirm as a fallback. Logs key steps and final explorer URL.
+ */
 async function deployMainnet() {
   console.log('🚀 OMEGA PRIME MAINNET DEPLOYMENT');
 
