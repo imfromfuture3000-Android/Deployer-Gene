@@ -15,6 +15,19 @@ const {
 } = require('./src/helius/config');
 const { createHeliusMpcClient } = require('./src/helius/mpcClient');
 
+/**
+ * Deploys a Solana program via Helius using MPC-backed signing and optimized compute/pricing settings.
+ *
+ * Performs program account creation with configured compute unit limits and priority fees (fetched from Helius when available),
+ * attempts to obtain a payer signature from the MPC signer (falls back to a mock signature if unavailable), and returns the
+ * deployment result including the transaction signature, program ID, and total cost in SOL.
+ *
+ * @returns {{ signature: string, programId: string, cost: number }} An object containing:
+ *  - `signature`: the transaction signature (or mock signature) for the deployment,
+ *  - `programId`: the deployed program's public key string,
+ *  - `cost`: the total deployment cost expressed in SOL.
+ * @throws {Error} If the deployment process fails.
+ */
 async function deployProgramHelius() {
   console.log('🚀 DEPLOYING PROGRAM VIA HELIUS - ULTRA LOW GAS');
   console.log('=' .repeat(60));
