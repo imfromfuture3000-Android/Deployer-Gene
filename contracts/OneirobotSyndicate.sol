@@ -148,10 +148,11 @@ contract OneirobotSyndicate is ERC721, ERC721URIStorage, AccessControl, Reentran
         uint256 tokenId, 
         address to
     ) private returns (OneirobotTraits memory traits) {
-        // Create unique seed from multiple entropy sources
+        // NOTE: On-chain entropy is miner-influenceable. For production use
+        // a VRF oracle (e.g. Chainlink VRF) to generate provably fair randomness.
         bytes32 seed = keccak256(abi.encodePacked(
             block.timestamp,
-            block.prevrandao, // More secure than block.difficulty
+            block.prevrandao,
             tokenId,
             to,
             msg.sender,
@@ -159,7 +160,6 @@ contract OneirobotSyndicate is ERC721, ERC721URIStorage, AccessControl, Reentran
             blockhash(block.number - 1)
         ));
         
-        // Ensure seed uniqueness to prevent replay attacks
         require(!_usedSeeds[seed], "OneirobotSyndicate: Seed already used");
         _usedSeeds[seed] = true;
         

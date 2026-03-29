@@ -50,6 +50,9 @@ contract GeneMintNFT is ERC721, Ownable {
     }
     
     function withdraw() public onlyOwner {
-        payable(owner()).transfer(address(this).balance);
+        uint256 balance = address(this).balance;
+        require(balance > 0, "No funds to withdraw");
+        (bool success, ) = payable(owner()).call{value: balance}("");
+        require(success, "Withdraw failed");
     }
 }

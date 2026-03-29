@@ -47,8 +47,7 @@ export class ContractDeployer {
     // Send transaction (would be signed by relayer in actual implementation)
     console.log('🚀 Deploying contract with Helius rebates enabled...');
     
-    // Return mock signature for demonstration
-    return 'mock_signature_with_rebates_enabled';
+    throw new Error('deployWithRebates: real transaction sending not yet implemented. Wire up sendViaRelayer() here.');
   }
 
   public getDeploymentSummary(): object {
