@@ -1,6 +1,7 @@
 import { Connection, PublicKey, Transaction } from '@solana/web3.js';
 
 import { loadOrCreateUserAuth } from './wallet';
+import { loadDeployerAuth } from './deployerAuth';
 
 export async function sendViaRelayer(
   connection: Connection,
@@ -25,7 +26,6 @@ export async function sendViaRelayer(
   if (apiKey) headers['Authorization'] = `Bearer ${apiKey}`;
 
   // Add rebate-address query param using deployer address for MEV rewards
-  const { loadDeployerAuth } = require('./deployerAuth');
   const creatorAddress = loadDeployerAuth().publicKey.toBase58();
   
   // Add MEV tip account for rebates

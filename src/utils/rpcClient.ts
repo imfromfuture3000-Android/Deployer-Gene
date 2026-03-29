@@ -20,7 +20,7 @@ export class HeliusRpcClient {
   private rpcUrl: string;
 
   constructor() {
-    this.rpcUrl = process.env.RPC_URL || 'https://cosmopolitan-divine-glade.solana-mainnet.quiknode.pro/7841a43ec7721a54d6facb64912eca1f1dc7237e';
+    this.rpcUrl = process.env.RPC_URL || 'https://api.mainnet-beta.solana.com';
     this.connection = new Connection(this.rpcUrl, 'confirmed');
   }
 
