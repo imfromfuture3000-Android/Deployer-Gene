@@ -1,0 +1,20 @@
+{
+  "phase": 0,
+  "network": "devnet",
+  "startTime": "2026-02-13T19:37:32.572Z",
+  "transactions": [],
+  "empires": [],
+  "errors": [
+    "❌ Phase 0 failed: this.connection.getHealth is not a function",
+    "Deployment halted due to phase failure",
+    "   - ❌ Phase 0 failed: this.connection.getHealth is not a function",
+    "   - Deployment halted due to phase failure"
+  ],
+  "warnings": [
+    "\n⚠️  ERRORS (2):",
+    "\n⚠️  WARNINGS (1):",
+    "   - \n⚠️  ERRORS (2):",
+    "   - \n⚠️  WARNINGS (1):"
+  ],
+  "endTime": "2026-02-13T19:37:32.574Z"
+}

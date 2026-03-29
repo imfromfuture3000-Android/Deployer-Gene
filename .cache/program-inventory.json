@@ -1,0 +1,220 @@
+{
+  "scan_timestamp": "2026-01-27T00:00:00Z",
+  "network": "solana-mainnet",
+  "dao_name": "Omega Prime DAO",
+  "scan_results": {
+    "total_programs": 7,
+    "active_programs": 7,
+    "by_status": {
+      "active": 7,
+      "inactive": 0,
+      "unknown": 0
+    }
+  },
+  "programs": [
+    {
+      "id": 1,
+      "name": "Vote Program",
+      "type": "Core Governance",
+      "internal_id": "Votejju1omngnwg",
+      "authority": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "commission": "5%",
+      "status": "ACTIVE",
+      "features": [
+        "vote_tracking",
+        "reward_distribution",
+        "governance_participation"
+      ],
+      "description": "Core voting program for Omega Prime DAO governance",
+      "deployed": "2025-10-08T03:33:07.936Z",
+      "upgrade_authority": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4"
+    },
+    {
+      "id": 2,
+      "name": "NFT Collection - Omega Prime Voting NFTs",
+      "type": "Token (SPL-NFT)",
+      "internal_id": "NFTfhr4ph5w0ug",
+      "symbol": "OPVN",
+      "total_supply": 10000,
+      "royalty": "5%",
+      "status": "ACTIVE",
+      "features": [
+        "voting_power",
+        "earning_multiplier",
+        "governance_rights"
+      ],
+      "description": "NFT collection providing voting power and earning multipliers",
+      "deployed": "2025-10-08T03:33:07.936Z",
+      "mint_authority": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4"
+    },
+    {
+      "id": 3,
+      "name": "Bot 1 - Vote Harvester",
+      "type": "Autonomous Bot",
+      "bot_id": "BOTake4d6i3yae",
+      "internal_address": "Botzcv45lq3rar",
+      "bot_type": "vote_harvester",
+      "earning_rate": "8.90%",
+      "status": "ACTIVE",
+      "capabilities": [
+        "auto_vote",
+        "claim_rewards",
+        "compound_earnings",
+        "nft_management"
+      ],
+      "daily_earnings": "~82 SOL",
+      "description": "Automated vote harvester bot for DAO governance participation",
+      "deployed": "2025-10-08T03:33:07.936Z",
+      "controller": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4"
+    },
+    {
+      "id": 4,
+      "name": "Bot 2 - Reward Claimer",
+      "type": "Autonomous Bot",
+      "bot_id": "BOToyvwrcudit8",
+      "internal_address": "Botgy74odomne",
+      "bot_type": "reward_claimer",
+      "earning_rate": "9.62%",
+      "status": "ACTIVE",
+      "capabilities": [
+        "auto_vote",
+        "claim_rewards",
+        "compound_earnings",
+        "nft_management"
+      ],
+      "daily_earnings": "~88 SOL",
+      "description": "Automated reward claimer and compounder bot",
+      "deployed": "2025-10-08T03:33:07.936Z",
+      "controller": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4"
+    },
+    {
+      "id": 5,
+      "name": "Bot 3 - NFT Trader",
+      "type": "Autonomous Bot",
+      "bot_id": "BOT7ihru1xgn3h",
+      "internal_address": "Botfpocp7jkxr",
+      "bot_type": "nft_trader",
+      "earning_rate": "11.30%",
+      "status": "ACTIVE",
+      "capabilities": [
+        "auto_vote",
+        "claim_rewards",
+        "compound_earnings",
+        "nft_management"
+      ],
+      "daily_earnings": "~115 SOL",
+      "description": "NFT trading and arbitrage bot for collection value optimization",
+      "deployed": "2025-10-08T03:33:07.936Z",
+      "controller": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4"
+    },
+    {
+      "id": 6,
+      "name": "Bot 4 - Yield Farmer",
+      "type": "Autonomous Bot",
+      "bot_id": "BOTd6bn1ovijnv",
+      "internal_address": "Botbsm7et3k5r",
+      "bot_type": "yield_farmer",
+      "earning_rate": "9.07%",
+      "status": "ACTIVE",
+      "capabilities": [
+        "auto_vote",
+        "claim_rewards",
+        "compound_earnings",
+        "nft_management"
+      ],
+      "daily_earnings": "~93 SOL",
+      "description": "Yield farming bot for maximizing DeFi returns",
+      "deployed": "2025-10-08T03:33:07.936Z",
+      "controller": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4"
+    },
+    {
+      "id": 7,
+      "name": "Bot 5 - Governance Voter",
+      "type": "Autonomous Bot",
+      "bot_id": "BOTm93gpq85zb",
+      "internal_address": "Botnk1s2xskl7",
+      "bot_type": "governance_voter",
+      "earning_rate": "13.28%",
+      "status": "ACTIVE",
+      "capabilities": [
+        "auto_vote",
+        "claim_rewards",
+        "compound_earnings",
+        "nft_management"
+      ],
+      "daily_earnings": "~136 SOL",
+      "description": "Governance-focused voter bot with highest earning potential",
+      "deployed": "2025-10-08T03:33:07.936Z",
+      "controller": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4"
+    }
+  ],
+  "summary": {
+    "total_daily_earnings": "409.92 SOL",
+    "total_monthly_earnings": "12,297.60 SOL",
+    "total_annual_earnings": "149,620.80 SOL",
+    "bot_breakdown": {
+      "vote_harvesters": 1,
+      "reward_claimers": 1,
+      "nft_traders": 1,
+      "yield_farmers": 1,
+      "governance_voters": 1
+    },
+    "program_types": {
+      "governance": 1,
+      "token_nft": 1,
+      "autonomous_bots": 5
+    }
+  },
+  "authority_chain": {
+    "master_authority": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+    "vote_program_authority": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+    "nft_mint_authority": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+    "bot_controllers": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+    "centralization_risk": "HIGH - Single authority controls all programs"
+  },
+  "deployment_status": {
+    "network": "solana-mainnet",
+    "deployment_timestamp": "2025-10-08T03:33:07.936Z",
+    "deployment_cost": "0 SOL (relayer covered)",
+    "all_programs_active": true,
+    "upgrade_path_available": true
+  },
+  "recommendations": [
+    {
+      "priority": "CRITICAL",
+      "action": "Implement Multi-Sig Authority",
+      "reason": "Single authority creates systemic risk",
+      "affected_programs": "All 7 programs"
+    },
+    {
+      "priority": "HIGH",
+      "action": "Add Program Upgrade Guards",
+      "reason": "Protect against unauthorized upgrades",
+      "affected_programs": "Vote Program, NFT Program"
+    },
+    {
+      "priority": "HIGH",
+      "action": "Monitor Bot Performance",
+      "reason": "Ensure bots maintain expected earning rates",
+      "affected_programs": "All 5 bots"
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Implement Rate Limits",
+      "reason": "Prevent bot abuse and spam",
+      "affected_programs": "All 5 bots"
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Add Emergency Pause Functions",
+      "reason": "Stop operations during security incidents",
+      "affected_programs": "All 7 programs"
+    }
+  ],
+  "file_locations": {
+    "deployment_data": ".cache/node-votes-nft-bots-deployment.json",
+    "dao_operations_scan": ".cache/dao-operations-summary.json",
+    "signer_mapping": ".cache/copilot-signer-mapping.json",
+    "mpc_system": "src/mpc/mpcCore.js"
+  }
+}

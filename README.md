@@ -478,6 +478,19 @@ npm run mainnet:all
 
 ---
 
+### **Helius Relayer Config + MPC Bootstrap**
+
+- **Single source of truth**: `src/helius/config.ts` validates `HELIUS_API_KEY`, `RELAYER_PUBKEY`, `RELAYER_URL`, `MPC_SERVER_URL`, compute unit limits, and priority-fee defaults. Run `node setup-helius.js` after editing `.env` to verify the values are wired correctly.
+- **MPC client**: `src/helius/mpcClient.ts` exposes `requestPayerSignature`, `submitTransaction`, and `getPriorityFees` using the Helius SDK so deploy scripts can route through your relayer + signer stack without re-implementing RPC calls.
+- **Failover RPCs**: keep `RPC_URL` unset to use `https://mainnet.helius-rpc.com/?api-key=$HELIUS_API_KEY` by default, then fall back to `https://rpc.helius.xyz/?api-key=$HELIUS_API_KEY` when health checks fail. The helper `heliusFailoverRpcUrls(apiKey)` produces the recommended priority list for monitors.
+- **Key rotation**:
+  1. Generate a new Helius key, relayer keypair, or MPC endpoint credential.
+  2. Update `.env` (`HELIUS_API_KEY`, `RELAYER_PUBKEY`, `RELAYER_URL`, `MPC_SERVER_URL`) and re-run `node setup-helius.js`.
+  3. Restart any long-running deploy daemons and refresh CI secrets so the new credentials are live everywhere.
+- **Bootstrap checklist**: confirm outbound access to your `MPC_SERVER_URL`, verify `RELAYER_PUBKEY` matches the relayer you expect to pay fees, and use `getPriorityFees` to preflight fee caps before broadcasting.
+
+---
+
 ## 📊 **Architecture**
 
 ### **System Overview**

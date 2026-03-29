@@ -1,0 +1,83 @@
+[
+  {
+    "timestamp": "2026-01-27T19:30:47.347Z",
+    "type": "key_operation",
+    "mpcId": "test-mpc-001",
+    "action": "generate",
+    "status": "success",
+    "details": "Generated new MPC keypair",
+    "user": "alice@example.com"
+  },
+  {
+    "timestamp": "2026-01-27T19:30:47.347Z",
+    "type": "key_operation",
+    "mpcId": "test-mpc-001",
+    "action": "sign",
+    "status": "success",
+    "details": "Signed transaction with 3-of-5 shares",
+    "user": "bob@example.com"
+  },
+  {
+    "timestamp": "2026-01-27T19:30:47.348Z",
+    "type": "share_operation",
+    "mpcId": "test-mpc-001",
+    "action": "recover",
+    "status": "success",
+    "details": "Successfully recovered key from shares",
+    "user": "charlie@example.com"
+  },
+  {
+    "timestamp": "2026-01-27T19:31:40.870Z",
+    "type": "key_operation",
+    "mpcId": "test-mpc-001",
+    "action": "generate",
+    "status": "success",
+    "details": "Generated new MPC keypair",
+    "user": "alice@example.com"
+  },
+  {
+    "timestamp": "2026-01-27T19:31:40.871Z",
+    "type": "key_operation",
+    "mpcId": "test-mpc-001",
+    "action": "sign",
+    "status": "success",
+    "details": "Signed transaction with 3-of-5 shares",
+    "user": "bob@example.com"
+  },
+  {
+    "timestamp": "2026-01-27T19:31:40.871Z",
+    "type": "share_operation",
+    "mpcId": "test-mpc-001",
+    "action": "recover",
+    "status": "success",
+    "details": "Successfully recovered key from shares",
+    "user": "charlie@example.com"
+  },
+  {
+    "timestamp": "2026-01-27T19:32:24.127Z",
+    "type": "key_operation",
+    "mpcId": "test-mpc-001",
+    "action": "generate",
+    "status": "success",
+    "details": "Generated new MPC keypair",
+    "user": "alice@example.com"
+  },
+  {
+    "timestamp": "2026-01-27T19:32:24.127Z",
+    "type": "key_operation",
+    "mpcId": "test-mpc-001",
+    "action": "sign",
+    "status": "success",
+    "details": "Signed transaction with 3-of-5 shares",
+    "user": "bob@example.com"
+  },
+  {
+    "timestamp": "2026-01-27T19:32:24.129Z",
+    "type": "share_operation",
+    "mpcId": "test-mpc-001",
+    "action": "recover",
+    "status": "success",
+    "details": "Successfully recovered key from shares",
+    "user": "charlie@example.com"
+  }
+]

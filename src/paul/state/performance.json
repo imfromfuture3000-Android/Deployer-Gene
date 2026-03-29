@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-02-13T00:00:00Z",
+  "period": "week",
+  "strategies": {
+    "yieldHarvester": {
+      "totalReturn": 0,
+      "trades": 0,
+      "winRate": 0,
+      "sharpe": 0,
+      "maxDrawdown": 0
+    },
+    "signalSeeker": {
+      "totalReturn": 0,
+      "trades": 0,
+      "winRate": 0,
+      "sharpe": 0,
+      "maxDrawdown": 0
+    },
+    "liquiditySniffer": {
+      "totalReturn": 0,
+      "trades": 0,
+      "winRate": 0,
+      "sharpe": 0,
+      "maxDrawdown": 0
+    },
+    "zkCompressionFarmer": {
+      "totalReturn": 0,
+      "trades": 0,
+      "winRate": 0,
+      "sharpe": 0,
+      "maxDrawdown": 0
+    },
+    "beliefRewrite": {
+      "mutations": 0,
+      "avgMutationSize": 0
+    }
+  },
+  "combined": {
+    "totalPnL": 0,
+    "dailyAverage": 0,
+    "sharpe": 0,
+    "notes": "Will populate after first week of operation"
+  }
+}

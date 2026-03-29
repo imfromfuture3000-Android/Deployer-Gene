@@ -1,0 +1,143 @@
+{
+  "timestamp": "2026-01-27T20:22:11.545Z",
+  "network": "solana-mainnet",
+  "totalPrograms": 7,
+  "activePrograms": 0,
+  "inactivePrograms": 7,
+  "programs": {
+    "Votejju1omngnwg": {
+      "address": "Votejju1omngnwg",
+      "name": "Vote Program",
+      "authority": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "commission": 5,
+      "features": [
+        "vote_tracking",
+        "reward_distribution",
+        "governance_participation"
+      ],
+      "network": "solana-mainnet",
+      "status": "active",
+      "source": "deployment.voteNode.programId",
+      "onChain": {
+        "error": "Invalid public key input"
+      }
+    },
+    "NFTfhr4ph5w0ug": {
+      "address": "NFTfhr4ph5w0ug",
+      "name": "NFT Collection",
+      "symbol": "OPVN",
+      "supply": 10000,
+      "royalty": 5,
+      "features": [
+        "voting_power",
+        "earning_multiplier",
+        "governance_rights"
+      ],
+      "network": "solana-mainnet",
+      "status": "active",
+      "source": "deployment.nftCollection.collectionId",
+      "onChain": {
+        "error": "Non-base58 character"
+      }
+    },
+    "Botzcv45lq3rar": {
+      "address": "Botzcv45lq3rar",
+      "botId": "BOTake4d6i3yae",
+      "type": "vote_harvester",
+      "name": "Bot 1 (vote_harvester)",
+      "earningRate": "8.90%",
+      "capabilities": [
+        "auto_vote",
+        "claim_rewards",
+        "compound_earnings",
+        "nft_management"
+      ],
+      "network": "solana-mainnet",
+      "status": "active",
+      "source": "deployment.bots[0]",
+      "onChain": {
+        "error": "Non-base58 character"
+      }
+    },
+    "Botgy74odomne": {
+      "address": "Botgy74odomne",
+      "botId": "BOToyvwrcudit8",
+      "type": "reward_claimer",
+      "name": "Bot 2 (reward_claimer)",
+      "earningRate": "9.62%",
+      "capabilities": [
+        "auto_vote",
+        "claim_rewards",
+        "compound_earnings",
+        "nft_management"
+      ],
+      "network": "solana-mainnet",
+      "status": "active",
+      "source": "deployment.bots[1]",
+      "onChain": {
+        "error": "Invalid public key input"
+      }
+    },
+    "Botfpocp7jkxr": {
+      "address": "Botfpocp7jkxr",
+      "botId": "BOT7ihru1xgn3h",
+      "type": "nft_trader",
+      "name": "Bot 3 (nft_trader)",
+      "earningRate": "11.30%",
+      "capabilities": [
+        "auto_vote",
+        "claim_rewards",
+        "compound_earnings",
+        "nft_management"
+      ],
+      "network": "solana-mainnet",
+      "status": "active",
+      "source": "deployment.bots[2]",
+      "onChain": {
+        "error": "Invalid public key input"
+      }
+    },
+    "Botbsm7et3k5r": {
+      "address": "Botbsm7et3k5r",
+      "botId": "BOTd6bn1ovijnv",
+      "type": "yield_farmer",
+      "name": "Bot 4 (yield_farmer)",
+      "earningRate": "9.07%",
+      "capabilities": [
+        "auto_vote",
+        "claim_rewards",
+        "compound_earnings",
+        "nft_management"
+      ],
+      "network": "solana-mainnet",
+      "status": "active",
+      "source": "deployment.bots[3]",
+      "onChain": {
+        "error": "Invalid public key input"
+      }
+    },
+    "Botnk1s2xskl7": {
+      "address": "Botnk1s2xskl7",
+      "botId": "BOTm93gpq85zb",
+      "type": "governance_voter",
+      "name": "Bot 5 (governance_voter)",
+      "earningRate": "13.28%",
+      "capabilities": [
+        "auto_vote",
+        "claim_rewards",
+        "compound_earnings",
+        "nft_management"
+      ],
+      "network": "solana-mainnet",
+      "status": "active",
+      "source": "deployment.bots[4]",
+      "onChain": {
+        "error": "Non-base58 character"
+      }
+    }
+  },
+  "summary": {
+    "fromDeployment": 7,
+    "fromCodebase": 0
+  }
+}

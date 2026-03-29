@@ -1,0 +1,65 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                   💸 SOL WITHDRAWAL - QUICK START 💸                      ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+📊 AVAILABLE LIQUIDITY (Based on DAO Operations)
+═══════════════════════════════════════════════════════════════════════════════
+Daily:       409.92 SOL  (Vote rewards + Bots + Governance + NFT royalties)
+Monthly:    12,297.60 SOL (30-day accumulation)
+Annually:  149,620.80 SOL (Full year projection)
+
+
+🏦 TREASURY SETUP STATUS
+═══════════════════════════════════════════════════════════════════════════════
+Current On-Chain Balance:  0.00 SOL
+Authority Address:         zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4
+Network:                   Solana Mainnet
+Multi-Sig:                 ⚠️  NOT YET CONFIGURED
+
+
+🛠️ WITHDRAWAL COMMANDS
+═══════════════════════════════════════════════════════════════════════════════
+
+Check balance:
+  node scripts/withdraw-sol.js balance
+
+Create withdrawal (unsigned):
+  node scripts/withdraw-sol.js withdraw 100
+
+Execute withdrawal (with private key):
+  node scripts/withdraw-sol.js execute 100 ~/.secrets/deployer.key
+
+View withdrawal history:
+  node scripts/withdraw-sol.js history
+
+Show help:
+  node scripts/withdraw-sol.js help
+
+
+🔐 SECURITY LEVELS (Recommended)
+═══════════════════════════════════════════════════════════════════════════════
+< 1,000 SOL        →  Single signature (Authority)
+1,000 - 10,000     →  2-of-3 multi-sig
+> 10,000 SOL       →  3-of-5 multi-sig + 24h timelock
+
+
+📋 SETUP CHECKLIST
+═══════════════════════════════════════════════════════════════════════════════
+☐ Create dedicated treasury holding account
+☐ Configure bots to payout earnings to treasury
+☐ Deploy MPC system for multi-sig signing (src/mpc/)
+☐ Enable governance voting for large withdrawals (>5,000 SOL)
+☐ Set withdrawal limits in smart contract
+☐ Add emergency pause function
+☐ Test withdrawal flow on devnet
+
+
+💡 NEXT ACTIONS
+═══════════════════════════════════════════════════════════════════════════════
+1. Fund treasury account with first month earnings (~12,300 SOL)
+2. Deploy 3-of-5 multi-sig using MPC system
+3. Enable automatic payout tracking to .cache/withdrawal-history.json
+4. Setup Helius webhooks for real-time earnings monitoring
+5. Create governance proposals for large withdrawals
+
+For detailed plan:  cat .cache/WITHDRAWAL-PLAN.md

@@ -1,0 +1,176 @@
+{
+  "scan_timestamp": "2026-01-27T00:00:00Z",
+  "report_title": "Copilot/Deployer Address Mapping & Program Signers",
+  "primary_deployers": [
+    {
+      "address": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+      "role": "Primary Deployer / Authority",
+      "identified_in_files": [
+        ".cache/node-votes-nft-bots-deployment.json (line 2, 7)",
+        "SECURITY-AUDIT-RALPH-ITERATION-1.md (line 45)",
+        "RALPH-FULL-DEVELOPMENT-RUN.md (line 107)"
+      ],
+      "programs_deployed": [
+        {
+          "program_id": "Votejju1omngnwg",
+          "type": "vote_tracking",
+          "features": ["vote_tracking", "reward_distribution", "governance_participation"],
+          "status": "active",
+          "network": "solana-mainnet"
+        }
+      ],
+      "bots_signed": [
+        {
+          "bot_id": "BOTake4d6i3yae",
+          "type": "vote_harvester",
+          "address": "Botzcv45lq3rar",
+          "earning_rate": "8.90%"
+        },
+        {
+          "bot_id": "BOToyvwrcudit8",
+          "type": "reward_claimer",
+          "address": "Botgy74odomne",
+          "earning_rate": "9.62%"
+        },
+        {
+          "bot_id": "BOT7ihru1xgn3h",
+          "type": "nft_trader",
+          "address": "Botfpocp7jkxr",
+          "earning_rate": "11.30%"
+        },
+        {
+          "bot_id": "BOTd6bn1ovijnv",
+          "type": "yield_farmer",
+          "address": "Botbsm7et3k5r",
+          "earning_rate": "9.07%"
+        },
+        {
+          "bot_id": "BOTm93gpq85zb",
+          "type": "governance_voter",
+          "address": "Botnk1s2xskl7",
+          "earning_rate": "13.28%"
+        }
+      ],
+      "nft_collections": [
+        {
+          "collection_id": "NFTfhr4ph5w0ug",
+          "name": "Omega Prime Voting NFTs",
+          "symbol": "OPVN",
+          "total_supply": 10000,
+          "royalty": "5%"
+        }
+      ],
+      "daily_earnings": {
+        "vote_rewards": "96.39 SOL",
+        "nft_royalties": "28.77 SOL",
+        "governance_rewards": "74.26 SOL",
+        "bot_earnings": "210.50 SOL",
+        "total_daily": "409.92 SOL"
+      },
+      "on_chain_status": "active"
+    }
+  ],
+  "secondary_deployers": [
+    {
+      "address": "CdTkRbgfxDThnFZjZCGnjqYvMqoswu2fJwkU4mzM9QFo",
+      "role": "Program Deployer (Referenced)",
+      "identified_in_files": [
+        "SECURITY-AUDIT-RALPH-ITERATION-1.md (line 48)",
+        "RALPH-FULL-DEVELOPMENT-RUN.md (line 110)"
+      ],
+      "status": "referenced_in_docs"
+    }
+  ],
+  "copilot_references": [
+    {
+      "name": "ralph-copilot",
+      "role": "Autonomous agent runner",
+      "config_file": ".ralph-config.json (line 14)",
+      "description": "AI-driven autonomous development loop (Ralph Wiggum methodology)"
+    },
+    {
+      "name": "CopilotOracleKey",
+      "role": "CI/CD placeholder deployer",
+      "value": "CopilotOracleKey1111111111111111111111111111",
+      "config_file": ".github/workflows/sacred-mint.yml (line 60)",
+      "description": "Placeholder key for Sacred Mint automated deployment"
+    }
+  ],
+  "key_management_infrastructure": [
+    {
+      "secret_name": "DEPLOYER_PRIVATE_KEY",
+      "usage": "GitHub Actions secrets for mainnet deployment",
+      "workflows": [
+        ".github/workflows/deploy-production.yml (line 57)",
+        ".github/workflows/sacred-mint.yml"
+      ],
+      "file_destination": ".deployer.key (ephemeral, cleaned up after use)"
+    },
+    {
+      "secret_name": "HELIUS_API_KEY",
+      "usage": "Helius RPC and indexing service",
+      "workflows": [
+        ".github/workflows/ralph-autonomy.yml (line 19)",
+        ".github/workflows/mpc-agent-deploy.yml (line 51)",
+        ".github/workflows/allowlist-deploy.yml (line 46)",
+        ".github/workflows/deploy-production.yml (line 77)"
+      ]
+    },
+    {
+      "secret_name": "AGENT_API_KEY",
+      "usage": "GitHub Copilot or AI agent authentication",
+      "config": ".ralph-config.json (line 14)",
+      "description": "API key for executing Ralph autonomously with Copilot"
+    }
+  ],
+  "signing_chain": {
+    "signer_hierarchy": [
+      {
+        "level": 1,
+        "entity": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+        "role": "Master/Primary Signer",
+        "signs": [
+          "Program deployments",
+          "Bot instantiation",
+          "NFT collection creation",
+          "Authority transfers"
+        ]
+      },
+      {
+        "level": 2,
+        "entity": "GitHub Actions (via DEPLOYER_PRIVATE_KEY secret)",
+        "role": "Automated Signer",
+        "signs": [
+          "Deployment transactions",
+          "Allowlist updates",
+          "MPC agent operations"
+        ]
+      },
+      {
+        "level": 3,
+        "entity": "AI Agent (Copilot/Ralph)",
+        "role": "Decision Maker",
+        "signs": "None directly; orchestrates L2 signings"
+      }
+    ],
+    "interaction_flow": "Ralph (AI) → GitHub Actions → DEPLOYER_PRIVATE_KEY → Solana Transaction → Mainnet"
+  },
+  "program_addresses_summary": {
+    "vote_program": "Votejju1omngnwg",
+    "nft_collection": "NFTfhr4ph5w0ug",
+    "governance_token": "Not explicitly stored in deployment file",
+    "mint_authority": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4"
+  },
+  "recommended_next_steps": [
+    "Use Helius API to query full transaction history for zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+    "Check https://explorer.solana.com/address/Votejju1omngnwg?cluster=mainnet for BPF loader transactions",
+    "Verify MPC (Multi-Party Computation) system signing authority in src/mpc/ modules",
+    "Audit GitHub Actions secrets rotation policy",
+    "Validate all program upgrade authorities match expected signers"
+  ],
+  "helius_query_commands": {
+    "option_1_helius_api": "curl 'https://api.helius.xyz/v0/addresses/zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4/transactions?api-key=YOUR_KEY&limit=100'",
+    "option_2_solana_explorer": "https://explorer.solana.com/address/zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4?cluster=mainnet",
+    "option_3_solana_rpc": "curl -X POST https://api.mainnet-beta.solana.com -H 'Content-Type: application/json' -d '{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"getSignaturesForAddress\",\"params\":[\"zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4\",{\"limit\":100}]}'"
+  }
+}

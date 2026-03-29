@@ -134,6 +134,12 @@ Role: Fee payer
 Balance needed: 0.01+ SOL
 ```
 
+### Helius + MPC Configuration
+- Centralize RPC + relayer defaults in `src/helius/config.ts` (validates `HELIUS_API_KEY`, `RELAYER_PUBKEY`, `RELAYER_URL`, `MPC_SERVER_URL`, compute unit limits, and priority-fee presets).
+- Deploy paths use the MPC wrapper in `src/helius/mpcClient.ts` for `requestPayerSignature`, `submitTransaction`, and `getPriorityFees`; keep your signer endpoint reachable at `MPC_SERVER_URL`.
+- Failover RPC order: leave `RPC_URL` unset to hit `https://mainnet.helius-rpc.com/?api-key=$HELIUS_API_KEY`, then fall back to `https://rpc.helius.xyz/?api-key=$HELIUS_API_KEY` if health checks or deploys stall.
+- Key rotation playbook: rotate Helius API keys and relayer pubkeys in `.env`, run `node setup-helius.js` to confirm, then restart any deployment daemons/CI jobs so new credentials propagate.
+
 ## ✅ Successful Deployments
 
 ### Devnet

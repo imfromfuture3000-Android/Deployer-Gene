@@ -1,0 +1,77 @@
+{
+  "phase": 5,
+  "network": "devnet",
+  "startTime": "2026-02-13T19:42:29.484Z",
+  "transactions": [
+    {
+      "account": "11111111111111111111111111111112",
+      "network": "devnet",
+      "timestamp": "2026-02-13T19:42:30.576Z",
+      "status": "simulated"
+    }
+  ],
+  "empires": [
+    {
+      "phase": "token_created",
+      "data": {
+        "name": "Ralph Test Token",
+        "symbol": "RALPH",
+        "decimals": 9,
+        "supply": "1000000000",
+        "bondingCurveAddress": "pumpdotfun111111111111111111111111111111111",
+        "initialPrice": 0.000001,
+        "createdAt": "2026-02-13T19:42:29.819Z"
+      }
+    },
+    {
+      "phase": "nft_collection_created",
+      "data": {
+        "name": "Ralph Genesis NFTs",
+        "symbol": "RALPH-GN",
+        "baseUri": "https://ipfs.io/ipfs/bafybei...",
+        "merkleRoot": "abc123def456ghi789jkl",
+        "capacity": 2000000,
+        "compressed": true,
+        "compressionRatio": "99.8%",
+        "costReduction": "5KB → 42 bytes per NFT",
+        "totalMinted": 100
+      }
+    },
+    {
+      "phase": "jupiter_lend_test",
+      "data": {
+        "earn": {
+          "depositAmount": 1,
+          "tokenMint": "EPjFWaLb3odcccccccccccccccccccccccccccccccc",
+          "expectedAPY": "6.5%",
+          "status": "simulated"
+        },
+        "borrow": {
+          "collateralMint": "So11111111111111111111111111111111111111111",
+          "collateralAmount": 1,
+          "debtMint": "EPjFWaLb3odcccccccccccccccccccccccccccccccc",
+          "borrowAmount": 0.5,
+          "ltv": 0.65,
+          "liquidationThreshold": 0.85,
+          "status": "simulated"
+        },
+        "programs": {
+          "earn": "jup3YeL8QhtSx1e253b2FDvsMNC87fDrgQZivbrndc9",
+          "borrow": "jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi"
+        }
+      }
+    },
+    {
+      "phase": "transaction_test",
+      "data": {
+        "account": "11111111111111111111111111111112",
+        "network": "devnet",
+        "timestamp": "2026-02-13T19:42:30.576Z",
+        "status": "simulated"
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "endTime": "2026-02-13T19:42:30.577Z"
+}

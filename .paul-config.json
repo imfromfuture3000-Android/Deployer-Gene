@@ -1,0 +1,63 @@
+{
+  "ralph": {
+    "description": "Ralph Wiggum Autonomous Loop Configuration",
+    "version": "1.0.0",
+    "loop": {
+      "maxIterations": 50,
+      "iterationTimeout": 1800,
+      "promptFile": "scripts/ralph/prompt.md",
+      "prdFile": "PRD.md",
+      "agentsFile": "AGENTS.md",
+      "completeSignal": "LOOP_COMPLETE"
+    },
+    "agent": {
+      "name": "ralph-copilot",
+      "model": "claude-haiku-4.5",
+      "temperature": 0.7,
+      "maxTokens": 8000
+    },
+    "git": {
+      "autoCommit": true,
+      "commitPrefix": "[ralph]",
+      "committer": "ralph-autonomy[bot]",
+      "committerEmail": "ralph@autonomy.local"
+    },
+    "blockchain": {
+      "networks": {
+        "devnet": {
+          "name": "Solana Devnet",
+          "rpc": "https://api.devnet.solana.com"
+        },
+        "testnet": {
+          "name": "Solana Testnet",
+          "rpc": "https://api.testnet.solana.com"
+        },
+        "mainnet": {
+          "name": "Solana Mainnet",
+          "rpc": "https://api.mainnet-beta.solana.com"
+        }
+      },
+      "defaultNetwork": "devnet"
+    },
+    "services": {
+      "biconomy": {
+        "enabled": true,
+        "apiKeyEnv": "BICONOMY_API_KEY"
+      },
+      "alchemy": {
+        "enabled": true,
+        "apiKeyEnv": "ALCHEMY_API_KEY"
+      }
+    },
+    "testing": {
+      "framework": "jest",
+      "coverage": true,
+      "coverageThreshold": 70
+    },
+    "logging": {
+      "level": "info",
+      "format": "json",
+      "destination": "logs/ralph.log"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+name: Cosmic Mutation Engine
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+jobs:
+  evolve:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+
+      - name: Install and run Ollama
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          ollama serve &
+          sleep 5
+
+      - name: Pull Ollama models
+        run: |
+          ollama pull qwen3-coder:480b-cloud
+          ollama pull gpt-oss:20b
+
+      - name: Run Cosmic Mutation
+        env:
+          HELIUS_API_KEY: ${{ secrets.HELIUS_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          # Assuming a script that orchestrates the mutation and approval process
+          # as described in the manifest.
+          # This script would use Ollama and the Telegram bot.
+          python scripts/cosmic_mutation_workflow.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'Cosmic Mutation Engine'
+          git config --global user.email 'github-actions@github.com'
+          git add .
+          if git diff-index --quiet HEAD; then
+            echo "No changes to commit."
+          else
+            git commit -m "🧬 Automated evolution by Cosmic Mutation Engine"
+            git push
+          fi

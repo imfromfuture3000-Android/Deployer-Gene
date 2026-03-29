@@ -1,0 +1,342 @@
+name: Build Reown App
+
+on:
+  push:
+    branches: [main, develop]
+    paths:
+      - 'src/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/reown-build.yml'
+  pull_request:
+    branches: [main, develop]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Build environment'
+        required: true
+        default: 'development'
+        type: choice
+        options:
+          - development
+          - staging
+          - production
+
+env:
+  NODE_VERSION: '18.x'
+  REGISTRY: ghcr.io
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    
+    environment:
+      name: ${{ github.event.inputs.environment || 'development' }}
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+      
+      - name: Create .env file from secrets
+        run: |
+          cat > .env.local << 'EOF'
+          # Reown Configuration
+          NEXT_PUBLIC_REOWN_PROJECT_ID=${{ secrets.REOWN_PROJECT_ID }}
+          REOWN_SECRET_KEY=${{ secrets.REOWN_SECRET_KEY }}
+          
+          # Solana Configuration
+          SOLANA_RPC_URL=${{ secrets.SOLANA_RPC_URL }}
+          SOLANA_NETWORK=${{ secrets.SOLANA_NETWORK || 'devnet' }}
+          
+          # API Keys
+          ALCHEMY_API_KEY=${{ secrets.ALCHEMY_API_KEY }}
+          HELIUS_API_KEY=${{ secrets.HELIUS_API_KEY }}
+          
+          # Wallet Configuration
+          DEPLOYER_KEYPAIR=${{ secrets.DEPLOYER_KEYPAIR }}
+          TREASURY_PUBKEY=${{ secrets.TREASURY_PUBKEY }}
+          
+          # App Configuration
+          NODE_ENV=${{ github.event.inputs.environment || 'development' }}
+          NEXT_PUBLIC_APP_URL=${{ secrets.APP_URL || 'http://localhost:3000' }}
+          NEXT_PUBLIC_API_URL=${{ secrets.API_URL || 'http://localhost:3001' }}
+          
+          # Feature Flags
+          NEXT_PUBLIC_ENABLE_WALLET_CONNECT=${{ secrets.ENABLE_WALLET_CONNECT || 'true' }}
+          NEXT_PUBLIC_ENABLE_ANALYTICS=${{ secrets.ENABLE_ANALYTICS || 'true' }}
+          EOF
+          
+          echo "✅ .env.local created from secrets"
+          cat .env.local | grep -E '^[A-Z_]+=' | cut -d= -f1 | sort
+      
+      - name: Verify environment variables
+        run: |
+          echo "Verifying required environment variables..."
+          
+          required_vars=(
+            "NEXT_PUBLIC_REOWN_PROJECT_ID"
+            "SOLANA_RPC_URL"
+            "NEXT_PUBLIC_APP_URL"
+          )
+          
+          missing_vars=()
+          for var in "${required_vars[@]}"; do
+            if [ -z "${!var}" ]; then
+              missing_vars+=("$var")
+            fi
+          done
+          
+          if [ ${#missing_vars[@]} -gt 0 ]; then
+            echo "❌ Missing required environment variables:"
+            printf '%s\n' "${missing_vars[@]}"
+            exit 1
+          fi
+          
+          echo "✅ All required environment variables are set"
+      
+      - name: Install dependencies
+        run: npm ci --verbose
+        env:
+          CI: true
+      
+      - name: Lint code
+        run: npm run lint --if-present
+        continue-on-error: true
+      
+      - name: Run tests
+        run: npm test --if-present -- --coverage
+        continue-on-error: true
+      
+      - name: Build application
+        run: npm run build --if-present
+        env:
+          NEXT_PUBLIC_REOWN_PROJECT_ID: ${{ secrets.REOWN_PROJECT_ID }}
+          NEXT_PUBLIC_APP_URL: ${{ secrets.APP_URL || 'http://localhost:3000' }}
+      
+      - name: Generate SBOM (Software Bill of Materials)
+        uses: anchore/sbom-action@v0
+        with:
+          format: cyclonedx-json
+          output-file: sbom.json
+      
+      - name: Upload SBOM
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbom
+          path: sbom.json
+          retention-days: 30
+      
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: build-artifacts
+          path: |
+            .next/
+            dist/
+            build/
+          retention-days: 7
+      
+      - name: Upload coverage reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coverage-report
+          path: coverage/
+          retention-days: 30
+      
+      - name: Security scan - Trivy
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          scan-ref: '.'
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+      
+      - name: Upload Trivy results to GitHub Security
+        uses: github/codeql-action/upload-sarif@v3
+        if: always()
+        with:
+          sarif_file: 'trivy-results.sarif'
+      
+      - name: Run security audit
+        run: npm audit --audit-level=moderate
+        continue-on-error: true
+      
+      - name: Check for secrets in code
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITLEAKS_ENABLE_COMMENTS: true
+      
+      - name: Docker build (optional)
+        if: success()
+        run: |
+          if [ -f "Dockerfile" ]; then
+            docker build -t reown-app:${{ github.sha }} .
+            echo "✅ Docker build successful"
+          else
+            echo "⚠️  Dockerfile not found, skipping Docker build"
+          fi
+      
+      - name: Generate build report
+        if: always()
+        run: |
+          cat > build-report.md << 'EOF'
+          # Build Report
+          
+          **Build Status**: ${{ job.status }}
+          **Timestamp**: $(date -u +'%Y-%m-%dT%H:%M:%SZ')
+          **Commit**: ${{ github.sha }}
+          **Branch**: ${{ github.ref }}
+          **Actor**: ${{ github.actor }}
+          
+          ## Environment
+          - Node Version: ${{ env.NODE_VERSION }}
+          - Environment: ${{ github.event.inputs.environment || 'development' }}
+          
+          ## Artifacts
+          - SBOM: sbom.json
+          - Coverage: coverage/
+          - Build Output: .next/, dist/, build/
+          
+          ## Security
+          - Trivy Scan: trivy-results.sarif
+          - Gitleaks: Enabled
+          - npm audit: Enabled
+          EOF
+          
+          echo "Build report generated"
+      
+      - name: Upload build report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: build-report
+          path: build-report.md
+          retention-days: 30
+      
+      - name: Comment PR with build status
+        if: github.event_name == 'pull_request' && always()
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const status = '${{ job.status }}' === 'success' ? '✅' : '❌';
+            const comment = `${status} **Build ${{ job.status }}**
+            
+            - Environment: ${{ github.event.inputs.environment || 'development' }}
+            - Commit: ${{ github.sha }}
+            - [View artifacts](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})`;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });
+      
+      - name: Notify on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '❌ Build failed. Check the [Actions log](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}) for details.'
+            });
+
+  security-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Run Snyk security scan
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        continue-on-error: true
+      
+      - name: Upload Snyk results
+        uses: github/codeql-action/upload-sarif@v3
+        if: always()
+        with:
+          sarif_file: 'snyk.sarif'
+        continue-on-error: true
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    
+    permissions:
+      contents: read
+      packages: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      
+      - name: Log in to Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Extract metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ github.repository }}
+          tags: |
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=ref,event=branch
+            type=sha
+      
+      - name: Build and push Docker image
+        if: success()
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+      
+      - name: Create release
+        if: success()
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ github.run_number }}
+          release_name: Release ${{ github.run_number }}
+          body: |
+            Build and deployment successful
+            
+            - Commit: ${{ github.sha }}
+            - Docker Image: ${{ env.REGISTRY }}/${{ github.repository }}:sha-${{ github.sha }}
+            
+            [View Workflow](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
+          draft: false
+          prerelease: false

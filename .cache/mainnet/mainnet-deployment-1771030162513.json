@@ -1,0 +1,66 @@
+{
+  "startTime": "2026-02-14T00:49:22.407Z",
+  "phases": [
+    {
+      "phase": "initialization",
+      "status": "complete",
+      "slot": 400098427,
+      "blockhash": "F3qovhLXo4jQxCsYErGqFL3ygUzCNHYdc3D3NV1xwKCH"
+    },
+    {
+      "phase": "token_deployment",
+      "data": {
+        "name": "Ralph Empire Token",
+        "symbol": "RALPH",
+        "decimals": 9,
+        "supply": 1000000000,
+        "status": "configured",
+        "note": "Ready for Pump.io deployment with user signature"
+      },
+      "status": "ready"
+    },
+    {
+      "phase": "nft_deployment",
+      "data": {
+        "name": "Ralph Genesis Collection",
+        "symbol": "RALPH-GN",
+        "compressed": true,
+        "capacity": 1048576,
+        "status": "configured"
+      },
+      "status": "ready"
+    },
+    {
+      "phase": "jupiter_integration",
+      "data": {
+        "earnProgram": "jup3YeL8QhtSx1e253b2FDvsMNC87fDrgQZivbrndc9",
+        "borrowProgram": "jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi",
+        "rewardsProgram": "jup7TthsMgcR9Y3L277b8Eo9uboVSmu1utkuXHNUKar",
+        "status": "active"
+      },
+      "status": "active"
+    },
+    {
+      "phase": "treasury_setup",
+      "data": {
+        "receiver": "7b201OKf5pQdHRWFo7cDhnlE1YuqpR4sYXrYGDMvCvPc",
+        "rebateEnabled": true,
+        "crossChainEnabled": true,
+        "status": "active"
+      },
+      "status": "active"
+    },
+    {
+      "phase": "biconomy_relayer",
+      "data": {
+        "apiKey": "mee_E5AZgEKp6wsbAkcTLdSZMs",
+        "gaslessEnabled": true,
+        "status": "active"
+      },
+      "status": "active"
+    }
+  ],
+  "transactions": [],
+  "status": "deployed",
+  "endTime": "2026-02-14T00:49:22.513Z"
+}

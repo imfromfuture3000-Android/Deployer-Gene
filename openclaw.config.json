@@ -1,0 +1,18 @@
+{
+  "provider": "ollama",
+  "model": "qwen3-coder",
+  "contextWindow": 65536,
+  "agent": {
+    "name": "ralph-copilot",
+    "loop": {
+      "enabled": true,
+      "maxIterations": 50,
+      "promptFile": "scripts/ralph/prompt.md",
+      "interval": "1h"
+    }
+  },
+  "ollama": {
+    "baseUrl": "http://localhost:11434",
+    "model": "qwen3-coder"
+  }
+}

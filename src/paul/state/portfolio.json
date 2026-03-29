@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-02-13T00:00:00Z",
+  "network": "solana-mainnet",
+  "wallet": "YOUR_WALLET_ADDRESS_HERE",
+  "totalAssets": 0,
+  "positions": [],
+  "recentTransactions": [],
+  "notes": "Portfolio tracking initialized. Populate as Ralph executes strategies."
+}

@@ -1,0 +1,76 @@
+{
+  "timestamp": "2026-01-27T20:38:38.528Z",
+  "network": "solana-mainnet",
+  "rpc": "https://api.mainnet-beta.solana.com",
+  "summary": {
+    "total_programs": 7,
+    "valid_addresses": 0,
+    "found_onchain": 0,
+    "not_found": 7
+  },
+  "authority": {
+    "address": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+    "valid": false,
+    "exists": false,
+    "reason": "Invalid address format"
+  },
+  "programs": [
+    {
+      "name": "Vote Program",
+      "id": "Votejju1omngnwg",
+      "valid": false,
+      "exists": false,
+      "reason": "Invalid address format",
+      "explorerUrl": "https://explorer.solana.com/address/Votejju1omngnwg?cluster=mainnet"
+    },
+    {
+      "name": "NFT Collection (OPVN)",
+      "id": "NFTfhr4ph5w0ug",
+      "valid": false,
+      "exists": false,
+      "reason": "Invalid address format",
+      "explorerUrl": "https://explorer.solana.com/address/NFTfhr4ph5w0ug?cluster=mainnet"
+    },
+    {
+      "name": "Bot #1: Vote Harvester",
+      "id": "Botzcv45lq3rar",
+      "valid": false,
+      "exists": false,
+      "reason": "Invalid address format",
+      "explorerUrl": "https://explorer.solana.com/address/Botzcv45lq3rar?cluster=mainnet"
+    },
+    {
+      "name": "Bot #2: Reward Claimer",
+      "id": "Botgy74odomne",
+      "valid": false,
+      "exists": false,
+      "reason": "Invalid address format",
+      "explorerUrl": "https://explorer.solana.com/address/Botgy74odomne?cluster=mainnet"
+    },
+    {
+      "name": "Bot #3: NFT Trader",
+      "id": "Botfpocp7jkxr",
+      "valid": false,
+      "exists": false,
+      "reason": "Invalid address format",
+      "explorerUrl": "https://explorer.solana.com/address/Botfpocp7jkxr?cluster=mainnet"
+    },
+    {
+      "name": "Bot #4: Yield Farmer",
+      "id": "Botbsm7et3k5r",
+      "valid": false,
+      "exists": false,
+      "reason": "Invalid address format",
+      "explorerUrl": "https://explorer.solana.com/address/Botbsm7et3k5r?cluster=mainnet"
+    },
+    {
+      "name": "Bot #5: Governance Voter",
+      "id": "Botnk1s2xskl7",
+      "valid": false,
+      "exists": false,
+      "reason": "Invalid address format",
+      "explorerUrl": "https://explorer.solana.com/address/Botnk1s2xskl7?cluster=mainnet"
+    }
+  ],
+  "explorer_base": "https://explorer.solana.com"
+}

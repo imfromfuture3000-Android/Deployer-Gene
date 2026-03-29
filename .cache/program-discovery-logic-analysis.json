@@ -1,0 +1,106 @@
+{
+  "timestamp": "2026-01-27T20:46:44.481Z",
+  "discoveryMethod": "LOGIC_BASED_MULTI_SOURCE",
+  "summary": {
+    "totalPrograms": 12,
+    "runningPrograms": 7,
+    "likelyActive": 0,
+    "corePrograms": 3
+  },
+  "programs": {
+    "confirmed": [
+      {
+        "name": "Vote Program",
+        "id": "Votejju1omngnwg",
+        "type": "governance",
+        "status": "CONFIRMED_RUNNING",
+        "authority": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+        "source": "DEPLOYMENT_MANIFEST"
+      },
+      {
+        "name": "NFT Collection (OPVN)",
+        "id": "NFTfhr4ph5w0ug",
+        "type": "nft",
+        "status": "CONFIRMED_RUNNING",
+        "authority": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4",
+        "source": "DEPLOYMENT_MANIFEST"
+      },
+      {
+        "name": "Bot #1: vote_harvester",
+        "id": "BOTake4d6i3yae",
+        "type": "autonomous_agent",
+        "status": "CONFIRMED_RUNNING",
+        "authority": "N/A",
+        "source": "DEPLOYMENT_MANIFEST"
+      },
+      {
+        "name": "Bot #2: reward_claimer",
+        "id": "BOToyvwrcudit8",
+        "type": "autonomous_agent",
+        "status": "CONFIRMED_RUNNING",
+        "authority": "N/A",
+        "source": "DEPLOYMENT_MANIFEST"
+      },
+      {
+        "name": "Bot #3: nft_trader",
+        "id": "BOT7ihru1xgn3h",
+        "type": "autonomous_agent",
+        "status": "CONFIRMED_RUNNING",
+        "authority": "N/A",
+        "source": "DEPLOYMENT_MANIFEST"
+      },
+      {
+        "name": "Bot #4: yield_farmer",
+        "id": "BOTd6bn1ovijnv",
+        "type": "autonomous_agent",
+        "status": "CONFIRMED_RUNNING",
+        "authority": "N/A",
+        "source": "DEPLOYMENT_MANIFEST"
+      },
+      {
+        "name": "Bot #5: governance_voter",
+        "id": "BOTm93gpq85zb",
+        "type": "autonomous_agent",
+        "status": "CONFIRMED_RUNNING",
+        "authority": "N/A",
+        "source": "DEPLOYMENT_MANIFEST"
+      }
+    ],
+    "likely": [],
+    "core": [
+      {
+        "name": "Token Program",
+        "id": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "type": "system",
+        "status": "CORE_SYSTEM",
+        "source": "CORE_SOLANA"
+      },
+      {
+        "name": "Metadata Program",
+        "id": "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
+        "type": "system",
+        "status": "CORE_SYSTEM",
+        "source": "CORE_SOLANA"
+      },
+      {
+        "name": "Associated Token Program",
+        "id": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+        "type": "system",
+        "status": "CORE_SYSTEM",
+        "source": "CORE_SOLANA"
+      }
+    ]
+  },
+  "deploymentManifest": {
+    "status": "deployed",
+    "network": "solana-mainnet",
+    "timestamp": "2025-10-08T03:33:07.936Z",
+    "deployer": "zhBqbd9tSQFPevg4188JxcgpccCj3t1Jxb29zsBc2R4"
+  },
+  "evidence": {
+    "deploymentManifestFound": true,
+    "deploymentScriptsFound": 4,
+    "codeReferencesFound": 13,
+    "multiSourceVerification": true
+  }
+}

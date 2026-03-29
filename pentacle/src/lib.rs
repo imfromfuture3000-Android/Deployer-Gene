@@ -66,3 +66,4 @@ pub fn emit_pentacle_pulse(depth: u64) {
     // In a real program you might create a custom log format for off-chain indexing
     msg!("PENTACLE_PULSE depth={}", depth);
 }
+

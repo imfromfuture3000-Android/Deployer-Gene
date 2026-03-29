@@ -1,0 +1,74 @@
+{
+  "version": "1.0",
+  "timestamp": "2026-02-13T00:00:00Z",
+  "theme": "Agentic Ancient Alien – Cyberpunk Solana Empire",
+  "strategies": {
+    "yieldHarvester": {
+      "weight": 0.25,
+      "enabled": true,
+      "minApy": 5,
+      "minCompoundGain": 0.01,
+      "riskScore": 0.3,
+      "topProtocols": [
+        "Tulip Protocol",
+        "Francium",
+        "Raydium",
+        "Orca"
+      ]
+    },
+    "signalSeeker": {
+      "weight": 0.20,
+      "enabled": false,
+      "minSentimentScore": 0.6,
+      "minVelocity": 50,
+      "riskScore": 0.5,
+      "sources": [
+        "Twitter",
+        "Discord",
+        "Telegram"
+      ]
+    },
+    "liquiditySniffer": {
+      "weight": 0.25,
+      "enabled": false,
+      "maxRiskScore": 0.7,
+      "volumeThreshold": 1000,
+      "riskScore": 0.6,
+      "dexes": [
+        "Raydium",
+        "Orca",
+        "Marinade"
+      ]
+    },
+    "zkCompressionFarmer": {
+      "weight": 0.15,
+      "enabled": false,
+      "minAirdropValue": 10,
+      "rentEfficiency": 0.95,
+      "riskScore": 0.2
+    },
+    "beliefRewrite": {
+      "weight": 0.15,
+      "enabled": false,
+      "lookbackDays": 7,
+      "mutationRate": 0.1,
+      "riskScore": 0.1,
+      "description": "Evolutionary parameter tuning based on recent PnL"
+    }
+  },
+  "constraints": {
+    "maxPositionSize": 10000,
+    "maxLeverage": 1.0,
+    "minBalance": 0.5,
+    "maxDailyLoss": 0.05,
+    "stopLoss": 0.02
+  },
+  "execution": {
+    "yieldHarvester": "0 */6 * * *",
+    "signalSeeker": "*/5 * * * *",
+    "liquiditySniffer": "continuous",
+    "zkCompressionFarmer": "0 0 * * *",
+    "beliefRewrite": "0 0 * * 0"
+  },
+  "notes": "Initial state - Signal Seeker and Liquidity Sniffer disabled until Twitter/Discord APIs integrated. Yield Harvester goes live first."
+}
